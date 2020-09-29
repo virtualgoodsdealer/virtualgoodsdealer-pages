@@ -1,0 +1,11 @@
+<header class='header'>
+  <nav class='header__nav'>
+    <a class='header__nav__item header__nav__item--title' href='{{ '/' | relative_url }}'>{{ site.title | escape }}</a>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <a class='header__nav__item' href='{{ page.url | relative_url }}'>{{ page.title | escape }}</a>
+      {% endif %}
+    {% endfor %}
+    <a class='header__nav__item' href='https://virtualgoodsdealer.com' target="_blank">{{ "shop" | escape }}</a>
+  </nav>
+</header>

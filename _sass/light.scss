@@ -1,5 +1,7 @@
 // colors for the theme
 
+$blue: #0000ff;
+
 $green: #1b813e;
 $green-dark: darken($green, 5);
 $green-darker: darken($green, 10);
@@ -25,18 +27,18 @@ $white: #fff;
 // specific colors for page
 
 $body-bg-color: $white;
-$header-nav-color: $green;
+$header-nav-color: $blue;
 $footer-color: $grey;
 $icon-color: $grey;
 
 // specific colors for post
 
 $post-date-color: $grey;
-$post-link-color: $black;
-$post-content-color: $black-lighter;
-$post-heading-color: $black-light;
-$post-link-color: $black;
-$post-link-hover-color: $black-lightest;
+$post-link-color: $blue;
+$post-content-color: $black;
+$post-heading-color: $blue;
+$post-link-color: $blue;
+$post-link-hover-color: $black-light;
 $post-emphasis-color: $black-light;
 $post-figure-color: $black-lightest;
 $post-border-color: $grey-light;
