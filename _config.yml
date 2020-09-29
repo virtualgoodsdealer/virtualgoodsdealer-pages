@@ -30,7 +30,7 @@ twitter_username: vgdofficial
 github_username:  virtualgoodsdealer
 
 # Build settings
-theme: jekyll-theme-mint
+remote_theme: aidewoode/jekyll-theme-mint
 
 blog_theme: light
 
