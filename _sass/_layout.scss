@@ -1,5 +1,13 @@
-.navbar-light{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
   color: $header-nav-color;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.post a{
+  text-decoration: underline;
 }
 
 html {
@@ -71,7 +79,7 @@ body {
 
 .posts__link {
   color: $post-link-color;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer {
