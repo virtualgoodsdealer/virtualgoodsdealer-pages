@@ -1,0 +1,55 @@
+<footer class='footer'>
+  <ul class='footer__list'>
+    {% if site.author %}
+      {% if site.email %}
+        <li class='footer__item'>
+          <a href='mailto:{{ site.email }}'>{{ site.author }}</a>
+        </li>
+      {% else %}
+        <li class='footer__item'>{{ site.author }}</li>
+      {% endif %}
+    {% endif %}
+
+    {% if site.github_username %}
+      <li class='footer__item'>
+        <a href='https://github.com/{{ site.github_username }}' title='github'>
+          github
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <li class='footer__item'>
+        <a href='https://twitter.com/{{ site.twitter_username }}' title='twitter'>
+          twitter
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.instagram_username %}
+      <li class='footer__item'>
+        <a href='https://www.instagram.com/{{ site.instagram_username }}' title='instagram'>
+          instagram
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+      <li class='footer__item'>
+        <a href='https://www.facebook.com/{{ site.facebook_username }}' title='facebook'>
+          {% include icon.html icon='facebook' %}
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.dribbble_username %}
+      <li class='footer__item'>
+        <a href='https://dribbble.com/{{ site.dribbble_username }}' title='dribbble'>
+          {% include icon.html icon='dribbble' %}
+        </a>
+      </li>
+    {% endif %}
+
+
+  </ul>
+</footer>

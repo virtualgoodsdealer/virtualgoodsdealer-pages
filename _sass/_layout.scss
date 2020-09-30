@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a {
   color: $header-nav-color;
 }
 
@@ -6,7 +6,7 @@
   padding: 0px;
 }
 
-.post a{
+.post a, .landing a{
   text-decoration: underline;
 }
 
@@ -107,6 +107,11 @@ body {
 }
 
 .footer__item:nth-child(2):before {
+  content: '|';
+  margin-right: 10px;
+}
+
+.footer__item:nth-child(3):before {
   content: '|';
   margin-right: 10px;
 }
