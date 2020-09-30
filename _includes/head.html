@@ -1,0 +1,20 @@
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  {% seo %}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  {% case site.blog_theme %}
+    {% when 'light' %}
+      <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
+    {% when 'dark' %}
+      <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}'>
+    {% when 'auto' %}
+      <link rel='stylesheet' href='{{ '/assets/light.css' | relative_url }}'>
+      <link rel='stylesheet' href='{{ '/assets/dark.css' | relative_url }}' media="(prefers-color-scheme: dark)">
+  {% endcase %}
+
+  {% feed_meta %}
+  {% include google_analytics.html %}
+</head>

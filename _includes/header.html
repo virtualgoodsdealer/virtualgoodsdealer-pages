@@ -1,11 +1,24 @@
 <header class='header'>
-  <nav class='header__nav'>
-    <a class='header__nav__item header__nav__item--title' href='{{ '/' | relative_url }}'>{{ site.title | escape }}</a>
-    {% for page in site.pages %}
-      {% if page.title %}
-        <a class='header__nav__item' href='{{ page.url | relative_url }}'>{{ page.title | escape }}</a>
-      {% endif %}
-    {% endfor %}
-    <a class='header__nav__item' href='https://virtualgoodsdealer.com' target="_blank">{{ "shop" | escape }}</a>
-  </nav>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="/">{{ site.title | escape }}</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <div class="navbar-nav">
+		    	{% for page in site.pages %}
+			      {% if page.title %}
+			      	<li>
+			      		<a class="nav-item nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+			      	</li>
+			      {% endif %}
+			    {% endfor %}
+			  <li>
+		      	<a class="nav-item nav-link" href="https://virtualgoodsdealer.com" target="_blank">{{ "shop" | escape }}</a>
+		      </li>
+		    </div>
+		  </div>
+		</nav>
+	</div>
 </header>
