@@ -1,4 +1,4 @@
 ---
 tag: news
-permalink: "/news"
+permalink: "/articles/news"
 ---

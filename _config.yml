@@ -36,7 +36,18 @@ remote_theme: aidewoode/jekyll-theme-mint
 blog_theme: light
 
 # categories
-permalink: /articles/:categories/:title/
+permalink: /articles/:title/
+
+collections:
+  category:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "articlescategory"
 
 # artist directory
 
