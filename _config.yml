@@ -28,13 +28,17 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://pages.virtualgoodsdealer.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vgddotcom
-github_username:  virtualgoodsdealer
 instagram_username: virtualgoodsdealer
 
 # Build settings
 remote_theme: aidewoode/jekyll-theme-mint
 
 blog_theme: light
+
+# categories
+permalink: /articles/:categories/:title/
+
+# artist directory
 
 # Exclude from processing.
 # The following items will not be processed, by default.

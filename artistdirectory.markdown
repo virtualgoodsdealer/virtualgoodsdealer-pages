@@ -4,15 +4,20 @@ title: artist directory
 permalink: /artistdirectory/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+{% if site.posts.size > 0 %}
+<ul class='posts'>
+  {% for post in site.posts %}
+  <li class='posts__item'>
+    <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
+      {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+      {{ post.date | date: date_format }}
+    </time>
+    <div class='posts__title'>
+      <a class='posts__link' href='{{ post.url | relative_url }}'>
+        {{ post.title | escape }}
+      </a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

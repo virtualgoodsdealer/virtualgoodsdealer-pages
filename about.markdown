@@ -4,15 +4,10 @@ title: about
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+pages.virtualgoodsdealer.com focuses on publishing non-physical art and showcasing creators.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+by @males_are_cancelled and @ada.wrong
 
-
-[jekyll-organization]: https://github.com/jekyll
+contact us at [virtualgoodsofficial@gmail.com](mailto:virtualgoodsofficial@gmail.com)

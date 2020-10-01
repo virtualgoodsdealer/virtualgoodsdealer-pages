@@ -1,0 +1,4 @@
+---
+tag: tutorial
+permalink: "/tutorial"
+---

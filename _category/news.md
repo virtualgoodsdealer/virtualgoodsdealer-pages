@@ -1,0 +1,4 @@
+---
+tag: news
+permalink: "/news"
+---
