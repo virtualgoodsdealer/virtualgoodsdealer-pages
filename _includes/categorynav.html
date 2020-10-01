@@ -1,7 +1,11 @@
 <div class="col-3 category-nav">
+  <ul class="nav flex-column">
   {% for category in site.categories %}
-    <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
+    <li>
+      <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
+    </li>
   {% endfor %}
+  </ul>
 </div>
 
 

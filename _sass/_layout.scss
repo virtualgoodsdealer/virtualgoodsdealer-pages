@@ -10,9 +10,24 @@
   text-decoration: underline;
 }
 
-.article-category-name{
+.post a:hover, .landing a:hover, .posts__link:hover{
+  color: $post-link-hover-color;
+  text-decoration: underline;
+}
+
+.article-category-name, .read-more{
   color: $post-date-color
 }
+
+.post-exerpt{
+  margin-bottom: -1rem;
+}
+
+.read-more:hover{
+  color: $post-link-hover-color;
+  text-decoration: none;
+}
+
 
 html {
   box-sizing: border-box;
@@ -66,7 +81,7 @@ body {
 .posts__item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
   align-items: baseline;
 }
 

@@ -5,23 +5,28 @@ layout: default
 <div class="row">
   <div class="col-9">
     {% if site.posts.size > 0 %}
-    <ul class='posts'>
+    <div class='posts'>
       {% for post in site.posts %}
-      <li class='posts__item'>
-        <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
-          {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
-          {{ post.date | date: date_format }}
-        </time>
-        <div class='posts__title'>
+      <div class='posts__item row'>
+      	<div class='col'>
+        	<time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
+          		{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+          		{{ post.date | date: date_format }}
+        	</time>
+        </div>
+        <div class='col-10 posts__title'>
           <a class='posts__link' href='{{ post.url | relative_url }}'>
             {{ post.title | escape }}
           </a>
+          <div class="post-exerpt">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
         </div>
-      </li>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
     {% endif %}
   </div>
   {% include categorynav.html %}
 </div>
-
