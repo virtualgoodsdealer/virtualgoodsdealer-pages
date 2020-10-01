@@ -1,33 +1,34 @@
 ---
 layout: default
 ---
+
 <div class="row">
-  <div class="col-9">
-    <p class="article-category-name">/articles/{{ page.tag }}</p>
-  </div>
-  <div class="col-3"></div>
-</div>
-<div class="row">
-  <div class="col-9">
+  <div class="col-10">
+
     {% if site.posts.size > 0 %}
+    <p class="article-category-name">/articles/{{ page.tag }}</p>
 
-
-
-      <ul class='posts'>
+      <div class='posts'>
         {% for post in site.categories[page.tag] %}
-        <li class='posts__item'>
+        <div class='posts__item row'>
+        <div class='col'>
           <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
-            {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
-            {{ post.date | date: date_format }}
+              {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+              {{ post.date | date: date_format }}
           </time>
-          <div class='posts__title'>
-            <a class='posts__link' href='{{ post.url | relative_url }}'>
-              {{ post.title | escape }}
-            </a>
+        </div>
+        <div class='col-10 posts__title'>
+          <a class='posts__link' href='{{ post.url | relative_url }}'>
+            {{ post.title | escape }}
+          </a>
+          <div class="post-exerpt">
+            {{ post.excerpt }}
           </div>
-        </li>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+        </div>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     {% endif %}
   </div>
   {% include categorynav.html %}
