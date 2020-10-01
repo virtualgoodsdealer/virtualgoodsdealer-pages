@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
-
 <div class="row">
-  <div class="col-8">
-    <h1>Filed Under <small>#{{ page.tag }}</small></h1>
+  <div class="col-9">
+    <p class="article-category-name">/articles/{{ page.tag }}</p>
+  </div>
+  <div class="col-3"></div>
+</div>
+<div class="row">
+  <div class="col-9">
     {% if site.posts.size > 0 %}
 
 
@@ -26,10 +30,6 @@ layout: default
       </ul>
     {% endif %}
   </div>
-  <div class="col-4">
-    {% for category in site.categories %}
-        <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">{{ category | first }}</a>
-    {% endfor %}
-  </div>
+  {% include categorynav.html %}
 </div>
 

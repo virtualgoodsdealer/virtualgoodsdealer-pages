@@ -1,0 +1,7 @@
+<div class="col-3 category-nav">
+  {% for category in site.categories %}
+    <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
+  {% endfor %}
+</div>
+
+

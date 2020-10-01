@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-8">
+  <div class="col-9">
     {% if site.posts.size > 0 %}
     <ul class='posts'>
       {% for post in site.posts %}
@@ -22,10 +22,6 @@ layout: default
     </ul>
     {% endif %}
   </div>
-  <div class="col-4">
-    {% for category in site.categories %}
-        <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">{{ category | first }}</a>
-    {% endfor %}
-  </div>
+  {% include categorynav.html %}
 </div>
 

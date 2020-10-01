@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a {
   color: $header-nav-color;
 }
 
@@ -8,6 +8,10 @@
 
 .post a, .landing a{
   text-decoration: underline;
+}
+
+.article-category-name{
+  color: $post-date-color
 }
 
 html {
