@@ -35,11 +35,15 @@ remote_theme: aidewoode/jekyll-theme-mint
 
 blog_theme: light
 
-# categories
 permalink: /articles/:title/
+
+# article categories set up
+# artist directory set up
 
 collections:
   category:
+    output: true
+  artists:
     output: true
 
 defaults:
@@ -48,8 +52,13 @@ defaults:
       type: "category"
     values:
       layout: "articlescategory"
+  - scope:
+      path: ""
+      type: "artists"
+    values:
+      layout: "artist"
 
-# artist directory
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
