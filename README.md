@@ -15,10 +15,12 @@ install bundler and jekyll
 clone this repository to where you want it
 `git clone https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io.git`
 
-try running the site locally
+go inside the repo folder and try running the site locally
 `bundle exec jekyll serve`
 
-go to `localhost:4000` in your browser to see the site running locally. note that if you change the `_config.yml` file, you have to stop the local server (with ctrl-c) and rerun it for the changes to be reflected.
+go to `localhost:4000` in your browser to see the site running locally. 
+
+from now on, you only need to go inside the repo folder and run `bundle exec jekyll serve` to test the site in your browser. note that if you change the `_config.yml` file, you have to stop the local server (with ctrl-c) and rerun it for the changes to be reflected. otherwise, you can just refresh the browser.
 
 ## Adding a new article
 first, make a new branch for yourself or go to your branch
