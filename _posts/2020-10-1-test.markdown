@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "test!"
-categories: news
+categories: [news, tutorial]
 author: ada.wrong
 ---
 You’ll find this post in your `_posts` directory. 
