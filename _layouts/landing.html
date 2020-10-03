@@ -2,41 +2,39 @@
 <html lang='{{ page.lang | default: site.lang | default: 'en' }}'>
   {% include head.html %}
   <body>
-  	<div class="container landing">
+  	<div class="container landing fixed-bottom">
 
-  	<div class="row mt-5">
-  		
-			<img src="../images/virtualgoodsdealer_logo_color_web.png" class="img-fluid" alt="virtualgoodsdealer logo">
-
-  	</div>
-
-  	<div class="row">
-
-	  	<ul class="nav flex-column">
-	  		{% for page in site.pages %}
-				{% if page.title %}
-				    <li>
-				      	<a class="nav-item nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-				    </li>
-				{% endif %}
-			{% endfor %}
+	  	<div class="row">
+	  		<div class="col">
+	  		</div>
+	  		<div class="col-sm-4 mb-5 justify-content-center">
+				<img src="../images/virtualgoodsdealer_logo_color.png" class="img-fluid d-block m-auto logo" alt="virtualgoodsdealer logo">
+			  	<ul class="nav flex-column text-center">
+			  		{% for page in site.pages %}
+						{% if page.title %}
+						    <li>
+						      	<a class="nav-item nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+						    </li>
+						{% endif %}
+					{% endfor %}
 
 
-	  	<li>
-		    <a class="nav-item nav-link" href="https://virtualgoodsdealer.com" target="_blank">{{ "shop" | escape }}</a>
-		</li>
+				  	<li>
+					    <a class="nav-item nav-link" href="https://virtualgoodsdealer.com" target="_blank">{{ "shop" | escape }}</a>
+					</li>
 
-		<li>
-		    <a class="nav-item nav-link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">{{ "instagram" | escape }}</a>
-		</li>
+					<li>
+					    <a class="nav-item nav-link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">{{ "instagram" | escape }}</a>
+					</li>
 
-		<li>
-		    <a class="nav-item nav-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ "twitter" | escape }}</a>
-		</li>
-	</ul>
-
-
-  	</div>
+					<li>
+					    <a class="nav-item nav-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ "twitter" | escape }}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+	  		</div>
+	  	</div>
 
 
 	 </div>
