@@ -6,7 +6,7 @@ layout: default
   <div class="col-lg">
 
     {% if site.posts.size > 0 %}
-    <p class="article-category-name">/articles/{{ page.tag }}</p>
+    <p class="page-name">/articles/{{ page.tag }}</p>
 
       <div class='posts'>
         {% for post in site.categories[page.tag] %}

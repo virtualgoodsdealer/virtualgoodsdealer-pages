@@ -4,5 +4,5 @@
 
 layout: articles
 title: articles
-permalink: /articles/
+permalink: /articles
 ---

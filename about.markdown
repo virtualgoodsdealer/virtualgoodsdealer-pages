@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about
-permalink: /about/
+permalink: /about
 ---
 
 virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.

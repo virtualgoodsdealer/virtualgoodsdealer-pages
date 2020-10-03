@@ -5,6 +5,8 @@ layout: default
 <div class="row">
   <div class="col-lg">
     {% if site.posts.size > 0 %}
+    <p class="page-name">/{{ page.title }}</p>
+
     <div class='posts'>
       {% for post in site.posts %}
         <div class='posts__item row'>
