@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a {
   color: $header-nav-color;
 }
 
@@ -6,7 +6,7 @@
   padding: 0px;
 }
 
-.post a, .landing a{
+.post a, .landing a, .artist-page a{
   text-decoration: underline;
 }
 
@@ -15,7 +15,7 @@
   text-decoration: underline;
 }
 
-.article-category-name, .read-more{
+.article-category-name, .read-more, .artist-articles{
   color: $post-date-color
 }
 
@@ -31,6 +31,27 @@
   margin-top: 1rem;
 }
 
+.artist-name{
+  margin-top: 1rem;
+}
+
+.artist-articles-heading{
+  margin-top: 2rem;
+}
+
+.artist-links .list-group{
+  flex-direction: row;
+}
+
+.artist-links .list-group-item, .artist-articles .list-group-item{
+  border: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.artist-articles .list-group-item{
+  margin-bottom: 1rem;
+}
 
 .read-more:hover{
   color: $post-link-hover-color;
