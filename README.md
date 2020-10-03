@@ -1,4 +1,4 @@
-# virtualgoodsdealer.github.com
+# virtualgoodsdealer.github.io
 live at [pages.virtualgoodsdealer.com](https://pages.virtualgoodsdealer.com/)
 
 [jekyll](https://jekyllrb.com/docs/) generated site. theme adapted from [aidewoode/jekyll-theme-mint](https://github.com/aidewoode/jekyll-theme-mint) and using [bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
@@ -83,7 +83,7 @@ photo: artistname.jpg
 for `permalink`, after `/artistdirectory/` enter the artist markdown file name.
 the photo filename should also the same as the artist markdown file name.
 
-urls need to include `https://` or `http://`.
+website and shop urls need to include `https://` or `http://`.
 for instagram and twitter, only enter the username for that site (not the full url)
 
 please note that if the artist is also an author of articles, the `name` field in the `artistname.md` file must match with the `author` field in the article files for them to be linked.
@@ -104,9 +104,10 @@ permalink: /articles/categoryname
 ```
 
 ## Pushing changes
-push change to your branch and then create a merge request on the github website.
+push changes to your branch and then create a merge request on the github website.
 
 ## Helpful quick links
-[markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for formatting article content
+
 [jekyll docs](https://jekyllrb.com/docs/)
 
