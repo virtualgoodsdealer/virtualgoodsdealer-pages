@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class='post'>
+	<div class="row">
+		<div class="col post-title">
+			{{ page.title }}
+		</div>
+		<div class="col-md-3">
+			<div class="posts__date text-md-right font-weight-light" datetime='{{ page.date | date_to_xmlschema }}'>
+        	{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+        	{{ page.date | date: date_format }}
+        	</div>
+  		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			  {% if page.author %}
+              by
+              {% for artist in site.artists %}
+                {% if artist.name == page.author %}
+                  <a href='{{ artist.permalink }}'>
+                    {{ page.author | escape }}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+		</div>
+		<div class="col-md-3 text-md-right">
+			{% if page.categories %}
+				{% for category in page.categories %}
+					<a href="/articles/{{ category }}">/articles/{{ category }}</a>
+				{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col post-content">
+			{{ content }}
+		</div>
+
+	</div>
+
+
+</article>
+
+{% include disqus.html %}

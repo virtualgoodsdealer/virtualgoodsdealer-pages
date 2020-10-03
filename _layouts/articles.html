@@ -3,27 +3,38 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-10">
+  <div class="col-lg">
     {% if site.posts.size > 0 %}
     <div class='posts'>
       {% for post in site.posts %}
-      <div class='posts__item row'>
-      	<div class='col'>
-        	<time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
-          		{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
-          		{{ post.date | date: date_format }}
-        	</time>
-        </div>
-        <div class='col-10 posts__title'>
-          <a class='posts__link' href='{{ post.url | relative_url }}'>
-            {{ post.title | escape }}
-          </a>
-          <div class="post-exerpt">
-            {{ post.excerpt }}
+        <div class='posts__item row'>
+        	<div class='col-lg-2'>
+          	<time class='posts__date font-weight-light text-nowrap' datetime='{{ post.date | date_to_xmlschema }}'>
+            		{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+            		{{ post.date | date: date_format }}
+          	</time>
           </div>
-          <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+          <div class='col-lg posts__title'>
+            <a class='posts__link' href='{{ post.url | relative_url }}'>
+              {{ post.title }}
+            </a>
+
+            {% if post.author %}
+              by
+              {% for artist in site.artists %}
+                {% if artist.name == post.author %}
+                  <a class='posts__link' href='{{ artist.permalink }}'>
+                    {{ post.author | escape }}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            <div class="post-exerpt font-weight-light">
+              {{ post.excerpt }}
+            </div>
+            <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
     {% endif %}

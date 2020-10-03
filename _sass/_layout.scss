@@ -23,6 +23,15 @@
   margin-bottom: -1rem;
 }
 
+.post-title{
+  font-size: 1.5em;
+}
+
+.post-content{
+  margin-top: 1rem;
+}
+
+
 .read-more:hover{
   color: $post-link-hover-color;
   text-decoration: none;
@@ -86,13 +95,11 @@ body {
 }
 
 .posts__date {
-  width: 30%;
   color: $post-date-color;
   font-size: 1rem;
 }
 
 .posts__title {
-  width: 70%;
   font-size: 1rem;
 }
 
