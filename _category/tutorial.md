@@ -1,4 +1,4 @@
 ---
 tag: tutorial
-permalink: "/articles/tutorial"
+permalink: /articles/tutorial
 ---

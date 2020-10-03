@@ -33,7 +33,7 @@ remote_theme: aidewoode/jekyll-theme-mint
 
 blog_theme: light
 
-permalink: /articles/:title/
+permalink: /articles/:year/:month/:day/:title/
 
 # article categories set up
 # artist directory set up
