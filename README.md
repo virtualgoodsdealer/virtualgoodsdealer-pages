@@ -61,38 +61,38 @@ then, insert `<!--more-->` after where you want the preview to cut off in the ar
 
 [jekyll doc example](https://jekyllrb.com/docs/posts/#post-excerpts)
 
-## Adding a new artist to the artist directory
+## Adding a new creator to the creator directory
 first, make a new branch for yourself or go to your branch
 
-add a new artist by adding a file `artistname.md` in the `_artists` folder. the file name should be the artist's name but no period characters or spaces (use dashes instead of spaces).
+add a new creator by adding a file `creatorname.md` in the `_creators` folder. the file name should be the creator's name but no period characters or spaces (use dashes instead of spaces).
 
 open the file and fill out the following front matter:
 ```
 ---
 title: name
-permalink: /artistdirectory/artistname
+permalink: /creatordirectory/creatorname
 name: name ((optional))
 website: store url ((optional))
 shop: store url ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
-photo: artistname.jpg
+photo: creatorname.jpg
 ---
 ```
 
 `title` should be the same as `name`.
 
-for `permalink`, after `/artistdirectory/` enter the artist markdown file name.
-the photo filename should also the same as the artist markdown file name.
+for `permalink`, after `/creatordirectory/` enter the creator markdown file name.
+the photo filename should also the same as the creator markdown file name.
 
 website and shop urls need to include `https://` or `http://`.
 for instagram and twitter, only enter the username for that site (not the full url)
 
-please note that if the artist is also an author of articles, the `name` field in the `artistname.md` file must match with the `author` field in the article files for them to be linked.
+please note that if the creator is also an author of articles, the `name` field in the `creatorname.md` file must match with the `author` field in the article files for them to be linked.
 
-save the artist photo in the `images/artist_images` folder.
+save the creator photo in the `images/creator_images` folder.
 
-then, insert the bio of the artist below the frontmatter.
+then, insert the bio of the creator below the frontmatter.
 
 ## Adding a new article category page
 first, make a new branch for yourself or go to your branch

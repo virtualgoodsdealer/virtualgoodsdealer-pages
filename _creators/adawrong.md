@@ -1,6 +1,6 @@
 ---
 title: ada.wrong
-permalink: /artistdirectory/adawrong
+permalink: /creatordirectory/adawrong
 name: ada.wrong
 website: https://jzhong.today
 shop:

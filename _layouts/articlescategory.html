@@ -23,9 +23,9 @@ layout: default
           </a>
           {% if post.author %}
               by
-              {% for artist in site.artists %}
-                {% if artist.name == post.author %}
-                  <a class='posts__link' href='{{ artist.permalink }}'>
+              {% for creator in site.creators %}
+                {% if creator.name == post.author %}
+                  <a class='posts__link' href='{{ creator.permalink }}'>
                     {{ post.author | escape }}
                   </a>
                 {% endif %}
