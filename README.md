@@ -15,6 +15,9 @@ install bundler and jekyll
 clone this repository to where you want it
 `git clone https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io.git`
 
+install all the gems needed for the repository
+`bundle install`
+
 go inside the repo folder and try running the site locally
 `bundle exec jekyll serve`
 
@@ -23,7 +26,7 @@ go to `localhost:4000` in your browser to see the site running locally.
 from now on, you only need to go inside the repo folder and run `bundle exec jekyll serve` to test the site in your browser. note that if you change the `_config.yml` file, you have to stop the local server (with ctrl-c) and rerun it for the changes to be reflected. otherwise, you can just refresh the browser.
 
 ## Adding a new article
-first, make a new branch for yourself or go to your branch
+first, go to article drafts branch or make a new one
 
 create a new article by adding a file `yyyy-mm-dd-title-of-article.md` in the `_posts` folder. the file name must be in this format and everything must be separated by dashes (no spaces).
 
@@ -62,7 +65,7 @@ then, insert `<!--more-->` after where you want the preview to cut off in the ar
 [jekyll doc example](https://jekyllrb.com/docs/posts/#post-excerpts)
 
 ## Adding a new creator to the creator directory
-first, make a new branch for yourself or go to your branch
+first, go to artist bios branch or create a new one
 
 add a new creator by adding a file `creatorname.md` in the `_creators` folder. the file name should be the creator's name but no period characters or spaces (use dashes instead of spaces).
 
@@ -106,7 +109,7 @@ permalink: /articles/categoryname
 ```
 
 ## Pushing changes
-push changes to your branch and then create a merge request on the github website.
+push changes to your current branch and then create a merge request on the github website.
 
 ## Helpful quick links
 [markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for formatting article content
