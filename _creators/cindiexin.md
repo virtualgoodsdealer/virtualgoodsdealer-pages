@@ -1,7 +1,7 @@
 ---
 title: cindie.xin
 permalink: /creatordirectory/cindiexin
-name: cindie.xin
+name: cindie xin
 website: 
 shop:
 instagram: males_are_cancelled
