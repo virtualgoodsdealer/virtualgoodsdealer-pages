@@ -18,9 +18,9 @@ layout: default
 		<div class="col">
 			  {% if page.author %}
               by
-              {% for artist in site.artists %}
-                {% if artist.name == page.author %}
-                  <a href='{{ artist.permalink }}'>
+              {% for creator in site.creators %}
+                {% if creator.name == page.author %}
+                  <a href='{{ creator.permalink }}'>
                     {{ page.author | escape }}
                   </a>
                 {% endif %}

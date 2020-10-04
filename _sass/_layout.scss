@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a {
   color: $header-nav-color;
 }
 
@@ -6,7 +6,7 @@
   padding: 0px;
 }
 
-.post a, .landing a, .artist-page a{
+.post a, .post-content a, .landing a, .artist-page a{
   text-decoration: underline;
 }
 

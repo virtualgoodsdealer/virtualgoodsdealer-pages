@@ -27,6 +27,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://pages.virtualgoodsdealer.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vgddotcom
 instagram_username: virtualgoodsdealer
+shop: https://www.virtualgoodsdealer.com
 
 # Build settings
 remote_theme: aidewoode/jekyll-theme-mint
