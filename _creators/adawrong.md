@@ -2,7 +2,7 @@
 title: ada.wrong
 permalink: /creatordirectory/adawrong
 name: ada.wrong
-website: https://jzhong.today
+website: https://www.jzhong.today
 shop:
 instagram: ada.wrong
 twitter: queefape

@@ -85,7 +85,7 @@ photo: creatorname.jpg
 for `permalink`, after `/creatordirectory/` enter the creator markdown file name.
 the photo filename should also the same as the creator markdown file name.
 
-website and shop urls need to include `https://` or `http://`.
+website and shop urls need to include `https://www.` or `http://www.`.
 for instagram and twitter, only enter the username for that site (not the full url)
 
 please note that if the creator is also an author of articles, the `name` field in the `creatorname.md` file must match with the `author` field in the article files for them to be linked.
