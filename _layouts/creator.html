@@ -33,6 +33,21 @@ layout: default
 						<a href="https://twitter.com/{{ page.twitter }}"> twitter {{ escape }}</a>
 					</li>
 				{% endif %}
+				{% if page.spotify %}
+					<li class="list-group-item">
+						<a href="{{ page.spotify }}"> spotify {{ escape }}</a>
+					</li>
+				{% endif %}
+				{% if page.bandcamp %}
+					<li class="list-group-item">
+						<a href="{{ page.bandcamp }}"> bandcamp {{ escape }}</a>
+					</li>
+				{% endif %}
+				{% if page.soundcloud %}
+					<li class="list-group-item">
+						<a href="{{ page.soundcloud }}"> soundcloud {{ escape }}</a>
+					</li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>
