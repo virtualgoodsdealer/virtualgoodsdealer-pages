@@ -9,4 +9,4 @@ twitter:
 photo: adrimarieknits.jpg
 ---
 
-Adrianna Spence is an Atlanta-based creative making crotchet bag designs. She first began to crotchet at age 12, after she learned from her grandma, and loves the freedom and creativity that comes with working with yarn. She is inspired by nature and street style fashion, which reflects in her elegant yet playful designs. She plans on expanding her collection in the future to include apparel and knit items.
+Adrianna is an architecture student based out of Atlanta, GA who loves to create in her free time. Her work represents a mixture of the playfulness that designing and creating can bring as well as the seriousness of structure and well constructed products; things she learned in architecture school. Adrianna plans to expand her collection in the future to include apparel and knit items.
