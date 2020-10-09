@@ -1,5 +1,5 @@
 ---
-title: cindie.xin
+title: cindie xin
 permalink: /creatordirectory/cindiexin
 name: cindie xin
 website: 
