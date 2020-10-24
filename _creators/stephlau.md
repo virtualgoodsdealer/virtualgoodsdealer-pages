@@ -2,8 +2,8 @@
 title: Steph Lau
 permalink: /creatordirectory/stephlau
 name: Steph Lau
-website: http://www.96step.com/
-shop: http://www.96step.com/new-products
+website: http://www.96step.com/new-products
+shop: steph-lau
 instagram: 96step
 twitter: _stepstepstep
 photo: stephlau.jpg

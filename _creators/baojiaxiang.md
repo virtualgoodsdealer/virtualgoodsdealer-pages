@@ -3,7 +3,7 @@ title: bod [包家巷]
 permalink: /creatordirectory/baojiaxiang
 name: bod [包家巷]
 website: 
-shop: 
+shop: music-for-self-esteem
 instagram: baojiaxiang
 twitter: baojiaxiang_
 soundcloud: https://soundcloud.com/baojiaxiang

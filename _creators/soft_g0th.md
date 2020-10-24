@@ -2,8 +2,8 @@
 title: Soft_G0th
 permalink: /creatordirectory/soft_g0th
 name: Soft_G0th
-website: 
-shop: https://www.inprnt.com/gallery/soft_goth/
+website: https://www.inprnt.com/gallery/soft_goth/
+shop: soft_g0th
 instagram: Soft_G0th
 twitter: Soft_G0th
 photo: softgoth.jpg
