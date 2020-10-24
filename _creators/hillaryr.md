@@ -3,7 +3,7 @@ title: Hillary R
 permalink: /creatordirectory/hillaryr
 name: Hillary R
 website: 
-shop:
+shop: hillary-r
 instagram: hilldawwg10
 twitter: 
 photo: hillaryr.jpg

@@ -3,7 +3,7 @@ title: Juriel Furukawa
 permalink: /creatordirectory/jurielfurukawa
 name: Juriel Furukawa
 website: 
-shop:
+shop: juriel-furukawa
 instagram: jurielfurukawa
 twitter: 
 photo: jurielfurukawa.jpg
