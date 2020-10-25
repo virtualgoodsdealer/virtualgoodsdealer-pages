@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "males_are_cancelled set - dorian electra subculture afterparty "
+title:  "males_are_cancelled set - dorian electra subculture afterparty"
 categories: music
 author: cindie xin
+post_description: "Length 19:23. Audio hosted on Virtualgoodsdealer."  
 ---
 
 ![Set Cover 10.24](/images/post_images/2020-10-24-cindie-set.markdown/males_are_cancelled_mix_cover.jpg)
