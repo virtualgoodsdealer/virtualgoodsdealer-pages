@@ -32,7 +32,11 @@ layout: default
               {% endfor %}
           {% endif %}
           <div class="post-exerpt font-weight-light">
-            {{ post.excerpt }}
+            {% if post.post_description %}
+              {{ post.post_description }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
           </div>
           <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
         </div>
