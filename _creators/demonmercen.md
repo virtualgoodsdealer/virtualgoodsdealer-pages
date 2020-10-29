@@ -5,7 +5,7 @@ name: demonmercen
 website: https://www.depop.com/demonmercen/
 shop: demonmercen
 instagram: demonmercenary
-twitter: demonmercenary
+twitter: demmonmercenary
 photo: demonmercen.jpg
 ---
 

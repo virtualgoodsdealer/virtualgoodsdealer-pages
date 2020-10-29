@@ -69,7 +69,11 @@ layout: default
 					<li class="list-group-item">
 						<a href="{{ post.url }}">{{ post.title }}</a>
 						<div class="post-exerpt font-weight-light">
-            				{{ post.excerpt }}
+            				{% if post.post_description %}
+                				{{ post.post_description }}
+              				{% else %}
+                				{{ post.excerpt }}
+              				{% endif %}
           				</div>
 					</li>
 				{% endif %}
