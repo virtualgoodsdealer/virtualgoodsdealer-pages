@@ -16,7 +16,7 @@ layout: default
 	</div>
 	<div class="row">
 		<div class="col">
-			  {% if page.author %}
+			{% if page.author %}
               by
               {% for creator in site.creators %}
                 {% if creator.name == page.author %}
@@ -46,5 +46,29 @@ layout: default
 
 
 </article>
+
+	    {% if page.author %}
+      		{% for creator in site.creators %}
+        		{% if creator.name == page.author %}
+        		<div class="card text-center">
+				  <div class="card-header">
+				    Thanks for reading!
+				  </div>
+				  <div class="card-body">
+				  	{% if creator.donationlink %}
+				    	<h5 class="card-title">If you enjoyed this post, consider donating to the author below.</h5>
+				    {% endif %}
+				    <p class="card-text"><span class="donation-text">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more">Learn more</a></p>
+				    {% if creator.donationlink %}
+				    	<a href="{{ creator.donationlink }}" class="btn btn-primary">Donate here</a>
+				    {% endif %}
+				  </div>
+				</div>
+        			
+
+					
+        		{% endif %}
+      		{% endfor %}
+    	{% endif %}
 
 {% include disqus.html %}
