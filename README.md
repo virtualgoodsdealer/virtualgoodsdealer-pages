@@ -75,11 +75,12 @@ open the file and fill out the following front matter:
 title: name
 permalink: /creatordirectory/creatorname
 name: name ((optional))
-website: store url ((optional))
-shop: store url ((optional))
+website: website or store url ((optional))
+shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
 photo: creatorname.jpg
+donationlink: url of donation link ((optional))
 ---
 ```
 
@@ -88,8 +89,10 @@ photo: creatorname.jpg
 for `permalink`, after `/creatordirectory/` enter the creator markdown file name.
 the photo filename should also the same as the creator markdown file name.
 
-website and shop urls need to include `https://www.` or `http://www.`.
+website and donationlink urls need to include `https://www.` or `http://www.`.
 for instagram and twitter, only enter the username for that site (not the full url)
+
+only use shop if the creator's products are active on virtualgoodsdealer.com. enter the tag of their category on the virtualgoodsdealer.com shop.
 
 please note that if the creator is also an author of articles, the `name` field in the `creatorname.md` file must match with the `author` field in the article files for them to be linked.
 
