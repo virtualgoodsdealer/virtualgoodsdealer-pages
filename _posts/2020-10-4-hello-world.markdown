@@ -6,7 +6,7 @@ author:
 post_description: "We are Virtualgoodsdealer."
 ---
 
-Virtualgoodsdealer pages is digital space featuring writing, tutorials, and other media. We created this platform as a direct response to the media submissions to our first open call, but we hope to expand the definitions of this space to include net art and other interactive media.
+Virtualgoodsdealer pages is a digital space featuring writing, tutorials, and other media. We created this platform as a direct response to the media submissions to our first open call, but we hope to expand the definitions of this space to include net art and other interactive media.
 
 Pages also hosts our [creator directory](/creatordirectory) which lists all creators we have worked with in the past. This includes creators whose work we have stocked on [virtualgoodsdealer.com](https://www.virtualgoodsdealer.com) and contributors this site.
 
