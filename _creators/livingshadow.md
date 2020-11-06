@@ -1,6 +1,6 @@
 ---
 title: LIVING SHADOW™
-permalink: /creatordirectory/jurielfurukawa
+permalink: /creatordirectory/livingshadow
 name: LIVING SHADOW™
 website: https://darkage.online/
 shop: living-shadow
