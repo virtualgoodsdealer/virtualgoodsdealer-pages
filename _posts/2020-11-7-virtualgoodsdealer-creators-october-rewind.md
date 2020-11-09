@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 We began our first iteration of Virtualgoodsdealer Creators a month ago on October 6th and it has been a unique and rewarding experience! This post is a lookback on our experiences, as the organizers of Virtualgoodsdealer, and a feature on all the participants who released products with us this month. <!--more-->
 
-This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and Skullfucked.
+This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and Skullfucked. Here we are sharing some more about each creator, their inspiration, and their goals.
 
 -----
 ![cyber_sprite Fembot Pendant](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/cyber_sprite_fembot.jpg)
