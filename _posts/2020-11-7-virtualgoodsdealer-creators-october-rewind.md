@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 We began our first iteration of Virtualgoodsdealer Creators a month ago on October 6th and it has been a unique and rewarding experience! This post is a lookback on our experiences, as the organizers of Virtualgoodsdealer, and a feature on all the participants who released products with us this month. <!--more-->
 
-This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and Skullfucked. Here we are sharing some more about each creator, their inspiration, and their goals.
+This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and Skullfucked. Here we are sharing some more about each creator and their inspiration and goals.
 
 -----
 ![cyber_sprite Fembot Pendant](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/cyber_sprite_fembot.jpg)
@@ -20,7 +20,12 @@ This month we featured work from [Charming Sprite Shop by cyber_sprite](/creator
 [cyber_sprite](/creatordirectory/cyber_sprite) is based on Los Angeles, CA and is currently inspired by N64 Graphics and kandi culture. We were drawn to her work because of eyecatching multilayered holographic designs and the references to internet culture and technology theory. 
 
 **Q: If you could have an infinite budget for one creative project, what would you make?**  
-cyber_sprite: I would love to develop a mixed-reality VR experience with social elements, IRL items, and popup-type events that coincide with in-game events and lore; something that could connect people online and off. 
+cyber_sprite: I would love to develop a mixed-reality VR experience with social elements, IRL items, and popup-type events that coincide with in-game events and lore; something that could connect people online and off.
+
+**Q: Favorite meme?**  
+cyber_sprite: The glitter girl from the “coming back from the club” vine. Legendary queen!
+
+![glitter girl meme](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/glitter_girl.jpg)
 
 -----
 ![Juriel Furukawa Shirt](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/juriel_furukawa_mockup.png)
@@ -29,6 +34,9 @@ cyber_sprite: I would love to develop a mixed-reality VR experience with social 
 >-Juriel Furukawa
 
 [Juriel Furukawa](/creatordirectory/jurielfurukawa) is an artist and designer based in New York City. Her study centers around the relationship between performance art and motion graphics, with a particular interest in the different modality of self duplication.
+
+**Q: How do you feel about online shopping?**   
+Juriel: less frequent than before! I love how much more access I have to more independent sellers, but feel like I can spend too long looking at things. I do enjoy the immediate feeling of desire and love than comes from seeing an item in person
 
 -----
 ![Demonmercen Bowl](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/demonmercen_bowl.jpg)
@@ -74,6 +82,8 @@ Steph: A feature film where I get to make a world fully come to life + hire all 
 **Q: Favorite meme?**   
 Steph: recently variations of the  ["you're finally awake!" meme](https://knowyourmeme.com/memes/youre-finally-awake-you-hit-your-head-really-hard) always makes me feel better lol
 
+![hey you're finally awake meme](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/finallyyou'reawake_meme.png)
+
 -----
 ![Excerpt from Zines by Jackie](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/zines_by_jackie_excerpt.png)
 
@@ -96,8 +106,21 @@ Hillary: I would create a series of one room installations based videogame level
 **Q: Favorite meme?**   
 Hillary: anything about the vintage tshirt community. I watch a lot of t-shirt auctions and it can get ridiculous.
 
+----
+![Skullfucked Harness](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/skullfucked_harnesslarge_closeup.png)
+
+[Skullfucked](/creatordirectory/skullfucked) was created by New Orleans, LA based designer Daiju Edwards. Their influences are deeply rooted in eroticism, horror, and dreaming; currently they are inspired by industrial music, latex, blood, and prosthetics.
+
+**Q: If you could have an infinite budget for one creative project, what would you make?**   
+Daiju: I would make a queer slasher film.
+
+**Q: Favorite meme?**
+Steve RAWRvey XD
+
+![emo steve harvey](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/emo_steve_harvey.jpg)
+
 -----
-That's all our creators for October! We are continuing to release new items by different creators every week throughout November at [virtualgoodsdealer.com](virtualgoodsdealer.com).
+That's all our creators for October! We are continuing to release new items by different creators every week throughout November at [virtualgoodsdealer.com](virtualgoodsdealer.com). Virtualgoodsdealer is organized and run by [Cindie Xin](/creatordirectory/cindiexin) and [@ada.wrong](/creatordirectory/adawrong). Here's some reflections on our Virtualgoodsdealer creators experience so far:
 
 >Thank you to all the participants and everyone that submitted to our open call. This was an experimental concept and we appreciate everyone's patience during the process! As a person tied to material things, I wanted to explore a different approach towards online shopping, the value of items, the definition of a product, the idea of luxury, and running an e-commerce business. We are only hoping to go bigger in scale and more abstract on future Virtualgoodsdealer projects. I hope you enjoy the items you have purchased and the new items we are dropping next month!
 >-@ada.wrong
