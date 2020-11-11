@@ -126,5 +126,5 @@ That's all our creators for October! We are continuing to release new items by d
 >-@ada.wrong
 
 >Wow, it seems like it was just yesterday that we posted our open call. The initial positive response we received far exceeded our expectations, and since then we have been working hard to create an e-commerce platform that prioritizes independent artists and creatives, while also being a smooth and reliable shopping experience for buyers. From shooting and editing product photos, to social media promotion, to building out our Pages site (that you're on now!), we have tried to take an approach that maintains our ideals and aesthetic. My favorite part of this process has definitely been meeting and working with our extremely talented creators, all of whom I have learned a great deal from and been deeply inspired by.
->Thank you to everybody who has stuck around since we were called Mimi Apparel. And thank you to those who recently learned about our project. We are grateful to have the opportunity and platform to experiment and grow.
+>Thank you to everybody who has stuck around since we were called Mimi Apparel. And thank you to those who recently learned about Virtualgoodsdealer. We are grateful to have the opportunity and platform to experiment and grow.
 >-cindie xin
