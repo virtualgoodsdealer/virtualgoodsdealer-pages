@@ -72,6 +72,7 @@
   text-decoration: none;
 }
 
+
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
@@ -184,4 +185,274 @@ body {
 
 #disqus_thread {
   margin-top: 60px;
+}
+
+.post {
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  color: $post-content-color;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  color: $post-heading-color;
+}
+
+.post h1 {
+  font-size: 1.5em;
+  margin: 1.3em 0;
+  line-height: 1.1em;
+}
+
+.post > h1 {
+  margin-top: 0;
+}
+
+.post h2 {
+  font-size: 1.35em;
+  margin: 0.83em 0;
+}
+
+.post h3 {
+  font-size: 1.15em;
+  margin: 1em 0;
+}
+
+.post h4,
+.post h5,
+.post h6 {
+  font-size: 1em;
+  margin: 1.6em 0 1em 0;
+}
+
+.post h6 {
+  font-weight: 500;
+}
+
+.post p {
+  margin-top: 0;
+  margin-bottom: 1.46em;
+}
+
+.post a {
+  color: $post-link-color;
+  word-wrap: break-word;
+  text-decoration-color: rgba($post-link-color, .8);
+}
+
+.post a:hover {
+  color: $post-link-hover-color;
+  text-decoration-color: rgba($post-link-hover-color, .6);
+}
+
+.post h1 a,
+.post h2 a,
+.post h3 a {
+  text-decoration: none;
+}
+
+.post strong,
+.post b {
+  font-weight: 700;
+  color: $post-emphasis-color;
+}
+
+.post em,
+.post i {
+  font-style: italic;
+  color: $post-emphasis-color;
+}
+
+.post img {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.post figure {
+  position: relative;
+  clear: both;
+  outline: 0;
+  margin: 10px 0 30px;
+  padding: 0;
+  min-height: 100px;
+}
+
+.post figure img {
+  display: block;
+  max-width: 100%;
+  margin: auto auto 4px;
+  box-sizing: border-box;
+}
+
+.post figure figcaption {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $post-figure-color;
+}
+
+.post figure figcaption a {
+  text-decoration: none;
+  color: $post-figure-color;
+}
+
+.post hr {
+  display: block;
+  width: 40%;
+  margin: 60px auto 55px;
+  border: 0 none;
+  border-top: 1px solid $post-border-color;
+}
+
+.post blockquote {
+  margin: 0 0 1.64em 0;
+  border-left: 3px solid $post-border-color;
+  padding-left: 12px;
+  color: $post-blockquote-color;
+}
+
+.post blockquote a {
+  color: $post-blockquote-color;
+}
+
+.post ul,
+.post ol {
+  margin: 0 0 24px 6px;
+  padding-left: 16px;
+}
+
+.post ul {
+  list-style-type: circle;
+  list-style: inside;
+}
+
+.post ol {
+  list-style-type: decimal;
+}
+
+.post li {
+  margin-bottom: 0.2em;
+}
+
+.post li ul,
+.post li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14px;
+}
+
+.post li ul {
+  list-style-type: disc;
+}
+
+.post li ul ul {
+  list-style-type: circle;
+}
+
+.post li p {
+  margin: 0.4em 0 0.6em;
+}
+
+.post .unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post code,
+.post tt {
+  color: $post-block-color;
+  background-color: $post-block-bg-color;
+  font-size: 0.96em;
+  padding: 1px 2px;
+  border: 1px solid $post-border-color;
+  border-radius: 3px;
+  font-family: $monospaced-fonts;
+  word-wrap: break-word;
+}
+
+.post pre {
+  margin: 1.64em 0;
+  padding: 7px;
+  border: none;
+  border-left: 3px solid $post-border-color;
+  padding-left: 10px;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.96em;
+  font-family: $monospaced-fonts;
+  color: $post-block-color;
+  background-color: $post-block-bg-color;
+}
+
+.post pre code,
+.post pre tt {
+  color: $post-block-color;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.post table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em;
+  font-size: 0.96em;
+  box-sizing: border-box;
+}
+
+.post th,
+.post td {
+  text-align: left;
+  padding: 4px 8px 4px 10px;
+  border: 1px solid $post-border-color;
+}
+
+.post td {
+  vertical-align: top;
+}
+
+.post tr:nth-child(even) {
+  background-color: $post-block-bg-color;
+}
+
+.post iframe {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.post figure iframe {
+  margin: auto;
+}
+
+.post table pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@media (min-width: 1100px) {
+  .post blockquote {
+    padding-left: 20px;
+    border-width: 4px;
+  }
+
+  .post blockquote blockquote {
+    margin-left: 0;
+  }
 }
