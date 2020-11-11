@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 We began our first iteration of Virtualgoodsdealer Creators a month ago on October 6th and it has been a unique and rewarding experience! This post is a lookback on our experiences, as the organizers of Virtualgoodsdealer, and a feature on all the participants who released products with us this month. <!--more-->
 
-This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and Skullfucked. Here we are sharing some more about each creator and their inspiration and goals.
+This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and [Skullfucked](/creatordirectory/skullfucked). Here we are sharing some more about each creator and their inspiration and goals.
 
 -----
 ![cyber_sprite Fembot Pendant](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/cyber_sprite_fembot.jpg)
@@ -124,3 +124,7 @@ That's all our creators for October! We are continuing to release new items by d
 
 >Thank you to all the participants and everyone that submitted to our open call. This was an experimental concept and we appreciate everyone's patience during the process! As a person tied to material things, I wanted to explore a different approach towards online shopping, the value of items, the definition of a product, the idea of luxury, and running an e-commerce business. We are only hoping to go bigger in scale and more abstract on future Virtualgoodsdealer projects. I hope you enjoy the items you have purchased and the new items we are dropping next month!
 >-@ada.wrong
+
+>Wow, it seems like it was just yesterday that we posted our open call. The initial positive response we received far exceeded our expectations, and since then we have been working hard to create an e-commerce platform that prioritizes independent artists and creatives, while also being a smooth and reliable shopping experience for buyers. From shooting and editing product photos, to social media promotion, to building out our Pages site (that you're on now!), we have tried to take an approach that maintains our ideals and aesthetic. My favorite part of this process has definitely been meeting and working with our extremely talented creators, all of whom I have learned a great deal from and been deeply inspired by.
+>Thank you to everybody who has stuck around since we were called Mimi Apparel. And thank you to those who recently learned about our project. We are grateful to have the opportunity and platform to experiment and grow.
+>-cindie xin
