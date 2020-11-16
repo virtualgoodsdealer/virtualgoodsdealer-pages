@@ -20,16 +20,16 @@ If that list meant nothing to you, that is completely okay! You will be using al
 My inspiration for writing this tutorial was this text that I originally wrote in January 2020 which is transcribed below.
 
 <div class="row">
-	<div class="col">
+	<div class="col-sm">
 		<img class="img-fluid" src='/images/post_images/2020-11-16-simple-website-tutorial-part-one.md/whyihatefacebook_post1.png'>
 	</div>
-	<div class="col">
+	<div class="col-sm">
 		<img class="img-fluid" src='/images/post_images/2020-11-16-simple-website-tutorial-part-one.md/whyihatefacebook_post2.png'>
 	</div>
-	<div class="col">
+	<div class="col-sm">
 		<img class="img-fluid" src='/images/post_images/2020-11-16-simple-website-tutorial-part-one.md/whyihatefacebook_post3.png'>
 	</div>
-	<div class="col">
+	<div class="col-sm">
 		<img class="img-fluid" src='/images/post_images/2020-11-16-simple-website-tutorial-part-one.md/whyihatefacebook_post4.png'>
 	</div>
 </div>
