@@ -13,6 +13,7 @@
 .post a:hover, .landing a:hover, .posts__link:hover{
   color: $post-link-hover-color;
   text-decoration: underline;
+  text-decoration-color: $post-link-hover-color;
 }
 
 .page-name, .read-more, .artist-articles{
@@ -70,6 +71,10 @@
 .btn:hover{
   background-color: black;
   text-decoration: none;
+}
+
+.post blockquote a{
+  text-decoration-color: dimgray;
 }
 
 
@@ -247,7 +252,7 @@ body {
 
 .post a:hover {
   color: $post-link-hover-color;
-  text-decoration-color: rgba($post-link-hover-color, .6);
+  text-decoration-color: $post-link-hover-color;
 }
 
 .post h1 a,
