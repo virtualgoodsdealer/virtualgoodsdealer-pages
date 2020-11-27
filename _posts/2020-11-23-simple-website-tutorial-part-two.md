@@ -6,7 +6,7 @@ author: ada.wrong
 excerpt_separator: <!--more-->
 ---
 
-This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> I will also suggest resources for developing the actual website using HTML and CSS. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
+This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a barebones one page website served on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
 
 ## Overall Project Structure ##
 In the previous part, I listed the technologies/frameworks this tutorial will cover:
@@ -78,7 +78,8 @@ After your computer boots up again, go to the Microsoft Store. Here you can inst
 
 Click "Get" to install the program. After installation, search "Ubuntu" in the Start Menu and open the program. The first time you open this program, it will run some installations. Wait a bit and it will prompt you to create a UNIX username and password. This is specific to your Ubuntu installation and isn't related to your Windows username and password. Press enter after typing to submit your username and password.
 
-After following the prompts, you should see something like this:   ss   
+After following the prompts, you should see something like this:   
+![image of terminal](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/ubuntuterminal.png)   
 
 We will be using this terminal window to run all our commands from now on. The blinking rectangle on the last line of text is the cursor. When you type commands, the text should appear in front of it. To run a command, press the enter key on your keyboard.   
 [Source: "How to Install and Use the Linux Bash Shell on Windows 10" from howtogeek.com](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/){:target="_blank"}   
@@ -87,17 +88,16 @@ We will be using this terminal window to run all our commands from now on. The b
 ### Setting up git ###
 Git is included with the Ubuntu distribution. Run the command `git version` to verify that it has been installed. It should output the text "git version" and a version number.
 
-Remember that this Ubuntu distribution is running as a subsystem on your Windows system. Use the command `pwd` to find out what directory you are in.
-ss   
+Remember that this Ubuntu distribution is running as a subsystem on your Windows system. Use the command `pwd` to find out what directory you are in.   
 You probably do not recognize this file location because it is inside the newly created filesystem for your Ubuntu distribution.
 
-Use the command `cd ..` to move to the directory that is the parent of the current directory. `cd foldername` will move you to that folder (replace `foldername` with the name of a folder). `..` means the parent of the current directory whereas `.` means the current directory.   
+Use the command `cd ..` to move to the directory that is the parent of the current directory. `cd foldername` will move you to that folder (where `foldername` is the name of a folder). `..` means the parent of the current directory.  
 Use `cd ..` again to move up one more level.
 Then use the command `ls` to list all the files in the current directory.   
-ss   
-You should see a folder called `/mnt`. This folder contains your Windows filesystem.   
+
+You should now see a folder called `/mnt`. This folder contains your Windows filesystem.   
 Use `cd /mnt` to move to it. You should now see folders for the familiar drives that hold all your files.   
-ss   
+![image of ubuntu filesystem](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/ubuntufilesystem.png)   
 
 If you want to edit your files outside of the Ubuntu terminal, make sure your files are saved in your Windows filesystem (within the folders in the `/mnt` folder). It is **not** recommended to edit any of the files in the Ubuntu distribution filesystem with any Windows software. Later you will probably be editing files with Windows software installed on your computer such an image editing software or a text editor, so it's best to keep your website files in the Windows filesystem.   
 [Source: "How to Access Your Ubuntu Bash Files in Windows" from howtogeek.com](https://www.howtogeek.com/261383/how-to-access-your-ubuntu-bash-files-in-windows-and-your-windows-system-drive-in-bash/){:target="_blank"}
@@ -162,11 +162,14 @@ So now we have our git repository initiated, but how do we start creating files 
 #### Creating a .gitignore file ####
 Now, we need to create a **.gitignore file**. A .gitignore file is a file that contains a list of folders and files that you want git to ignore. Any file or folder that is listed will not be tracked as part of git's version control system. The contents of this file really depends on the languages and frameworks you are using in your program. Mostly, it is used so that specific files that are generated by operating systems or frameworks are not uploaded to Github. For the barebones website we are creating in this part of the tutorial you only need to add content if you are using a Mac.
 
-Run the following command in your terminal.
+Run the following command in your terminal.   
 `touch .gitignore`   
 Then navigate to the folder that holds your local repo and open the .gitignore file in your code editor. If you are using a file browser program (Finder or File Explorer), you may need to enable viewing hidden files in the program settings to see the file.
 
-Add the text `.DS_Store` to the file. Then, save and close.   
+Add the following text to the file. Then, save and close.   
+```
+.DS_Store
+```
 ![image of .gitignore file](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitignore.png)   
 This is mainly to ignore a file that is generated on MacOS systems but it's good to add it even if you aren't using MacOS in case you work with someone that does on the repo. Here is [a collection of .gitignore file templates](https://github.com/github/gitignore){:target="_blank"} for different programming languages and frameworks that you can use depending on your project.
 
@@ -176,7 +179,7 @@ The output should look something like the image below. Keep in mind your termina
 ![image of git status command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitstatus.png)  
 The output says there are no new changes you can currently save to git but there are changes in **untracked files**. This is because we created a new .gitignore file but that file is currently not being tracked by git.
 
-Use the `git add .` command to add all changes to files in the current folder to the **staging area**. `.` means the current folder; however, you can add individual files to be staged with `git add filename` (replace `filename` with the name of the file).      
+Use the `git add .` command to add changes to all files in the current folder to the **staging area**. `.` means the current folder; however, you can add individual files to be staged with `git add filename` (replace `filename` with the name of the file).      
 Then, run `git status` again. All the changes that are in the staging area will be listed under the text "Changes to be committed".
 ![image of git add . command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitaddthis.png)   
 Now, you can see that the creation of the .gitignore file is **staged**. When a change is staged, it is marked as being ready to be saved. So, make sure you are only staging changes that you want to keep.
@@ -202,14 +205,174 @@ You should now be redirected to the web page for your new github repository. Fol
 `git push -u origin main`   
 The output will prompt you to enter your Github username and password. Text characters will not appear on your screen when entering your password. Just type it and press enter. Note that this is your Github account username and password (what you use to login to github.com).
 
-Now your local git repo is connected to your remote github repo and set to **push** changes to it and **fetch** updates from it. Your latest commit is also now reflected on your github repository. Refresh the web page and you should see your .gitignore file there. Congrats on pushing to github for the first time!
+You should see an output message similar to this.   
+![image of git push origin main command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitpush.png)     
+Now your local git repo is connected to your remote github repo. Your local commit was also **pushed** your remote repo. Refresh the web page for your Github repo and you should see your .gitignore file there. Congrats on pushing to github for the first time!
 
 From now on, you can use the command `git push origin main` to push your local git commits to your remote github repo. Think of this as the equivalent of uploading a new version of a file to Google Drive.
 
-There is so much more functionality to git and I only gave you the basic commands you need to get this working. If you are interested in learning more or need to look up how to do something, check the [git documentation](https://git-scm.com/docs){:target="_blank"} for a list of commands or read articles from the [Pro Git Book](https://git-scm.com/book/en/v2){:target="_blank"}. We briefly learned the concepts of commit, push, and remote. Some basic concepts you should eventually learn are clone, push, fetch, merge, pull, and branches.
+There is so much more functionality to git and I only gave you the basic commands you need to get this working. If you are interested in learning more or need to look up how to do something, check the [git documentation](https://git-scm.com/docs){:target="_blank"} for a list of commands or read articles from the [Pro Git Book](https://git-scm.com/book/en/v2){:target="_blank"}. We briefly learned the concepts of commit, push, and remote. Some basic concepts you should eventually learn are clone, fetch, merge, pull, and branches.
 
 Another thing you can set up is [connecting to Github with SSH](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh){:target="_blank"} so you do not have to enter your Github username and password everytime you push to the remote repo.
 
 ## A barebones website and resources to get started ##
+We now know how to use git to save our work and upload it to Github. It's time to actually build our website. From here, everyone's process will start to differ. In this section, I will go over the basic files you need to have a web page, the programming languages used in front end web development, and some resources to continue developing your static website.
+
+The next part of this tutorial is about using Jekyll to install readymade templates and adapting them for your use. So if you want a polished and scaleable site from day 1, stay tuned for the next part. However, I recommend you keep following along anyway so you understand the basics of frontend web development.
+
+The three languages used to create web pages are HTML, CSS, and Javascript. **HTML** is a markup language used to display and layout the contents of the page (text, images, buttons, links). **CSS** is a stylesheet language used to style and position the contents of a page (colors, fonts, borders, fixed navigation bars). **Javascript** is a scripting language used to add interactivity to a page (notifications, responsive content).
+
+### Creating an HTML file ###
+Every web page is an html page. The home page of a website is always named `index.html`. So when we serve our website, the content on the `index.html` page will be viewable at yourgithubusername.github.io.
+
+Create a file named `index.html` in the folder of your git repo, open it in your code editor, and add the following code to it. You can replace "Mynamehere" with your name or whatever you want.
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mynamehere</title>
+	</head>
+	<body>
+		<div>
+			<p>Welcome to mynamehere's web page. You can contact me here.</p>
+		</div>
+	</body>
+</html>
+```
+The words that are surrounded by angled brackets are called **tags**. There are many tags and they all have different purposes. Most importantly, remember that if there is a starting tag, there must be an ending tag at the end of the content. For example, the `<p>` and `</p>` tags surrounding the 2 sentences are called **paragraph tags** and are usually used for a section of text.
+
+The text within the `<title>` **title tags** is the title of the web page. You can see this text on the tab of a web page in your web browser. Open the `index.html` file we just created in a web browser to see.
+
+Finally, the `<div>` tag is used to hold and separate content. We will be using it more in the next section.
+
+Now, let's create a link to our email address so people can contact us through our web page! The tag for a link is the `<a>` **anchor** tag. Use the following code to create a link to an email address.
+```html
+<a href="mailto:myemailaddress@example.com">click here to email me</a>
+```
+The contents inbetween the quotation marks after the `href` **attribute** is the address that the web browser will go to when someone clicks the link. The text inbetween the two anchor tags becomes the clickable the link. A link can go to an external web address or another html file (another page on your site). [More about links here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a){:target="_blank"}
+
+So now let's add the link to our web page.
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mynamehere</title>
+	</head>
+	<body>
+		<div>
+			<p>Welcome to mynamehere's web page. You can contact me <a href="mailto:myemailaddress@example.com">here</a>.</p>
+		</div>
+	</body>
+</html>
+```
+Save the file. Then, open the file in your web browser again or refresh the page to test it. Note that everytime you make a change to your website files, you have to save them *and* refresh the browser to see the changes reflected.
+
+### Creating a CSS file ###
+Now let's create a CSS file and connect it to our HTML file. In the folder of your git repo, create a file called `style.css` with your code editor.
+
+To connect the CSS file to our HTML file, we need to reference in the header of the HTML page. Add the following code within the `<head>` **head** tags. [More about the head tag here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head){:target="_blank"}
+```html
+<link rel="stylesheet" href="style.css">
+```
+Your `index.html` file should now look like this.
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mynamehere</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<p>Welcome to mynamehere's web page. You can contact me <a href="mailto:myemailaddress@example.com">here</a>.</p>
+		</div>
+	</body>
+</html>
+```
+
+Open the `style.css` file. Let's change the color of our text. Add the following to the `style.css` file.
+```css
+p {
+	color: #0000ff;
+}
+```
+This will change the color of all text inside paragraph tags to a specific shade of blue. You can use this [color picker](https://www.google.com/search?q=color+picker){:target="_blank"} to find the hex decimal code that represents different web colors. Open the `index.html` file in your web browser again or refresh the page to see the change.
+
+### Using class and id ###
+Finally, I will teach you the basics of using class and id. In the last section, we styled our page by targeting all content surrounded by a paragraph tag. With class and id, we can target parts of a webpage or **elements** even more specifically. We can create a class or id, add styles to it, and then assign it to specific elements. Then, the styles will be applied to only those specific elements. For example, you could use this if you want two different paragraphs to be two different colors.
+
+Classes and ids function in the same way, but they are used in different situations by convention. A **class** can be applied on several elements. An **id** can only be applied on one element. It must be unique. [More about class and id here.](https://stackoverflow.com/questions/544010/whats-the-difference-between-an-id-and-a-class){:target="_blank"}
+
+Let's use a class to change the positioning of our text section. Add a class to the div element.
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mynamehere</title>
+	</head>
+	<body>
+		<div class="content">
+			<p>Welcome to mynamehere's web page. You can contact me <a href="mailto:myemailaddress@example.com">here</a>.</p>
+		</div>
+	</body>
+</html>
+```
+Now, we can add **properties** to that class by adding the following code to the `style.css` file.
+```css
+.content {
+	margin-top: 100px;
+	margin-left: 50px;
+	width: 80%;
+	font-size: 2em;
+}
+```
+Open the `index.html` file in your web browser again or refresh the page to see the changes. The margin properties created pixel width margins on the top and left sides of the div element that has the content class applied. The width property sets the width of the div to be 80% of the width of its parent element. Since the div's parent element is body, the div will be 80% of the width of the web page. You can resize your browser window to see the div width change. The font size property sets the font to be 2 times the size of the default browser font size. [More on em values here.](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size){:target="_blank"}
+
+### Resources for customizing your website ###
+We only used a couple CSS properties on our extremely simple webpage, but there are a lot. This [CSS reference from MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference){:target="_blank"} contains a list of every standard CSS property. It's a good reference point for understanding the usage of specific CSS properties.
+
+Don't worry if you are overwhelmed by the amount of properties. People always tell me that they don't know CSS and honestly I don't know CSS either. If I want to find out how to do something, I usually just Google "css" and what I want to do. For example, try searching "css change font family" on a search engine to figure out how to change the font of the text on your site.
+
+Speaking of fonts, a good resource for fonts for your website is [Google Fonts](https://fonts.google.com/){:target="_blank"}. There are a lot of free fonts you can easily reference and apply to your site.
+
+Like I mentioned earlier, you can use [Google color picker](https://www.google.com/search?q=color+picker){:target="_blank"} to choose web colors and find the hex decimal codes for them.
+
+Hopefully that is enough to get you interested in customizing your web page. As your site becomes more complicated, you may not want to style every element manually yourself. That's where frameworks come in. By referencing libraries of code written by others, we can easily apply their styles and layouts. A popular framework is [Bootstrap](https://getbootstrap.com/){:target="_blank"}. This site uses Bootstrap to create a **responsive** layout or a layout that can change based on the size of the window. This is important because your site needs to look good on different screen sizes and devices. If you decide to use the Jekyll theme I'm writing for the next part of this tutorial, you will be using Bootstrap.
+
+Lastly, I recommend getting comfortable with using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools){:target="_blank"} to test and troubleshoot your web page. Have you ever right clicked while using Chrome and clicked "Inspect"? This opens the DevTools window where you can edit elements on your page and see the changes live without actually editing your files.
+
+### Resources for learning frontend web development ###
+I can't go into details about HTML and CSS (not to mention Javascript) in this tutorial because it would be way too long. Also, there are so many more professional and knowledgable tutorials out there available for free.
+
+MDN web docs has a complete [web development course](https://developer.mozilla.org/en-US/docs/Learn){:target="_blank"} that covers HTML, CSS, Javascript, and even backend web programming. Honestly, I should have linked their courses on our site and called it a day.
+
+[Zines by Jackie](https://www.zinesbyjackie.com/activities/build-an-under-construction-page){:target="_blank"} has a aesthetically pleasing and beginner friendly tutorial on using HTML and CSS to create a simple site. The end product of the tutorial is basically what we just did with our HTML and CSS files but the tutorial goes into more detail on tags and properties. It's also a fun read on early web design.
+
+If you know more resources on learning web development or wrote one yourself and think I should add it here, [please email me](mailto:jillianzhong@gmail.com)).
 
 ## Serving your Github Pages site ##
+Now that we wrote a basic site, it's time to upload it to Github and serve our site. We need to add our two new files to our git repo, commit the changes, and push those changes to our remote repo on Github. To do this, we just have to do the same steps we did with the .gitignore file.
+
+### Pushing changes ###
+Open your terminal and go inside the folder that your website files are saved in, `yourgithubusername.github.io`, and run the following commands.   
+`git status` to see the status of your repo.   
+`git add .` to stage changes to all files in the folder.   
+`git commit -m 'created index.html file and style.css file'` to commit the changes.   
+`git push origin main` to push your commit to Github.
+
+Now if you go to your repository on Github at github.com/yourgithubusername/yourgithubusername.github.io, you should see `index.html` and `style.css` in the repo.
+
+### Setting up Github Pages ###
+Nice! We are so close! Now all we have to do is tell Github we want this repository to be hosted on Github Pages. From the repository page, click on "Settings" at the top right of the page or go to github.com/yourgithubusername/yourgithubusername.github.io/settings.   
+Scroll down to the "Github Pages" section.   
+Under "Source", click on the drop down that currently says "None".   
+Select the "main" branch and then click "Save".   
+Now, refresh the page and scroll back down to the "Github Pages" section. It should now say that your site is published. You can check the box next to "Enforce HTTPS".
+
+Your site is now live at yourgithubusername.github.io and can be visited by anyone at that address! Github Pages is using the files in your remote repo to generate this site. From now on, everytime you push changes to Github, they will automatically be reflected on your live site. That's why it is important to test locally by opening your HTML files in your web browser before pushing changes to Github.
+
+### Using a custom domain ###
+You can use a custom domain with Github Pages. This is so that your Github Pages site address will be a domain you own and not yourgithubusername.github.io. For example, we have a custom domain set up on this site so the address is "pages.virtualgoodsdealer.com" instead of "virtualgoodsdealer.github.io". To do this, you need to purchase a domain name if you don't own one. The Github docs has [a guide to setting up a custom domain name with Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site){:target="_blank"}.
+
+## What is coming in part three? ##
+As mentioned before, the next part of this tutorial will be about using Jekyll themes with Github Pages. I chose to cover this because I think it's a fast way to build a polished and scalable site for yourself. Like I talked about in [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}), my goal for this tutorial series is to have people build sites they want to use. The site we built in this tutorial only has one page, but what if you wanted to write a blog (similar to this one) and need a page for each article and you have 50 articles? What if you want to display photos and need a page for each and want add a new photo to your site everyday? Also, if you aren't someone that wants to bother customizing every little detail on your site but you still want it to look nice, using themes made by others is a good idea. And if you *are* someone that loves customizing the appearance of things, you have the option to edit an existing theme to your preferences. I'm also going to be creating a Jekyll theme for the next part of the tutorial aimed at Instagram users for displaying content they originally created for Instagram. So, stay tuned for the next part and feel free to contact me via email or social media if you have feedback or questions on this part of the tutorial. I'm always interested in improving this section to be clearer for beginners.
