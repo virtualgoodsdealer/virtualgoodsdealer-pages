@@ -65,7 +65,7 @@ Follow the command line prompts to finish the installation. Then, run this comma
 [Source: Homebrew documentation](https://brew.sh/)   
 [Source: Github git guide](https://github.com/git-guides/install-git)
 
-After the installation is complete, use `git version` to make sure it has been installed. Now you should be ready to use git and Github!
+After the installation is complete, use `git version` to make sure it has been installed. It should output the text “git version” and a version number. Now you should be ready to use git and Github!
 
 ## Windows: Setting up bash and git ##
 ### Setting up bash ###
