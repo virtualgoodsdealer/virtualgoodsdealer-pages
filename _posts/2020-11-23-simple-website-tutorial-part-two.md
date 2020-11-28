@@ -6,7 +6,7 @@ author: ada.wrong
 excerpt_separator: <!--more-->
 ---
 
-This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a barebones one page website served on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
+This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a one page website hosted on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
 
 ## Overall Project Structure ##
 In the previous part, I listed the technologies/frameworks this tutorial will cover:
@@ -15,7 +15,9 @@ In the previous part, I listed the technologies/frameworks this tutorial will co
 - github and github pages
 - jekyll (optional)
 
-Now, I will explain the purpose of each part on extremely basic terms. If you are already familiar with these terms, you can skip to the next section. Also, please note that I'm not an expert (if you think I'm saying anything technically wrong, [please email me](mailto:jillianzhong@gmail.com)).
+Now, I will explain the purpose of each part on extremely basic terms. If you are already familiar with these terms, you can skip to the next section.
+
+The tutorial is going to follow the order of the project structure listed above. However, I'm going to explain what each part is in reverse order, starting with github pages. This is because I'm writing these tutorials from a results-focused mindset. I'm assuming you don't care about learning the ins and outs of these technologies for the sake of it, but care most about achieving the final result - a website you can use.
 
 The goal is to have a static website viewable from any web browser. To do this, we need a hosting service. That is why we are using Github Pages. Github Pages is a hosting service offered by Github where files you upload to their servers can easily be served as websites. This service is free and we are even currently using it to host this site. In order to get our files on Github, we need to use git to upload them. [Git](https://git-scm.com/){:target="_blank"} is a version control software where you can track changes to every file in a project. It is really convenient for projects with many files, working with others on the same project, or if you are like me and get confused easily. 
 
@@ -65,7 +67,8 @@ Follow the command line prompts to finish the installation. Then, run this comma
 [Source: Homebrew documentation](https://brew.sh/)   
 [Source: Github git guide](https://github.com/git-guides/install-git)
 
-After the installation is complete, use `git version` to make sure it has been installed. It should output the text “git version” and a version number. Now you should be ready to use git and Github!
+After the installation is complete, use `git version` to make sure it has been installed. It should output the text “git version” and a version number. Now you should be ready to use git and Github!   
+Skip to the section called "Basic git and Github".
 
 ## Windows: Setting up bash and git ##
 ### Setting up bash ###
@@ -157,7 +160,9 @@ Then initiate a git repository in this folder:
 You should see an output like "Initialized empty Git repository in ..."
 
 #### Installing a code editor ####
-So now we have our git repository initiated, but how do we start creating files to add to it? We need to install a code editor. A code editor is a program for editing files that contain code. You can think of it like Microsoft Word but for code. There are many code editors out there; some popular free ones are [Microsoft VS Code](https://code.visualstudio.com/){:target="_blank"}, [Atom](https://atom.io/){:target="_blank"}, and [Sublime Text](https://www.sublimetext.com/){:target="_blank"}. I use Sublime Text because it's light and simple and works for the scope of projects I am doing. I would recommend it for this project if you are a beginner. If you want to be a super nerd, I recommend learning how to use [vim](https://www.vim.org/){:target="_blank"}. It's a command line editor that is already installed on most UNIX systems. I still like using this editor but I **do not** recommend using it if this is your first time using a code editor because of the amount of commands you have to remember. Personally, I hate Microsoft VS Code and Atom confuses me but you can choose whatever you are comfortable with. Everyone has their own preferences and in the end it doesn't matter for this project as long as you are able to open and save files.
+So now we have our git repository initiated, but how do we start creating files to add to it? We need to install a code editor. A code editor is a program for editing files that contain code. You can think of it like Microsoft Word but for code. There are many code editors out there; some popular free ones are [Microsoft VS Code](https://code.visualstudio.com/){:target="_blank"}, [Atom](https://atom.io/){:target="_blank"}, and [Sublime Text](https://www.sublimetext.com/){:target="_blank"}. I use Sublime Text because it's light and simple and works for the scope of projects I am doing. I would recommend it for this project if you are a beginner.
+
+If you want to be a super nerd, I recommend learning how to use [vim](https://www.vim.org/){:target="_blank"}. It's a command line editor that is already installed on most UNIX systems. I still like using this editor but I **do not** recommend using it if this is your first time using a code editor because of the amount of commands you have to remember. Personally, I hate Microsoft VS Code and Atom confuses me but you can choose whatever you are comfortable with. Everyone has their own preferences and in the end it doesn't matter for this project as long as you are able to open and save files.
 
 #### Creating a .gitignore file ####
 Now, we need to create a **.gitignore file**. A .gitignore file is a file that contains a list of folders and files that you want git to ignore. Any file or folder that is listed will not be tracked as part of git's version control system. The contents of this file really depends on the languages and frameworks you are using in your program. Mostly, it is used so that specific files that are generated by operating systems or frameworks are not uploaded to Github. For the barebones website we are creating in this part of the tutorial you only need to add content if you are using a Mac.
@@ -188,7 +193,7 @@ Now, we are going to **commit** our staged changes. After doing so, the staged c
 
 Run the following command to commit your staged changes.   
 `git commit -m 'description of commit'`   
-You should write a detailed description of the commit within quotations so you can understand at a glance what changed in each commit.
+The `-m` flag means message. After it, write a detailed description of the commit within quotations so you can understand at a glance what changed in each commit.
 ![image of git commit command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitcommit.png) 
 
 You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Repeat the steps in this section everytime you want to save changes to your project files to your local git repo.
@@ -366,7 +371,7 @@ Now if you go to your repository on Github at github.com/yourgithubusername/your
 Nice! We are so close! Now all we have to do is tell Github we want this repository to be hosted on Github Pages. From the repository page, click on "Settings" at the top right of the page or go to github.com/yourgithubusername/yourgithubusername.github.io/settings.   
 Scroll down to the "Github Pages" section.   
 Under "Source", click on the drop down that currently says "None".   
-Select the "main" branch and then click "Save".   
+Select the "main" and then click "Save".   
 Now, refresh the page and scroll back down to the "Github Pages" section. It should now say that your site is published. You can check the box next to "Enforce HTTPS".
 
 Your site is now live at yourgithubusername.github.io and can be visited by anyone at that address! Github Pages is using the files in your remote repo to generate this site. From now on, everytime you push changes to Github, they will automatically be reflected on your live site. That's why it is important to test locally by opening your HTML files in your web browser before pushing changes to Github.
@@ -375,6 +380,6 @@ Your site is now live at yourgithubusername.github.io and can be visited by anyo
 You can use a custom domain with Github Pages. This is so that your Github Pages site address will be a domain you own and not yourgithubusername.github.io. For example, we have a custom domain set up on this site so the address is "pages.virtualgoodsdealer.com" instead of "virtualgoodsdealer.github.io". To do this, you need to purchase a domain name if you don't own one. The Github docs has [a guide to setting up a custom domain name with Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site){:target="_blank"}.
 
 ## What is coming in part three? ##
-As mentioned before, the next part of this tutorial will be about using Jekyll themes with Github Pages. I chose to cover this because I think it's a fast way to build a polished and scalable site for yourself. Like I talked about in [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}), my goal for this tutorial series is to have people build sites they want to use. The site we built in this tutorial only has one page, but what if you wanted to write a blog (similar to this one) and need a page for each article and you have 50 articles? What if you want to display photos and need a page for each and want add a new photo to your site everyday? Also, if you aren't someone that wants to bother customizing every little detail on your site but you still want it to look nice, using themes made by others is a good idea. And if you *are* someone that loves customizing the appearance of things, you have the option to edit an existing theme to your preferences. 
+As mentioned before, the next part of this tutorial will be about using Jekyll themes with Github Pages. I chose to cover this because I think it's a fast way to build a polished and scalable site for yourself. Like I talked about in [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}), my goal for this tutorial series is to have people build sites they want to use. The site we built in this tutorial only has one page, but what if you wanted to write a blog (similar to this one) and need a page for each article and you have 50 articles? And what if you want to add new articles every day? Also, if you aren't someone that wants to bother customizing every little detail on your site but you still want it to look nice, using themes made by others is a good idea. And if you *are* someone that loves customizing the appearance of things, you have the option to edit an existing theme to your preferences. 
 
-I'm also going to be creating a Jekyll theme for the next part of the tutorial aimed at Instagram users for displaying content they originally created for Instagram. So, stay tuned for the next part and feel free to contact me via email or social media if you have feedback or questions on this part of the tutorial. I'm always interested in improving this section to be clearer for beginners.
+I'm also going to be creating a Jekyll theme for the next part of the tutorial aimed at Instagram users for displaying content they originally created for Instagram. So, stay tuned for the next part and feel free to contact me via [email](mailto:jillianzhong@gmail.com) or social media if you have feedback or questions on the tutorial. I'm always interested in improving it to be clearer for beginners.
