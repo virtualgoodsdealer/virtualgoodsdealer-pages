@@ -44,7 +44,7 @@ collections:
     output: true
   creators:
     output: true
-  submit:
+  submissions:
     output: true
 
 defaults:
@@ -60,9 +60,9 @@ defaults:
       layout: "creator"
   - scope:
       path: ""
-      type: "submit"
+      type: "submissions"
     values:
-      layout: "post"
+      layout: "submissions"
 
 
 

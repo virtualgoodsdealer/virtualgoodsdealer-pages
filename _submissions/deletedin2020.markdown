@@ -1,7 +1,7 @@
 ---
-layout: submit
+layout: submissions
 title:  "Submit to Deleted In 2020"
-permalink: /submit/deletedin2020
+permalink: /submissions/deletedin2020
 ---
 
 Have you had any posts deleted from Instagram in the past year? You can submit them to our upcoming web show, Deleted in 2020. 

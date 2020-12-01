@@ -1,7 +1,7 @@
 ---
-layout: submit
+layout: submissions
 title:  "General Submissions"
-permalink: /submit/general
+permalink: /submissions/general
 ---
 
 We are seeking submissions for Virtualgoodsdealer Pages.
