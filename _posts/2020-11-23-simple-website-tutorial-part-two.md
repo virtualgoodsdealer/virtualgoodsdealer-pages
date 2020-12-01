@@ -37,10 +37,10 @@ Search for "Terminal" in your Applications and open it.
 
 You should see something like this:   
 ![image of terminal](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/terminal.png)   
+The rectangle on the last line of text is the cursor. When you type commands, the text should appear in front of it. To run a command, press the enter key on your keyboard.
+
 If it does not say "bash" at the top of the window and says "zsh" instead, type run this command to change the default shell to bash:   
 `chsh -s /bin/bash`
-
-The rectangle on the last line of text is the cursor. When you type commands, the text should appear in front of it. To run a command, press the enter key on your keyboard.
 
 After running that command, it will prompt you for your system password (the password you use to login to your Mac). Type your password and press enter. Text characters will not appear on your screen when entering your password. Then, close the Terminal window and open it again. You should now be running the bash shell. Check that it says "bash" at the top of the Terminal window like the image above.   
 [Source: "How to Change the Default Shell to Bash in MacOS Catalina" from howtogeek.com](https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/#:~:text=From%20System%20Preferences&text=Hold%20the%20Ctrl%20key%2C%20click,Zsh%20as%20your%20default%20shell.){:target="_blank"}
@@ -126,12 +126,12 @@ From now on, I will refer to the git repository (repo for short) on your local f
 First, you need a Github account. In a web browser, go to [github.com](https://github.com/){:target="_blank"} and sign up for an account. Keep in mind that your username may be important to your final Github Pages site. Unless you are using a custom domain name, the url of your site will be "yourgithubusername.github.io" where "yourgithubusername" is your Github username. However, you can purchase a domain name at any time and connect it to your Github Pages site so it's not a huge deal. Go to [jirrian.github.io](https://jirrian.github.io){:target="_blank"} for an example.
 
 ### Setting your git identity ###
-To start making commits with git, we need to set a username and email. From within your terminal window, run the following command to set a username for git (replace `yourgitusername` with your name or username of choice). This is not the same thing as your Github username and it does not have to be the same.   
+To start saving our work with git, we need to set a username and email. From within your terminal window, run the following command to set a username for git (replace `yourgitusername` with your name or username of choice). This is not the same thing as your Github username and it does not have to be the same.   
 `git config --global user.name "yourgitusername"`   
 Then, add your email with the following command (replace `youremailaddress@example.com` with your email address).   
 `git config --global user.email youremailaddress@example.com`
 
-This information is used in every git commit. The `--global` **flag** sets this user information for all git repositories on your machine.   
+This user information is used in every git commit (more on commits later). The `--global` **flag** sets this user information for all git repositories on your machine.   
 [Source: Setting your username in Git](https://docs.github.com/en/free-pro-team@latest/github/using-git/setting-your-username-in-git#:~:text=Git%20uses%20a%20username%20to,same%20as%20your%20GitHub%20username.){:target="_blank"}
 
 ### Creating a local git repository ###
@@ -149,7 +149,7 @@ The first result gives me the answer, which is the command `ls -a`. There is a l
 
 #### Initiating the local git repository ####
 So, now you are ready to create the folder where your website files are going to be saved. The name for the folder is based on 2 conventions. First, it's easiest to make the name of the local folder that contains your git repository match the name of the remote repository on github.com. Second, the Github repository you are using to serve a Github Pages site must be named "yourgithubusername.github.io" where "yourgithubusername" is replaced with your github username.   
-For example, the name for our Github (organization) account is "virtualgoodsdealer", so the repository for this site's files on Github is named "virtualgoodsdealer.github.com". Since I always match my local and remote repo names, I named my local folder "virtualgoodsdealer.github.io".
+For example, the name for our Github (organization) account is "virtualgoodsdealer", so the repository for this site's files on Github is named "virtualgoodsdealer.github.io". Since I always match my local and remote repo names, I named my local folder "virtualgoodsdealer.github.io".
 
 Run the following commands to create the folder and move into it.   
 `mkdir yourgithubusername.github.io`   
@@ -254,7 +254,7 @@ Now, let's create a link to our email address so people can contact us through o
 ```html
 <a href="mailto:myemailaddress@example.com">click here to email me</a>
 ```
-The contents inbetween the quotation marks after the `href` **attribute** is the address that the web browser will go to when someone clicks the link. The text inbetween the two anchor tags becomes the clickable the link. A link can go to an external web address or another html file (another page on your site). [More about links here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a){:target="_blank"}
+The contents inbetween the quotation marks after the `href` **attribute** is the address that the web browser will go to when someone clicks the link. The text inbetween the two anchor tags becomes the clickable link. A link can go to an external web address or another html file (another page on your site). [More about links here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a){:target="_blank"}
 
 So now let's add the link to our web page.
 ```html
