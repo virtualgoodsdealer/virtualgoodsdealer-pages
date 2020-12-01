@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a, .donation-text a {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title {
   color: $header-nav-color;
 }
 
@@ -24,7 +24,7 @@
   margin-bottom: 0rem;
 }
 
-.post-title{
+.post-title, .response-form-title{
   font-size: 1.5em;
 }
 
@@ -77,6 +77,28 @@
   text-decoration-color: dimgray;
 }
 
+.form-article-title{
+  width: 100%;
+  background-color: transparent;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+
+.form-article-title:focus{
+  outline: none;
+}
+
+.form-article-title-container{
+  padding-left: 3px;
+}
+
+.form-responding-to-container{
+  padding-right: 0px;
+}
+
+.response-form{
+  margin-top: 1.25rem;
+}
 
 html {
   box-sizing: border-box;
