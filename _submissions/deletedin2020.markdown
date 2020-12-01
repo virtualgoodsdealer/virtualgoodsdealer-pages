@@ -21,4 +21,4 @@ We also understand that privacy may be a concern, especially if you are submitti
 
 There is no limit on the number of images you can submit. However, we will prioritize including all the creators who submit, rather than all the images from each creator.
 
-If you have any technical issues or need clarifications before you submit to us, please email us at vgdsubmissions@gmail.com and we will be happy to help.
+If you have any technical issues or need clarifications before you submit to us, please email us at [vgdsubmissions@gmail.com](mailto:vgdsubmissions@gmail.com?subject=Deleted%20In%202020%20Submission) and we will be happy to help.
