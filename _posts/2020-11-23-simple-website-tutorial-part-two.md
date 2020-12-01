@@ -126,7 +126,7 @@ From now on, I will refer to the git repository (repo for short) on your local f
 First, you need a Github account. In a web browser, go to [github.com](https://github.com/){:target="_blank"} and sign up for an account. Keep in mind that your username may be important to your final Github Pages site. Unless you are using a custom domain name, the url of your site will be "yourgithubusername.github.io" where "yourgithubusername" is your Github username. However, you can purchase a domain name at any time and connect it to your Github Pages site so it's not a huge deal. Go to [jirrian.github.io](https://jirrian.github.io){:target="_blank"} for an example.
 
 ### Setting your git identity ###
-To start saving our work with git, we need to set a username and email. From within your terminal window, run the following command to set a username for git (replace `yourgitusername` with your name or username of choice). This is not the same thing as your Github username and it does not have to be the same.   
+To start saving our changes with git, we need to set a username and email. From within your terminal window, run the following command to set a username for git (replace `yourgitusername` with your name or username of choice). This is not the same thing as your Github username and it does not have to be the same.   
 `git config --global user.name "yourgitusername"`   
 Then, add your email with the following command (replace `youremailaddress@example.com` with your email address).   
 `git config --global user.email youremailaddress@example.com`
