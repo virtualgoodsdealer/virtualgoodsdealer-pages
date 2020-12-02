@@ -17,7 +17,7 @@ This month we featured work from [Charming Sprite Shop by cyber_sprite](/creator
 >I love online shopping because I can take my sweet time. I also like that I can support artists that I admire from around the world, directly, rather than a corporation.
 >-cyber_sprite
 
-[cyber_sprite](/creatordirectory/cyber_sprite) is based on Los Angeles, CA and is currently inspired by N64 Graphics and kandi culture. We were drawn to her work because of eyecatching multilayered holographic designs and the references to internet culture and technology theory. 
+[cyber_sprite](/creatordirectory/cyber_sprite) is an accessories designer based in Los Angeles, CA. She is currently inspired by N64 Graphics and kandi culture. We were drawn to her work because of eyecatching multilayered holographic designs and the references to internet culture and technology theory. 
 
 **Q: If you could have an infinite budget for one creative project, what would you make?**  
 cyber_sprite: I would love to develop a mixed-reality VR experience with social elements, IRL items, and popup-type events that coincide with in-game events and lore; something that could connect people online and off.
