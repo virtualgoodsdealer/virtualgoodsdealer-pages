@@ -67,7 +67,7 @@ Luna and Jon: After the quarantine we started to appreciate our neighborhood mor
 Luna and Jon: We would create a space in our neighborhood, for example. An open space, welcoming people of any age, to participate and experiment with art. To give accessibility to people who for one never had the possibility or lacked the visibility of art in their lives. And for those whom may have always wanted to experiment with art but never had the economic access to pursue art.  A space with camera, paints, fabrics, all types of creative process to simply serve as a source of entertainment and/or inspiration.
 
 -----
-![Moe Noza soft sculpture](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/moenoza_soft_sculpture_bg.png)
+![Moe Noza soft sculpture](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/moe_noza_room.png)
 
 [Moe Noza](/creatordirectory/moenoza) is a soft sculpture artist originally from Southern California, but relocated to Portland, Oregon. Each of their soft sculptures are unique and handmade from upcycled materials. We were drawn to the organic color pallettes and special forms of their pieces.
 
