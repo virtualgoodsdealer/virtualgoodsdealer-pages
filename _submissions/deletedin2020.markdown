@@ -15,7 +15,7 @@ Please email your submission to [vgdsubmissions@gmail.com](mailto:vgdsubmissions
 
 For each image displayed in the exhibit, we will provide space for a description. We suggest using this space to provide context such as your username, what it was deleted for, and thoughts/reflections. You can write as much or little as you want. You can also choose not to include descriptions, and we will leave the space blank in the exhibit.
 
-Please provide for us the description for each image in the body of your email, and specify the file name of the corresponding image.
+If you choose to use descriptions, please write the description for each image in the body of your email, and specify the file name of the corresponding image.
 
 We also understand that privacy may be a concern, especially if you are submitting content that is sensitive in any way. We will not share any information about you outside of the descriptions you provide.
 
