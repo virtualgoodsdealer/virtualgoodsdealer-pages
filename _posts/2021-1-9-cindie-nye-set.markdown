@@ -6,15 +6,21 @@ author: cindie xin
 post_description: "Length 20:04. Multi-genre, variable BPM. Audio hosted on Virtualgoodsdealer."  
 ---
 
+&zwnj;
+
 ![Set Cover 1.9](/images/post_images/2021-1-9-cindie-nye-set.md/twitch_screenshot.png)
 
+&zwnj;
 
-hi its cindie. this my set from the <a href="https://www.instagram.com/p/CJbw5shnvBP/" target="_blank">wasted fuckers nye rave.</a> during the live set, i messed around with my midi keyboard and added some more sounds. unfortunately those weren't recorded, so what's posted here is just the pre-mixed component. if you are listening with headphones there may be some sounds that are jarring or unpleasant to hear. please listen at your own caution. &zwnj;  
+hi its cindie. this my set from the <a href="https://www.instagram.com/p/CJbw5shnvBP/" target="_blank">wasted fuckers nye rave.</a> if you are listening with headphones there may be some sounds that are jarring or unpleasant to hear. please listen at your own caution.
 
-{% include open-embed.html src="/mp3/nye_set02.mp3" %}  &zwnj;  
+&zwnj;  
 
-*Setlist:*
+{% include open-embed.html src="/mp3/nye_set02.mp3" %}  
 
+&zwnj;  
+
+*Setlist:*  
 *0:00 - 3:41*	        superbass - nicki minaj (€1И remix)  
 *3:42 - 5:36*	        <a href="https://soundcloud.com/recordrecordparis/no-mak-schro-dingers-1" target="_blank">BABYMETAL _ イジメ、ダメ、ゼッタイ ONIES Mashup Remix</a>  
 *5:37 - 6:57*	        say so - doja cat (slowed & reverb)  
@@ -29,7 +35,7 @@ hi its cindie. this my set from the <a href="https://www.instagram.com/p/CJbw5sh
 i am testing the artist name "€1И" short for cindie.
 "a24" is me and hubert's group name. check out hubert's music <a href="https://boxofpizza.bandcamp.com/"  target="_blank">here</a>.
 
-follow <a href="https://www.instagram.com/males_are_cancelled2/" target="_blank">@males_are_cancelled2</a> on instagram for music updates ♥ leave a response below to let me know what you think!
+leave a response below to let me know what you think ♥ 
 
 while you're here, check out some of our other [articles](/articles).
 
