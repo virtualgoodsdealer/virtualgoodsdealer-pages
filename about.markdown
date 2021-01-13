@@ -8,6 +8,6 @@ virtualgoodsdealer is a collaborative virtual space and e-commerce portal. worki
 
 pages.virtualgoodsdealer.com focuses on publishing non-physical art and showcasing creators.
 
-by [ada.wrong](/creatordirectory/adawrong) and [cindie xin](/creatordirectory/cindiexin)
+by [ada.wrong](/creatordirectory/adawrong), [cindie xin](/creatordirectory/cindiexin), and [saqmemes](/creatordirectory/saqmemes)
 
 contact us at [virtualgoodsofficial@gmail.com](mailto:virtualgoodsofficial@gmail.com)
