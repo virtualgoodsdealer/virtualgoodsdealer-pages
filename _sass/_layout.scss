@@ -6,6 +6,27 @@
   padding: 0px;
 }
 
+.heading-link a{
+  text-decoration: none;
+}
+
+.heading-link a:hover{
+  text-decoration: none;
+}
+
+.heading-link svg{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-left: 0.4rem;
+    fill: $post-date-color;
+    opacity: 0.3;
+    transition: 0.2s;
+}
+
+.heading-link svg:hover{
+    opacity: 0.65;
+}
+
 .post a, .post-content a, .landing a, .artist-page a, .donation-text a{
   text-decoration: underline;
 }
