@@ -37,8 +37,8 @@ layout: default
               {% else %}
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
               {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
             </div>  
-            <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
           </div>
         </div>
       {% endfor %}
