@@ -44,7 +44,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		<div class="col-md">
 			<div class="text-md-right text-nowrap">
 			{% if page.categories %}
-				{% for category in page.categories %}
+				{% assign categories = page.categories | sort %}
+				{% for category in categories %}
 					<a href="/articles/{{ category }}">/articles/{{ category }}</a>
 				{% endfor %}
 			{% endif %}
