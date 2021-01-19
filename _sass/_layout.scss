@@ -27,6 +27,14 @@
     opacity: 0.65;
 }
 
+.posts-categories{
+  margin-left: 0.4 rem;
+}
+
+.posts-categories a:hover{
+    text-decoration: none;
+}
+
 .post a, .post-content a, .landing a, .artist-page a, .donation-text a{
   text-decoration: underline;
 }
@@ -37,7 +45,7 @@
   text-decoration-color: $post-link-hover-color;
 }
 
-.page-name, .read-more, .artist-articles, .article-suggested{
+.page-name, .read-more, .artist-articles, .article-suggested, .posts-categories a{
   color: $post-date-color
 }
 
@@ -78,7 +86,7 @@
   padding: 0px;
 }
 
-.read-more:hover{
+.read-more:hover, .posts-categories a:hover {
   color: $post-link-hover-color;
   text-decoration: none;
 }
@@ -114,6 +122,23 @@
 
 .response-form{
   margin-top: 1.25rem;
+}
+
+.posts-link-articles:after {
+  /* absolute positioning keeps it within h1's relative positioned box, takes it out of the document flow and forces a block-style display */
+  position: absolute;
+  /* the same width as our letter-spacing property on the h1 element */
+  width: 0.3rem;
+  /* we need to make sure our 'mask' is tall enough to hide the underline. For my own purpose 200% was enough, but you can play and see what suits you */
+  height: 1.5rem;
+  /* set the background colour to the same as whatever the background colour is behind your element. I've used a red box here so you can see it on your page before you change the colour ;) */
+  background-color: white;
+  /* give the browser some text to render (if you're familiar with clearing floats like this, you should understand why this is important) */
+  content: ".";
+  /* hide the dynamic text you've just added off the screen somewhere */
+  text-indent: -9999em;
+  /* this is the magic part - pull the mask off the left and hide the underline beneath */
+  margin-left: -0.3em;
 }
 
 html {
@@ -184,6 +209,7 @@ body {
 .posts__link {
   color: $post-link-color;
   text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .footer {
