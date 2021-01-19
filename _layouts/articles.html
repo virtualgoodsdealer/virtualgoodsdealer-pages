@@ -33,7 +33,8 @@ layout: default
             {% endif %}
             {% if post.categories %}
               <span class="posts-categories">
-              {% for category in post.categories %}
+              {% assign categories = post.categories | sort %}
+              {% for category in categories %}
                 <a class='font-weight-light' href='/articles/{{ category }}'>
                    /{{ category }}
                 </a>
