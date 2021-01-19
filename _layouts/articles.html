@@ -17,7 +17,7 @@ layout: default
           	</time>
           </div>
           <div class='col-lg posts__title'>
-            <a class='posts__link' href='{{ post.url | relative_url }}'>
+            <a class='posts__link posts-link-articles' href='{{ post.url | relative_url }}'>
               {{ post.title }}
             </a>
 
@@ -25,11 +25,20 @@ layout: default
               by
               {% for creator in site.creators %}
                 {% if creator.name == post.author %}
-                  <a class='posts__link' href='{{ creator.permalink }}'>
+                  <a class='posts__link posts-link-articles' href='{{ creator.permalink }}'>
                     {{ post.author | escape }}
                   </a>
                 {% endif %}
               {% endfor %}
+            {% endif %}
+            {% if post.categories %}
+              <span class="posts-categories">
+              {% for category in post.categories %}
+                <a class='font-weight-light' href='/articles/{{ category }}'>
+                   /{{ category }}
+                </a>
+              {% endfor %}
+              </span>
             {% endif %}
             <div class="post-exerpt font-weight-light">
               {% if post.post_description %}
