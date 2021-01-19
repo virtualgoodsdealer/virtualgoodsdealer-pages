@@ -145,6 +145,11 @@
   width: 100%;
 }
 
+.navbar-light .navbar-toggler {
+  border: none;
+  padding: 0px;
+}
+
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
