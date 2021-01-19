@@ -38,6 +38,7 @@ layout: post
 title: title of article
 categories: category ((optional))
 author: name ((optional))
+related-articles: [article file name] ((optional))
 ---
 ```
 
@@ -45,6 +46,12 @@ if the article has multipled categories, write it in brackets.
 ```
 categories: [category1, category2]
 ```
+
+the `related-articles` value is for a list of related articles that you definitely want to be listed underneath this article. list the article filenames without the markdown extension.
+```
+related-articles: [yyyy-mm-dd-title-of-article]
+```   
+the max number of articles shown under a post is 3. if there is less than 3 related articles listed in the front matter, the latest posts in the same categories as the article will be displayed. if that still doesn't reach 3 articles, the most recent posts on the pages site will be displayed.
 
 then, insert the content of the article below the front matter. 
 
@@ -56,6 +63,7 @@ layout: post
 title: title of article
 categories: category ((optional))
 author: name ((optional))
+related-articles: [article file name] ((optional))
 
 excerpt_separator: <!--more-->
 ---

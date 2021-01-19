@@ -1,4 +1,4 @@
 ---
-tag: exhibit
-permalink: /articles/exhibit
+tag: tutorial
+permalink: /articles/tutorial
 ---
