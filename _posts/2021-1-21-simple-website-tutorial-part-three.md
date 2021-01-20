@@ -4,6 +4,7 @@ title:  "Making A Simple Static Website: Part Three, Installing and Using Jekyll
 categories: [tutorial, tech]
 author: ada.wrong
 excerpt_separator: <!--more-->
+related-articles: [2020-11-16-simple-website-tutorial-part-one, 2020-11-23-simple-website-tutorial-part-two]
 ---
 
 This is the third part of a multi-part series on creating your own static website for complete beginners. It will focus on using Jekyll with Github Pages and customizing Jekyll themes.<!--more--> In [part two]({% post_url 2020-11-23-simple-website-tutorial-part-two %}), we covered using git to save our work and Github Pages to host a webpage. Now, we will take our static site to the next level, making it easy to upload new content and manage a large number of web pages. Again, everything used to complete this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection.
