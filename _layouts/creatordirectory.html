@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p class="page-name">/{{ page.title }}</p>
-<ul class="nav flex-column category-nav">
+<ul class="nav flex-column category-nav creator-list">
   {% for creator in site.creators %}
     <li>
       <a href="{{ site.url }}{{ creator.permalink }}">/{{ creator.name }}</a>

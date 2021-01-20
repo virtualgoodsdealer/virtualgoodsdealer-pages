@@ -9,4 +9,4 @@ twitter: queefape
 photo: adawrong.jpg
 donationlink: https://www.paypal.com/paypalme/jillianzhong
 ---
-ada.wrong is a designer, programmer, and internet user based in New York, NY. She is one half of virtualgoodsdealer.
+ada.wrong is a designer, programmer, and internet user based in New York, NY. She is part of virtualgoodsdealer.
