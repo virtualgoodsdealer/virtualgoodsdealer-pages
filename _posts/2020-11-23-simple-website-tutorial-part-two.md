@@ -4,7 +4,7 @@ title:  "Making A Simple Static Website: Part Two, Setting Up Your Development E
 categories: [tutorial, tech]
 author: ada.wrong
 excerpt_separator: <!--more-->
-related-articles: [2020-11-16-simple-website-tutorial-part-one]
+related-articles: [2020-11-16-simple-website-tutorial-part-one, 2021-1-21-simple-website-tutorial-part-three]
 ---
 
 This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a one page website hosted on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
