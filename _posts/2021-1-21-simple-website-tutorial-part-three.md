@@ -325,7 +325,7 @@ include:
   - _images
 ```
 Finally, test your site locally again and make sure everything looks right. Keep in mind that depending on the theme that you are using, you may need to edit or add values to the front matter of pages and posts. Check the "Usage" or "Configuration" section of your theme's read me on Github for details.   
-If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#jekyll-theme-image-grid){:target="_blank"}.
+If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#adding-a-new-post){:target="_blank"}.
 
 When you are ready, commit your changes and push them to Github. [Start with `git add .` then repeat the rest of this section.]]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#hosting-your-site-on-github-pages).   
 After a couple minutes, your site will be generated and served at "yourgithubusername.github.io".
