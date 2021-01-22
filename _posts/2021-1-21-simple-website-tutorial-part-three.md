@@ -167,7 +167,7 @@ Contact me at myemail@example.com
 This new page would then be linked in the navigation bar at the top of the site and accessible at `localhost:4000/contact` or yourgithubusername.github.io/contact (this may vary depending on your theme and configuration settings). [More on pages here.](https://jekyllrb.com/docs/pages/){:target="_blank"}
 
 ### Adding a new post ###
-Organizing and displaying text-based content is built into Jekyll sites with **posts**. Use posts to organize content that is dated (has a date attached to it). The most common usage for posts is blogging.
+Organizing and displaying text-based content is built into Jekyll sites with **posts**. Use posts to organize content that is dated (has a date attached to it). The intended usage for posts is blogging.
 
 All posts must be saved in the `_posts` folder. Go inside that folder and you should see a markdown file for an example post. When adding a new post, you can copy the front matter in this example post.   
 Post filenames must follow the specific format `yyyy-mm-dd-name-of-post.md`, where "yyyy-mm-dd" is replaced with the date of the post and the name of the post is seperated by dash characters.
@@ -215,6 +215,37 @@ Replace the line that says `gem "minima", "~> 2.5"` with the gem for the theme t
 For example, if you were using the image grid theme, it should say `gem jekyll-theme-image-grid`.
 
 Your `Gemfile` should now look [similar to this one](https://github.com/jirrian/image-grid-example/blob/main/Gemfile){:target="_blank"}. The image grid theme doesn't use the jekyll-feed plugin so it is commented out. If the theme you are using uses that plugin, you can leave it there.
+```ruby
+source "https://rubygems.org"
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+#gem "jekyll", "~> 4.2.0"
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "jekyll-theme-image-grid"
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem "github-pages", group: :jekyll_plugins
+# If you have any plugins, put them here!
+#group :jekyll_plugins do
+#  gem "jekyll-feed", "~> 0.12"
+#end
+
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+```
 
 Save the `Gemfile`. Open your terminal and navigate to the root of your site folder.   
 Run the following command to install all the gems you need to run the site locally.   
@@ -232,6 +263,8 @@ Replace the line that says `theme: minima` with `remote_theme: theme-author/jeky
 If you are using the image grid theme, it should say `remote_theme: jirrian/jekyll-theme-image-grid@main`.   
 Note that if you don't include the "@branch" at the end, Github Pages will default to looking for the theme on the "master" branch. However, as of October 2020, [Github changed the default branch name](https://github.com/github/renaming){:target="_blank"} for newly created repos to "main". So depending on when the theme repo on Github was created, you may need to specify the name of the default branch. You can check if your theme's repo's default branch is called "master" or "main" by going to the theme's Github repo web page and checking the drop-down box on the top left corner.
 
+[Source: Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme){:target="_blank"}
+
 ### Editing the config file ###
 The theme should now work locally and on Github Pages. Test it locally by running `bundle exec jekyll serve` in your terminal and going to `localhost:4000` in a web browser. You should see your Jekyll site with the new theme installed.
 
@@ -240,12 +273,58 @@ Next, let's add more settings to our site in `_config.yml`. Some of these settin
 The required settings for Jekyll should already be in the `_config.yml` file. Just replace the sample text with your information.   
 For more Jekyll settings you can set in the `_config.yml` file, such as permalink styles and including more folders, reference [this guide, "Jekyll Configuration Options" from Simple Primate](http://simpleprimate.com/blog/configuration){:target="_blank"}.
 
-To set the settings that are specific to the theme you are using, read the "Usage" section of your theme's read me on Github and the `config.yml` file in your theme's Github repo. Under `plugins:`, make sure all plugins used by your theme are listed below.   
+To set the settings that are specific to the theme you are using, read the "Usage" or "Configuration" section of your theme's read me on Github and the `config.yml` file in your theme's Github repo. Under `plugins:`, make sure all plugins used by your theme are listed below.   
 If your theme provides a sample `_config.yml` file, it's easiest to just copy the content into your `_config.yml` and edit the values from there.
 
 If you are using image grid, [here is a sample `_config.yml` file](https://github.com/jirrian/image-grid-example/blob/main/_config.yml){:target="_blank"}.
+``` markdown
+title: image grid
+email: jillianzhong@yahoo.com
+description: >- # this means to ignore newlines until "baseurl:" Add your site description here in the _config.yml file. It will appear in your document head meta (for Google search results) and title of the website (in browser tabs).
+  example site for jekyll-theme-image-grid by jirrian
+baseurl: "/image-grid-example" # the subpath of your site, e.g. /blog. leave blank if this is your main github pages repository
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-Finally, test your site locally again and make sure everything looks right. Keep in mind that depending on the theme that you are using, you may need to edit or add values to the front matter of pages and posts. Check the "Usage" section of your theme's read me on Github for details.   
+
+# Build settings
+remote_theme: jirrian/jekyll-theme-image-grid@main
+
+# generate social links in footer
+social_links:
+  twitter: queefape
+  github: jirrian
+  # facebook: jekyll
+  instagram: ada.wrong
+  # linkedin: jekyll
+  # pinterest: jekyll
+  # youtube: jekyll
+  # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+  # youtube_channel_name: CloudCannon
+
+  # Mastodon instances
+  # mastodon:
+  # - username: jekyll
+  #   instance: example.com
+  # - username: jekyll2
+  #   instance: example.com
+
+# settings for image grid homepage
+grid_settings:
+  show_all_images: true #true - displays all images in grid page, false - only show first (file name of image sorted alphabetically) image of post in grid page
+  display: square-cropped #square-cropped - images displayed in square grid and cropped, #square-og - images displayed in square grid and with original aspect ratio, masonry - images displayed in original aspect ratio but staggered (please note this will display the images in top to bottom order instead of left to right)
+
+# settings for post pages
+post_settings:
+  show_title: true #true - shows title of post (post filename or title in front matter of post file), false - does not show title of post. this settings can be overwritten in the frontmatter of individual post files with the show_title variable.
+  show_date: true #true - shows date of post (from post filename), false - does not show date of post
+
+plugins:
+  - jekyll-seo-tag
+
+include:
+  - _images
+```
+Finally, test your site locally again and make sure everything looks right. Keep in mind that depending on the theme that you are using, you may need to edit or add values to the front matter of pages and posts. Check the "Usage" or "Configuration" section of your theme's read me on Github for details.   
 If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#jekyll-theme-image-grid){:target="_blank"}.
 
 When you are ready, commit your changes and push them to Github. [Start with `git add .` then repeat the rest of this section.]]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#hosting-your-site-on-github-pages).   
@@ -264,7 +343,7 @@ If you are using Windows Subsystem for Linux, it's easist to clone the theme rep
 Otherwise, you can find the location the theme is saved in by running `bundle info jekyll-theme-name` where "jekyll-theme-name" is the name of the theme gem. There should be an output with a file path. Navigate to that folder and you should see all the theme files.
 
 - `_layouts` - folder with layout HTML files (these layouts' filenames are referenced in page and post front matter)
-- `_includes` - folder with HTML files that contain code that are referenced in layout files (these are referenced with {% includes file-name %} in an layout file)
+- `_includes` - folder with HTML files that contain code that are referenced in layout files (these are referenced with {% raw %}`{% includes file-name %}`{% endraw %})
 - `_sass` - folder with SCSS files that are used to generate CSS files used by the template
 
 To customize a part of a theme, copy that part's file(s) from the theme folder to your site project folder while maintaining its directory structure. Then make the edits to that file and save.
