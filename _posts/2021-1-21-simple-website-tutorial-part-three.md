@@ -44,7 +44,7 @@ Now, run the following command to install RVM.
 
 After installation, restart your terminal and run `rvm --version` to verify that it has been installed. You should see an output that says "rvm" and some version numbers. We can now move on to [installing ruby]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#installing-ruby).
 
-[Source: Installing Ruby and Rails on Mac OSX](https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac){:target="_blank"}
+[Source: "Installing Ruby and Rails on Mac OSX" by The Pragmatic Studio](https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac){:target="_blank"}
 
 ### Windows: Installing RVM ###
 First, open your Ubuntu terminal window. [See part two if you need a refresher.]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#windows-setting-up-bash)  
@@ -135,7 +135,7 @@ Your new Jekyll site is now live at yourgithubusername.github.io and can be visi
 ### Understanding the site directory structure ###
 Now, let's take a closer look at some of the files that Jekyll uses to generate your website. You should see all of these files inside your project folder "yourgithubusername.github.io".
 - `Gemfile` - file that [Bundler uses to install the necessary gems for your site](https://bundler.io/gemfile.html){:target="_blank"}
-- `config.yml` - file that contains configuration settings for your Jekyll site
+- `_config.yml` - file that contains configuration settings for your Jekyll site
 - `index.markdown` - file that is used to generate index.html (the default home page of your website).
 - `_posts` - folder that all your files that represent posts will go inside
 
@@ -190,19 +190,99 @@ You might have already noticed that any text after the front matter section beco
 By now, you should have everything you need to start adding content to your basic Jekyll site. The next section of the tutorial will focus on changing the design of the site to fit your needs and tastes. To do this, we will install a Jekyll theme and customize it.
 
 ### Picking a theme ###
-The rest of this tutorial's steps will reference a Jekyll theme that I created, [image grid](https://github.com/jirrian/jekyll-theme-image-grid){:target="_blank"},  If your content is mostly text, it would be better to use the many blog oriented themes available.
+The default theme that is installed on your Jekyll site is [minima](https://github.com/jekyll/minima){:target="_blank"}. It is a good theme to start with for blogging and writing. Some other themes ready-made for blogging or any text-based content are (ordered from least complex and more complex):
+- [no style, please!](https://github.com/riggraz/no-style-please){:target="_blank"}
+- [mint by aidewoode](https://github.com/aidewoode/jekyll-theme-mint){:target="_blank"}
+- [alembic by daviddarnes](https://github.com/daviddarnes/alembic){:target="_blank"}
+- [basically basic by mmistakes](https://github.com/mmistakes/jekyll-theme-basically-basic){:target="_blank"}
+- [minimal mistakes by mmistakes](https://github.com/mmistakes/minimal-mistakes){:target="_blank"}
+
+When choosing a theme, consider the features that you need and your comfort level with using it. If you are planning on customizing the theme for your own needs, it's better to choose a simpler theme to work off.
+
+When researching themes for this tutorial, I couldn't find a lot of free themes for image heavy content. Since that is probably what our community needs the most, I decided to create my own Jekyll theme, [image grid](https://github.com/jirrian/jekyll-theme-image-grid){:target="_blank"}. This theme currently only supports posts of images. I am also planning on updating it with more features such as text post support and tags/categories.
+
+Next we are going to cover installing a theme both locally and on Github Pages. This is so you can test your site locally and also have it work on Github Pages. I will be using my theme as an example for the next steps in this tutorial. However, you can apply the same steps to any of the themes I listed above. 
+
+There are [a lot more themes available on Github](https://github.com/topics/jekyll-theme){:target="_blank"} that can be installed in the same way. Some themes don't support this method of installation; make sure you check the read me section (at the bottom of the github repo page) to see the installation instructions. A theme is really just a collection of layout files (HTML files), style files (SCSS files), and a list of gem dependencies (listed in the gemspec file). So the installation method doesn't matter as much as long as you can get all the relevant files and ruby dependencies. However, the method we are covering will make it easy for you to pull any updates to the theme or switch between themes in the future.
 
 ### Installing a gem-based theme to run locally ###
+First, let's install the theme locally by installing its ruby gem. Navigate to your site folder "yourgithubusername.github.io". Open the file called `Gemfile` in a code editor.
 
-### Installing a theme to run on Github pages ###
+Comment out the line that says `gem "jekyll", "~> 4.1.1"` by adding a `#` in front of it.   
+Uncomment the line that says `gem "github-pages", group: :jekyll_plugins` by removing the `#` in front of it.
+
+Replace the line that says `gem "minima", "~> 2.5"` with the gem for the theme that you are using. You can usually find the name of the gem in the "Installation" section of your theme's read me on Github.      
+For example, if you were using the image grid theme, it should say `gem jekyll-theme-image-grid`.
+
+Your `Gemfile` should now look [similar to this one](https://github.com/jirrian/image-grid-example/blob/main/Gemfile){:target="_blank"}. The image grid theme doesn't use the jekyll-feed plugin so it is commented out. If the theme you are using uses that plugin, you can leave it there.
+
+Save the `Gemfile`. Open your terminal and navigate to the root of your site folder.   
+Run the following command to install all the gems you need to run the site locally.   
+`bundle install`
+
+From now on, if you make changes to the `Gemfile`, run `bundle install` to install all of gems needed by the project. If you need to update any gems that are already installed, run `bundle update`. [More on Bundler commands here.](https://bundler.io/docs.html){:target="_blank"}.
+
+[Source: "Testing your Github Pages site locally with Jekyll" from GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}
+
+### Installing a theme to run on Github Pages ###
+Next, let's edit the site configuration file to work with our theme. Navigate to your site folder "yourgithubusername.github.io" and open the file `_config.yml` in a code editor. This file is where you set settings for your entire site.
+
+Replace the line that says `theme: minima` with `remote_theme: theme-author/jekyll-theme-name@branch` where "theme-author" is the Github username of the author of the theme, "jekyll-theme-name" is the name of the theme, and "branch" is the name of the default branch of the theme on Github. You can find this information in the "Installation" section of your theme's read me on Github.
+
+If you are using the image grid theme, it should say `remote_theme: jirrian/jekyll-theme-image-grid@main`.   
+Note that if you don't include the "@branch" at the end, Github Pages will default to looking for the theme on the "master" branch. However, as of October 2020, [Github changed the default branch name](https://github.com/github/renaming){:target="_blank"} for newly created repos to "main". So depending on when the theme repo on Github was created, you may need to specify the name of the default branch. You can check if your theme's repo's default branch is called "master" or "main" by going to the theme's Github repo web page and checking the drop-down box on the top left corner.
+
+### Editing the config file ###
+The theme should now work locally and on Github Pages. Test it locally by running `bundle exec jekyll serve` in your terminal and going to `localhost:4000` in a web browser. You should see your Jekyll site with the new theme installed.
+
+Next, let's add more settings to our site in `_config.yml`. Some of these settings are specific to Jekyll sites and some settings are specific to the theme you might be using. 
+
+The required settings for Jekyll should already be in the `_config.yml` file. Just replace the sample text with your information.   
+For more Jekyll settings you can set in the `_config.yml` file, such as permalink styles and including more folders, reference [this guide, "Jekyll Configuration Options" from Simple Primate](http://simpleprimate.com/blog/configuration){:target="_blank"}.
+
+To set the settings that are specific to the theme you are using, read the "Usage" section of your theme's read me on Github and the `config.yml` file in your theme's Github repo. Under `plugins:`, make sure all plugins used by your theme are listed below.   
+If your theme provides a sample `_config.yml` file, it's easiest to just copy the content into your `_config.yml` and edit the values from there.
+
+If you are using image grid, [here is a sample `_config.yml` file](https://github.com/jirrian/image-grid-example/blob/main/_config.yml){:target="_blank"}.
+
+Finally, test your site locally again and make sure everything looks right. Keep in mind that depending on the theme that you are using, you may need to edit or add values to the front matter of pages and posts. Check the "Usage" section of your theme's read me on Github for details.   
+If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#jekyll-theme-image-grid){:target="_blank"}.
+
+When you are ready, commit your changes and push them to Github. [Start with `git add .` then repeat the rest of this section.]]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#hosting-your-site-on-github-pages).   
+After a couple minutes, your site will be generated and served at "yourgithubusername.github.io".
+
+If you are happy with your theme and don't need to customize it further, you are done! Continue to add new posts and pages to your site by creating markdown files, test your changes locally, commit your changes to git, and push your changes to Github.
 
 ## Customizing a Jekyll theme ##
+Jekyll themes can be further customized to your exact needs with some HTML, CSS, and Liquid. Themes are just HTML and CSS files in specific folders; Jekyll uses these files to generate the code for your website. To make edits to the theme, overwrite a theme file by creating a new file with the same name in the Jekyll site project folder. When generating the site, Jekyll will prioritize using the files in the site project folder rather than the ones in the theme gem or theme Github repo.
+
 ### Editing layouts and styles ###
+First, find where the theme is saved on your computer so you can see the theme's layout and stylesheet files.
+
+If you are using Windows Subsystem for Linux, it's easist to clone the theme repo from Github into a folder outside of the Jekyll site project folder. This is because you cannot open the ruby gems installed into the Linux subsystem with Windows programs.
+
+Otherwise, you can find the location the theme is saved in by running `bundle info jekyll-theme-name` where "jekyll-theme-name" is the name of the theme gem. There should be an output with a file path. Navigate to that folder and you should see all the theme files.
+
+- `_layouts` - folder with layout HTML files (these layouts' filenames are referenced in page and post front matter)
+- `_includes` - folder with HTML files that contain code that are referenced in layout files (these are referenced with {% includes file-name %} in an layout file)
+- `_sass` - folder with SCSS files that are used to generate CSS files used by the template
+
+To customize a part of a theme, copy that part's file(s) from the theme folder to your site project folder while maintaining its directory structure. Then make the edits to that file and save.
+
+For example, if I want to change the background color of the image grid theme, I would create a `_sass` folder in my site folder and copy paste the `style.scss` file into it. Then I would open the file in a code editor, change the background color value, and then save. While testing the site locally, I should see my changes to the theme.
+
+Use the same method to make changes to any of the layout HTML files, includes HTML files, or scss files in your theme.
 
 ### Resources for customization ###
-theme you are using's readme
-Resources from part two
-Jekyll docs
-Liquid reference sheets
+I won't go into the details of customizing Jekyll themes in this tutorial because it would basically be teaching all of frontend web development. If you are trying to figure out how to add a feature to your Jekyll site, I suggest first checking out the theme's Github repo's read me. There is also a large community of people using Jekyll online. You can probably find out how to implement many common features by searching for it on a search engine.
+
+For the details on all Jekyll features, reference the [Jekyll Docs](https://jekyllrb.com/docs/){:target="_blank"}. I won't go into it in this tutorial, but an important part of Jekyll sites is its support of [Liquid](https://shopify.github.io/liquid/){:target="_blank"}. Liquid is a template language that is used to display a site's content. The lines surrounded by curly braces in the layout HTML files are written in Liquid. For example, the language is used to display all the posts on the site's home page. [More on using Liquid with Jekyll here](https://jekyllrb.com/docs/liquid/){:target="_blank"}.
+
+For more resources on learning basic web development, check out [the resources section from part two]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#resources-for-learning-frontend-web-development).
 
 ## Now it's up to you! ##
+You should now be able to start customizing your Jekyll site for your needs!
+
+This is the planned end for the simple website tutorial series. However, I'm considering writing a short tutorial on using a python script to migrate your instagram posts to an image grid themed Jekyll site.
+
+Please use the form below to suggest other web development tutorial topics and feel free to reach out if you have any questions or suggestions on this tutorial! Also, if you are interested in writing a tech related tutorial for Virtualgoodsdealer Pages, let us know <3
