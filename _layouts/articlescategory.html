@@ -22,7 +22,7 @@ layout: default
             {{ post.title | escape }}
           </a>
           {% if post.author %}
-              by
+            <span class="posts-link-by">by</span>
               {% for creator in site.creators %}
                 {% if creator.name == post.author %}
                   <a class='posts__link' href='{{ creator.permalink }}'>

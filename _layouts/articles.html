@@ -22,7 +22,7 @@ layout: default
             </a>
 
             {% if post.author %}
-              by
+              <span class="posts-link-by">by</span>
               {% for creator in site.creators %}
                 {% if creator.name == post.author %}
                   <a class='posts__link posts-link-articles' href='{{ creator.permalink }}'>
@@ -31,6 +31,14 @@ layout: default
                 {% endif %}
               {% endfor %}
             {% endif %}
+            <div class="post-exerpt font-weight-light">
+              {% if post.post_description %}
+                {{ post.post_description }}
+              {% else %}
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
+            </div>  
             {% if post.categories %}
               <span class="posts-categories">
               {% assign categories = post.categories | sort %}
@@ -41,14 +49,6 @@ layout: default
               {% endfor %}
               </span>
             {% endif %}
-            <div class="post-exerpt font-weight-light">
-              {% if post.post_description %}
-                {{ post.post_description }}
-              {% else %}
-                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-              {% endif %}
-              <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
-            </div>  
           </div>
         </div>
       {% endfor %}
