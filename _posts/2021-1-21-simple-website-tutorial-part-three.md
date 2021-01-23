@@ -35,9 +35,9 @@ So far, we have covered in part two:
 
 This part will cover Jekyll sites at three different levels of customization. The later sections are optional depending on the degree that you want to customize your website and your comfort level with programming. The end goal of this tutorial is to set up a static site that you can use. So feel free to stop at the end of any of the below sections if you are happy with your site's functionality and design.
 
-- Jekyll and Github Pages - a basic Jekyll site hosted on Github Pages
-- Github Pages Jekyll Remote Themes - installing a theme onto your site
-- Customizing Jekyll Themes - customizing your site's theme
+- [Jekyll and Github Pages]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#setting-up-a-new-jekyll-site-with-github-pages) - a basic Jekyll site hosted on Github Pages
+- [Github Pages Jekyll Remote Themes]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#installing-a-jekyll-remote-theme) - installing a theme onto your site
+- [Customizing Jekyll Themes]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#customizing-a-jekyll-theme) - customizing your site's theme
 
 ## Installing Ruby and Jekyll ##
 In order to install and run Jekyll, we have to install [ruby](https://www.ruby-lang.org/en/){:target="_blank"}. Ruby is a programming language that Jekyll is built with. Before we install ruby, we are going to install [RVM](https://rvm.io/){:target="_blank"}. RVM or Ruby Version Manager allows you to easily install and manage different ruby environments on your system. Like part two, the installation instructions differ if you are using a Mac or a Linux subsystem with Windows 10. So, skip to the section for the operating system you are using.
@@ -70,7 +70,7 @@ Run the following commands to install RVM.
 Add your Ubuntu user to RVM with the following command where "yourusername" is replaced with your Ubuntu username.   
 `sudo usermod -a -G rvm yourusername`
 
-After installation, restart your terminal by quiting it and relaunching it. Run `rvm --version` to verify that it has been installed. You should see an output that says "rvm" and some version numbers.
+After installation, restart your terminal by quiting it and relaunching it. Run `rvm --version` to verify that it has been installed. You should see an output that says "rvm" and some version numbers. We can now move on to installing ruby.
 
 [Source: RVM package for Ubuntu](https://github.com/rvm/ubuntu_rvm){:target="_blank"}
 
@@ -92,7 +92,7 @@ Jekyll is built with ruby. When you create your site with Jekyll, in order to ge
 Let's install Bundler and Jekyll.
 `gem install bundler jekyll`
 
-## Creating a new Jekyll site ##
+## Setting up a new Jekyll site with Github Pages ##
 Navigate to a folder that you would like to save your site in. In the previous part, we created the folder and git repo "yourgithubusername.github.io" for a Github Pages site (where "yourgithubusername" is your Github username). However, now that we are creating a site with Jekyll, we need to start over from scratch. You need to either delete the existing local folder and Github repo or rename them both to something else. If you decide to save your previous files and rename the repo on Github.com, [you will need to update the url of the remote repo in your local repo if you still want to push files from it](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository){:target="_blank"}.
 
 Then, run the following command but replace "yourgithubusername" with your github username.
@@ -208,7 +208,7 @@ Now, your post will be included in the home page's list of posts (this may vary 
 ### Adding content with markdown ###
 You might have already noticed that any text after the front matter section becomes the content of your pages or posts. Markdown supports a large amount of formatting features such as bullet points, links, images, and headings. Check out the [Markdown Guide](https://www.markdownguide.org/basic-syntax/){:target="_blank"} for the syntax needed to format the content of your pages and posts.
 
-## Installing a Jekyll theme ##
+## Installing a Jekyll remote theme ##
 By now, you should have everything you need to start adding content to your basic Jekyll site. The next section of the tutorial will focus on changing the design of the site to fit your needs and tastes. To do this, we will install a different Jekyll theme and customize it.
 
 ### Picking a theme ###
