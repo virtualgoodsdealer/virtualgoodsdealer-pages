@@ -12,8 +12,8 @@ This is the first part of a multi-part series on creating your own static websit
 For those of you that are already familiar with programming or web technologies, this is the breakdown of the technologies/frameworks I'm going over step by step in this tutorial series:
 - bash
 - git
-- github and github pages
-- jekyll (optional)  
+- Github and Github Pages
+- Jekyll  
 
 If that list meant nothing to you, that is completely okay! You will be using all of these if you follow the steps in this tutorial series. We are also going to be using more stuff such as HTML and CSS but I won't cover step by step. Instead I will teach you how to learn what you need from free resources on the internet. That said, this tutorial assumes you know nothing other than how to type, use a web browser, and search engine.
 

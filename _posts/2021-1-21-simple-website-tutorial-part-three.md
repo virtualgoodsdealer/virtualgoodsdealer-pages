@@ -28,7 +28,12 @@ Another reason to use Jekyll is the amount of community made themes available fo
 Finally, I wanted to include Jekyll in this tutorial series because I created an [image grid theme](https://github.com/jirrian/jekyll-theme-image-grid){:target="_blank"} that can be used with it. [Part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) of this tutorial series covered reasons to learn web development; many of those reasons were inspired by my experience posting on instagram for several years. To address the specific needs of our online community, this theme was made to make it easy for instagram users to display their existing image-based content on their own self-made website. A customized version of this theme was also used in Virtualgoodsdealer's ["Deleted in 2020"](https://pages.virtualgoodsdealer.com/deleted2020/){:target="_blank"} web exhibit. So if you are interested in displaying your work in a similar way, keep reading!
 
 ## Project Structure ##
-The later parts of this tutorial are optional depending on the degree that you want to customize your website and your comfort level with programming. The ending goal of this tutorial is to set up a static site that you can use. So feel free to stop at the end of any of the below parts if you are happy with your site's functionality and design.
+So far, we have covered in part two:
+- bash
+- git
+- Github and Github Pages
+
+This part will cover Jekyll sites at three different levels of customization. The later sections are optional depending on the degree that you want to customize your website and your comfort level with programming. The end goal of this tutorial is to set up a static site that you can use. So feel free to stop at the end of any of the below sections if you are happy with your site's functionality and design.
 
 - Jekyll and Github Pages - a basic Jekyll site hosted on Github Pages
 - Github Pages Jekyll Remote Themes - installing a theme onto your site
@@ -149,7 +154,7 @@ Now, let's take a closer look at some of the files that Jekyll uses to generate 
 Check out the Jekyll documentation for [more information on the structure of the Jekyll site directory](https://jekyllrb.com/docs/structure/){:target="_blank"}.   
 For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. We have more folders and files than your current basic Jekyll site. Note that we have seperate folders for storing images and audio files (`images` and `mp3`) in the root folder.
 
-Take a look at the `_site` folder. Jekyll takes in your configurations, markdown files, and theme HTML/CSS files, generates all the files for a website, and places it there. The files in the folder should be similar to the HTML and CSS files we created in part two. So if you aren't planning on customizing your site's theme, you don't actually need to know HTML and CSS to use your Jekyll site(I still decided to cover it in part two so you can understand what Jekyll does). You will only be working with markdown files.
+Take a look at the `_site` folder. Jekyll takes in your configurations, markdown files, and theme HTML/CSS files, generates all the files for a website, and places it there. The files in the folder should be similar to the HTML and CSS files we created in part two. So if you aren't planning on customizing your site's theme, you don't actually need to know HTML and CSS to use your Jekyll site (I still decided to cover it in part two so you can understand what Jekyll does). You will only be working with markdown files.
 
 ### Editing the config file ###
 First, let's add settings to our site in `_config.yml`. Some settings in this file are specific to Jekyll and some are specific to the theme that is in use. You can also declare your own setting values and integrate them throughout the site.
@@ -323,7 +328,7 @@ After you have a local download of the theme files, take a look at the folders l
 - `_includes` - folder with HTML files that are referenced in other files (these are referenced with {% raw %}`{% includes file-name %}`{% endraw %})
 - `_sass` - folder with SCSS files that are used to generate CSS files used by the template
 
-To customize a part of a theme, copy that part's file(s) from the theme folder to your site project folder while maintaining its directory structure. Then make the edits to that file and save.
+To customize a theme, copy the relevant file(s) from the theme folder to your site project folder while maintaining its directory structure. Then make the edits to that file and save.
 
 For example, if I want to change the background color of the image grid theme, I would create a `_sass` folder in my site folder and copy paste the `style.scss` file into it. Then I would open the file in a code editor, change the background color value, and then save. While testing the site locally, I should see my changes to the theme.
 

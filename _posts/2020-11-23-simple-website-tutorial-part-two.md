@@ -9,12 +9,11 @@ related-articles: [2020-11-16-simple-website-tutorial-part-one, 2021-1-21-simple
 
 This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a one page website hosted on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
 
-## Overall Project Structure ##
-In the previous part, I listed the technologies/frameworks this tutorial will cover:
+## Project Structure ##
+Here is all of the technologies/frameworks this part of the tutorial will cover:
 - bash
 - git
-- github and github pages
-- jekyll (optional)
+- Github and Github Pages
 
 Now, I will explain the purpose of each part on extremely basic terms. If you are already familiar with these terms, you can skip to the next section.
 
@@ -69,7 +68,7 @@ Follow the command line prompts to finish the installation. Then, run this comma
 [Source: Github git guide](https://github.com/git-guides/install-git)
 
 After the installation is complete, use `git version` to make sure it has been installed. It should output the text “git version” and a version number. Now you should be ready to use git and Github!   
-Skip to the section called "Basic git and Github".
+Skip to the section called ["Basic git and Github"]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#basic-git-and-github).
 
 ### Windows: Setting up bash ###
 If you are using a Windows operating system, it's a bit more complicated to set up bash. We are going to use a feature called "Windows Subsystem for Linux" that allows us to run Linux programs on Windows 10. Then, we will install Ubuntu, a Linux operating system, which includes the bash shell. This solution only works for Windows 10 64-bit. If you are using Windows 7, [you can upgrade to Windows 10 for free](https://www.theverge.com/2020/1/14/21065140/how-to-upgrade-microsoft-windows-7-10-free-os){:target="_blank"} or try using a client like [git for Windows](https://gitforwindows.org/){:target="_blank"}.
