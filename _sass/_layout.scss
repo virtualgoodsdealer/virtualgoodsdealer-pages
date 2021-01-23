@@ -124,7 +124,7 @@
   margin-top: 1.25rem;
 }
 
-.posts-link-articles:after {
+.posts-link-by:before {
   /* absolute positioning keeps it within h1's relative positioned box, takes it out of the document flow and forces a block-style display */
   position: absolute;
   /* the same width as our letter-spacing property on the h1 element */
