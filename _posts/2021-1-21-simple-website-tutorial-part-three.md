@@ -19,13 +19,20 @@ This is the third part of a multi-part series on creating your own static websit
 </div>
 
 ## Why do we need to use Jekyll? ##
-After following part two, you now know how to create a basic web page with HTML and CSS. That would be fine for a simple website with only a few pages. However, as mentioned at the end of that part, what if you wanted to create a website that you are adding content to everyday? For example, if you were to create a blog site similar to this one, how would you keep all of your pages organized and consistent over a period of several years? How would you make an edit to the layout of the site, such as adding a new link to the navigation bar, without manually editing every single HTML file? This is where [Jekyll](https://jekyllrb.com/){:target="_blank"} comes in. Jekyll is a static site generator. This means that it is software that takes folders of files that are formatted in specific ways and uses them to generate the HTML and CSS files that build up your website. Static site generators make it easy for you to start adding content to your site and keep it organized.
+After following part two, you now know how to create a basic web page with HTML and CSS. That would be fine for a simple website with only a few pages. However, what if you wanted to create a website that hosts a lot of content and is updated frequently? For example, if you were to create a blog site similar to this one, how would you keep all of your pages organized and consistent over a period of several years? How would you make an edit to the layout of the site, such as adding a new link to the navigation bar, without manually editing every single HTML file? This is where [Jekyll](https://jekyllrb.com/){:target="_blank"} comes in. Jekyll is a static site generator. This means that it is software that takes folders of files that are formatted in specific ways and uses them to generate the HTML and CSS files that build up your website. Static site generators make it easy for you to start adding content to your site and keep it organized.
 
 There are other static site generators. We are using Jekyll because it is compatible with Github Pages, the free hosting service we are using. Jekyll can also be run on other hosting services. You can also use Jekyll to build your site locally, and then host the generated website files on any hosting service. So, even though we are using these specific software and platforms, you and your content are not locked to them forever.
 
 Another reason to use Jekyll is the amount of community made themes available for use with it. If you are not interested in learning the details of web development technology or customizing your website, you can easily install a theme with Jekyll and just start posting content. If you are interested in customizing your website, it is easy to work off of pre-made themes and get them to exactly what you want. For example, this site was built off of [mint theme by aidewoode](https://github.com/aidewoode/jekyll-theme-mint){:target="_blank"}. You can see how different this site looks now compared to the theme it was built off of.
 
-Finally, I wanted to include Jekyll in this tutorial series because I created an [image grid theme](https://github.com/jirrian/jekyll-theme-image-grid){:target="_blank"} that can be used with it. [Part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) of this tutorial series covered reasons to learn web development; many of those reasons were inspired by my experience posting on instagram for several years. To address the specific needs of our online community, this theme was made to make it easy for instagram users to display their existing image-based content on their own self-made website. A customized version of this theme was also used in Virtualgoodsdealer's ["Deleted in 2020"](https://pages.virtualgoodsdealer.com/deleted2020/){:target="_blank"} web exhibit. So if you are interested in displaying your work in a similar way, follow this tutorial.
+Finally, I wanted to include Jekyll in this tutorial series because I created an [image grid theme](https://github.com/jirrian/jekyll-theme-image-grid){:target="_blank"} that can be used with it. [Part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) of this tutorial series covered reasons to learn web development; many of those reasons were inspired by my experience posting on instagram for several years. To address the specific needs of our online community, this theme was made to make it easy for instagram users to display their existing image-based content on their own self-made website. A customized version of this theme was also used in Virtualgoodsdealer's ["Deleted in 2020"](https://pages.virtualgoodsdealer.com/deleted2020/){:target="_blank"} web exhibit. So if you are interested in displaying your work in a similar way, keep reading!
+
+## Project Structure ##
+The later parts of this tutorial are optional depending on the degree that you want to customize your website and your comfort level with programming. The ending goal of this tutorial is to set up a static site that you can use. So feel free to stop at the end of any of the below parts if you are happy with your site's functionality and design.
+
+- Jekyll and Github Pages - a basic Jekyll site hosted on Github Pages
+- Github Pages Jekyll Remote Themes - installing a theme onto your site
+- Customizing Jekyll Themes - customizing your site's theme
 
 ## Installing Ruby and Jekyll ##
 In order to install and run Jekyll, we have to install [ruby](https://www.ruby-lang.org/en/){:target="_blank"}. Ruby is a programming language that Jekyll is built with. Before we install ruby, we are going to install [RVM](https://rvm.io/){:target="_blank"}. RVM or Ruby Version Manager allows you to easily install and manage different ruby environments on your system. Like part two, the installation instructions differ if you are using a Mac or a Linux subsystem with Windows 10. So, skip to the section for the operating system you are using.
@@ -142,6 +149,14 @@ Now, let's take a closer look at some of the files that Jekyll uses to generate 
 Check out the Jekyll documentation for [more information on the structure of the Jekyll site directory](https://jekyllrb.com/docs/structure/){:target="_blank"}.   
 For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. We have more folders and files than your current basic Jekyll site. Note that we have seperate folders for storing images and audio files (`images` and `mp3`) in the root folder.
 
+Take a look at the `_site` folder. Jekyll takes in your configurations, markdown files, and theme HTML/CSS files, generates all the files for a website, and places it there. The files in the folder should be similar to the HTML and CSS files we created in part two. So if you aren't planning on customizing your site's theme, you don't actually need to know HTML and CSS to use your Jekyll site(I still decided to cover it in part two so you can understand what Jekyll does). You will only be working with markdown files.
+
+### Editing the config file ###
+First, let's add settings to our site in `_config.yml`. Some settings in this file are specific to Jekyll and some are specific to the theme that is in use. You can also declare your own setting values and integrate them throughout the site.
+
+The required settings for Jekyll should already be in the `_config.yml` file. Just replace the sample text with your information.   
+For more Jekyll settings you can set in the `_config.yml` file, such as permalink styles and including more folders, reference [this guide, "Jekyll Configuration Options" from Simple Primate](http://simpleprimate.com/blog/configuration){:target="_blank"}.
+
 ### Using front matter ###
 Jekyll uses markdown files saved in specific folders to generate web pages. In order for a markdown file (files with .md or .markdown extentions) to be used by Jekyll, it must have a front matter. Open the `index.markdown` file in your code editor. The frontmatter is the two lines of dash characters and anything inside of them. [More on front matter in the Jekyll docs.](https://jekyllrb.com/docs/front-matter/){:target="_blank"}.
 ```markdown
@@ -149,7 +164,7 @@ Jekyll uses markdown files saved in specific folders to generate web pages. In o
 layout: home
 ---
 ```
-Markdown files in the root of your website directory, such as `index.markdown` and `about.markdown`, will be generated at yourgithubusername.github.io/index.html or yourgithubusername.github.io/about.html. The only value inside the frontmatter that is necessary for these files is "layout". That determines the layout that will be used to generate the corresponding web page. Depending on the theme you decide to use for your site, you may have to add more values in the front matter of your files than the examples in this tutorial (more on this later).   
+Markdown files in the root of your website directory, such as `index.markdown` and `about.markdown`, will be generated at yourgithubusername.github.io/index.html or yourgithubusername.github.io/about.html. The only value inside the frontmatter that is necessary for these files is "layout". That value corresponds to a layout HTML file in the theme files (more on this later). 
 
 ### Adding a new page ###
 If you run your site locally and go to `localhost:4000/about`, you will see the content inside `about.markdown`. Notice that the "layout" value in `about.markdown` is "page". This means that the about page is being generated with a layout called "page". If you want to add another **page** to your site (such as a contact page), copy the setup and frontmatter values of `about.markdown`.
@@ -181,13 +196,13 @@ title:  "My First Blog Post"
 
 This is my first blog post!
 ```
-Now, your post will be included in the home page's list of posts (this may vary depending on your theme) and also have it's own individual webpage.
+Now, your post will be included in the home page's list of posts (this may vary depending on the theme) and also have it's own individual webpage.
 
 ### Adding content with markdown ###
 You might have already noticed that any text after the front matter section becomes the content of your pages or posts. Markdown supports a large amount of formatting features such as bullet points, links, images, and headings. Check out the [Markdown Guide](https://www.markdownguide.org/basic-syntax/){:target="_blank"} for the syntax needed to format the content of your pages and posts.
 
 ## Installing a Jekyll theme ##
-By now, you should have everything you need to start adding content to your basic Jekyll site. The next section of the tutorial will focus on changing the design of the site to fit your needs and tastes. To do this, we will install a Jekyll theme and customize it.
+By now, you should have everything you need to start adding content to your basic Jekyll site. The next section of the tutorial will focus on changing the design of the site to fit your needs and tastes. To do this, we will install a different Jekyll theme and customize it.
 
 ### Picking a theme ###
 The default theme that is installed on your Jekyll site is [minima](https://github.com/jekyll/minima){:target="_blank"}. It is a good theme to start with for blogging and writing. Some other themes ready-made for blogging or any text-based content are (ordered from least complex and more complex):
@@ -203,14 +218,20 @@ When researching themes for this tutorial, I couldn't find a lot of free themes 
 
 Next we are going to cover installing a theme both locally and on Github Pages. This is so you can test your site locally and also have it work on Github Pages. I will be using my theme as an example for the next steps in this tutorial. However, you can apply the same steps to any of the themes I listed above. 
 
-There are [a lot more themes available on Github](https://github.com/topics/jekyll-theme){:target="_blank"} that can be installed in the same way. Some themes don't support this method of installation; make sure you check the read me section (at the bottom of the github repo page) to see the installation instructions. A theme is really just a collection of layout files (HTML files), style files (SCSS files), and a list of gem dependencies (listed in the gemspec file). So the installation method doesn't matter as much as long as you can get all the relevant files and ruby dependencies. However, the method we are covering will make it easy for you to pull any updates to the theme or switch between themes in the future.
+There are [a lot more themes available on Github](https://github.com/topics/jekyll-theme){:target="_blank"} that can be installed in the same way. Some themes don't support this method of installation; make sure you check the read me section (at the bottom of the github repo page) to see the installation instructions. 
 
-### Installing a gem-based theme to run locally ###
-First, let's install the theme locally by installing its ruby gem. Navigate to your site folder "yourgithubusername.github.io". Open the file called `Gemfile` in a code editor.
+### Installing a Jekyll theme ###
+This section will cover one method to install a Jekyll theme. This method will have the theme working on Github Pages and locally. It's simple while also making it easy to pull any updates to the theme or switch between themes in the future.
 
+Github Pages supports any Jekyll theme that is hosted on Github; the theme's Github repo just needs to be listed in the site's configuration file to get it running on Github Pages. To test the site locally with the theme, the Github Pages gem needs to be installed. The Jekyll theme's gem can also be installed, if it is available, to see all the theme files locally (this step is optional).
+
+Navigate to your site folder "yourgithubusername.github.io". Open the file called `Gemfile` in a code editor. In this file, list all of the gems that need to be installed to build the Jekyll site.
+
+Add the Github Pages gem by doing the following.
 Comment out the line that says `gem "jekyll", "~> 4.1.1"` by adding a `#` in front of it.   
 Uncomment the line that says `gem "github-pages", group: :jekyll_plugins` by removing the `#` in front of it.
 
+Install the theme you are using locally by adding its ruby gem (this is optional).   
 Replace the line that says `gem "minima", "~> 2.5"` with the gem for the theme that you are using. You can usually find the name of the gem in the "Installation" section of your theme's read me on Github.      
 For example, if you were using the image grid theme, it should say `gem jekyll-theme-image-grid`.
 
@@ -247,87 +268,41 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 ```
 
-Save the `Gemfile`. Open your terminal and navigate to the root of your site folder.   
-Run the following command to install all the gems you need to run the site locally.   
+Save `Gemfile` and close it. Open your terminal and navigate to the root of your site folder.   
+Run the following command to use Bundler to install all the gems listed in `Gemfile`.   
 `bundle install`
 
 From now on, if you make changes to the `Gemfile`, run `bundle install` to install all of gems needed by the project. If you need to update any gems that are already installed, run `bundle update`. [More on Bundler commands here.](https://bundler.io/docs.html){:target="_blank"}.
 
-[Source: "Testing your Github Pages site locally with Jekyll" from GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}
+Next, let's edit the site configuration file to work with our theme. Navigate to the root of your site folder and open the file `_config.yml` in a code editor. This file is where you set settings for your entire site.
 
-### Installing a theme to run on Github Pages ###
-Next, let's edit the site configuration file to work with our theme. Navigate to your site folder "yourgithubusername.github.io" and open the file `_config.yml` in a code editor. This file is where you set settings for your entire site.
+Replace the line that says `theme: minima` with `remote_theme: theme-author/jekyll-theme-name@branch` where "theme-author" is the Github username of the author of the theme, "jekyll-theme-name" is the name of the theme, and "branch" is the name of the default branch of the theme on Github. You can find this information on your theme's Github repo page.   
+If you are using the image grid theme, it should say `remote_theme: jirrian/jekyll-theme-image-grid@main`.
 
-Replace the line that says `theme: minima` with `remote_theme: theme-author/jekyll-theme-name@branch` where "theme-author" is the Github username of the author of the theme, "jekyll-theme-name" is the name of the theme, and "branch" is the name of the default branch of the theme on Github. You can find this information in the "Installation" section of your theme's read me on Github.
-
-If you are using the image grid theme, it should say `remote_theme: jirrian/jekyll-theme-image-grid@main`.   
 Note that if you don't include the "@branch" at the end, Github Pages will default to looking for the theme on the "master" branch. However, as of October 2020, [Github changed the default branch name](https://github.com/github/renaming){:target="_blank"} for newly created repos to "main". So depending on when the theme repo on Github was created, you may need to specify the name of the default branch. You can check if your theme's repo's default branch is called "master" or "main" by going to the theme's Github repo web page and checking the drop-down box on the top left corner.
 
+[Source: "Testing your Github Pages site locally with Jekyll" from GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll){:target="_blank"}   
 [Source: Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme){:target="_blank"}
 
-### Editing the config file ###
-The theme should now work locally and on Github Pages. Test it locally by running `bundle exec jekyll serve` in your terminal and going to `localhost:4000` in a web browser. You should see your Jekyll site with the new theme installed.
+### Adding theme configurations ###
+The theme should now work locally and on Github Pages. Test it locally by running `bundle exec jekyll serve` in your terminal and going to `localhost:4000` in a web browser. You should see your Jekyll site with the new theme installed.   
+Note that if you make changes to `_config.yml`, the local server must be restarted for the changes to be reflected in the browser. Stop the server with Ctrl-C in the terminmal and start it again with `bundle exec jekyll serve`.
 
-Next, let's add more settings to our site in `_config.yml`. Some of these settings are specific to Jekyll sites and some settings are specific to the theme you might be using. 
+Next, let's add more settings that are specific to the theme you are using to `_config.yml` . 
 
-The required settings for Jekyll should already be in the `_config.yml` file. Just replace the sample text with your information.   
-For more Jekyll settings you can set in the `_config.yml` file, such as permalink styles and including more folders, reference [this guide, "Jekyll Configuration Options" from Simple Primate](http://simpleprimate.com/blog/configuration){:target="_blank"}.
+Read the "Usage" or "Configuration" section of your theme's read me on Github or the `config.yml` file in your theme's Github repo to see all the settings that are available.   
+Some plugins may be required by the theme. Make sure these are listed in the `_config.yml` file under `plugins:`.
 
-To set the settings that are specific to the theme you are using, read the "Usage" or "Configuration" section of your theme's read me on Github and the `config.yml` file in your theme's Github repo. Under `plugins:`, make sure all plugins used by your theme are listed below.   
-If your theme provides a sample `_config.yml` file, it's easiest to just copy the content into your `_config.yml` and edit the values from there.
-
+If your theme provides a sample `_config.yml` file, it's easiest to just copy the content into your `_config.yml` and edit the values from there.   
 If you are using image grid, [here is a sample `_config.yml` file](https://github.com/jirrian/image-grid-example/blob/main/_config.yml){:target="_blank"}.
-``` markdown
-title: image grid
-email: jillianzhong@yahoo.com
-description: >- # this means to ignore newlines until "baseurl:" Add your site description here in the _config.yml file. It will appear in your document head meta (for Google search results) and title of the website (in browser tabs).
-  example site for jekyll-theme-image-grid by jirrian
-baseurl: "/image-grid-example" # the subpath of your site, e.g. /blog. leave blank if this is your main github pages repository
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-
-# Build settings
-remote_theme: jirrian/jekyll-theme-image-grid@main
-
-# generate social links in footer
-social_links:
-  twitter: queefape
-  github: jirrian
-  # facebook: jekyll
-  instagram: ada.wrong
-  # linkedin: jekyll
-  # pinterest: jekyll
-  # youtube: jekyll
-  # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-  # youtube_channel_name: CloudCannon
-
-  # Mastodon instances
-  # mastodon:
-  # - username: jekyll
-  #   instance: example.com
-  # - username: jekyll2
-  #   instance: example.com
-
-# settings for image grid homepage
-grid_settings:
-  show_all_images: true #true - displays all images in grid page, false - only show first (file name of image sorted alphabetically) image of post in grid page
-  display: square-cropped #square-cropped - images displayed in square grid and cropped, #square-og - images displayed in square grid and with original aspect ratio, masonry - images displayed in original aspect ratio but staggered (please note this will display the images in top to bottom order instead of left to right)
-
-# settings for post pages
-post_settings:
-  show_title: true #true - shows title of post (post filename or title in front matter of post file), false - does not show title of post. this settings can be overwritten in the frontmatter of individual post files with the show_title variable.
-  show_date: true #true - shows date of post (from post filename), false - does not show date of post
-
-plugins:
-  - jekyll-seo-tag
-
-include:
-  - _images
-```
 Finally, test your site locally again and make sure everything looks right. Keep in mind that depending on the theme that you are using, you may need to edit or add values to the front matter of pages and posts. Check the "Usage" or "Configuration" section of your theme's read me on Github for details.   
 If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#adding-a-new-post){:target="_blank"}.
 
-When you are ready, commit your changes and push them to Github. [Start with `git add .` then repeat the rest of this section.]]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#hosting-your-site-on-github-pages).   
+When you are ready, commit your changes and push them to Github.   
+`git add .`
+`git commit -m "your commit message here"`
+`git push origin main` 
 After a couple minutes, your site will be generated and served at "yourgithubusername.github.io".
 
 If you are happy with your theme and don't need to customize it further, you are done! Continue to add new posts and pages to your site by creating markdown files, test your changes locally, commit your changes to git, and push your changes to Github.
@@ -336,14 +311,16 @@ If you are happy with your theme and don't need to customize it further, you are
 Jekyll themes can be further customized to your exact needs with some HTML, CSS, and Liquid. Themes are just HTML and CSS files in specific folders; Jekyll uses these files to generate the code for your website. To make edits to the theme, overwrite a theme file by creating a new file with the same name in the Jekyll site project folder. When generating the site, Jekyll will prioritize using the files in the site project folder rather than the ones in the theme gem or theme Github repo.
 
 ### Editing layouts and styles ###
-First, find where the theme is saved on your computer so you can see the theme's layout and stylesheet files.
+First, get a copy of your theme's layout and stylesheet files downloaded onto your computer. If you chose to install your theme's gem by adding it to `Gemfile`, you can open its installation folder.
 
-If you are using Windows Subsystem for Linux, it's easist to clone the theme repo from Github into a folder outside of the Jekyll site project folder. This is because you cannot open the ruby gems installed into the Linux subsystem with Windows programs.
+Find the location the theme is saved in by running `bundle info jekyll-theme-name` where "jekyll-theme-name" is the name of the theme gem. There should be an output with a file path. Navigate to that folder (use the `cd filepath` command) and you should see all the theme files.
 
-Otherwise, you can find the location the theme is saved in by running `bundle info jekyll-theme-name` where "jekyll-theme-name" is the name of the theme gem. There should be an output with a file path. Navigate to that folder and you should see all the theme files.
+If you are using Windows Subsystem for Linux, I recommend to **clone** (download through git) the theme repo from Github outside of the Jekyll site project folder. This is because you cannot open the files saved in the Linux subsystem with Windows programs. You can also do this if you don't want to install the theme's gem.   
+`git clone https://github.com/jirrian/jekyll-theme-image-grid.git` where the url is for the theme you are using. [More on cloning from Github with git here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository){:target="_blank"}
 
+After you have a local download of the theme files, take a look at the folders listed below.
 - `_layouts` - folder with layout HTML files (these layouts' filenames are referenced in page and post front matter)
-- `_includes` - folder with HTML files that contain code that are referenced in layout files (these are referenced with {% raw %}`{% includes file-name %}`{% endraw %})
+- `_includes` - folder with HTML files that are referenced in other files (these are referenced with {% raw %}`{% includes file-name %}`{% endraw %})
 - `_sass` - folder with SCSS files that are used to generate CSS files used by the template
 
 To customize a part of a theme, copy that part's file(s) from the theme folder to your site project folder while maintaining its directory structure. Then make the edits to that file and save.
@@ -355,7 +332,11 @@ Use the same method to make changes to any of the layout HTML files, includes HT
 ### Resources for customization ###
 I won't go into the details of customizing Jekyll themes in this tutorial because it would basically be teaching all of frontend web development. If you are trying to figure out how to add a feature to your Jekyll site, I suggest first checking out the theme's Github repo's read me. There is also a large community of people using Jekyll online. You can probably find out how to implement many common features by searching for it on a search engine.
 
-For the details on all Jekyll features, reference the [Jekyll Docs](https://jekyllrb.com/docs/){:target="_blank"}. I won't go into it in this tutorial, but an important part of Jekyll sites is its support of [Liquid](https://shopify.github.io/liquid/){:target="_blank"}. Liquid is a template language that is used to display a site's content. The lines surrounded by curly braces in the layout HTML files are written in Liquid. For example, the language is used to display all the posts on the site's home page. [More on using Liquid with Jekyll here](https://jekyllrb.com/docs/liquid/){:target="_blank"}.
+Two methods of organizing content in Jekyll sites that were not covered in this tutorial are [collections](https://jekyllrb.com/docs/collections/) and [data files](https://jekyllrb.com/docs/datafiles/). I recommend reading about them if you want to add support for categories or make a portfolio site.
+
+For the details on all Jekyll features, reference the [Jekyll Docs](https://jekyllrb.com/docs/){:target="_blank"}. An important part of Jekyll sites is its support of [Liquid](https://shopify.github.io/liquid/){:target="_blank"}. Liquid is a template language that is used to display a site's content. The lines surrounded by curly braces in the layout HTML files are written in Liquid. For example, the language is used to display all the posts on the site's home page. [More on using Liquid with Jekyll here](https://jekyllrb.com/docs/liquid/){:target="_blank"}.
+
+[Jekyll plugins](https://jekyllrb.com/docs/plugins/){:target="_blank"} are a common way of adding more features to Jekyll sites. Currently, [very few plugins](https://pages.github.com/versions/){:target="_blank"} are supported by Github Pages. However, it is still possible to include them in your Jekyll site by generating the site locally and then pushing to Github Pages. [This tutorial by Nicu Surdu](https://surdu.me/2020/02/04/jekyll-git-hook.html){:target="_blank"} covers the process.
 
 For more resources on learning basic web development, check out [the resources section from part two]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#resources-for-learning-frontend-web-development).
 
