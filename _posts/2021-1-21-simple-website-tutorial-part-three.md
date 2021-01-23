@@ -11,10 +11,10 @@ This is the third part of a multi-part series on creating your own static websit
 
 <div class="row">
 	<div class="col">
-		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/minima.png" />
+		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/minima.PNG" />
 	</div>
 	<div class="col">
-		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/image-grid.png" />
+		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/image-grid.PNG" />
 	</div>
 </div>
 
@@ -101,7 +101,7 @@ This will create a new basic Jekyll site in the folder "yourgithubusername.githu
 
 ### Running the Jekyll site locally ###
 Navigate inside of the new folder with `cd yourgithubusername.io`. You should now see a bunch of files that make up your new Jekyll site.     
-![photo of jekyll site folder](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/jekyll_new.png)
+![photo of jekyll site folder](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/jekyll_new.PNG)
 
 To test your site locally, run the following command in the **root** of your Jekyll site (directly inside the folder "yourgithubusername.github.io").   
 `bundle exec jekyll serve`
@@ -116,7 +116,7 @@ Create a git repo in your new Jekyll site folder.
 `git init`
 
 If you are using MacOS, open the `.gitignore` file in your code editor and add `**/.DS_Store` after all the text in the file. Then save and close the file.   
-![photo of gitignore file](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/macos_gitignore.png)
+![photo of gitignore file](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/macos_gitignore.PNG)
 
 Stage all of the changes to files in this folder.   
 `git add .`
