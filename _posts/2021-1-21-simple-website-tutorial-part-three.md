@@ -162,6 +162,8 @@ First, let's add settings to our site in `_config.yml`. Some settings in this fi
 The required settings for Jekyll should already be in the `_config.yml` file. Just replace the sample text with your information.   
 For more Jekyll settings you can set in the `_config.yml` file, such as permalink styles and including more folders, reference [this guide, "Jekyll Configuration Options" from Simple Primate](http://simpleprimate.com/blog/configuration){:target="_blank"}.
 
+Note that if you make changes to `_config.yml`, the local server must be restarted for the changes to be reflected in the browser. Stop the server with Ctrl-C in the terminmal and start it again with `bundle exec jekyll serve`.
+
 ### Using front matter ###
 Jekyll uses markdown files saved in specific folders to generate web pages. In order for a markdown file (files with .md or .markdown extentions) to be used by Jekyll, it must have a front matter. Open the `index.markdown` file in your code editor. The frontmatter is the two lines of dash characters and anything inside of them. [More on front matter in the Jekyll docs.](https://jekyllrb.com/docs/front-matter/){:target="_blank"}.
 ```markdown
@@ -305,9 +307,9 @@ Finally, test your site locally again and make sure everything looks right. Keep
 If you are using image grid, follow [these specific instructions for front matter formatting and adding new image posts](https://github.com/jirrian/jekyll-theme-image-grid#adding-a-new-post){:target="_blank"}.
 
 When you are ready, commit your changes and push them to Github.   
-`git add .`
-`git commit -m "your commit message here"`
-`git push origin main` 
+`git add .`   
+`git commit -m "your commit message here"`   
+`git push origin main`    
 After a couple minutes, your site will be generated and served at "yourgithubusername.github.io".
 
 If you are happy with your theme and don't need to customize it further, you are done! Continue to add new posts and pages to your site by creating markdown files, test your changes locally, commit your changes to git, and push your changes to Github.
