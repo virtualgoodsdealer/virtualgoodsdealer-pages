@@ -154,6 +154,22 @@
   margin-bottom: 0.2rem;
 }
 
+.social-media-list li{
+  display: inline;
+  margin-right: 1em;
+}
+
+.svg-icon{
+  fill: $footer-color;
+  width: 1em;
+  margin-top: 5px;
+}
+
+.footer-link a{
+  color: $footer-color;
+  text-decoration: none;
+}
+
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
@@ -226,38 +242,10 @@ body {
 }
 
 .footer {
-  padding: 25px 0;
   font-size: .9rem;
-  font-style: italic;
   color: $footer-color;
 }
 
-.footer__list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__item {
-  margin-right: 10px;
-  display: flex;
-}
-
-.footer__item a {
-  color: $footer-color;
-  text-decoration: none;
-}
-
-.footer__item:nth-child(2):before {
-  content: '|';
-  margin-right: 10px;
-}
-
-.footer__item:nth-child(3):before {
-  content: '|';
-  margin-right: 10px;
-}
 
 .icon {
   height: .9rem;
