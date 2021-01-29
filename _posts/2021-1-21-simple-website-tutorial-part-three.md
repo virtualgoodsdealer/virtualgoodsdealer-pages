@@ -100,7 +100,7 @@ Then, run the following command but replace "yourgithubusername" with your githu
 This will create a new basic Jekyll site in the folder "yourgithubusername.github.io".
 
 ### Running the Jekyll site locally ###
-Navigate inside of the new folder with `cd yourgithubusername.io`. You should now see a bunch of files that make up your new Jekyll site.     
+Navigate inside of the new folder with `cd yourgithubusername.github.io`. You should now see a bunch of files that make up your new Jekyll site.     
 ![photo of jekyll site folder](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/jekyll_new.PNG)
 
 To test your site locally, run the following command in the **root** of your Jekyll site (directly inside the folder "yourgithubusername.github.io").   
@@ -108,6 +108,8 @@ To test your site locally, run the following command in the **root** of your Jek
 
 After you see the text "Server running...", open your web browser and type `localhost:4000` in the address bar. After pressing enter, you should now see your new basic Jekyll site running locally.
 From now on, use `bundle exec jekyll serve` to generate your website from your local files and view it in your browser. You should do this anytime you make changes to your files to make sure everything is working correctly.
+
+Stop the server by typing Ctrl-C while in the terminal and start it again with `bundle exec jekyll serve`.
 
 ### Hosting your site on Github Pages ###
 Now we have to connect our new site to Github and host it on Github Pages. A lot of this process is going to be the same as what we covered in part two. In this part, I will go through the necessary steps quickly, but you can view the links to specific sections of part two for more details. First we need to create a new git repo and [make our first commit]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#staging-and-commiting-changes).
@@ -293,7 +295,7 @@ Note that if you don't include the "@branch" at the end, Github Pages will defau
 
 ### Adding theme configurations ###
 The theme should now work locally and on Github Pages. Test it locally by running `bundle exec jekyll serve` in your terminal and going to `localhost:4000` in a web browser. You should see your Jekyll site with the new theme installed.   
-Note that if you make changes to `_config.yml`, the local server must be restarted for the changes to be reflected in the browser. Stop the server with Ctrl-C in the terminmal and start it again with `bundle exec jekyll serve`.
+Note that if you make changes to `_config.yml`, the local server must be restarted for the changes to be reflected in the browser. Stop the server with Ctrl-C in the terminal and start it again with `bundle exec jekyll serve`.
 
 Next, let's add more settings that are specific to the theme you are using to `_config.yml` . 
 
