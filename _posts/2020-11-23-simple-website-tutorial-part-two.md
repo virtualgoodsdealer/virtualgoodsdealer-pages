@@ -195,7 +195,7 @@ Run the following command to commit your staged changes.
 The `-m` flag means message. After it, write a detailed description of the commit within quotations so you can understand at a glance what changed in each commit.
 ![image of git commit command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitcommit.png) 
 
-You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Repeat the steps in this section everytime you want to save changes to your project files to your local git repo.
+You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Refer to this section or the [quick git command reference]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#quick-git-command-reference) at the bottom of this page if you need to make subsequent changes to your files.
 
 ### Creating a repository on Github ###
 We committed changes to our local git repo, but now we have to get those changes onto Github. In a web browser, go to [github.com/new](https://github.com/new){:target="_blank"} to create a new github repository.
@@ -366,6 +366,9 @@ Open your terminal and go inside the folder that your website files are saved in
 
 Now if you go to your repository on Github at github.com/yourgithubusername/yourgithubusername.github.io, you should see `index.html` and `style.css` in the repo.
 
+If you make further changes at anytime, repeat the above steps. You can also refer to the quick reference below for commonly used git commands.
+
+{% include commandref-git.html %}
 ### Setting up Github Pages ###
 Nice! We are so close! Now all we have to do is tell Github we want this repository to be hosted on Github Pages. From the repository page, click on "Settings" at the top right of the page or go to github.com/yourgithubusername/yourgithubusername.github.io/settings.   
 Scroll down to the "Github Pages" section.   

@@ -43,7 +43,7 @@ This part will cover Jekyll sites at three different levels of customization. Th
 In order to install and run Jekyll, we have to install [ruby](https://www.ruby-lang.org/en/){:target="_blank"}. Ruby is a programming language that Jekyll is built with. Before we install ruby, we are going to install [RVM](https://rvm.io/){:target="_blank"}. RVM or Ruby Version Manager allows you to easily install and manage different ruby environments on your system. Like part two, the installation instructions differ if you are using a Mac or a Linux subsystem with Windows 10. So, skip to the section for the operating system you are using.
 
 ### MacOS: Installing RVM ###
-First, open your terminal window. [See part two if you need a refresher.]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#macos-setting-up-bash)  
+First, open your terminal window. [See part two if you need a refresher.]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#macos-setting-up-bash){:target="_blank"}  
 Check if you have GCC installed. [GCC](https://gcc.gnu.org/){:target="_blank"} is needed by RVM to compile the ruby versions.   
 `gcc --version`   
 
@@ -54,12 +54,12 @@ After installation, restart your terminal by quiting it and relaunching it. Run 
 Now, run the following command to install RVM.   
 `curl -L https://get.rvm.io | bash -s stable`
 
-After installation, restart your terminal and run `rvm --version` to verify that it has been installed. You should see an output that says "rvm" and some version numbers. We can now move on to [installing ruby]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#installing-ruby).
+After installation, restart your terminal and run `rvm --version` to verify that it has been installed. You should see an output that says "rvm" and some version numbers. We can now move on to [installing ruby]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#installing-ruby){:target="_blank"}.
 
 [Source: "Installing Ruby and Rails on Mac OSX" by The Pragmatic Studio](https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac){:target="_blank"}
 
 ### Windows: Installing RVM ###
-First, open your Ubuntu terminal window. [See part two if you need a refresher.]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#windows-setting-up-bash)  
+First, open your Ubuntu terminal window. [See part two if you need a refresher.]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#windows-setting-up-bash){:target="_blank"}  
 
 Run the following commands to install RVM.
 `sudo apt-get install software-properties-common`   
@@ -112,7 +112,7 @@ From now on, use `bundle exec jekyll serve` to generate your website from your l
 Stop the server by typing Ctrl-C while in the terminal and start it again with `bundle exec jekyll serve`.
 
 ### Hosting your site on Github Pages ###
-Now we have to connect our new site to Github and host it on Github Pages. A lot of this process is going to be the same as what we covered in part two. In this part, I will go through the necessary steps quickly, but you can view the links to specific sections of part two for more details. First we need to create a new git repo and [make our first commit]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#staging-and-commiting-changes).
+Now we have to connect our new site to Github and host it on Github Pages. A lot of this process is going to be the same as what we covered in part two. In this part, I will go through the necessary steps quickly, but you can view the links below to specific sections of part two or the [quick git command reference]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#quick-git-command-reference){:target="_blank"} for more details. First we need to create a new git repo and [make our first commit]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#staging-and-commiting-changes){:target="_blank"}.
 
 Create a git repo in your new Jekyll site folder.   
 `git init`
@@ -129,7 +129,7 @@ Check to see if the correct files are staged to be committed.
 Commit all of the new files.
 `git commit -m 'initial commit'`
 
-Now we are going to [create a remote repo on github.com and push our new commit to it]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#creating-a-repository-on-github).   
+Now we are going to [create a remote repo on github.com and push our new commit to it]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#creating-a-repository-on-github){:target="_blank"}.   
 In a web browser, go to [github.com/new](https://github.com/new){:target="_blank"} to create a new github repository named "yourgithubusername.github.io" where "yourgithubusername" is replaced with your github username.
 
 On the web page for your new repository, follow the instructions under "…or push an existing repository from the command line" and run the following commands.   
@@ -138,7 +138,7 @@ On the web page for your new repository, follow the instructions under "…or pu
 `git push -u origin main`   
 Enter your Github login information when prompted. The web page for your repository should now be updated with the new files.
 
-Finally, we have to [serve our new site on Github Pages]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#setting-up-github-pages). In a web browser, go to the settings page for your new github repo (github.com/yourgithubusername/yourgithubusername.github.io/settings).   
+Finally, we have to [serve our new site on Github Pages]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#setting-up-github-pages){:target="_blank"}. In a web browser, go to the settings page for your new github repo (github.com/yourgithubusername/yourgithubusername.github.io/settings).   
 Scroll down to the "Github Pages" section.   
 Under "Source", click on the drop down that currently says "None" and change it to "main".   
 Now, refresh the page and scroll back down to the "Github Pages" section. It should now say that your site is published. You can check the box next to "Enforce HTTPS".
@@ -227,7 +227,7 @@ When researching themes for this tutorial, I couldn't find a lot of free themes 
 
 Next we are going to cover installing a theme both locally and on Github Pages. This is so you can test your site locally and also have it work on Github Pages. I will be using my theme as an example for the next steps in this tutorial. However, you can apply the same steps to any of the themes I listed above. 
 
-There are [a lot more themes available on Github](https://github.com/topics/jekyll-theme){:target="_blank"} that can be installed in the same way. Some themes don't support this method of installation; make sure you check the read me section (at the bottom of the github repo page) to see the installation instructions. 
+There are [a lot more themes available on Github](https://github.com/topics/jekyll-theme){:target="_blank"} that can be installed in the same way. Some themes don't support this method of installation; make sure you check the read me section (at the bottom of the Github repo page) to see the installation instructions. 
 
 ### Installing a Jekyll theme ###
 This section will cover one method to install a Jekyll theme. This method will have the theme working on Github Pages and locally. It's simple while also making it easy to pull any updates to the theme or switch between themes in the future.
@@ -281,7 +281,7 @@ Save `Gemfile` and close it. Open your terminal and navigate to the root of your
 Run the following command to use Bundler to install all the gems listed in `Gemfile`.   
 `bundle install`
 
-From now on, if you make changes to the `Gemfile`, run `bundle install` to install all of gems needed by the project. If you need to update any gems that are already installed, run `bundle update`. [More on Bundler commands here.](https://bundler.io/docs.html){:target="_blank"}.
+From now on, if you make changes to the `Gemfile`, run `bundle install` to install all of gems needed by the project. If you need to update any gems that are already installed, run `bundle update`. [More on Bundler commands here.](https://bundler.io/docs.html){:target="_blank"}. You can also refer to the [quick Bundler and Jekyll command reference]({% post_url 2021-1-21-simple-website-tutorial-part-three %}#quick-bundler-jekyll-command-reference){:target="_blank"} at the bottom of this page.
 
 Next, let's edit the site configuration file to work with our theme. Navigate to the root of your site folder and open the file `_config.yml` in a code editor. This file is where you set settings for your entire site.
 
@@ -347,7 +347,10 @@ For the details on all Jekyll features, reference the [Jekyll Docs](https://jeky
 
 [Jekyll plugins](https://jekyllrb.com/docs/plugins/){:target="_blank"} are a common way of adding more features to Jekyll sites. Currently, [very few plugins](https://pages.github.com/versions/){:target="_blank"} are supported by Github Pages. However, it is still possible to include them in your Jekyll site by generating the site locally and then pushing to Github Pages. [This tutorial by Nicu Surdu](https://surdu.me/2020/02/04/jekyll-git-hook.html){:target="_blank"} covers the process.
 
-For more resources on learning basic web development, check out [the resources section from part two]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#resources-for-learning-frontend-web-development).
+For more resources on learning basic web development, check out [the resources section from part two]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#resources-for-learning-frontend-web-development){:target="_blank"}.
+
+Refer to the quick command reference below for Jekyll and Bundler commands we used in this tutorial.
+{% include commandref-bundler.html %}
 
 ## Now it's up to you! ##
 You should now be able to start customizing your Jekyll site for your needs!
