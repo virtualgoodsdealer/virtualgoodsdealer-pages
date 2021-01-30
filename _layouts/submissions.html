@@ -6,12 +6,18 @@ layout: default
 <div class="justify-content-center">
 	<img src="../images/virtualgoodsdealer_logo_bw.png" class="img-fluid d-block m-auto logo" alt="virtualgoodsdealer logo">
 </div>
-<div class="row">
-	<div class="col post-title">
-		{{ page.title }}
-	</div>
-</div>
 
-<div class="post-content">
- 	{{ content }}
+<div class="submission-content">
+	<div class="post-title">
+			{{ page.title }}
+			{% if page.open == true %}
+	      		<span class="badge badge-pill badge-primary">Open</span>
+	      	{% else %}
+	      		<span class="badge badge-pill badge-secondary">Closed</span>
+	      	{% endif %}
+	</div>
+
+	<div class="post-content">
+	 	{{ content }}
+	</div>
 </div>
