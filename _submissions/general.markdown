@@ -2,6 +2,8 @@
 layout: submissions
 title:  "General Submissions"
 permalink: /submissions/general
+date: 2021-1-29
+open: true
 ---
 
 We are seeking submissions for Virtualgoodsdealer Pages.

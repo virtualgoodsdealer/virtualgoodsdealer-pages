@@ -2,6 +2,8 @@
 layout: submissions
 title:  "Males_are_cancelled Account Takeover"
 permalink: /submissions/males_are_cancelled
+date: 2021-1-20
+open: true
 ---
 
 We are opening the @males_are_cancelled Instagram account for takeovers.

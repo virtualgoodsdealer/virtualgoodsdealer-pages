@@ -119,6 +119,26 @@ tag: categoryname
 permalink: /articles/categoryname
 ```
 
+## Adding a new submissions page
+first, go to submissions branch or create a new one
+
+add a submissions page by adding a file `submissionscallname.md` in the `_submissions` folder. the file name should be revelant to the submissions call title but no period characters or spaces (use dashes instead of spaces).
+
+open the file and fill out the following front matter:
+```
+---
+layout: submissions
+title:  title of submissions call
+permalink: /submissions/submissionscallname
+date: yyyy-mm-dd
+open: true
+---
+```
+
+the date is used to sort the submissions by most recent.
+
+set `open` to "true" if the submissions call is open. set it to "false" if the call is closed.
+
 ## Pushing changes
 push changes to your current branch and then create a merge request on the github website.
 

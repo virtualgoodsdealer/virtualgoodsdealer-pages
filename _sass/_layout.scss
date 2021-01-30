@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a{
   color: $header-nav-color;
 }
 
@@ -150,7 +150,7 @@
   padding: 0px;
 }
 
-.creator-list li{
+.creator-list li, .submission-item{
   margin-bottom: 0.2rem;
 }
 
@@ -168,6 +168,18 @@
 .footer-link a{
   color: $footer-color;
   text-decoration: none;
+}
+
+.badge {
+  margin-right: 0.2rem;
+}
+
+.badge-primary {
+  background-color: $header-nav-color;
+}
+
+.submission-content {
+  margin-top: 1rem;
 }
 
 html {
