@@ -2,7 +2,7 @@
 title: Dr. André Brock
 permalink: /creatordirectory/drandrebrock
 name: André L. Brock
-website: http://opensquare.nyupress.org/books/9781479820375/
+website: https://andrebrock.academia.edu/
 shop:
 instagram:
 twitter: Docdre
