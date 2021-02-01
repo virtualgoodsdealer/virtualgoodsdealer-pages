@@ -8,10 +8,16 @@ layout: default
   {{ content }}
 </div>
 
-<ul class="nav flex-column category-nav">
-  {% for form in site.submissions %}
-    <li>
+<div class="submission-list">
+	{% assign form_sorted = site.submissions | reverse %}
+  {% for form in form_sorted %}
+    <div class="submission-item">
       <a href="{{ site.url }}{{ form.permalink }}">{{ form.title }}</a>
-    </li>
+      {% if form.open == true %}
+      	<span class="badge badge-pill badge-primary">Open</span>
+      {% else %}
+      	<span class="badge badge-pill badge-secondary">Closed</span>
+      {% endif %}
+    </div>
   {% endfor %}
-</ul>
+</div>

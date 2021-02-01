@@ -17,15 +17,15 @@ layout: default
           	</time>
           </div>
           <div class='col-lg posts__title'>
-            <a class='posts__link' href='{{ post.url | relative_url }}'>
+            <a class='posts__link posts-link-articles' href='{{ post.url | relative_url }}'>
               {{ post.title }}
             </a>
 
             {% if post.author %}
-              by
+              <span class="posts-link-by">by</span>
               {% for creator in site.creators %}
                 {% if creator.name == post.author %}
-                  <a class='posts__link' href='{{ creator.permalink }}'>
+                  <a class='posts__link posts-link-articles' href='{{ creator.permalink }}'>
                     {{ post.author | escape }}
                   </a>
                 {% endif %}
@@ -37,8 +37,18 @@ layout: default
               {% else %}
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
               {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
             </div>  
-            <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
+            {% if post.categories %}
+              <span class="posts-categories">
+              {% assign categories = post.categories | sort %}
+              {% for category in categories %}
+                <a class='font-weight-light' href='/articles/{{ category }}'>
+                   /{{ category }}
+                </a>
+              {% endfor %}
+              </span>
+            {% endif %}
           </div>
         </div>
       {% endfor %}

@@ -22,7 +22,7 @@ layout: default
             {{ post.title | escape }}
           </a>
           {% if post.author %}
-              by
+            <span class="posts-link-by">by</span>
               {% for creator in site.creators %}
                 {% if creator.name == post.author %}
                   <a class='posts__link' href='{{ creator.permalink }}'>
@@ -37,9 +37,9 @@ layout: default
             {% else %}
               {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             {% endif %}
-          </div>
-          <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
+            <a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>
         </div>
+          </div>
         </div>
         {% endfor %}
       </div>

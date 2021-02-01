@@ -12,6 +12,7 @@
 					<img src="../images/virtualgoodsdealer_logo_color.png" class="img-fluid d-block m-auto logo" alt="virtualgoodsdealer logo">
 				</a>
 			  	<ul class="nav flex-column text-center">
+
 			  		{% for page in site.pages %}
 						{% if page.title %}
 						    <li>
@@ -26,11 +27,14 @@
 					</li>
 
 					<li>
-					    <a class="nav-item nav-link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">{{ "instagram" | escape }}</a>
+					    <a class="nav-item nav-link" href="https://www.instagram.com/{{ site.social_links.instagram }}" target="_blank">{{ "instagram" | escape }}</a>
 					</li>
 
 					<li>
-					    <a class="nav-item nav-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ "twitter" | escape }}</a>
+					    <a class="nav-item nav-link" href="https://twitter.com/{{ site.social_links.twitter }}" target="_blank">{{ "twitter" | escape }}</a>
+					</li>
+					<li>
+					    <a class="nav-item nav-link" href="https://pages.virtualgoodsdealer.com/deleted2020/" target="_blank">{{ "Deleted in 2020" | escape }}</a>
 					</li>
 				</ul>
 			</div>

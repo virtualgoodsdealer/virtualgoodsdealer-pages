@@ -4,6 +4,7 @@ title:  "Making A Simple Static Website: Part One, Why Code Your Own Website?"
 categories: [tutorial, tech]
 author: ada.wrong
 excerpt_separator: <!--more-->
+related-articles: [2020-11-23-simple-website-tutorial-part-two, 2021-1-21-simple-website-tutorial-part-three]
 ---
 
 This is the first part of a multi-part series on creating your own static website for complete beginners. First, we will discuss *why* you may want to code your own website.<!--more--> Then, I will go over how to set up your development environment and how to use github pages to host your site. Finally, I will suggest resources for learning how to build a site from scratch and how to use templates of websites that are compatible with github pages. Everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started.
@@ -11,8 +12,8 @@ This is the first part of a multi-part series on creating your own static websit
 For those of you that are already familiar with programming or web technologies, this is the breakdown of the technologies/frameworks I'm going over step by step in this tutorial series:
 - bash
 - git
-- github and github pages
-- jekyll (optional)  
+- Github and Github Pages
+- Jekyll  
 
 If that list meant nothing to you, that is completely okay! You will be using all of these if you follow the steps in this tutorial series. We are also going to be using more stuff such as HTML and CSS but I won't cover step by step. Instead I will teach you how to learn what you need from free resources on the internet. That said, this tutorial assumes you know nothing other than how to type, use a web browser, and search engine.
 

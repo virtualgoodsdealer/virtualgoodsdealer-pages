@@ -1,0 +1,17 @@
+<div class="card">
+	<div class="card-header">
+    	<h4 id="quick-git-command-reference" style="margin:0px;">Quick Git Command Reference</h4>
+  	</div>
+  	<div class="card-body">
+    <p style="margin-bottom:1rem;" class="card-text">
+    {% capture commands %}`git init` - create a new git repository   
+	`git status` - view changes to git repo and staging area   
+	`git add filename` where "filename" is the name of a file or folder - stage changes to file to be committed   
+	`git commit -m "description of commit"` - commit staged changes   
+	`git push origin main` - push local commits to remote Github repo's main branch{% endcapture %}
+    {{ commands | markdownify | remove: '<p>' | remove: '</p>' }}
+    </p>
+    <a href="https://git-scm.com/docs" target="_blank" class="card-link">Git Docs</a>
+    <a href="https://git-scm.com/book/en/v2" target="_blank" class="card-link">Git Book</a>
+  </div>
+</div>

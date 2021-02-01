@@ -1,0 +1,17 @@
+<div class="card">
+	<div class="card-header">
+    	<h4 id="quick-bundler-jekyll-command-reference" style="margin:0px;">Quick Bundler/Jekyll Command Reference</h4>
+  	</div>
+  	<div class="card-body">
+    <p style="margin-bottom:1rem;" class="card-text">
+    {% capture commands %}`bundle exec jekyll serve` - start generate Jekyll site and start local server viewable at `localhost:4000` in a web browser. Type **Ctrl-C** inside the terminal window to stop the local server.  
+    `jekyll new foldername` where "foldername" is the name of a folder - creates a new Jekyll site inside a folder   
+    `bundle install` - installs all gems (and their dependencies) listed in `Gemfile`   
+    `bundle update gemname` where gemname is the name of a ruby gem - updates specific gem   
+    `bundle info gemname` where gemname is the name of a ruby gem - shows information about a specific gem{% endcapture %}
+    {{ commands | markdownify | remove: '<p>' | remove: '</p>' }}
+    </p>
+    <a href="https://bundler.io/docs.html" target="_blank" class="card-link">Bundler Docs</a>
+    <a href="https://jekyllrb.com/docs/usage/" target="_blank" class="card-link">Jekyll Command Line Usage</a>
+  </div>
+</div>

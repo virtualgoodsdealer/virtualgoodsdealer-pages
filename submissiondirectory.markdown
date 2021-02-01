@@ -4,4 +4,4 @@ title: submissions
 permalink: /submissions
 ---
 
-We are currently collecting general submissions for our site. Click the links below for submission instructions and guidelines.
+We are currently collecting submissions for our site and other projects. Click the links below for submission instructions and guidelines.

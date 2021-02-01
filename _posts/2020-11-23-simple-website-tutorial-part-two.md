@@ -4,16 +4,16 @@ title:  "Making A Simple Static Website: Part Two, Setting Up Your Development E
 categories: [tutorial, tech]
 author: ada.wrong
 excerpt_separator: <!--more-->
+related-articles: [2020-11-16-simple-website-tutorial-part-one, 2021-1-21-simple-website-tutorial-part-three]
 ---
 
 This is the second part of a multi-part series on creating your own static website for complete beginners. It will focus on setting up your development environment and the workflow for using github pages.<!--more--> By the end of this tutorial part, you will have a one page website hosted on Github pages for the world to see. I will also suggest resources for further developing your website. Again, everything used in this tutorial is free! All you need is a computer (Mac, Windows, or Linux) and an internet connection to get started. If you haven't already, check out [part one]({% post_url 2020-11-16-simple-website-tutorial-part-one %}) for why we are coding our own website.
 
-## Overall Project Structure ##
-In the previous part, I listed the technologies/frameworks this tutorial will cover:
+## Project Structure ##
+Here is all of the technologies/frameworks this part of the tutorial will cover:
 - bash
 - git
-- github and github pages
-- jekyll (optional)
+- Github and Github Pages
 
 Now, I will explain the purpose of each part on extremely basic terms. If you are already familiar with these terms, you can skip to the next section.
 
@@ -27,10 +27,10 @@ There are many ways to use git. This tutorial will cover using it through the ba
 
 There is a learning curve for modern computer/smartphone users, but I still recommend learning this because of the amount of documentation available online for bash users. Although there are [many softwares available for using git](https://git-scm.com/downloads/guis){:target="_blank"}, I think using git through bash is the most common way of using git. It also works well with creating a local host to test your site locally and installing other frameworks if you want to continue to learn more and expand your website. For example, later we will be using bash to install and run jekyll (more on that in the next part).
 
-I also wanted to make this tutorial useful for both Windows and MacOS users. Instead of making a separate parallel tutorial with different commands and clients for Windows users, I decided to concentrate on getting everyone to a UNIX or UNIX-like operating system and using bash. That said, the next part differs depending on if you are using MacOS or Windows. So skip to the section for the operation system you are using.
+I also wanted to make this tutorial useful for both Windows and MacOS users. Instead of making a separate parallel tutorial with different commands and clients for Windows users, I decided to concentrate on getting everyone to a UNIX or UNIX-like operating system and using bash. That said, the next part differs depending on if you are using MacOS or Windows. So skip to the sections for the operation system you are using.
 
-## MacOS: Setting up bash and git ##
-### Setting up bash ###
+## Setting up bash and git ##
+### MacOS: Setting up bash ###
 If you are using any MacOS before MacOS Catalina, bash should be the default shell on your computer. You can check what OS you are running by clicking the Apple logo on the top left of your screen and then "About this Mac". If you are using Catalina, the default shell used by Terminal is zsh, but you can easily switch to bash.
 
 Search for "Terminal" in your Applications and open it.
@@ -49,7 +49,7 @@ After running that command, it will prompt you for your system password (the pas
 We will be using this terminal window to run all our commands from now on. You can also install other terminal applications that include more features. I use [iterm2](https://iterm2.com/){:target="_blank"} instead of the Terminal application. I recommend using it but it's completely optional!
 
 
-### Setting up git ###
+### MacOS: Setting up git ###
 Now, it's time to set up git. Check to see if you already have git installed by running this command in Terminal.   
 `git version`
 
@@ -68,10 +68,9 @@ Follow the command line prompts to finish the installation. Then, run this comma
 [Source: Github git guide](https://github.com/git-guides/install-git)
 
 After the installation is complete, use `git version` to make sure it has been installed. It should output the text “git version” and a version number. Now you should be ready to use git and Github!   
-Skip to the section called "Basic git and Github".
+Skip to the section called ["Basic git and Github"]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#basic-git-and-github).
 
-## Windows: Setting up bash and git ##
-### Setting up bash ###
+### Windows: Setting up bash ###
 If you are using a Windows operating system, it's a bit more complicated to set up bash. We are going to use a feature called "Windows Subsystem for Linux" that allows us to run Linux programs on Windows 10. Then, we will install Ubuntu, a Linux operating system, which includes the bash shell. This solution only works for Windows 10 64-bit. If you are using Windows 7, [you can upgrade to Windows 10 for free](https://www.theverge.com/2020/1/14/21065140/how-to-upgrade-microsoft-windows-7-10-free-os){:target="_blank"} or try using a client like [git for Windows](https://gitforwindows.org/){:target="_blank"}.
 
 Search "Control Panel" in the Start Menu and open it. Go to "Programs" and then "Turn Windows Features On Or Off". In the "Windows Features" window, check the box next to “Windows Subsystem for Linux” and click "OK".   
@@ -88,7 +87,7 @@ We will be using this terminal window to run all our commands from now on. The b
 [Source: "How to Install and Use the Linux Bash Shell on Windows 10" from howtogeek.com](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/){:target="_blank"}   
 [Source: Ubuntu Windows 10 Tutorial](https://ubuntu.com/tutorials/ubuntu-on-windows#5-launch-ubuntu-on-windows-10){:target="_blank"}
 
-### Setting up git ###
+### Windows: Setting up git ###
 Git is included with the Ubuntu distribution. Run the command `git version` to verify that it has been installed. It should output the text "git version" and a version number.
 
 Remember that this Ubuntu distribution is running as a subsystem on your Windows system. Use the command `pwd` to find out what directory you are in.   
@@ -196,7 +195,7 @@ Run the following command to commit your staged changes.
 The `-m` flag means message. After it, write a detailed description of the commit within quotations so you can understand at a glance what changed in each commit.
 ![image of git commit command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitcommit.png) 
 
-You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Repeat the steps in this section everytime you want to save changes to your project files to your local git repo.
+You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Refer to this section or the [quick git command reference]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#quick-git-command-reference) at the bottom of this page if you need to make subsequent changes to your files.
 
 ### Creating a repository on Github ###
 We committed changes to our local git repo, but now we have to get those changes onto Github. In a web browser, go to [github.com/new](https://github.com/new){:target="_blank"} to create a new github repository.
@@ -367,6 +366,9 @@ Open your terminal and go inside the folder that your website files are saved in
 
 Now if you go to your repository on Github at github.com/yourgithubusername/yourgithubusername.github.io, you should see `index.html` and `style.css` in the repo.
 
+If you make further changes at anytime, repeat the above steps. You can also refer to the quick reference below for commonly used git commands.
+
+{% include commandref-git.html %}
 ### Setting up Github Pages ###
 Nice! We are so close! Now all we have to do is tell Github we want this repository to be hosted on Github Pages. From the repository page, click on "Settings" at the top right of the page or go to github.com/yourgithubusername/yourgithubusername.github.io/settings.   
 Scroll down to the "Github Pages" section.   
