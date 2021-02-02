@@ -16,7 +16,7 @@ hi its cindie. this my set from the <a href="https://www.instagram.com/p/CJbw5sh
 
 &zwnj;  
 
-{% include open-embed.html src="/assets/post_media/nye_set02.mp3" %}  
+{% include open-embed.html src="/assets/post_media/2021-1-9-cindie-nye-set.md/nye_set02.mp3" %}  
 
 &zwnj;  
 

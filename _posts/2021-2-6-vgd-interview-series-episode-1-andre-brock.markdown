@@ -7,5 +7,5 @@ guest: André L. Brock
 post_description: "Length 20:04. Multi-genre, variable BPM. Audio hosted on Virtualgoodsdealer."  
 ---
 
-{% include open-embed.html src="/assets/post_media/nye_set02.mp3" %}  
+{% include open-embed.html src="/assets/post_media/2021-2-6-vgd-interview-series-episode-1-andre-brock/nye_set02.mp3" %}  
 

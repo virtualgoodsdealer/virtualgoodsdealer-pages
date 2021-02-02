@@ -72,6 +72,15 @@ then, insert `<!--more-->` after where you want the preview to cut off in the ar
 
 [jekyll doc example](https://jekyllrb.com/docs/posts/#post-excerpts)
 
+### Adding media to posts
+all media for posts (images, mp3 files, video files) go in the `assets/post_media` folder.
+
+create a folder with the full filename of the corresponding post inside `assets/post_media`.
+
+add all media for that post into that folder. for example, add all media used in `_posts/yyyy-mm-dd-title-of-article.md` into `assets/post_media/yyyy-mm-dd-title-of-article.md`
+
+reference the meda in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article.md/nameoffile.jpg` where "nameoffile.jpg" is your image file.
+
 ## Adding a new creator to the creator directory
 first, go to artist bios branch or create a new one
 
@@ -104,7 +113,7 @@ only use shop if the creator's products are active on virtualgoodsdealer.com. en
 
 please note that if the creator is also an author of articles, the `name` field in the `creatorname.md` file must match with the `author` field in the article files for them to be linked.
 
-save the creator photo in the `images/creator_images` folder.
+save the creator photo in the `assets/creator_images` folder.
 
 then, insert the bio of the creator below the frontmatter.
 
