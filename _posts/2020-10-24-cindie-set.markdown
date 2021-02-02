@@ -13,7 +13,7 @@ hi this is cindie (males_are_cancelled) this my set from dorian electra’s afte
 I wanted to share some of the original music i have been working on for the past few months, and to mix them together with some of my favorite hits.  
 cover photo is by <a href="https://www.instagram.com/felipedavilaarango/" target="_blank">@felipedavilaarango</a>. 
 
-{% include open-embed.html src="/mp3/dorian_mix_final.mp3" %}  &zwnj;  
+{% include open-embed.html src="/assets/post_media/dorian_mix_final.mp3" %}  &zwnj;  
 
 If you are having trouble with the embedded audio player, you can also listen <a href="https://drive.google.com/file/d/1ohR1AzSy4MyFn72ieofGPKdYKbRvPKXo/view?usp=sharing" target="_blank">here</a>
 
