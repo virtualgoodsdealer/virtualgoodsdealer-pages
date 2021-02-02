@@ -6,7 +6,7 @@ author: cindie xin
 post_description: "Length 19:23. Audio hosted on Virtualgoodsdealer."  
 ---
 
-![Set Cover 10.24](/images/post_images/2020-10-24-cindie-set.markdown/males_are_cancelled_mix_cover.jpg)
+![Set Cover 10.24](/assets/post_media/2020-10-24-cindie-set.markdown/males_are_cancelled_mix_cover.jpg)
 
 
 hi this is cindie (males_are_cancelled) this my set from dorian electra’s afterparty, hosted by subculture on oct 24 2020.  

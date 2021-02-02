@@ -8,7 +8,7 @@ post_description: "Length 20:04. Multi-genre, variable BPM. Audio hosted on Virt
 
 &zwnj;
 
-![Set Cover 1.9](/images/post_images/2021-1-9-cindie-nye-set.md/twitch_screenshot.png)
+![Set Cover 1.9](/assets/post_media/2021-1-9-cindie-nye-set.md/twitch_screenshot.png)
 
 &zwnj;
 

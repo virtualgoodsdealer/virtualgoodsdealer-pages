@@ -36,7 +36,7 @@ If you are using any MacOS before MacOS Catalina, bash should be the default she
 Search for "Terminal" in your Applications and open it.
 
 You should see something like this:   
-![image of terminal](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/terminal.png)   
+![image of terminal](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/terminal.png)   
 The rectangle on the last line of text is the cursor. When you type commands, the text should appear in front of it. To run a command, press the enter key on your keyboard.
 
 If it does not say "bash" at the top of the window and says "zsh" instead, type run this command to change the default shell to bash:   
@@ -81,7 +81,7 @@ After your computer boots up again, go to the Microsoft Store. Here you can inst
 Click "Get" to install the program. After installation, search "Ubuntu" in the Start Menu and open the program. The first time you open this program, it will run some installations. Wait a bit and it will prompt you to create a UNIX username and password. This is specific to your Ubuntu installation and isn't related to your Windows username and password. Press enter after typing to submit your username and password.
 
 After following the prompts, you should see something like this:   
-![image of terminal](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/ubuntuterminal.png)   
+![image of terminal](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/ubuntuterminal.png)   
 
 We will be using this terminal window to run all our commands from now on. The blinking rectangle on the last line of text is the cursor. When you type commands, the text should appear in front of it. To run a command, press the enter key on your keyboard.   
 [Source: "How to Install and Use the Linux Bash Shell on Windows 10" from howtogeek.com](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/){:target="_blank"}   
@@ -99,7 +99,7 @@ Then use the command `ls` to list all the files in the current directory.
 
 You should now see a folder called `/mnt`. This folder contains your Windows filesystem.   
 Use `cd /mnt` to move to it. You should now see folders for the familiar drives that hold all your files.   
-![image of ubuntu filesystem](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/ubuntufilesystem.png)   
+![image of ubuntu filesystem](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/ubuntufilesystem.png)   
 
 If you want to edit your files outside of the Ubuntu terminal, make sure your files are saved in your Windows filesystem (within the folders in the `/mnt` folder). It is **not** recommended to edit any of the files in the Ubuntu distribution filesystem with any Windows software. Later you will probably be editing files with Windows software installed on your computer such an image editing software or a text editor, so it's best to keep your website files in the Windows filesystem.   
 [Source: "How to Access Your Ubuntu Bash Files in Windows" from howtogeek.com](https://www.howtogeek.com/261383/how-to-access-your-ubuntu-bash-files-in-windows-and-your-windows-system-drive-in-bash/){:target="_blank"}
@@ -143,7 +143,7 @@ Use `cd ..` to move to the parent of the current folder. There is a lot more to 
 Use the `ls` command to list every file in the folder you are currently in.
 
 There are a lot of commands you can use to do basically anything you are used to doing on your graphical user interface for browsing files (Finder in MacOS or File Explorer in Windows). If you want to find a command for something, just use a search engine to search "unix" and what you want to do and you will find documentation on how to do it. For example, I want to find out how to list all the files in a folder including hidden files, so I Googled "unix view all hidden files".   
-![image of google search](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/googlingcommands.png)   
+![image of google search](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/googlingcommands.png)   
 The first result gives me the answer, which is the command `ls -a`. There is a lot of documentation online as well as solutions to common issues on [Stack Overflow](https://stackoverflow.com/){:target="_blank"} or [Ask Ubuntu](https://askubuntu.com/){:target="_blank"}. Be aware that while a lot of the commands are available on all UNIX operating systems, some commands are specific to Linux distributions and some are specific to macOS, so you may need to do more research if a command isn't working on your terminal. One example is `open` on macOS and `xdg-open` on Linux.
 
 #### Initiating the local git repository ####
@@ -174,18 +174,18 @@ Add the following text to the file. Then, save and close.
 ```
 .DS_Store
 ```
-![image of .gitignore file](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitignore.png)   
+![image of .gitignore file](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/gitignore.png)   
 This is mainly to ignore a file that is generated on MacOS systems but it's good to add it even if you aren't using MacOS in case you work with someone that does on the repo. Here is [a collection of .gitignore file templates](https://github.com/github/gitignore){:target="_blank"} for different programming languages and frameworks that you can use depending on your project.
 
 #### Staging and commiting changes ####
 Now we have our first new file, but we have to save this change to git. Use the `git status` command to see the status of your git repo.   
 The output should look something like the image below. Keep in mind your terminal window will look different from mine if you are using Ubuntu on Windows or a different terminal application.      
-![image of git status command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitstatus.png)  
+![image of git status command](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/gitstatus.png)  
 The output says there are no new changes you can currently save to git but there are changes in **untracked files**. This is because we created a new .gitignore file but that file is currently not being tracked by git.
 
 Use the `git add .` command to add changes to all files in the current folder to the **staging area**. `.` means the current folder; however, you can add individual files to be staged with `git add filename` (replace `filename` with the name of the file).      
 Then, run `git status` again. All the changes that are in the staging area will be listed under the text "Changes to be committed".
-![image of git add . command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitaddthis.png)   
+![image of git add . command](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/gitaddthis.png)   
 Now, you can see that the creation of the .gitignore file is **staged**. When a change is staged, it is marked as being ready to be saved. So, make sure you are only staging changes that you want to keep.
 
 Now, we are going to **commit** our staged changes. After doing so, the staged changes will be included in an entire snapshot of the git repo. This snapshot, also referred to as a **commit**, is saved by git. Think of this as the equivalent of saving changes to a file. This is why you must only stage changes you want to commit. However, the whole purpose of using git is to add version control to your project, so you can always roll back to a past commit.
@@ -193,7 +193,7 @@ Now, we are going to **commit** our staged changes. After doing so, the staged c
 Run the following command to commit your staged changes.   
 `git commit -m 'description of commit'`   
 The `-m` flag means message. After it, write a detailed description of the commit within quotations so you can understand at a glance what changed in each commit.
-![image of git commit command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitcommit.png) 
+![image of git commit command](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/gitcommit.png) 
 
 You just made your first git commit! Since the .gitignore file was included in the lastest snapshot of your git repo, the file is now being tracked by git. From now on, when we are staging changes, git will ignore the folder referenced in the .gitignore file. Refer to this section or the [quick git command reference]({% post_url 2020-11-23-simple-website-tutorial-part-two %}#quick-git-command-reference) at the bottom of this page if you need to make subsequent changes to your files.
 
@@ -210,7 +210,7 @@ You should now be redirected to the web page for your new github repository. Fol
 The output will prompt you to enter your Github username and password. Text characters will not appear on your screen when entering your password. Just type it and press enter. Note that this is your Github account username and password (what you use to login to github.com).
 
 You should see an output message similar to this.   
-![image of git push origin main command](/images/post_images/2020-11-23-simple-website-tutorial-part-two.md/gitpush.png)     
+![image of git push origin main command](/assets/post_media/2020-11-23-simple-website-tutorial-part-two.md/gitpush.png)     
 Now your local git repo is connected to your remote github repo. Your local commit was also **pushed** your remote repo. Refresh the web page for your Github repo and you should see your .gitignore file there. Congrats on pushing to github for the first time!
 
 From now on, you can use the command `git push origin main` to push your local git commits to your remote github repo. Think of this as the equivalent of uploading a new version of a file to Google Drive.
