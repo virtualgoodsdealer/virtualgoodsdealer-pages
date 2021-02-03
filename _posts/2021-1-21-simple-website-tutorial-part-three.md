@@ -154,7 +154,7 @@ Now, let's take a closer look at some of the files that Jekyll uses to generate 
 - `_posts` - folder that all your files that represent posts will go inside
 
 Check out the Jekyll documentation for [more information on the structure of the Jekyll site directory](https://jekyllrb.com/docs/structure/){:target="_blank"}.   
-For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. We have more folders and files than your current basic Jekyll site. Note that we have seperate folders for storing images and audio files (`images` and `mp3`) in the root folder.
+For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. Note that we have more folders and files than your current basic Jekyll site.
 
 Take a look at the `_site` folder. Jekyll takes in your configurations, markdown files, and theme HTML/CSS files, generates all the files for a website, and places it there. The files in the folder should be similar to the HTML and CSS files we created in part two. So if you aren't planning on customizing your site's theme, you don't actually need to know HTML and CSS to use your Jekyll site (I still decided to cover it in part two so you can understand what Jekyll does). You will only be working with markdown files.
 
