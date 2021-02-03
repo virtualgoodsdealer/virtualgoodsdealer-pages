@@ -77,7 +77,7 @@ all media for posts (images, mp3 files, video files) go in the `assets/post_medi
 
 create a folder with the file name (without extension) of the corresponding post inside `assets/post_media`.
 
-add all media for that post into that folder. for example, add all media used in `_posts/yyyy-mm-dd-title-of-article` into `assets/post_media/yyyy-mm-dd-title-of-article`
+add all media for that post into that folder. for example, add all media used in `_posts/yyyy-mm-dd-title-of-article.md` into `assets/post_media/yyyy-mm-dd-title-of-article/`
 
 reference the meda in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
 
