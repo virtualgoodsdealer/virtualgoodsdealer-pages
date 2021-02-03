@@ -15,6 +15,11 @@ layout: default
           <time class='posts__date font-weight-light' datetime='{{ post.date | date_to_xmlschema }}'>
               {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
               {{ post.date | date: date_format }}
+              {% assign post_date = post.date | date: '%s' %}
+              {% assign today_date = 'now' | date: '%s' %}
+              {% if post_date > today_date %}
+                <span class="badge badge-pill badge-primary">Coming Soon</span>
+              {% endif %}
           </time>
         </div>
         <div class='col-lg posts__title'>
