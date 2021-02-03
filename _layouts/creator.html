@@ -53,7 +53,7 @@ layout: default
 	</div>
 </div>
 {% for post in site.posts %}
-	{% if post.author == page.name %}
+	{% if post.author contains page.name or post.guest contains page.name %}
 		{% assign contributer = true %}
 		{% break %}
 	{% endif %}
@@ -65,7 +65,7 @@ layout: default
 			<p class="artist-articles-heading">pages.virtualgoodsdealer.com contributions</p>
 			<ul class="list-group">
 			{% for post in site.posts %}
-				{% if post.author == page.name %}
+				{% if post.author contains page.name or post.guest contains page.name %}
 					<li class="list-group-item">
 						<a href="{{ post.url }}">{{ post.title }}</a>
 						<div class="post-exerpt font-weight-light">
