@@ -32,13 +32,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		<div class="col">
 			{% if page.author %}
               by
-              {% for creator in site.creators %}
-                {% if creator.name == page.author %}
-                  <a href='{{ creator.permalink }}'>
-                    {{ page.author | escape }}
-                  </a>
-                {% endif %}
-              {% endfor %}
+              {% assign author_list = '' | split: '' %}
+              {% for author in page.author %}
+	              {% for creator in site.creators %}
+	                {% if creator.name == author %}
+	                	{% capture author_link %}
+	                  	<a href='{{ creator.permalink }}'>{{ author | escape }}</a>
+	                  	{% endcapture %}
+	                  	{% assign author_link = author_link | rstrip %}
+	                  	{% assign author_list = author_list | push: author_link %}
+	                {% endif %}
+	              {% endfor %}
+	           {% endfor %}
+	           {{ author_list | join: "," }}
             {% endif %}
 		</div>
 		<div class="col-md">
