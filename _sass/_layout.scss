@@ -6,6 +6,12 @@
   padding: 0px;
 }
 
+.posts-link-authors{
+  color: $post-date-color;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
 .heading-link a{
   text-decoration: none;
 }
@@ -39,7 +45,7 @@
   text-decoration: underline;
 }
 
-.post a:hover, .landing a:hover, .posts__link:hover{
+.post a:hover, .landing a:hover, .posts__link:hover, .posts-link-authors:hover{
   color: $post-link-hover-color;
   text-decoration: underline;
   text-decoration-color: $post-link-hover-color;
@@ -122,6 +128,10 @@
 
 .response-form{
   margin-top: 1.25rem;
+}
+
+.posts-link-by{
+  color: $post-date-color;
 }
 
 .posts-link-by:before {

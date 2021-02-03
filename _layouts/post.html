@@ -30,6 +30,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	</div>
 	<div class="row">
 		<div class="col">
+			{% if page.guest %}
+              featuring
+              {% assign guest_list = '' | split: '' %}
+              {% for guest in page.guest %}
+	              {% for creator in site.creators %}
+	                {% if creator.name == guest %}
+	                	{% capture guest_link %}
+	                  	<a href='{{ creator.permalink }}'>{{ guest | escape }}</a>
+	                  	{% endcapture %}
+	                  	{% assign guest_link = guest_link | rstrip %}
+	                  	{% assign guest_list = guest_list | push: guest_link %}
+	                {% endif %}
+	              {% endfor %}
+	           {% endfor %}
+	           {{ guest_list | join: "," }}
+	           <br />
+            {% endif %}
+
 			{% if page.author %}
               by
               {% assign author_list = '' | split: '' %}

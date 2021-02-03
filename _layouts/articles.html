@@ -17,9 +17,26 @@ layout: default
           	</time>
           </div>
           <div class='col-lg posts__title'>
-            <a class='posts__link posts-link-articles' href='{{ post.url | relative_url }}'>
+            <a class='posts__link' href='{{ post.url | relative_url }}'>
               {{ post.title }}
             </a>
+
+            {% if post.guest %}
+              <span class="posts-link-by">featuring</span>
+              {% assign guest_list = '' | split: '' %}
+              {% for guest in post.guest %}
+                {% for creator in site.creators %}
+                  {% if creator.name == guest %}
+                    {% capture guest_link %}
+                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ guest | escape }}</a>
+                      {% endcapture %}
+                      {% assign guest_link = guest_link | rstrip %}
+                      {% assign guest_list = guest_list | push: guest_link %}
+                  {% endif %}
+                {% endfor %}
+             {% endfor %}
+             {{ guest_list | join: "," }}
+            {% endif %}
 
             {% if post.author %}
               <span class="posts-link-by">by</span>
@@ -28,7 +45,7 @@ layout: default
                 {% for creator in site.creators %}
                   {% if creator.name == author %}
                     {% capture author_link %}
-                      <a class='posts__link posts-link-articles' href='{{ creator.permalink }}'>{{ author | escape }}</a>
+                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ author | escape }}</a>
                     {% endcapture %}
                     {% assign author_link = author_link | rstrip %}
                     {% assign author_list = author_list | push: author_link %}
