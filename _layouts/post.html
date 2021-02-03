@@ -30,15 +30,39 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	</div>
 	<div class="row">
 		<div class="col">
+			{% if page.guest %}
+              featuring
+              {% assign guest_list = '' | split: '' %}
+              {% for guest in page.guest %}
+	              {% for creator in site.creators %}
+	                {% if creator.name == guest %}
+	                	{% capture guest_link %}
+	                  	<a href='{{ creator.permalink }}'>{{ guest | escape }}</a>
+	                  	{% endcapture %}
+	                  	{% assign guest_link = guest_link | rstrip %}
+	                  	{% assign guest_list = guest_list | push: guest_link %}
+	                {% endif %}
+	              {% endfor %}
+	           {% endfor %}
+	           {{ guest_list | join: "," }}
+	           <br />
+            {% endif %}
+
 			{% if page.author %}
               by
-              {% for creator in site.creators %}
-                {% if creator.name == page.author %}
-                  <a href='{{ creator.permalink }}'>
-                    {{ page.author | escape }}
-                  </a>
-                {% endif %}
-              {% endfor %}
+              {% assign author_list = '' | split: '' %}
+              {% for author in page.author %}
+	              {% for creator in site.creators %}
+	                {% if creator.name == author %}
+	                	{% capture author_link %}
+	                  	<a href='{{ creator.permalink }}'>{{ author | escape }}</a>
+	                  	{% endcapture %}
+	                  	{% assign author_link = author_link | rstrip %}
+	                  	{% assign author_list = author_list | push: author_link %}
+	                {% endif %}
+	              {% endfor %}
+	           {% endfor %}
+	           {{ author_list | join: "," }}
             {% endif %}
 		</div>
 		<div class="col-md">

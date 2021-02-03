@@ -30,6 +30,7 @@ shop: https://www.virtualgoodsdealer.com
 
 # Build settings
 remote_theme: aidewoode/jekyll-theme-mint
+future: true
 
 blog_theme: light
 
