@@ -25,6 +25,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			<div class="posts__date text-md-right font-weight-light" datetime='{{ page.date | date_to_xmlschema }}'>
         	{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
         	{{ page.date | date: date_format }}
+        	{% assign post_date = page.date | date: '%s' %}
+              {% assign today_date = 'now' | date: '%s' %}
+              {% if post_date > today_date %}
+                <span class="badge badge-pill badge-primary">Coming Soon</span>
+              {% endif %}
         	</div>
   		</div>
 	</div>
