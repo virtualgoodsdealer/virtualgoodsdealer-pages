@@ -79,7 +79,7 @@ create a folder with the file name (without extension) of the corresponding post
 
 add all media for that post into that folder. for example, add all media used in `_posts/yyyy-mm-dd-title-of-article.md` into `assets/post_media/yyyy-mm-dd-title-of-article/`
 
-reference the meda in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
+reference the media in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
 
 ## Adding a new creator to the creator directory
 first, go to artist bios branch or create a new one
