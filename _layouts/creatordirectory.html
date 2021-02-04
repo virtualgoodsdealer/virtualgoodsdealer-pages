@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p class="page-name">/{{ page.title }}</p>
-<ul class="nav flex-column category-nav creator-list">
+<ul class="nav flex-column creator-list">
 {% assign creators = site.creators | sort_natural: 'name' %}
   {% for creator in creators %}
     <li>
