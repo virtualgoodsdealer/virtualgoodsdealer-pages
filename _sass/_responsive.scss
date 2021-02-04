@@ -25,4 +25,8 @@
   .header__nav__item--title {
     margin-right: 25px;
   }
+
+  .artist-links .list-group{
+    flex-direction: column;
+  }
 }
