@@ -190,6 +190,10 @@
   margin-top: 1rem;
 }
 
+video:focus {
+  outline:none;
+}
+
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
