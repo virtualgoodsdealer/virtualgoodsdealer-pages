@@ -195,7 +195,7 @@
   margin-top: 1rem;
 }
 
-video:focus {
+video:focus, audio:focus {
   outline:none;
 }
 
