@@ -34,7 +34,7 @@
 }
 
 .page-name, .read-more, .artist-articles, .article-suggested{
-  color: $post-date-color;
+  color: $post-date-color !important;
 }
 
 .posts-categories a, .category-nav a{
