@@ -2,7 +2,7 @@
 title: Hubert Obasanya
 permalink: /creatordirectory/hubert
 name: Hubert Obasanya
-website: 
+website: https://memeforsale.bigcartel.com
 shop:
 instagram: meme_for_speed
 twitter: o_headass
