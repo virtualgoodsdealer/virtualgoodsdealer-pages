@@ -14,6 +14,6 @@ post_description: "The first episode of Virtualgoodsdealer Interview Series. Cin
 This is the first episode of Virtualgoodsdealer Interview Series, where we will be having conversations with artists, scholars, and internet personalities on their work and experiences.   
 In this episode, we had the privilege of speaking with [Dr. Andre Brock](/creatordirectory/drandrebrock), author of *Distributed Blackness: African American Cybercultures* and professor of Black Digital Studies at the School of Literature, Media, and Communication at Georgia Tech. Our one-hour discussion revolved around the strange relationship between outrage and justice, and the digital manifestations of this phenomenon. [An open access version of his book is available through NYU Press Open Square](http://opensquare.nyupress.org/books/9781479820375/){:target="_blank"}.
 
-This interview is co-hosted by [Cindie Xin](/creatordirectory/cindiexin) and [Omnia Elbasheer](/creatordirectory/saqmemes), with editing by [ada.wrong](/creatordirectory/adawrong). It was recorded on Wednesday 1/27/21 at 4:30PM EST.
+This interview is co-hosted by [Cindie Xin](/creatordirectory/cindiexin) and [Omnia Elbasheer](/creatordirectory/saqmemes), with editing by [ada.wrong](/creatordirectory/adawrong). It was recorded on Wednesday 1/27/21 at 4:30PM EST. Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 
 ### Audio Transcription
