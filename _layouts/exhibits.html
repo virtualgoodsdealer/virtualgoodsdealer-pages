@@ -1,22 +1,18 @@
 ---
 layout: default
 ---
-
-{% assign post_images_array = site.data.post_dictionary[post_id]['images'] %}
-				
-{% for post_image in post_images_array %}
-			{% assign post_image_path = "assets/post_images/" | append: post_image | relative_url %}
-			{% assign post_imagethumb_path = "assets/post_thumbnails/" | append: post_image | relative_url %}
-	<div class='col-sm-4 col- p-0'>
-		<div class="image-container">
-			<a href="{{ post.url | relative_url }}">
-				{% if site.grid_settings.display == "square-cropped" %}
-					<img src="{{ post_image.path | relative_url }}" class="img-fluid" alt="{{ post.title }}">
-				{% elsif site.grid_settings.display == "square-og" %}
-					<img src="{{ post_image.path | relative_url }}" class="img-fluid grid-square-og" alt="{{ post.title }}">
-				{% endif %}
-			</a>
+<div class="row">
+{% assign exhibits = site.data.exhibits %}
+{% for exhibit in exhibits %}
+	<div class='col-lg-4 col- p-0'>
+		<div class="card exhibit-card">
+		  <img class="card-img-top" src="..." alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
+		    <p class="card-text">{{ exhibit[1]['description'] }}</p>
+		    <a href="{{ exhibit[1]['link'] }}" class="btn btn-primary" target="_blank">View</a>
+		  </div>
 		</div>
 	</div>
 {% endfor %}
-	
+</div>

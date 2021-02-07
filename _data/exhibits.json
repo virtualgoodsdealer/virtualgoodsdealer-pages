@@ -1,5 +1,5 @@
 {
-	"exhibits":[
+	"b":
 		{
 			"name": "LOOTING DREAM",
 			"date": "2021-02-14",
@@ -9,6 +9,7 @@
 			"demo_poster": "lootingdream_demo_poster.png",
 			"link": "https://kaaathy.com/everything/looting-dream.html"
 		},
+	"a":
 		{
 			"name": "Deleted in 2020",
 			"date": "2021-01-15",
@@ -18,5 +19,5 @@
 			"demo_poster": "deleted2020_demo_poster.png",
 			"link": "/deleted2020/"
 		}
-	]
+
 }
