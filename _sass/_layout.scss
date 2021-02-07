@@ -206,6 +206,10 @@ video:focus, audio:focus {
   outline:none;
 }
 
+.card-body{
+  padding-bottom: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
