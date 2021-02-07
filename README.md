@@ -81,6 +81,24 @@ add all media for that post into that folder. for example, add all media used in
 
 reference the media in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
 
+#### Large files hosted on git lfs
+For files larger than 100mb, host them on [git lfs](https://docs.github.com/en/github/managing-large-files/configuring-git-large-file-storage).
+
+It's recommended to install git lfs with `git lfs install --skip-smudge` so you do not download all the lfs files when you pull from the repo.
+
+Add the specific file path to the `.gitattributes` file:
+```
+git lfs track "assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+```
+After committing your changes, when you push to remote, the file will be uploaded to the lfs server rather than the normal git repo.
+
+Check the files that are tracked with lfs with `git lfs ls-files`. You should see the correct files listed.
+
+To reference a file stored with lfs on the pages site, add `https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/` in front of the file path.
+```
+src="https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+```
+
 ## Adding a new creator to the creator directory
 first, go to artist bios branch or create a new one
 
