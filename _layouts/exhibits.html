@@ -6,9 +6,14 @@ layout: default
 {% for exhibit in exhibits %}
 	<div class='col-lg-4 col- p-0'>
 		<div class="card exhibit-card">
-		  <img class="card-img-top" src="..." alt="Card image cap">
+		  {% include video-embed.html poster="{{ exhibit[1]['demo_poster'] }}" src="{{ exhibit[1]['demo'] }}" %}
 		  <div class="card-body">
 		    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
+		    {% if exhibit[1]['author'] %}
+		    	{% for author in exhibit[1]['author'] %}
+		    		<h6 class="card-subtitle mb-2">{{ author }}</h6>
+		    	{% endfor %}
+		    {% endif %}
 		    <p class="card-text">{{ exhibit[1]['description'] }}</p>
 		    <a href="{{ exhibit[1]['link'] }}" class="btn btn-primary" target="_blank">View</a>
 		  </div>
