@@ -26,7 +26,7 @@
 		            			{% if post.post_description %}
 		                			{{ post.post_description }}
 		              			{% else %}
-		                			{{ post.excerpt }}
+		                			{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 		              			{% endif %}
 		          			</div>
 						</li>
@@ -50,7 +50,7 @@
             			{% if post.post_description %}
                 			{{ post.post_description }}
               			{% else %}
-                			{{ post.excerpt }}
+                			{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
               			{% endif %}
           			</div>
 				</li>
@@ -69,7 +69,7 @@
         			{% if post.post_description %}
             			{{ post.post_description }}
           			{% else %}
-            			{{ post.excerpt }}
+            			{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
           			{% endif %}
       			</div>
 			</li>
@@ -79,3 +79,11 @@
 	{% endfor %}
 	</div>
 </div>
+
+{% include clamp.html %}
+<script>
+var exerpts = document.getElementsByClassName("post-exerpt");
+for (var i = 0; i < exerpts.length; i++){
+	$clamp(exerpts[i], {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+}
+</script>

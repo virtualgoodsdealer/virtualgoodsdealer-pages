@@ -3,7 +3,7 @@
   	{% assign categories = site.categories | sort %}
   {% for category in categories %}
     <li>
-      <a href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
+      <a class="font-weight-light" href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
     </li>
   {% endfor %}
   </ul>
