@@ -5,8 +5,8 @@
 			"date": "2021-02-14",
 			"description": "LOOTING DREAM is an interactive web fantasy about distorting, glitching, re-inserting, and deleting from glass boxes + institutions.",
 			"creators":["kathy wu"],
-			"demo": "lootingdream_demo.mp4",
-			"demo_poster": "lootingdream_demo_poster.png",
+			"demo": "/assets/exhibit_previews/lootingdream/lootingdream_preview.mp4",
+			"demo_poster": "/assets/exhibit_previews/lootingdream/lootingdream_preview_poster.png",
 			"link": "https://kaaathy.com/everything/looting-dream.html"
 		},
 	"a":
@@ -15,8 +15,8 @@
 			"date": "2021-01-15",
 			"description": '"Deleted in 2020" is a collection of images submitted by Instagram users. All the images in this exhibit were deleted off Instagram due to violations of community guidelines.',
 			"creators":[],
-			"demo": "deleted2020_demo.mp4",
-			"demo_poster": "deleted2020_demo_poster.png",
+			"demo": "/assets/exhibit_previews/deleted2020/deleted2020_preview.mp4",
+			"demo_poster": "/assets/exhibit_previews/deleted2020/deleted2020_preview_poster.png",
 			"link": "/deleted2020/"
 		}
 

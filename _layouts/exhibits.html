@@ -1,36 +1,68 @@
 ---
 layout: default
 ---
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+});
+</script>
 <div class="row">
 {% assign exhibits = site.data.exhibits %}
 {% for exhibit in exhibits %}
-	<div class='col-lg-4 col- p-0'>
+	<div class='col-lg-6 col- p-0 pb-5'>
 		<div class="card exhibit-card">
-		  {% include video-embed.html poster="{{ exhibit[1]['demo_poster'] }}" src="{{ exhibit[1]['demo'] }}" %}
-		  <div class="card-body">
-		    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
-		    {% if exhibit[1]['creators'][0] %}
-		    	{% capture creators_link %}
-		    		<h6 class="card-subtitle mb-2">
-		    	{% endcapture %}
-		    	{% for author in exhibit[1]['creators'] %}
-		    		{% assign creators_link = creators_link | append: author %}
-		    		{% assign creators_link = creators_link | append: "</h6>" %}
-		    		{% for creator in site.creators %}
-		    			{% if creator.name == author %}
-		    				{% assign creators_link = creators_link | prepend: '<a href="{{ creator.permalink }}" >' %}
-		    				{% assign creators_link = creators_link | append: '</a>' %}
-		    			{% endif %}
-		    		{% endfor %}
-		    	{% endfor %}
-		    	{{ creators_link }}
-		    {% endif %}
-		    <p class="card-text">{{ exhibit[1]['description'] }}</p>
-		    <div class="text-center">
-		    	<a href="{{ exhibit[1]['link'] }}" class="btn btn-primary w-100" target="_blank">View</a>
-		    </div>
-		  </div>
-		</div>
+			{% assign poster = exhibit[1]['demo_poster'] %}
+			{% assign source = exhibit[1]['demo'] %}
+			{% include exhibit-video-embed.html poster=poster src=source%}
+			  <div class="card-body d-flex flex-column">
+			    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
+			    {% if exhibit[1]['creators'][0] %}
+			    	{% capture creators_link %}
+			    		<h6 class="card-subtitle mb-2">
+			    	{% endcapture %}
+			    	{% for author in exhibit[1]['creators'] %}
+			    		{% assign creators_link = creators_link | append: author %}
+			    		{% assign creators_link = creators_link | append: "</h6>" %}
+			    		{% for creator in site.creators %}
+			    			{% if creator.name == author %}
+			    				{% assign creators_link = creators_link | prepend: '<a href="{{ creator.permalink }}" >' %}
+			    				{% assign creators_link = creators_link | append: '</a>' %}
+			    			{% endif %}
+			    		{% endfor %}
+			    	{% endfor %}
+			    	{{ creators_link }}
+			    {% else %}
+			    	<h6 class="card-subtitle mb-2">virtualgoodsdealer</h6>
+			    {% endif %}
+			    <div class="card-text">{{ exhibit[1]['description'] }}</div>
+			    <div class="text-center mt-auto mb-4">
+			    	<a href="{{ exhibit[1]['link'] }}" class="btn btn-primary w-100" target="_blank">View</a>
+			    </div>
+			  </div>
+			</div>
 	</div>
 {% endfor %}
 </div>
