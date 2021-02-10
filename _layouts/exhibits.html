@@ -9,13 +9,26 @@ layout: default
 		  {% include video-embed.html poster="{{ exhibit[1]['demo_poster'] }}" src="{{ exhibit[1]['demo'] }}" %}
 		  <div class="card-body">
 		    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
-		    {% if exhibit[1]['author'] %}
-		    	{% for author in exhibit[1]['author'] %}
-		    		<h6 class="card-subtitle mb-2">{{ author }}</h6>
+		    {% if exhibit[1]['creators'][0] %}
+		    	{% capture creators_link %}
+		    		<h6 class="card-subtitle mb-2">
+		    	{% endcapture %}
+		    	{% for author in exhibit[1]['creators'] %}
+		    		{% assign creators_link = creators_link | append: author %}
+		    		{% assign creators_link = creators_link | append: "</h6>" %}
+		    		{% for creator in site.creators %}
+		    			{% if creator.name == author %}
+		    				{% assign creators_link = creators_link | prepend: '<a href="{{ creator.permalink }}" >' %}
+		    				{% assign creators_link = creators_link | append: '</a>' %}
+		    			{% endif %}
+		    		{% endfor %}
 		    	{% endfor %}
+		    	{{ creators_link }}
 		    {% endif %}
 		    <p class="card-text">{{ exhibit[1]['description'] }}</p>
-		    <a href="{{ exhibit[1]['link'] }}" class="btn btn-primary" target="_blank">View</a>
+		    <div class="text-center">
+		    	<a href="{{ exhibit[1]['link'] }}" class="btn btn-primary w-100" target="_blank">View</a>
+		    </div>
 		  </div>
 		</div>
 	</div>
