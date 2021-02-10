@@ -204,6 +204,13 @@
   overflow:hidden;
 }
 
+.exhibit-col {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+}
+
 video:focus, audio:focus {
   outline:none;
 }
