@@ -1,4 +1,4 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link{
   color: $header-nav-color;
 }
 
@@ -33,7 +33,7 @@
     opacity: 0.65;
 }
 
-.page-name, .read-more, .artist-articles, .article-suggested{
+.page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd{
   color: $post-date-color !important;
 }
 
@@ -42,7 +42,7 @@
   text-decoration: none !important;
 }
 
-.read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover{
+.read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link:hover{
   color: $post-link-hover-color !important;
   text-decoration: none !important;
 }
@@ -205,10 +205,7 @@
 }
 
 .exhibit-col {
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 1rem;
+  padding: 0;
 }
 
 video:focus, audio:focus {

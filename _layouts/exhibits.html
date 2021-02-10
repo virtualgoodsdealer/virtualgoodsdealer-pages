@@ -41,21 +41,25 @@ layout: default
 			    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
 			    {% if exhibit[1]['creators'][0] %}
 			    	{% capture creators_link %}
-			    		<h6 class="card-subtitle mb-2">
+			    		<h6 class="card-subtitle exhibit-creator-link mb-2">
 			    	{% endcapture %}
 			    	{% for author in exhibit[1]['creators'] %}
+			    		{% assign author = author | strip %}
 			    		{% assign creators_link = creators_link | append: author %}
 			    		{% assign creators_link = creators_link | append: "</h6>" %}
 			    		{% for creator in site.creators %}
 			    			{% if creator.name == author %}
-			    				{% assign creators_link = creators_link | prepend: '<a href="{{ creator.permalink }}" >' %}
+			    				{% capture atag %}
+			    					<a href="{{ creator.permalink }}" >
+			    				{% endcapture %}
+			    				{% assign creators_link = creators_link | prepend: atag %}
 			    				{% assign creators_link = creators_link | append: '</a>' %}
 			    			{% endif %}
 			    		{% endfor %}
 			    	{% endfor %}
 			    	{{ creators_link }}
 			    {% else %}
-			    	<h6 class="card-subtitle mb-2">virtualgoodsdealer</h6>
+			    	<h6 class="card-subtitle exhibit-vgd mb-2">virtualgoodsdealer</h6>
 			    {% endif %}
 			    <div class="card-text">{{ exhibit[1]['description'] }}</div>
 			    <div class="text-center mt-auto mb-4">
