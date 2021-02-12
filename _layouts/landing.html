@@ -2,51 +2,211 @@
 <html lang='{{ page.lang | default: site.lang | default: 'en' }}'>
   {% include head.html %}
   <body>
-  	<div class="container landing fixed-bottom">
-
-	  	<div class="row">
-	  		<div class="col">
-	  		</div>
-	  		<div class="col-sm-4 mb-5 justify-content-center">
-	  			<a href="/articles">
-					<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid d-block m-auto logo" alt="virtualgoodsdealer logo">
-				</a>
-			  	<ul class="nav flex-column text-center">
-
-			  		{% for page in site.pages %}
-						{% if page.title %}
-						    <li>
-						      	<a class="nav-item nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+  	<div class='layout'>
+	  	<div class="container">
+	  		<div class="mx-2 landing">
+	  			<div class="mb-3 w-100 text-center">
+	  				<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
+	  			</div>
+	  			<div class="mb-1 w-100 landing-pages-about">
+	  				<span class="font-weight-bold">pages.virtualgoodsdealer.com</span> is a portal for publishing non-physical media and showcasing creators. 
+	  			</div>
+	  			<div class="mb-3 w-100" id="landing-about">
+					virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
+	  			</div>
+		  			<a href="/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
+		  		<h5 class="card-title text-center">
+		  			browse articles by category...
+		  		</h5>
+		  		<div class="landing-articles-categories mb-3 w-100 d-flex justify-content-center">
+		  			<a class="mr-1" href="/articles">/articles</a>
+		  			<ul class="list-group">					
+			  			{% assign categories = site.categories | sort %}
+			  			{% for category in categories %}
+						    <li class="list-group-item">
+						      <a class="font-weight-light" href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
 						    </li>
-						{% endif %}
+						{% endfor %}
+					</ul>
+		  		</div>
+		  		<div class="mb-5 w-100">
+		  			<div class="card">
+		  				<div class="card-body">
+		  					<h5 class="card-title text-center">
+		  						recent articles
+		  					</h5>
+		  		
+				  			{% for post in site.posts limit: 3 %}
+				  				<div class="mb-3">
+
+				  				<a class='posts__link' href='{{ post.url | relative_url }}'>
+					              {{ post.title }}
+					            </a>
+
+					            {% if post.guest %}
+					              <span class="posts-link-by">featuring</span>
+					              {% assign guest_list = '' | split: '' %}
+					              {% for guest in post.guest %}
+					                {% for creator in site.creators %}
+					                  {% if creator.name == guest %}
+					                    {% capture guest_link %}
+					                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ guest | escape }}</a>
+					                      {% endcapture %}
+					                      {% assign guest_link = guest_link | rstrip %}
+					                      {% assign guest_list = guest_list | push: guest_link %}
+					                  {% endif %}
+					                {% endfor %}
+					             {% endfor %}
+					             {{ guest_list | join: "," }}
+					            {% endif %}
+
+					            {% if post.author %}
+					              <span class="posts-link-by">by</span>
+					              {% assign author_list = '' | split: '' %}
+					              {% for author in post.author %}
+					                {% for creator in site.creators %}
+					                  {% if creator.name == author %}
+					                    {% capture author_link %}
+					                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ author | escape }}</a>
+					                    {% endcapture %}
+					                    {% assign author_link = author_link | rstrip %}
+					                    {% assign author_list = author_list | push: author_link %}
+					                  {% endif %}
+					                {% endfor %}
+					             {% endfor %}
+					             {{ author_list | join: "," }}
+					            {% endif %}
+					            <div class="post-exerpt font-weight-light">
+					              {% if post.post_description %}
+					                {{ post.post_description }}
+					              {% else %}
+					                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+					              {% endif %}
+					            </div>
+					            {% if post.categories %}
+					              <span class="posts-categories">
+					              {% assign categories = post.categories | sort %}
+					              {% for category in categories %}
+					                <a class='font-weight-light' href='/articles/{{ category }}'>
+					                   /{{ category }}
+					                </a>
+					              {% endfor %}
+					              </span>
+					            {% endif %}
+					        </div>
+				  		{% endfor %}
+					  	<div class="text-center mt-3">
+							<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
+						</div>
+				  	</div>
+			  		</div>
+			  	</div>
+			  	<div class="mb-3 w-100">
+		  			<h5 class="card-title text-center">
+		  				featured web exhibit
+		  			</h5>
+		  			{% assign exhibits = site.data.exhibits %}
+		  			{% for exhibit in exhibits limit:1 %}
+						<div class="card mb-3">
+							{% assign poster = exhibit[1]['demo_poster'] %}
+							{% assign source = exhibit[1]['demo'] %}
+							{% include exhibit-video-embed.html poster=poster src=source%}
+							  <div class="card-body">
+							    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
+							    {% if exhibit[1]['creators'][0] %}
+							    	{% capture creators_link %}
+							    		<h6 class="card-subtitle exhibit-creator-link mb-3">
+							    	{% endcapture %}
+							    	{% for author in exhibit[1]['creators'] %}
+							    		{% assign author = author | strip %}
+							    		{% assign creators_link = creators_link | append: author %}
+							    		{% assign creators_link = creators_link | append: "</h6>" %}
+							    		{% for creator in site.creators %}
+							    			{% if creator.name == author %}
+							    				{% capture atag %}
+							    					<a href="{{ creator.permalink }}" >
+							    				{% endcapture %}
+							    				{% assign creators_link = creators_link | prepend: atag %}
+							    				{% assign creators_link = creators_link | append: '</a>' %}
+							    			{% endif %}
+							    		{% endfor %}
+							    	{% endfor %}
+							    	{{ creators_link }}
+							    {% else %}
+							    	<h6 class="card-subtitle exhibit-vgd mb-3">virtualgoodsdealer</h6>
+							    {% endif %}
+							    <div class="card-text">{{ exhibit[1]['description'] }}</div>
+							    <div class="text-center mt-3">
+							    	<a href="{{ exhibit[1]['link'] }}" class="btn btn-outline-primary w-100 mb-0" target="_blank">view</a>
+							    </div>
+							  </div>
+							</div>
 					{% endfor %}
+					<a href="/exhibits" class="btn btn-primary w-100">exhibits</a>
+		  		</div>
+		  		<div class="mb-5 w-100">
+		  			<a href="/creatordirectory" class="btn btn-primary w-100 mb-3">creator directory</a>
+			  		<a href="/submissions" class="btn btn-primary w-100">submissions</a>
+		  		</div>
+				<div class="mb-5 w-100">
+					<h5 class="card-title text-center">
+		  				products @ virtualgoodsdealer.com
+		  			</h5>
+			  		<div class="card landing-product-card">
+					  <a href="https://www.virtualgoodsdealer.com/product/x___x-sticker" target="_blank"><img class="card-img-top" src="/assets/xxx_2.png" alt="x__X sticker"></a>
+					  <div class="card-body">
+					    	<a href="https://www.virtualgoodsdealer.com/product/x___x-sticker" target="_blank"><p class="card-text text-center mb-3">x__X sticker</p></a>
+					  
+					  		<a href="{{ site.shop }}" class="btn btn-outline-primary w-100" target="_blank">more products</a>
+					  </div>
 
+					</div>
+					
+				</div>
+		  	</div>
+		  	{% include footer.html %}
+		</div>
+		<script>
+					document.addEventListener("DOMContentLoaded", function() {
+		  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
-				  	<li>
-					    <a class="nav-item nav-link" href="{{ site.shop }}" target="_blank">{{ "shop" | escape }}</a>
-					</li>
+		  if ("IntersectionObserver" in window) {
+		    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+		      entries.forEach(function(video) {
+		        if (video.isIntersecting) {
+		          for (var source in video.target.children) {
+		            var videoSource = video.target.children[source];
+		            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+		              videoSource.src = videoSource.dataset.src;
+		            }
+		          }
 
-					<li>
-					    <a class="nav-item nav-link" href="https://www.instagram.com/{{ site.social_links.instagram }}" target="_blank">{{ "instagram" | escape }}</a>
-					</li>
+		          video.target.load();
+		          video.target.classList.remove("lazy");
+		          lazyVideoObserver.unobserve(video.target);
+		        }
+		      });
+		    });
 
-					<li>
-					    <a class="nav-item nav-link" href="https://twitter.com/{{ site.social_links.twitter }}" target="_blank">{{ "twitter" | escape }}</a>
-					</li>
-					<li>
-					    <a class="nav-item nav-link" href="https://pages.virtualgoodsdealer.com/deleted2020/" target="_blank">{{ "Deleted in 2020" | escape }}</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col">
-	  		</div>
-	  	</div>
-
-
-	 </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		    lazyVideos.forEach(function(lazyVideo) {
+		      lazyVideoObserver.observe(lazyVideo);
+		    });
+		  }
+		});
+		</script>
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</div>
   </body>
 </html>
+
+
+{% include clamp.html %}
+<script>
+	$clamp(document.getElementById("landing-about"), {clamp: 2, truncationHTML: '<a href="/about" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+	var exerpts = document.getElementsByClassName("post-exerpt");
+	for (var i = 0; i < exerpts.length; i++){
+		$clamp(exerpts[i], {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+	}
+</script>
