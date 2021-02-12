@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang='{{ page.lang | default: site.lang | default: 'en' }}'>
-  {% include head.html %}
-  <body>
-  	<div class='layout'>
-	  	<div class="container">
+---
+layout: default
+---
 	  		<div class="mx-2 landing">
 	  			<div class="mb-3 w-100 text-center">
 	  				<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
@@ -11,7 +8,7 @@
 	  			<div class="mb-1 w-100 landing-pages-about">
 	  				<span class="font-weight-bold">pages.virtualgoodsdealer.com</span> is a portal for publishing non-physical media and showcasing creators. 
 	  			</div>
-	  			<div class="mb-3 w-100" id="landing-about">
+	  			<div class="mb-5 w-100" id="landing-about">
 					virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
 	  			</div>
 		  			<a href="/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
@@ -101,7 +98,7 @@
 				  	</div>
 			  		</div>
 			  	</div>
-			  	<div class="mb-3 w-100">
+			  	<div class="mb-5 w-100">
 		  			<h5 class="card-title text-center">
 		  				featured web exhibit
 		  			</h5>
@@ -144,10 +141,6 @@
 					{% endfor %}
 					<a href="/exhibits" class="btn btn-primary w-100">exhibits</a>
 		  		</div>
-		  		<div class="mb-5 w-100">
-		  			<a href="/creatordirectory" class="btn btn-primary w-100 mb-3">creator directory</a>
-			  		<a href="/submissions" class="btn btn-primary w-100">submissions</a>
-		  		</div>
 				<div class="mb-5 w-100">
 					<h5 class="card-title text-center">
 		  				products @ virtualgoodsdealer.com
@@ -164,8 +157,6 @@
 					
 				</div>
 		  	</div>
-		  	{% include footer.html %}
-		</div>
 		<script>
 					document.addEventListener("DOMContentLoaded", function() {
 		  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
@@ -197,9 +188,6 @@
 	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</div>
-  </body>
-</html>
 
 
 {% include clamp.html %}
