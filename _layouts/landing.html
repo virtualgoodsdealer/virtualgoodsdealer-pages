@@ -4,18 +4,22 @@
   <body>
   	<div class='layout'>
 	  	<div class="container">
-	  		<div class="row mx-2 landing">
-	  			<div class="col- w-100">
+	  		<div class="mx-2 landing">
+	  			<div class="mb-3 w-100 text-center">
 	  				<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
 	  			</div>
-	  			<div class="col- w-100" id="landing-about">
-	  				pages.virtualgoodsdealer.com focuses on publishing non-physical art and showcasing creators. virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
+	  			<div class="mb-1 w-100 landing-pages-about">
+	  				<span class="font-weight-bold">pages.virtualgoodsdealer.com</span> is a portal for publishing non-physical media and showcasing creators. 
 	  			</div>
-	  			<div class="col- w-100">
-		  			<a href="/subscribe" class="btn btn-outline-primary w-100">>> subscribe to our mailing list <<</a>
-		  		</div>
-		  		<div class="landing-articles-categories col- w-100">
-		  			<a href="/articles">/articles</a>
+	  			<div class="mb-3 w-100" id="landing-about">
+					virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
+	  			</div>
+		  			<a href="/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
+		  		<h5 class="card-title text-center">
+		  			browse articles by category...
+		  		</h5>
+		  		<div class="landing-articles-categories mb-3 w-100 d-flex justify-content-center">
+		  			<a class="mr-1" href="/articles">/articles</a>
 		  			<ul class="list-group">					
 			  			{% assign categories = site.categories | sort %}
 			  			{% for category in categories %}
@@ -25,15 +29,15 @@
 						{% endfor %}
 					</ul>
 		  		</div>
-		  		<div class="col- w-100">
+		  		<div class="mb-5 w-100">
 		  			<div class="card">
 		  				<div class="card-body">
-		  					<h5 class="card-title">
-		  						Recent articles:
+		  					<h5 class="card-title text-center">
+		  						recent articles
 		  					</h5>
 		  		
 				  			{% for post in site.posts limit: 3 %}
-				  				<div>
+				  				<div class="mb-3">
 
 				  				<a class='posts__link' href='{{ post.url | relative_url }}'>
 					              {{ post.title }}
@@ -78,17 +82,32 @@
 					              {% else %}
 					                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 					              {% endif %}
-					            </div> 
+					            </div>
+					            {% if post.categories %}
+					              <span class="posts-categories">
+					              {% assign categories = post.categories | sort %}
+					              {% for category in categories %}
+					                <a class='font-weight-light' href='/articles/{{ category }}'>
+					                   /{{ category }}
+					                </a>
+					              {% endfor %}
+					              </span>
+					            {% endif %}
 					        </div>
 				  		{% endfor %}
+					  	<div class="text-center mt-3">
+							<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
+						</div>
 				  	</div>
 			  		</div>
 			  	</div>
-			  	<div class="col- w-100">
-		  			<a href="/submissions" class="btn btn-primary w-100">exhibits</a>
+			  	<div class="mb-3 w-100">
+		  			<h5 class="card-title text-center">
+		  				featured web exhibit
+		  			</h5>
 		  			{% assign exhibits = site.data.exhibits %}
 		  			{% for exhibit in exhibits limit:1 %}
-						<div class="card">
+						<div class="card mb-3">
 							{% assign poster = exhibit[1]['demo_poster'] %}
 							{% assign source = exhibit[1]['demo'] %}
 							{% include exhibit-video-embed.html poster=poster src=source%}
@@ -96,7 +115,7 @@
 							    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
 							    {% if exhibit[1]['creators'][0] %}
 							    	{% capture creators_link %}
-							    		<h6 class="card-subtitle exhibit-creator-link mb-2">
+							    		<h6 class="card-subtitle exhibit-creator-link mb-3">
 							    	{% endcapture %}
 							    	{% for author in exhibit[1]['creators'] %}
 							    		{% assign author = author | strip %}
@@ -114,7 +133,7 @@
 							    	{% endfor %}
 							    	{{ creators_link }}
 							    {% else %}
-							    	<h6 class="card-subtitle exhibit-vgd mb-2">virtualgoodsdealer</h6>
+							    	<h6 class="card-subtitle exhibit-vgd mb-3">virtualgoodsdealer</h6>
 							    {% endif %}
 							    <div class="card-text">{{ exhibit[1]['description'] }}</div>
 							    <div class="text-center mt-3">
@@ -123,12 +142,27 @@
 							  </div>
 							</div>
 					{% endfor %}
+					<a href="/exhibits" class="btn btn-primary w-100">exhibits</a>
 		  		</div>
-		  		<div class="col- w-100">
-		  			<a href="/submissions" class="btn btn-primary w-100">submissions</a>
-		  			<a href="/creatordirectory" class="btn btn-primary w-100">creator directory</a>
-		  			<a href="{{ site.shop }}" class="btn btn-outline-primary w-100">products</a>
+		  		<div class="mb-5 w-100">
+		  			<a href="/creatordirectory" class="btn btn-primary w-100 mb-3">creator directory</a>
+			  		<a href="/submissions" class="btn btn-primary w-100">submissions</a>
 		  		</div>
+				<div class="mb-5 w-100">
+					<h5 class="card-title text-center">
+		  				products @ virtualgoodsdealer.com
+		  			</h5>
+			  		<div class="card landing-product-card">
+					  <a href="https://www.virtualgoodsdealer.com/product/x___x-sticker" target="_blank"><img class="card-img-top" src="/assets/xxx_2.png" alt="x__X sticker"></a>
+					  <div class="card-body">
+					    	<a href="https://www.virtualgoodsdealer.com/product/x___x-sticker" target="_blank"><p class="card-text text-center mb-3">x__X sticker</p></a>
+					  
+					  		<a href="{{ site.shop }}" class="btn btn-outline-primary w-100" target="_blank">more products</a>
+					  </div>
+
+					</div>
+					
+				</div>
 		  	</div>
 		  	{% include footer.html %}
 		</div>
