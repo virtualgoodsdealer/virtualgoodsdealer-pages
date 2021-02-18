@@ -38,7 +38,7 @@ Let me say that again. **There are not enough workers, so automation rushes in t
 
 Now, I’m not going to just give giant corporations a free pass here. Part of the reason there are not enough people are because wages are low, benefits are meh, and the jobs are very tedious. Growth-track employment opportunities are dwindling in favor of the “independent contractor” model. There’s no promise that a job in order fulfillment will ever be more than just a job. The companies around these positions have a major role to play in making these positions undesirable.
 
-![robots in a wearhouse](/assets/post_media/2021-02-18-robots-explained/wearhouserobots.jpg "wearhouserobots")
+![robots in a waerhouse](/assets/post_media/2021-02-18-robots-explained/warehouserobots.jpg "warehouserobots")
 
 That said, at the end of the day, even if there is great pay and benefits, running around a warehouse all day is rarely going to be desirable. Autonomous ground vehicles, championed by Kiva Systems (now Amazon Robotics) made this job less tedious and labor intensive, by using robotic vehicles to bring the goods to the person (this is called “goods-to-person”) instead of sending people around the warehouse to find the goods.
 
@@ -128,13 +128,10 @@ Image taken from [xkcd](https://xkcd.com/1626/)
 
 I had a lot of fun writing this and I hope you had fun reading it! Here are some fun articles, comics, and resources:
 
--[AI is Learning from Humans](https://www.nytimes.com/2019/08/16/technology/ai-humans.html) from NY Times
-
--[Data for Black Lives](https://d4bl.org/)
-
--["Forget about AI, Extended Intelligence is the Future”](https://www.wired.co.uk/article/artificial-intelligence-extended-intelligence) by Joi Ito from Wired
-
--[“What if: Robot Takeover”](https://what-if.xkcd.com/5/) from xkcd.com
+- [AI is Learning from Humans](https://www.nytimes.com/2019/08/16/technology/ai-humans.html) from NY Times
+- [Data for Black Lives](https://d4bl.org/)
+- ["Forget about AI, Extended Intelligence is the Future”](https://www.wired.co.uk/article/artificial-intelligence-extended-intelligence) by Joi Ito from Wired
+- [“What if: Robot Takeover”](https://what-if.xkcd.com/5/) from xkcd.com
 
 *It is my belief we can appreciate non-problematic works by problematic individuals (to an extent) as long as we acknowledge the problems and participate in criticism. While I appreciate this particular article, I recognize Joi Ito’s complicity in facilitating donations by Jeffrey Epstein to MIT, and his association to Epstein when formerly at MIT.*
 
