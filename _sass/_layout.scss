@@ -1,9 +1,15 @@
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing a, .category-nav a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link,  .landing-product-card a{
   color: $header-nav-color;
 }
 
 .navbar {
   padding: 0px;
+}
+
+.posts-link-authors{
+  color: $post-date-color;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .heading-link a{
@@ -27,6 +33,20 @@
     opacity: 0.65;
 }
 
+.page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd{
+  color: $post-date-color !important;
+}
+
+.posts-categories a, .category-nav a{
+  color: $post-date-color !important;
+  text-decoration: none !important;
+}
+
+.read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link:hover, .landing-articles-categories a:hover, .landing-product-card a:hover{
+  color: $post-link-hover-color !important;
+  text-decoration: none !important;
+}
+
 .posts-categories{
   margin-left: 0.4 rem;
 }
@@ -35,18 +55,14 @@
     text-decoration: none;
 }
 
-.post a, .post-content a, .landing a, .artist-page a, .donation-text a{
+.post a, .post-content a, .artist-page a, .donation-text a{
   text-decoration: underline;
 }
 
-.post a:hover, .landing a:hover, .posts__link:hover{
+.post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover{
   color: $post-link-hover-color;
   text-decoration: underline;
   text-decoration-color: $post-link-hover-color;
-}
-
-.page-name, .read-more, .artist-articles, .article-suggested, .posts-categories a{
-  color: $post-date-color
 }
 
 .post-exerpt{
@@ -66,12 +82,12 @@
   margin-top: 1rem;
 }
 
-.artist-articles-heading, .article-suggested-heading{
-  margin-top: 2rem;
-}
-
 .artist-links .list-group{
   flex-direction: row;
+}
+
+.artist-articles-heading, .article-suggested-heading{
+  margin-top: 2rem;
 }
 
 .artist-links .list-group-item {
@@ -86,23 +102,38 @@
   padding: 0px;
 }
 
-.read-more:hover, .posts-categories a:hover {
-  color: $post-link-hover-color;
-  text-decoration: none;
+.landing-articles-categories .list-group-item{
+  border: 0px;
+  padding: 0px;
 }
 
 .logo{
-  max-width: 10rem;
+  max-width: 5rem;
 }
 
-.btn{
+.btn-primary{
   background-color: $header-nav-color;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: white !important;
 }
 
-.btn:hover{
+.btn-primary:hover{
   background-color: black;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+    color: $header-nav-color;
+    background-color: transparent;
+    background-image: none;
+    border-color: $header-nav-color;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $header-nav-color;
+    border-color: $header-nav-color;
 }
 
 .post blockquote a{
@@ -124,6 +155,10 @@
   margin-top: 1.25rem;
 }
 
+.posts-link-by{
+  color: $post-date-color;
+}
+
 .posts-link-by:before {
   /* absolute positioning keeps it within h1's relative positioned box, takes it out of the document flow and forces a block-style display */
   position: absolute;
@@ -141,10 +176,6 @@
   margin-left: -0.3em;
 }
 
-.music-player {
-  width: 100%;
-}
-
 .navbar-light .navbar-toggler {
   border: none;
   padding: 0px;
@@ -152,16 +183,16 @@
 
 .creator-list li, .submission-item{
   margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .social-media-list li{
   display: inline;
-  margin-right: 1em;
 }
 
 .svg-icon{
   fill: $footer-color;
-  width: 1em;
+  width: 1rem;
   margin-top: 5px;
 }
 
@@ -173,7 +204,6 @@
 .badge {
   line-height: 1.2;
   font-weight: 400;
-  margin-left: 0.2rem;
 }
 
 .badge-primary {
@@ -183,6 +213,34 @@
 .submission-content {
   margin-top: 1rem;
 }
+
+.exhibit-card {
+  margin-bottom: 1rem;
+  height: 100%;
+  border-color: $header-nav-color;
+  overflow:hidden;
+}
+
+.exhibit-submissions{
+  margin-top: 1rem;
+}
+
+
+
+.landing {
+  margin-top: 5rem;
+}
+
+.landing .card {
+  border-color: $header-nav-color;
+  overflow:hidden;
+}
+
+
+video:focus, audio:focus {
+  outline:none;
+}
+
 
 html {
   box-sizing: border-box;
