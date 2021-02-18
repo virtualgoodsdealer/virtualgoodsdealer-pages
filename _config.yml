@@ -30,6 +30,7 @@ shop: https://www.virtualgoodsdealer.com
 
 # Build settings
 remote_theme: aidewoode/jekyll-theme-mint
+future: true
 
 blog_theme: light
 
@@ -38,7 +39,7 @@ permalink: /articles/:year/:month/:day/:title/
 # generate social links in footer
 social_links:
   twitter: vgddotcom
-  github: virtualgoodsdealer
+#  github: virtualgoodsdealer
   # facebook: jekyll
   instagram: virtualgoodsdealer
   # linkedin: jekyll

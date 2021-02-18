@@ -11,10 +11,10 @@ This is the third part of a multi-part series on creating your own static websit
 
 <div class="row">
 	<div class="col">
-		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/minima.PNG" />
+		<img class="img-fluid" src="/assets/post_media/2021-1-21-simple-website-tutorial-part-three/minima.PNG" />
 	</div>
 	<div class="col">
-		<img class="img-fluid" src="/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/image-grid.PNG" />
+		<img class="img-fluid" src="/assets/post_media/2021-1-21-simple-website-tutorial-part-three/image-grid.PNG" />
 	</div>
 </div>
 
@@ -101,7 +101,7 @@ This will create a new basic Jekyll site in the folder "yourgithubusername.githu
 
 ### Running the Jekyll site locally ###
 Navigate inside of the new folder with `cd yourgithubusername.github.io`. You should now see a bunch of files that make up your new Jekyll site.     
-![photo of jekyll site folder](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/jekyll_new.PNG)
+![photo of jekyll site folder](/assets/post_media/2021-1-21-simple-website-tutorial-part-three/jekyll_new.PNG)
 
 To test your site locally, run the following command in the **root** of your Jekyll site (directly inside the folder "yourgithubusername.github.io").   
 `bundle exec jekyll serve`
@@ -118,7 +118,7 @@ Create a git repo in your new Jekyll site folder.
 `git init`
 
 If you are using MacOS, open the `.gitignore` file in your code editor and add `**/.DS_Store` after all the text in the file. Then save and close the file.   
-![photo of gitignore file](/images/post_images/2021-1-21-simple-website-tutorial-part-three.md/macos_gitignore.PNG)
+![photo of gitignore file](/assets/post_media/2021-1-21-simple-website-tutorial-part-three/macos_gitignore.PNG)
 
 Stage all of the changes to files in this folder.   
 `git add .`
@@ -154,7 +154,7 @@ Now, let's take a closer look at some of the files that Jekyll uses to generate 
 - `_posts` - folder that all your files that represent posts will go inside
 
 Check out the Jekyll documentation for [more information on the structure of the Jekyll site directory](https://jekyllrb.com/docs/structure/){:target="_blank"}.   
-For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. We have more folders and files than your current basic Jekyll site. Note that we have seperate folders for storing images and audio files (`images` and `mp3`) in the root folder.
+For an example of a Jekyll site project folder, check out [the github repo for this site](https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io){:target="_blank"}. Note that we have more folders and files than your current basic Jekyll site.
 
 Take a look at the `_site` folder. Jekyll takes in your configurations, markdown files, and theme HTML/CSS files, generates all the files for a website, and places it there. The files in the folder should be similar to the HTML and CSS files we created in part two. So if you aren't planning on customizing your site's theme, you don't actually need to know HTML and CSS to use your Jekyll site (I still decided to cover it in part two so you can understand what Jekyll does). You will only be working with markdown files.
 

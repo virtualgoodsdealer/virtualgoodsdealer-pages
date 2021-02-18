@@ -12,7 +12,7 @@ Virtualgoodsdealer Creators began its first run in October. In November, we cont
 Last month we featured work from [LIVING SHADOW™](/creatordirectory/livingshadow), [adrimarieknits](/creatordirectory/adrimarieknits), [GentleMoonBell [Gently Made Plush]](/creatordirectory/gentlemoonbell), [Luz Muerta](/creatordirectory/luzmuerta), and [Moe Noza](/creatordirectory/moenoza). Here we are sharing some more about each creator and their inspiration and goals.
 
 -----
-![LIVING SHADOW™ masks in all colors](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/livingshadow_mask_allcolors_square.png)
+![LIVING SHADOW™ masks in all colors](/assets/post_media/2020-12-1-virtualgoodsdealer-creators-november-rewind/livingshadow_mask_allcolors_square.png)
 
 [LIVING SHADOW™](/creatordirectory/livingshadow) is an avant streetwear brand based in Milwaukee, WI. It was created by Lucas Alamo and KC Harrison. The brand produces a variety of work from apparel to custom multimedia work.
 
@@ -25,7 +25,7 @@ KC and Lucas: EEG tool that interprets audio & visual signals to import directly
 KC and Lucas: Underground catacomb RAVES !!!!!!!!
 
 -----
-![adrimarieknits minibag in blue modeled](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/adrimarieknits_mini_bag_blue_styled.png)
+![adrimarieknits minibag in blue modeled](/assets/post_media/2020-12-1-virtualgoodsdealer-creators-november-rewind/adrimarieknits_mini_bag_blue_styled.png)
 
 [adrimarieknits](/creatordirectory/adrimarieknits) is a knitwear brand created by Adrianna Spence. Adrianna is an architecture student based out of Atlanta, GA who loves to create in her free time.
 
@@ -38,7 +38,7 @@ Adrianna: I would probably knit custom sweaters for every cat in the world
 Adrianna: Animal Crossing New Horizons
 
 -----
-![GentleMoonBell No Cat Banana Plush](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/gentlemoonbell_nobananacat_meme.png)
+![GentleMoonBell No Cat Banana Plush](/assets/post_media/2020-12-1-virtualgoodsdealer-creators-november-rewind/gentlemoonbell_nobananacat_meme.png)
 
 [GentleMoonBell [Gently Made Plush]](/creatordirectory/gentlemoonbell) is created by Melva Harris, who is based in Queens, NY. 
 
@@ -54,7 +54,7 @@ If you are interested in checking out her gaming stream, you can find her on [tw
 Melva: All I do is online shop now, lol. So I love it.
 
 -----
-![Luz Muerta No. 006 Top](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/luzmuerta_shirt_front_cropped.png)
+![Luz Muerta No. 006 Top](/assets/post_media/2020-12-1-virtualgoodsdealer-creators-november-rewind/luzmuerta_shirt_front_cropped.png)
 
 [Luz Muerta](/creatordirectory/luzmuerta) is the project of duo Jon Arbelaiz and Luna Fariña. They are based in Madrid, Spain.
 
@@ -67,7 +67,7 @@ Luna and Jon: After the quarantine we started to appreciate our neighborhood mor
 Luna and Jon: We would create a space in our neighborhood, for example. An open space, welcoming people of any age, to participate and experiment with art. To give accessibility to people who for one never had the possibility or lacked the visibility of art in their lives. And for those whom may have always wanted to experiment with art but never had the economic access to pursue art.  A space with camera, paints, fabrics, all types of creative process to simply serve as a source of entertainment and/or inspiration.
 
 -----
-![Moe Noza soft sculpture](/images/post_images/2020-12-1-virtualgoodsdealer-creators-november-rewind.md/moe_noza_room.png)
+![Moe Noza soft sculpture](/assets/post_media/2020-12-1-virtualgoodsdealer-creators-november-rewind/moe_noza_room.png)
 
 [Moe Noza](/creatordirectory/moenoza) is a soft sculpture artist originally from Southern California, but relocated to Portland, Oregon. Each of their soft sculptures are unique and handmade from upcycled materials. We were drawn to the organic color pallettes and special forms of their pieces.
 

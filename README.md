@@ -72,6 +72,33 @@ then, insert `<!--more-->` after where you want the preview to cut off in the ar
 
 [jekyll doc example](https://jekyllrb.com/docs/posts/#post-excerpts)
 
+### Adding media to posts
+all media for posts (images, mp3 files, video files) go in the `assets/post_media` folder.
+
+create a folder with the file name (without extension) of the corresponding post inside `assets/post_media`.
+
+add all media for that post into that folder. for example, add all media used in `_posts/yyyy-mm-dd-title-of-article.md` into `assets/post_media/yyyy-mm-dd-title-of-article/`
+
+reference the media in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
+
+#### Large files hosted on git lfs
+For files larger than 100mb, host them on [git lfs](https://docs.github.com/en/github/managing-large-files/configuring-git-large-file-storage).
+
+It's recommended to install git lfs with `git lfs install --skip-smudge` so you do not download all the lfs files when you pull from the repo.
+
+Add the specific file path to the `.gitattributes` file:
+```
+git lfs track "assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+```
+After committing your changes, when you push to remote, the file will be uploaded to the lfs server rather than the normal git repo.
+
+Check the files that are tracked with lfs with `git lfs ls-files`. You should see the correct files listed.
+
+To reference a file stored with lfs on the pages site, add `https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/` in front of the file path.
+```
+src="https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+```
+
 ## Adding a new creator to the creator directory
 first, go to artist bios branch or create a new one
 
@@ -87,6 +114,9 @@ website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
+bandcamp: bandcamp url ((optional))
+soundcloud: soundcloud url ((optional))
+spotify: spotify url ((optional))
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))
 ---
@@ -97,14 +127,14 @@ donationlink: url of donation link ((optional))
 for `permalink`, after `/creatordirectory/` enter the creator markdown file name.
 the photo filename should also the same as the creator markdown file name.
 
-website and donationlink urls need to include `https://www.` or `http://www.`.
+website, donation link, bandcamp, spotify, and soundcloud urls need to include `https://www.` or `http://www.`.
 for instagram and twitter, only enter the username for that site (not the full url)
 
 only use shop if the creator's products are active on virtualgoodsdealer.com. enter the tag of their category on the virtualgoodsdealer.com shop.
 
 please note that if the creator is also an author of articles, the `name` field in the `creatorname.md` file must match with the `author` field in the article files for them to be linked.
 
-save the creator photo in the `images/creator_images` folder.
+save the creator photo in the `assets/creator_images` folder.
 
 then, insert the bio of the creator below the frontmatter.
 

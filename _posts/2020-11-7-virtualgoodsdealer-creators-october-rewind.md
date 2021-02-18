@@ -12,7 +12,7 @@ We began our first iteration of Virtualgoodsdealer Creators a month ago on Octob
 This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and [Skullfucked](/creatordirectory/skullfucked). Here we are sharing some more about each creator and their inspiration and goals.
 
 -----
-![cyber_sprite Fembot Pendant](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/cyber_sprite_fembot.jpg)
+![cyber_sprite Fembot Pendant](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/cyber_sprite_fembot.jpg)
 
 >I love online shopping because I can take my sweet time. I also like that I can support artists that I admire from around the world, directly, rather than a corporation.
 >-cyber_sprite
@@ -25,10 +25,10 @@ cyber_sprite: I would love to develop a mixed-reality VR experience with social 
 **Q: Favorite meme?**  
 cyber_sprite: The glitter girl from the “coming back from the club” vine. Legendary queen!
 
-![glitter girl meme](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/glitter_girl.jpg)
+![glitter girl meme](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/glitter_girl.jpg)
 
 -----
-![Juriel Furukawa Shirt](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/juriel_furukawa_mockup.png)
+![Juriel Furukawa Shirt](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/juriel_furukawa_mockup.png)
 
 >The F\*\*\* You - T combines the body and performance to create typographical piece. The F\*\*\* You T on a deeper read reclaims the body and its subjugation to false stereotyping. However, it does also just exist as a bunch of fuck you's to whatever it is you want to express that to.
 >-Juriel Furukawa
@@ -39,7 +39,7 @@ cyber_sprite: The glitter girl from the “coming back from the club” vine. Le
 Juriel: less frequent than before! I love how much more access I have to more independent sellers, but feel like I can spend too long looking at things. I do enjoy the immediate feeling of desire and love than comes from seeing an item in person
 
 -----
-![Demonmercen Bowl](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/demonmercen_bowl.jpg)
+![Demonmercen Bowl](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/demonmercen_bowl.jpg)
 
 [Demonmercen](/creatordirectory/demonmercen) is "a demon of sadness" based in Orlando. They are creating resin art, jewelry, apparel, and visual art.
 
@@ -53,7 +53,7 @@ demonmercen: (devil may cry) my family, they have really been here for me, even 
 demonmercen: a giant resin sculpture, show casing the feeling of severe depression, id need a jack hammer tons of clay, a jar, and hella time
 
 -----
-![Soft_g0th Stickers](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/soft_g0th_stickerpile.png)
+![Soft_g0th Stickers](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/soft_g0th_stickerpile.png)
 
 [Soft_G0th](/creatordirectory/soft_g0th) is an artist based "at the intersection of art and technology". We were drawn to the striking imagery, playful colors, and variety of textures in her illustration work.
 
@@ -72,7 +72,7 @@ Soft_g0th: Right now I'm SUPER inspired by Bimbos, especially early 2000s bimbos
 Soft_g0th: Undertale!!! I beat the pacifist route like 6 times
 
 -----
-![Steph Lau Calendar](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/steph_lau_calendar.png)
+![Steph Lau Calendar](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/steph_lau_calendar.png)
 
 [Steph Lau](/creatordirectory/stephlau) is a mixed media artist based in New York. Her fantastical and otherworldly style instantly stands out and has inspired many. She has created commercial artwork for clients such as Elsewhere Space, Maison Margiela, Dazed Beauty, Selfridges, and Lady Gaga. Steph also commits to transparency about her experiences and processes as an artist in this day and age, something that reflects in her social media presence and new Youtube channel. She aims to help deconstruct the various forms of gatekeeping within the creative industries.
 
@@ -82,10 +82,10 @@ Steph: A feature film where I get to make a world fully come to life + hire all 
 **Q: Favorite meme?**   
 Steph: recently variations of the  ["you're finally awake!" meme](https://knowyourmeme.com/memes/youre-finally-awake-you-hit-your-head-really-hard) always makes me feel better lol
 
-![hey you're finally awake meme](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/finallyyou'reawake_meme.png)
+![hey you're finally awake meme](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/finallyyou'reawake_meme.png)
 
 -----
-![Excerpt from Zines by Jackie](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/zines_by_jackie_excerpt.png)
+![Excerpt from Zines by Jackie](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/zines_by_jackie_excerpt.png)
 
 [Zines by Jackie](/creatordirectory/zinesbyjackie) was created by Jackie Liu, an artist and designer based in the greater NYC area. "Zines by Jackie" is her effort to create safe spaces for others to thrive creativity in tech, design, and art. Developing an ongoing series, she hopes to create playful, welcoming, and socially-centered ways to learn about technology and our relationships to it.
 
@@ -96,7 +96,7 @@ Jackie: I hate how the dopamine is so linked to the act of purchasing but there 
 Jackie: probably my own animated TV show with its own merch empire
 
 -----
-![Hillary R Space Cadet Sticker](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/hillary_r_space cadet_shorter.gif)
+![Hillary R Space Cadet Sticker](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/hillary_r_space cadet_shorter.gif)
 
 [Hillary R](/creatordirectory/hillaryr) is a digital artist based in Washington, DC. Hillary is a digital artist based in Washington, DC. She is drawn to the aesthetic of creating weightlessness. The world acts as a surrealist escape from reality, where the world is entirely created from her imagination. We were drawn to her charming character designs and the nostalgic feeling they create. Her favorite videogame is Super Monkey Ball and you can definitely see the influence that era of game design has on her work.
 
@@ -107,7 +107,7 @@ Hillary: I would create a series of one room installations based videogame level
 Hillary: anything about the vintage tshirt community. I watch a lot of t-shirt auctions and it can get ridiculous.
 
 ----
-![Skullfucked Harness](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/skullfucked_harnesslarge_closeup.png)
+![Skullfucked Harness](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/skullfucked_harnesslarge_closeup.png)
 
 [Skullfucked](/creatordirectory/skullfucked) was created by New Orleans, LA based designer Daiju Edwards. Their influences are deeply rooted in eroticism, horror, and dreaming; currently they are inspired by industrial music, latex, blood, and prosthetics.
 
@@ -117,7 +117,7 @@ Daiju: I would make a queer slasher film.
 **Q: Favorite meme?**
 Steve RAWRvey XD
 
-![emo steve harvey](/images/post_images/2020-11-7-virtualgoodsdealer-creators-october-rewind.md/emo_steve_harvey.jpg)
+![emo steve harvey](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/emo_steve_harvey.jpg)
 
 -----
 That's all our creators for October! We are continuing to release new items by different creators every week throughout November at [virtualgoodsdealer.com](virtualgoodsdealer.com). Virtualgoodsdealer is organized and run by [Cindie Xin](/creatordirectory/cindiexin) and [@ada.wrong](/creatordirectory/adawrong). Here's some reflections on our Virtualgoodsdealer creators experience so far:
