@@ -1,12 +1,10 @@
 ---
-title: Salem Gano
+title: Selam Gano
 permalink: /creatordirectory/selamgano
 name: Selam Gano
 website: https://selamjie.wordpress.com/
-shop:
 instagram: selamjie
 twitter: selamjie
-email: 
 photo: selamgano.jpg
 donationlink:
 ---
