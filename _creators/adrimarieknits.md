@@ -3,7 +3,7 @@ title: adrimarieknits
 permalink: /creatordirectory/adrimarieknits
 name: adrimarieknits
 website: 
-shop: 
+shop: adrimarieknits
 instagram: adrimarieknits
 twitter:
 photo: adrimarieknits.jpg
