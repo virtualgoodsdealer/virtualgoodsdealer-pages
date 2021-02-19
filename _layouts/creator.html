@@ -14,39 +14,39 @@ layout: default
 		<div class="artist-links">
 
 			<ul class="list-group list-group-horizontal">
-				{% if page.website %}
-					<li class="list-group-item">
-						<a href="{{ page.website }}" target="_blank"> website {{ escape }}</a>
-					</li>
-				{% endif %}
 				{% if page.shop %}
 					<li class="list-group-item">
-						<a href="https://www.virtualgoodsdealer.com/category/{{ page.shop }}" target="_blank"> shop {{ escape }}</a>
+						<a href="https://www.virtualgoodsdealer.com/category/{{ page.shop }}" target="_blank">products</a>
+					</li>
+				{% endif %}
+				{% if page.website %}
+					<li class="list-group-item">
+						<a href="{{ page.website }}" target="_blank">website</a>
 					</li>
 				{% endif %}
 				{% if page.instagram %}
 					<li class="list-group-item">
-						<a href="https://www.instagram.com/{{ page.instagram }}" target="_blank"> instagram {{ escape }}</a>
+						<a href="https://www.instagram.com/{{ page.instagram }}" target="_blank">instagram</a>
 					</li>
 				{% endif %}
 				{% if page.twitter %}
 					<li class="list-group-item">
-						<a href="https://twitter.com/{{ page.twitter }}" target="_blank"> twitter {{ escape }}</a>
+						<a href="https://twitter.com/{{ page.twitter }}" target="_blank">twitter</a>
 					</li>
 				{% endif %}
 				{% if page.spotify %}
 					<li class="list-group-item">
-						<a href="{{ page.spotify }}" target="_blank"> spotify {{ escape }}</a>
+						<a href="{{ page.spotify }}" target="_blank">spotify</a>
 					</li>
 				{% endif %}
 				{% if page.bandcamp %}
 					<li class="list-group-item">
-						<a href="{{ page.bandcamp }}" target="_blank"> bandcamp {{ escape }}</a>
+						<a href="{{ page.bandcamp }}" target="_blank">bandcamp</a>
 					</li>
 				{% endif %}
 				{% if page.soundcloud %}
 					<li class="list-group-item">
-						<a href="{{ page.soundcloud }}" target="_blank"> soundcloud {{ escape }}</a>
+						<a href="{{ page.soundcloud }}" target="_blank">soundcloud</a>
 					</li>
 				{% endif %}
 			</ul>
