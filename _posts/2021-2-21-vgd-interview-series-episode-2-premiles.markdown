@@ -9,7 +9,7 @@ post_description: "The second episode of Virtualgoodsdealer Interview Series. Ci
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/8UvVB7ry8ys" %}
 
-{% include open-embed.html caption="Audio only version:" src="https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/assets/post_media/2021-2-6-vgd-interview-series-episode-1-andre-brock/vgd_interview_series_1_27_2021_andre_brock_audio.mp3" %}
+{% include open-embed.html caption="Audio only version:" src="/assets/post_media/2021-2-21-vgd-interview-series-episode-2-premiles/vgd_interviewseries_2_6_premiles_audio.mp3" %}
 
 This is the second episode of Virtualgoodsdealer Interview Series, where we will be having conversations with artists, scholars, and internet personalities on their work and experiences.   
 
