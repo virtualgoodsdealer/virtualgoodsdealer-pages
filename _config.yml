@@ -84,6 +84,7 @@ defaults:
       layout: "submissions"
 
 
+google_analytics: G-VTKW4XE2X9
 
 # Exclude from processing.
 # The following items will not be processed, by default.
