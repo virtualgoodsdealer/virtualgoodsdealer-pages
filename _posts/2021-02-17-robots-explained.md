@@ -3,7 +3,7 @@
 layout: post
 title: Robots, Explained
 categories: [tech]
-author: Salem Gano
+author: Selam Gano
 related-articles:
 
 ---
