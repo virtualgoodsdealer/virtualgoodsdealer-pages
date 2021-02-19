@@ -1,7 +1,7 @@
 ---
-title: SAQMEMES
+title: saqmemes
 permalink: /creatordirectory/saqmemes
-name: sad.african.queen
+name: saqmemes
 website: 
 shop:
 instagram: saqmemes
