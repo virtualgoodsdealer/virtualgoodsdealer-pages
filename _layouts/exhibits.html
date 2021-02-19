@@ -48,18 +48,18 @@ layout: default
 			    	{% endcapture %}
 			    	{% for author in exhibit[1]['creators'] %}
 			    		{% assign author = author | strip %}
-			    		{% assign creators_link = creators_link | append: author %}
-			    		{% assign creators_link = creators_link | append: "</h6>" %}
 			    		{% for creator in site.creators %}
 			    			{% if creator.name == author %}
 			    				{% capture atag %}
 			    					<a href="{{ creator.permalink }}" >
 			    				{% endcapture %}
-			    				{% assign creators_link = creators_link | prepend: atag %}
-			    				{% assign creators_link = creators_link | append: '</a>' %}
+			    				{% assign atag = atag | append: author %}
+			    				{% assign atag = atag | append: '</a>' %}
 			    			{% endif %}
 			    		{% endfor %}
+			    		{% assign creators_link = creators_link | append: atag %}
 			    	{% endfor %}
+			    	{% assign creators_link = creators_link | append: "</h6>" %}
 			    	{{ creators_link }}
 			    {% else %}
 			    	<h6 class="card-subtitle exhibit-vgd mb-2">virtualgoodsdealer</h6>
