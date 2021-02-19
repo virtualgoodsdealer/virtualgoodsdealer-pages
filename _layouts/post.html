@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 				  	{% if creator.donationlink %}
 				    	<h5 class="card-title">If you enjoyed this post, consider donating to the author below.</h5>
 				    {% endif %}
-				    <p class="card-text"><span class="donation-text">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more">Learn more</a></p>
+				    <p class="card-text">About {{creator.name}}: <span class="donation-text font-weight-light">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a></p>
 				    {% if creator.donationlink %}
 				    	<a href="{{ creator.donationlink }}" class="btn btn-primary" target="_blank">Donate here</a>
 				    {% endif %}
