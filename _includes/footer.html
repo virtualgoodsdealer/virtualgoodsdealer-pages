@@ -3,6 +3,7 @@
 {%- assign social = site.social_links -%}
   <ul class="social-media-list list-inline  d-flex justify-content-between">
     <li class="align-top footer-link"><a href="{{ site.shop | escape }}" title="{{ site.shop | escape }}" target="_blank">virtualgoodsdealer.com</a></li>
+     <li class="align-top footer-link"><a href="https://pages.virtualgoodsdealer.com/feed.xml" title="Feed" target="_blank">feed</a></li>
     {%- if social.facebook -%}<li><a rel="me" href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" title="{{ social.facebook | escape }}" target="_blank"><svg class="svg-icon  "><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a></li>{%- endif -%}
     {%- if social.github -%}<li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}" target="_blank"><svg class="svg-icon  "><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></li>{%- endif -%}
     {%- if social.instagram -%}<li><a rel="me" href="https://www.instagram.com/{{ social.instagram | cgi_escape | escape }}" title="{{ social.instagram | escape }}" target="_blank"><svg class="svg-icon  "><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg></a></li>{%- endif -%}
