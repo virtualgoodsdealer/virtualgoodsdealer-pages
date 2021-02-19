@@ -38,16 +38,24 @@ layout: post
 title: title of article
 categories: category ((optional))
 author: name ((optional))
+guest: guestname ((optional - for interview posts ))
 related-articles: [article file name] ((optional))
 ---
 ```
+please note that the `author` field must match with the `name` field in the `creatorname.md` creator file for them to be linked.   
+if the article has multiple authors, write them in brackets.
+```
+categories: [name1, name2]
+```
 
-if the article has multipled categories, write it in brackets.
+if the article has multiple categories, write it in brackets.
 ```
 categories: [category1, category2]
 ```
 
-the `related-articles` value is for a list of related articles that you definitely want to be listed underneath this article. list the article filenames without the markdown extension.
+the `guest` value is for interview posts only. put the name of the guest that is being interviewed here. this field must match with the `name` field in a `creatorname.md` creator file for them to be linked.
+
+the `related-articles` field is for a list of related articles that you definitely want to be listed underneath this article. list the article filenames without the markdown extension.
 ```
 related-articles: [yyyy-mm-dd-title-of-article]
 ```   
@@ -55,7 +63,7 @@ the max number of articles shown under a post is 3. if there is less than 3 rela
 
 then, insert the content of the article below the front matter. 
 
-### Article excerpts
+### Article excerpts/descriptions
 the main articles pages display an excerpt of the article text that is taken from the first paragraph by default. if you want the preview text to be shorter, add a custom excerpt separator to the article markdown file's frontmatter.
 ```
 ---
@@ -72,6 +80,19 @@ then, insert `<!--more-->` after where you want the preview to cut off in the ar
 
 [jekyll doc example](https://jekyllrb.com/docs/posts/#post-excerpts)
 
+You can also write a separate post description that will only show up on the main articles page.
+```
+---
+layout: post
+title: title of article
+categories: category ((optional))
+author: name ((optional))
+related-articles: [article file name] ((optional))
+
+post_description: Description of post is here!!!!
+---
+```
+
 ### Adding media to posts
 all media for posts (images, mp3 files, video files) go in the `assets/post_media` folder.
 
@@ -81,24 +102,21 @@ add all media for that post into that folder. for example, add all media used in
 
 reference the media in the post markdown file with `/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.jpg` where "nameoffile.jpg" is your image file.
 
-#### Large files hosted on git lfs
-For files larger than 100mb, host them on [git lfs](https://docs.github.com/en/github/managing-large-files/configuring-git-large-file-storage).
-
-It's recommended to install git lfs with `git lfs install --skip-smudge` so you do not download all the lfs files when you pull from the repo.
-
-Add the specific file path to the `.gitattributes` file:
+### Embedding Youtube videos
+Add the embed URL of the Youtube video within `src`.
 ```
-git lfs track "assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+{% include youtube-video-embed.html src="..." %}
 ```
-After committing your changes, when you push to remote, the file will be uploaded to the lfs server rather than the normal git repo.
-
-Check the files that are tracked with lfs with `git lfs ls-files`. You should see the correct files listed.
-
-To reference a file stored with lfs on the pages site, add `https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/` in front of the file path.
+### Embedding Videos
+Add the path to the video within `src` and the path to the thumbnail image within `poster`.
 ```
-src="https://media.githubusercontent.com/media/virtualgoodsdealer/virtualgoodsdealer.github.io/master/assets/post_media/yyyy-mm-dd-title-of-article/nameoffile.mp4"
+{% include video-embed.html poster="..." src="..."%}
 ```
-
+### Embedding Audio
+Add the path to the audio file within `src`. Add a caption that will be displayed above the player by adding text within `caption`.
+```
+{% include open-embed.html caption="Add Your Caption Here" src="..." %}
+```
 ## Adding a new creator to the creator directory
 first, go to artist bios branch or create a new one
 
@@ -109,7 +127,7 @@ open the file and fill out the following front matter:
 ---
 title: name
 permalink: /creatordirectory/creatorname
-name: name ((optional))
+name: name
 website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
@@ -173,7 +191,10 @@ set `open` to "true" if the submissions call is open. set it to "false" if the c
 push changes to your current branch and then create a merge request on the github website.
 
 ## Helpful quick links
-[markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for formatting article content
+[markdown guide](https://www.markdownguide.org/cheat-sheet/) for formatting article content
+
+[bootstrap lead](https://getbootstrap.com/docs/4.0/content/typography/#lead)
+[bootstrap figure](https://getbootstrap.com/docs/4.0/content/figures/)
 
 [jekyll docs](https://jekyllrb.com/docs/)
 
