@@ -36,7 +36,7 @@ layout: default
 {% assign exhibits = site.data.exhibits %}
 {% for exhibit in exhibits %}
 	<div class='col-lg-6 col- exhibit-col'>
-		<div class="card exhibit-card">
+		<div class="card exhibit-card" id="{{ exhibit[1]['name'] | slugify }}">
 			{% assign poster = exhibit[1]['demo_poster'] %}
 			{% assign source = exhibit[1]['demo'] %}
 			{% include exhibit-video-embed.html poster=poster src=source%}
