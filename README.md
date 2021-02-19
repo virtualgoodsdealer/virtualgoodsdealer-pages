@@ -193,7 +193,7 @@ push changes to your current branch and then create a merge request on the githu
 ## Helpful quick links
 [markdown guide](https://www.markdownguide.org/cheat-sheet/) for formatting article content
 
-[bootstrap lead](https://getbootstrap.com/docs/4.0/content/typography/#lead)
+[bootstrap lead](https://getbootstrap.com/docs/4.0/content/typography/#lead)   
 [bootstrap figure](https://getbootstrap.com/docs/4.0/content/figures/)
 
 [jekyll docs](https://jekyllrb.com/docs/)
