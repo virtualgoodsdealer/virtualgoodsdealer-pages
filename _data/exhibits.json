@@ -1,5 +1,15 @@
 {
-	"b":
+	"taipei-metro-quest":
+		{
+			"name": "TAIPEI METRO QUEST",
+			"date": "2021-02-25",
+			"description": "TAIPEI METRO QUEST is a narrative video game about memory, time and finding your way home to yourself set in Taipei's public transit system.",
+			"creators":["dri chiu tattersfield"],
+			"demo": "/assets/exhibit_previews/taipeimetroquest/taipeimetroquest_preview.mp4",
+			"demo_poster": "/assets/exhibit_previews/taipeimetroquest/taipeimetroquest_preview_poster.png",
+			"link": "https://hellodri.itch.io/taipei-metro-quest"
+		},
+	"looting-dream":
 		{
 			"name": "LOOTING DREAM",
 			"date": "2021-02-14",
@@ -9,7 +19,7 @@
 			"demo_poster": "/assets/exhibit_previews/lootingdream/lootingdream_preview_poster.png",
 			"link": "https://kaaathy.com/everything/looting-dream.html"
 		},
-	"a":
+	"deleted-in-2020":
 		{
 			"name": "Deleted in 2020",
 			"date": "2021-01-15",

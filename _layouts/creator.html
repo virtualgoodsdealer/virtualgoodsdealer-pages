@@ -51,7 +51,12 @@ layout: default
 				{% endif %}
 				{% if page.patreon %}
 					<li class="list-group-item">
-						<a href="{{ page.patreon }}" target="_blank"> patreon {{ escape }}</a>
+						<a href="{{ page.patreon }}" target="_blank">patreon</a>
+					</li>
+				{% endif %}
+				{% if page.gumroad %}
+					<li class="list-group-item">
+						<a href="{{ page.gumroad }}" target="_blank">gumroad</a>
 					</li>
 				{% endif %}
 			</ul>
