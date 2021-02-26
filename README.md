@@ -128,6 +128,7 @@ open the file and fill out the following front matter:
 title: name
 permalink: /creatordirectory/creatorname
 name: name
+
 website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
@@ -136,6 +137,8 @@ bandcamp: bandcamp url ((optional))
 soundcloud: soundcloud url ((optional))
 spotify: spotify url ((optional))
 patreon: patreon url ((optional))
+gumroad: gumroad url ((optional))
+
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))
 ---
@@ -146,7 +149,7 @@ donationlink: url of donation link ((optional))
 for `permalink`, after `/creatordirectory/` enter the creator markdown file name.
 the photo filename should also the same as the creator markdown file name.
 
-website, donation link, bandcamp, spotify, soundcloud, and patreon urls need to include `https://www.` or `http://www.`.
+website, donation link, bandcamp, spotify, soundcloud, patreon, and gumroad urls need to include `https://www.` or `http://www.`.
 for instagram and twitter, only enter the username for that site (not the full url)
 
 only use shop if the creator's products are active on virtualgoodsdealer.com. enter the tag of their category on the virtualgoodsdealer.com shop.
