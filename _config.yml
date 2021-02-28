@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://pages.virtualgoodsdealer.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-shop: https://www.virtualgoodsdealer.com
+shop: https://products.virtualgoodsdealer.com
 
 # Build settings
 remote_theme: aidewoode/jekyll-theme-mint
