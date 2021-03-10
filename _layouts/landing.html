@@ -5,17 +5,14 @@ layout: default
 	<div class="mb-3 w-100 text-center">
 		<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
 	</div>
-	<div class="mb-1 w-100 landing-pages-about text-center">
+	<div class="mb-3 w-100 landing-pages-about text-center">
 		virtualgoodsdealer pages is a portal for publishing non-physical media and showcasing creators. 
 	</div>
-	<div class="mb-3 w-100 font-weight-light text-center" id="landing-about">
-	virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
-	</div>
-		<a href="/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
+		<a href="https://www.virtualgoodsdealer.com/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
 	<h5 class="card-title text-center">
 		browse articles by category...
 	</h5>
-	<div class="landing-articles-categories mb-3 w-100 d-flex justify-content-center">
+	<div class="landing-articles-categories mb-5 w-100 d-flex justify-content-center">
 		<a class="mr-1" href="/articles">/articles</a>
 		<ul class="list-group">					
 			{% assign categories = site.categories | sort %}
@@ -173,7 +170,6 @@ layout: default
 
 {% include clamp.html %}
 <script>
-	$clamp(document.getElementById("landing-about"), {clamp: 2, truncationHTML: '<a href="/about" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
 	var exerpts = document.getElementsByClassName("post-exerpt");
 	for (var i = 0; i < exerpts.length; i++){
 		$clamp(exerpts[i], {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
