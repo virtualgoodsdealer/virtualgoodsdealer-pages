@@ -65,6 +65,8 @@ collections:
     output: true
   submissions:
     output: true
+  deleted2020:
+    output: true
 
 defaults:
   - scope:
@@ -82,6 +84,11 @@ defaults:
       type: "submissions"
     values:
       layout: "submissions"
+  - scope:
+      path: ""
+      type: "deleted2020"
+    values:
+      layout: "deleted2020redirect"
 
 
 google_analytics: G-VTKW4XE2X9
