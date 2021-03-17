@@ -33,7 +33,9 @@ layout: default
 					recent articles
 				</h5>
 	
-  			{% for post in site.posts limit: 3 %}
+			{% assign post_array = site.posts | where: "layout", "post" %}
+  			{% for post in post_array limit: 3 %}
+
   				<div class="mb-3">
 
   				<a class='posts__link' href='{{ post.url | relative_url }}'>
@@ -102,8 +104,8 @@ layout: default
 		<h5 class="card-title text-center">
 			featured web exhibit
 		</h5>
-		{% assign exhibits = site.data.exhibits %}
-		{% for exhibit in exhibits limit:1 %}
+		{% assign exhibit_array = site.posts | where: "layout", "exhibit" %}
+		{% for exhibit in exhibit_array limit: 1 %}
 		<div class="card mb-3">
 			{% assign poster = exhibit[1]['demo_poster'] %}
 			{% assign source = exhibit[1]['demo'] %}

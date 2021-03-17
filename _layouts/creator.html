@@ -103,21 +103,6 @@ layout: default
 					</li>
 				{% endif %}
 			{% endfor %}
-			{% for exhibit in exhibits %}
-				{% if exhibit[1]['creators'][0] %}
-					{% for author in exhibit[1]['creators'] %}
-						{% assign author = author | strip %}
-					    {% if page.name == author %}
-					    	<li class="list-group-item">
-								<a href="/exhibits#{{ exhibit[1]['name'] | slugify }}">{{ exhibit[1]['name'] }}</a>
-								<div class="post-exerpt font-weight-light">
-									{{ exhibit[1]['description'] }}
-		          				</div>
-							</li>
-					    {% endif %}
-					{% endfor %}
-				{% endif %}
-			{% endfor %}
 		</div>
 	</div>
 {% endif %}

@@ -9,6 +9,7 @@ layout: default
 
     <div class='posts'>
       {% for post in site.posts %}
+        {% if post.layout == "post" %}
         <div class='posts__item row'>
         	<div class='col-lg-2'>
           	<time class='posts__date font-weight-light text-nowrap' datetime='{{ post.date | date_to_xmlschema }}'>
@@ -80,6 +81,7 @@ layout: default
             {% endif %}
           </div>
         </div>
+        {% endif %}
       {% endfor %}
     </div>
     {% endif %}

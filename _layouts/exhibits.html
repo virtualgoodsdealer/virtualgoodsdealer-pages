@@ -33,20 +33,20 @@ layout: default
 <p class="page-name">/{{ page.title }}</p>
 
 <div class="row">
-{% assign exhibits = site.data.exhibits %}
-{% for exhibit in exhibits %}
+{% for exhibit in site.posts %}
+	{% if exhibit.layout == "exhibit" %}
 	<div class='col-lg-6 col- exhibit-col'>
-		<div class="card exhibit-card" id="{{ exhibit[1]['name'] | slugify }}">
-			{% assign poster = exhibit[1]['demo_poster'] %}
-			{% assign source = exhibit[1]['demo'] %}
+		<div class="card exhibit-card" id="{{ exhibit.title | slugify }}">
+			{% assign poster = exhibit.demo_poster %}
+			{% assign source = exhibit.demo %}
 			{% include exhibit-video-embed.html poster=poster src=source%}
 			  <div class="card-body d-flex flex-column">
-			    <h5 class="card-title">{{ exhibit[1]['name'] }}</h5>
-			    {% if exhibit[1]['creators'][0] %}
+			    <h5 class="card-title">{{ exhibit.title }}</h5>
+			    {% if exhibit.author %}
 			    	{% capture creators_link %}
 			    		<h6 class="card-subtitle exhibit-creator-link mb-2">
 			    	{% endcapture %}
-			    	{% for author in exhibit[1]['creators'] %}
+			    	{% for author in exhibit.author %}
 			    		{% assign author = author | strip %}
 			    		{% for creator in site.creators %}
 			    			{% if creator.name == author %}
@@ -64,13 +64,14 @@ layout: default
 			    {% else %}
 			    	<h6 class="card-subtitle exhibit-vgd mb-2">virtualgoodsdealer</h6>
 			    {% endif %}
-			    <div class="card-text">{{ exhibit[1]['description'] }}</div>
+			    <div class="card-text">{{ exhibit.post_description }}</div>
 			    <div class="text-center mt-auto">
-			    	<a href="{{ exhibit[1]['link'] }}" class="btn btn-primary w-100" target="_blank">View</a>
+			    	<a href="{{ exhibit.link }}" class="btn btn-primary w-100" target="_blank">View</a>
 			    </div>
 			  </div>
 			</div>
 	</div>
+	{% endif %}
 {% endfor %}
 </div>
 
