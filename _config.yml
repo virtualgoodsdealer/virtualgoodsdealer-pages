@@ -94,6 +94,11 @@ defaults:
 
 google_analytics: G-VTKW4XE2X9
 
+feed:
+  collections:
+    - creators
+    - submissions
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
