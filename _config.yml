@@ -89,9 +89,15 @@ defaults:
       type: "deleted2020"
     values:
       layout: "deleted2020redirect"
+      title: "Deleted in 2020"
 
 
 google_analytics: G-VTKW4XE2X9
+
+feed:
+  collections:
+    - creators
+    - submissions
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<p class="page-name">/{{ page.title }}</p>
+<p class="page-name mb-0">/{{ page.title }}</p>
 <ul class="nav flex-column creator-list">
+{% assign lastletter = "" %}
 {% assign creators = site.creators | sort_natural: 'name' %}
   {% for creator in creators %}
+  	{% assign tmpletter = creator.name | slice: 0 | upcase %}
+  	{% if tmpletter != lastletter %}
+        <div class='creator-list-letter'>{{ tmpletter }}</div>
+    {% endif %}
     <li>
       <a href="{{ site.url }}{{ creator.permalink }}">/{{ creator.name }}</a>
     </li>
+    {% assign lastletter = tmpletter %}
   {% endfor %}
 </ul>

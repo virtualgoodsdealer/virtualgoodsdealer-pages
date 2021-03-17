@@ -5,17 +5,14 @@ layout: default
 	<div class="mb-3 w-100 text-center">
 		<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
 	</div>
-	<div class="mb-1 w-100 landing-pages-about text-center">
+	<div class="mb-3 w-100 landing-pages-about text-center">
 		virtualgoodsdealer pages is a portal for publishing non-physical media and showcasing creators. 
 	</div>
-	<div class="mb-3 w-100 font-weight-light text-center" id="landing-about">
-	virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products.
-	</div>
-		<a href="/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
+		<a href="https://www.virtualgoodsdealer.com/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
 	<h5 class="card-title text-center">
 		browse articles by category...
 	</h5>
-	<div class="landing-articles-categories mb-3 w-100 d-flex justify-content-center">
+	<div class="landing-articles-categories mb-5 w-100 d-flex justify-content-center">
 		<a class="mr-1" href="/articles">/articles</a>
 		<ul class="list-group">					
 			{% assign categories = site.categories | sort %}
@@ -75,7 +72,7 @@ layout: default
 	             {% endfor %}
 	             {{ author_list | join: "," }}
 	            {% endif %}
-	            <div class="post-exerpt font-weight-light">
+	            <div class="font-weight-light" id="{{ post.title | slugify }}">
 	              {% if post.post_description %}
 	                {{ post.post_description }}
 	              {% else %}
@@ -93,6 +90,12 @@ layout: default
 	              </span>
 	            {% endif %}
 	        </div>
+
+	        {% include clamp.html %}
+			<script>
+				var exerpts = document.getElementById("{{ post.title | slugify }}");
+				$clamp(exerpts, {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+			</script>
   		{% endfor %}
 	  	<div class="text-center mt-3">
 			<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
@@ -141,7 +144,35 @@ layout: default
 			  </div>
 			</div>
 	{% endfor %}
-	<a href="/exhibits" class="btn btn-primary w-100">exhibits</a>
+	<a href="/exhibits" class="btn btn-primary w-100">more exhibits</a>
+	</div>
+	<div class="mb-5 w-100">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title text-center">
+					open calls for submissions
+				</h5>
+	
+	  			{% assign form_sorted = site.submissions | reverse %}
+				{% for form in form_sorted %}
+					{% if form.open == true %}
+				    	<div class="mb-3">
+					      	<a class="posts__link" href="{{ site.url }}{{ form.permalink }}">{{ form.title }}</a>
+					      	<div class="font-weight-light" id="{{ form.title | slugify }}">
+				                {{ form.content | strip_html | truncatewords: 50 }}
+				            </div>
+			    		</div>
+			    		<script>
+							var exerpts = document.getElementById("{{ form.title | slugify }}");
+							$clamp(exerpts, {clamp: 2, truncationHTML: '<a href="{{ form.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+						</script>
+			    	{% endif %}
+				{% endfor %}
+			  	<div class="text-center mt-3">
+					<a href="/submissions" class="btn btn-outline-primary w-100 mb-0" >view all</a>
+				</div>
+  			</div>
+		</div>
 	</div>
 </div>
 		<script>
@@ -172,12 +203,3 @@ layout: default
 		  }
 		});
 		</script>
-
-{% include clamp.html %}
-<script>
-	$clamp(document.getElementById("landing-about"), {clamp: 2, truncationHTML: '<a href="/about" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
-	var exerpts = document.getElementsByClassName("post-exerpt");
-	for (var i = 0; i < exerpts.length; i++){
-		$clamp(exerpts[i], {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
-	}
-</script>

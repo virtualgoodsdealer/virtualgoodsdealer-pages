@@ -24,27 +24,6 @@ body {
   text-decoration-skip-ink: auto;
 }
 
-.heading-link a{
-  text-decoration: none;
-}
-
-.heading-link a:hover{
-  text-decoration: none;
-}
-
-.heading-link svg{
-    width: 0.9rem;
-    height: 0.9rem;
-    margin-left: 0.4rem;
-    fill: $post-date-color;
-    opacity: 0.3;
-    transition: 0.2s;
-}
-
-.heading-link svg:hover{
-    opacity: 0.65;
-}
-
 .page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd{
   color: $post-date-color !important;
 }
@@ -198,6 +177,12 @@ body {
   margin-right: 0.2rem;
 }
 
+.creator-list-letter {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  margin-top: 1rem;
+}
+
 .social-media-list li{
   display: inline;
 }
@@ -206,11 +191,21 @@ body {
   fill: $footer-color;
   width: 1rem;
   margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.footer-link a{
+.svg-icon:hover{
+  fill: black;
+}
+
+.footer a{
   color: $footer-color;
   text-decoration: none;
+}
+
+.footer a:hover{
+  color: black;
 }
 
 .badge {
@@ -332,8 +327,10 @@ body {
 }
 
 .footer {
+  margin-top: 3rem;
   font-size: .9rem;
   color: $footer-color;
+  font-family: Arial, sans-serif;
 }
 
 

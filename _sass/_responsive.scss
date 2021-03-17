@@ -44,4 +44,15 @@
     margin-top: 0;
   }
 
+  .subscribe{
+    text-align: left!important;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
 }
