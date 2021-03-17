@@ -24,27 +24,6 @@ body {
   text-decoration-skip-ink: auto;
 }
 
-.heading-link a{
-  text-decoration: none;
-}
-
-.heading-link a:hover{
-  text-decoration: none;
-}
-
-.heading-link svg{
-    width: 0.9rem;
-    height: 0.9rem;
-    margin-left: 0.4rem;
-    fill: $post-date-color;
-    opacity: 0.3;
-    transition: 0.2s;
-}
-
-.heading-link svg:hover{
-    opacity: 0.65;
-}
-
 .page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd{
   color: $post-date-color !important;
 }
