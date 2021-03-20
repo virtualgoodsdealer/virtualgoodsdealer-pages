@@ -55,11 +55,11 @@ I offer **Hot Take #1: Technology just accelerates existing trends, whatever the
 
 I offer you this video, “Autonomously folding a pile of 5 previously unseen towels”.
 
-{% include youtube-video-embed.html src="https://www.youtube.com/embed/gy5g33S0Gzo" %}
+{% include youtube-video-embed.html src="https://www.youtube.com/embed/gy5g33S0Gzo?rel=0" %}
 <br />
 This video is at 50x speed…which means it takes the robot something like 20 minutes per towel. Granted, this is 9 years ago and it is pretty impressive that the towels are “never-before-seen”.
 
-{% include youtube-video-embed.html src="https://www.youtube.com/embed/g0TaYhjpOfo" %}
+{% include youtube-video-embed.html src="https://www.youtube.com/embed/g0TaYhjpOfo?rel=0" %}
 <br />
 This, too, is a lovely gem (the things that fancy universities and companies don’t show you…)
 
@@ -106,7 +106,7 @@ To be clear, ML is still very powerful. It’s hard to process tons of data, and
 
 All of this said, ML is still pretty powerful which is why some (ok, most) choose to call it a form of AI. Algorithms that can perform high-level analysis are indeed impressive. Look at this crazy, incredible shit:
 
-{% include youtube-video-embed.html src="https://www.youtube.com/embed/x4O8pojMF0w" %}
+{% include youtube-video-embed.html src="https://www.youtube.com/embed/x4O8pojMF0w?rel=0" %}
 <br />
 Let’s go back to what we deem as the best example of intelligence, a human being. We have many sensors to interact with our world, and we gain and compile information at incredibly fast speeds. On the software side, there’s the question of how our brains work to synthesize all this information. But doesn’t hardware matter too? How can we understand anything if we cannot see and interact with the world right in front of us?
 
