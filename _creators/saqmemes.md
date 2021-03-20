@@ -2,7 +2,7 @@
 title: saqmemes
 permalink: /creatordirectory/saqmemes
 name: saqmemes
-website: 
+website: https://saqmemes.com/
 shop:
 instagram: saqmemes
 twitter: sadafricanqueen
