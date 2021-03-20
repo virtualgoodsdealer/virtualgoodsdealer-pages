@@ -8,18 +8,14 @@ related-articles:
 post_description: The Myers-Briggs Type Indicator and some of its traits are reflected through different meme page habits. Let Claire take you through this journey of self-awareness & meme expression.
 ---
 
-<p class="lead">
+{% include youtube-video-embed.html src="https://www.youtube.com/embed/kCLccpWQkoY?rel=0" %}
+<p class="lead mt-4">
 	I decided to ask some meme page owners what MBTI they identified as and I couldn’t help but notice some trends.
 </p>
 
 Then I decided to make a video, spending 70+ hours interviewing and researching all kinds of different meme pages using my obsessive MBTI knowledge. I spent another week of pretty much non-stop editing on Adobe Photoshop, After Effects, and Premiere, making sure that my video would be just as entertaining as it was informative. Featuring digital collages by me. 
 
-{% include youtube-video-embed.html src="https://www.youtube.com/embed/kCLccpWQkoY?rel=0" %}
-<br />
-
-<p class="lead">
-	Check out the images version of some of the collages I made for this video:
-</p>
+Check out the images version of some of the collages I made for this video:
 
 ![collage 2](/assets/post_media/2021-3-19-mbti-types-and-memes/mbticollage2.jpg "mbti collage 2")
 
