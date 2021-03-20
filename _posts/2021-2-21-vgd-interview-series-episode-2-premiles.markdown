@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Virtualgoodsdealer Interview Series: Episode 2, 'Through the Cringe with @premiles'"
-categories: interview
+categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: premiles
 post_description: "The second episode of Virtualgoodsdealer Interview Series. Cindie and Omnia speak with Miles about the uncanny performance of vulnerability used throughout his posts and debated with him over the evolving definition of cringe."  
