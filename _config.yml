@@ -22,7 +22,7 @@ title: pages.virtualgoodsdealer.com
 author: virtualgoodsdealer
 email: virtualgoodsofficial@gmail.com
 description: >- # this means to ignore newlines until "baseurl:" 
-  virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in creative direction, art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products. pages.virtualgoodsdealer.com focuses on publishing non-physical art and showcasing creators. by ada.wrong, cindie xin, and saqmemes.
+  virtualgoodsdealer is a collaborative virtual space and e-commerce portal. working in art, fashion, technology, and craft, we provide an infrastructure to facilitate creative trades and develop products. pages.virtualgoodsdealer.com focuses on publishing non-physical art and showcasing creators. by ada.wrong, cindie xin, and saqmemes.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://pages.virtualgoodsdealer.com" # the base hostname & protocol for your site, e.g. http://example.com
 
