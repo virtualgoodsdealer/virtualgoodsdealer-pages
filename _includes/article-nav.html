@@ -1,14 +1,39 @@
 <div class="row article-nav">
-  {% if page.previous.url %}
-  	<div class="text-left col">
-    	<a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-    </div>
-  {% endif %}
-  {% if page.next.url %}
-  	<div class="text-right col">
-    	<a href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    </div>
-  {% endif %}
+	{% if page.previous.url %}
+		{% assign start = 0 %}
+		{% for post in site.posts %}
+			{% if post.url == page.url %}
+				{% assign start = 1 %}
+			{% endif %}
+			{% if start == 1 and post.previous.url %}
+				{% assign check_page = post.previous %}
+			  	{% if check_page.layout == "post" %}
+			  		<div class="text-left col">
+				    	<a href="{{ check_page.url }}">&laquo; {{ check_page.title }}</a>
+					</div>
+					{% break %}
+			  	{% endif %}
+			{% endif %}
+	 	{% endfor %}
+	{% endif %}
+  	{% if page.next.url %}
+  		{% assign posts_reverse = site.posts | reverse %}
+  		{% assign start = 0 %}
+		{% for post in posts_reverse %}
+			{% if post.url == page.url %}
+				{% assign start = 1 %}
+			{% endif %}
+			{% if start == 1 and post.next.url %}
+				{% assign check_page = post.next %}
+			  	{% if check_page.layout == "post" %}
+				  	<div class="text-right col">
+				    	<a href="{{ check_page.url }}">{{ check_page.title }} &raquo;</a>
+				    </div>
+				    {% break %}
+			  	{% endif %}
+			{% endif %}
+	 	{% endfor %}
+  	{% endif %}
 </div>
 <div class="row article-suggested">
 	<div class="col">
@@ -70,7 +95,8 @@
 		{% endfor %}
 	{% endfor %}
 
-	{% for post in site.posts %}
+	{% assign posts = site.posts | where: "layout", "post" %}
+	{% for post in posts %}
 		{% if article_list.size < 3 and page.path != post.path %}
 			{% unless article_list contains post %}
 			<li class="list-group-item">
