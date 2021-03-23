@@ -3,7 +3,7 @@ title: Claire Ramirez
 permalink: /creatordirectory/claireramirez
 name: Claire Ramirez
 website: https://www.bequietclaire.com/
-instagram: bequiteclaire
+instagram: bequietclaire
 twitter: 
 photo: claireramirez.jpg
 donationlink:
