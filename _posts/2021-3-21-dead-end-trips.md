@@ -1,12 +1,13 @@
 ---
 
 layout: post
-title: "Dead-End Trips: An Intrapersonal Guide to Interplanetary Travel"
+
+title: "Dead-End Trips: An Intrapersonal Guide to Interstellar Travel"
 categories: [prose]
 author: saqmemes
 related-articles:
-post_description: [How drawing certain boundaries between you and your higher self may reveal your true potential.
-Plus, the only thing you need to know before attempting your first interstellar journey]
+post_description: [How drawing certain boundaries between you and your higher self may reveal your true potential. Plus the one thing you should know before next voyage]
+
 ---
 
 
@@ -51,7 +52,9 @@ Well, it means you may as well come to a permanent stop, relax, and learn to acc
 
 **My Advice?**
 
-before you attempt reach for the stars, you must first and foremost locate 🦓 
+
+Before reaching for the stars, you must first and foremost locate your 🦓 
+
 
 
 for 🦓 = ♾️ = ♾️ = 🦓
@@ -64,4 +67,6 @@ for 🦓 = ♾️ = ♾️ = 🦓
 
 
 
-This piece was inspired by [u/Sexycoed1972](https://www.reddit.com/user/Sexycoed1972/)'s response to this [question](https://www.reddit.com/r/AskReddit/comments/k2c9rp/what_is_the_scariestcreepiest_theory_you_know/gdu778g/?utm_source=reddit&utm_medium=web2x&context=3) found on [r/askreddit](https://www.reddit.com/r/AskReddit/)
+
+This piece was inspired by [u/Sexycoed1972](https://www.reddit.com/user/Sexycoed1972/)'s response to this [question](https://www.reddit.com/r/AskReddit/comments/k2c9rp/what_is_the_scariestcreepiest_theory_you_know/gdu778g/?utm_source=reddit&utm_medium=web2x&context=3). Via [r/askreddit](https://www.reddit.com/r/AskReddit/)
+
