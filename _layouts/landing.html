@@ -9,6 +9,99 @@ layout: default
 		virtualgoodsdealer pages is a portal for publishing non-physical media and showcasing creators. 
 	</div>
 		<a href="https://www.virtualgoodsdealer.com/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
+
+	<div class="mb-5 w-100">
+		<h5 class="card-title text-center">
+			recent articles
+		</h5>
+		<div class="card">
+			<div class="card-body">
+				{% assign post_array = site.posts | where: "layout", "post" %}
+	  			{% for post in post_array limit: 3 %}
+	  				<div class="mb-3 row">
+	  					{% if post.thumbnail %}
+	  					<div class="col- col-md-3">
+	  						<div class="post-thumbnail-container">
+	  							<a href='{{ post.url | relative_url }}'>
+	  								<img class="" src="{{ post.thumbnail }}"/>
+	  							</a>
+	  						</div>
+	  					</div>
+	  					<div class="col- col-md-9">
+	  					{% else %}
+	  						<div class="col">
+	  					{% endif %}
+		  				<a class='posts__link' href='{{ post.url | relative_url }}'>
+			              {{ post.title }}
+			            </a>
+
+			            {% if post.guest %}
+			              <span class="posts-link-by">featuring</span>
+			              {% assign guest_list = '' | split: '' %}
+			              {% for guest in post.guest %}
+			                {% for creator in site.creators %}
+			                  {% if creator.name == guest %}
+			                    {% capture guest_link %}
+			                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ guest | escape }}</a>
+			                      {% endcapture %}
+			                      {% assign guest_link = guest_link | rstrip %}
+			                      {% assign guest_list = guest_list | push: guest_link %}
+			                  {% endif %}
+			                {% endfor %}
+			             {% endfor %}
+			             {{ guest_list | join: "," }}
+			            {% endif %}
+
+			            {% if post.author %}
+			              <span class="posts-link-by">by</span>
+			              {% assign author_list = '' | split: '' %}
+			              {% for author in post.author %}
+			                {% for creator in site.creators %}
+			                  {% if creator.name == author %}
+			                    {% capture author_link %}
+			                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ author | escape }}</a>
+			                    {% endcapture %}
+			                    {% assign author_link = author_link | rstrip %}
+			                    {% assign author_list = author_list | push: author_link %}
+			                  {% endif %}
+			                {% endfor %}
+			             {% endfor %}
+			             {{ author_list | join: "," }}
+			            {% endif %}
+			            <div class="font-weight-light" id="{{ post.title | slugify }}">
+			              {% if post.post_description %}
+			                {{ post.post_description }}
+			              {% else %}
+			                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+			              {% endif %}
+			            </div>
+			            {% if post.categories %}
+			              <span class="posts-categories">
+			              {% assign categories = post.categories | sort %}
+			              {% for category in categories %}
+			                <a class='font-weight-light' href='/articles/{{ category }}'>
+			                   /{{ category }}
+			                </a>
+			              {% endfor %}
+			              </span>
+			            {% endif %}
+
+		       		</div>
+
+			        {% include clamp.html %}
+					<script>
+						var exerpts = document.getElementById("{{ post.title | slugify }}");
+						$clamp(exerpts, {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
+					</script>
+					</div>
+  				{% endfor %}
+			  	<div class="text-center mt-3">
+					<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
 	<h5 class="card-title text-center">
 		browse articles by category...
 	</h5>
@@ -23,86 +116,7 @@ layout: default
 		{% endfor %}
 	</ul>
 	</div>
-	<div class="mb-5 w-100">
-		<div class="card">
-			<div class="card-body">
-				<h5 class="card-title text-center">
-					recent articles
-				</h5>
-	
-			{% assign post_array = site.posts | where: "layout", "post" %}
-  			{% for post in post_array limit: 3 %}
 
-  				<div class="mb-3">
-
-  				<a class='posts__link' href='{{ post.url | relative_url }}'>
-	              {{ post.title }}
-	            </a>
-
-	            {% if post.guest %}
-	              <span class="posts-link-by">featuring</span>
-	              {% assign guest_list = '' | split: '' %}
-	              {% for guest in post.guest %}
-	                {% for creator in site.creators %}
-	                  {% if creator.name == guest %}
-	                    {% capture guest_link %}
-	                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ guest | escape }}</a>
-	                      {% endcapture %}
-	                      {% assign guest_link = guest_link | rstrip %}
-	                      {% assign guest_list = guest_list | push: guest_link %}
-	                  {% endif %}
-	                {% endfor %}
-	             {% endfor %}
-	             {{ guest_list | join: "," }}
-	            {% endif %}
-
-	            {% if post.author %}
-	              <span class="posts-link-by">by</span>
-	              {% assign author_list = '' | split: '' %}
-	              {% for author in post.author %}
-	                {% for creator in site.creators %}
-	                  {% if creator.name == author %}
-	                    {% capture author_link %}
-	                      <a class='posts-link-authors' href='{{ creator.permalink }}'>{{ author | escape }}</a>
-	                    {% endcapture %}
-	                    {% assign author_link = author_link | rstrip %}
-	                    {% assign author_list = author_list | push: author_link %}
-	                  {% endif %}
-	                {% endfor %}
-	             {% endfor %}
-	             {{ author_list | join: "," }}
-	            {% endif %}
-	            <div class="font-weight-light" id="{{ post.title | slugify }}">
-	              {% if post.post_description %}
-	                {{ post.post_description }}
-	              {% else %}
-	                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-	              {% endif %}
-	            </div>
-	            {% if post.categories %}
-	              <span class="posts-categories">
-	              {% assign categories = post.categories | sort %}
-	              {% for category in categories %}
-	                <a class='font-weight-light' href='/articles/{{ category }}'>
-	                   /{{ category }}
-	                </a>
-	              {% endfor %}
-	              </span>
-	            {% endif %}
-	        </div>
-
-	        {% include clamp.html %}
-			<script>
-				var exerpts = document.getElementById("{{ post.title | slugify }}");
-				$clamp(exerpts, {clamp: 2, truncationHTML: '<a href="{{ post.url | relative_url }}" class="read-more font-weight-light">Read More</a>', useNativeClamp: false});
-			</script>
-  		{% endfor %}
-	  	<div class="text-center mt-3">
-			<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
-		</div>
-  	</div>
-		</div>
-	</div>
 	<div class="mb-5 w-100">
 		<h5 class="card-title text-center">
 			featured web exhibit

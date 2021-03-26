@@ -49,6 +49,28 @@
     margin-top: 1rem;
   }
 
+  .post-thumbnail-container {
+    width: 320px;
+    height: 180px;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-thumbnail-container img {
+    margin-top: 0px;
+    width: 320px;
+
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
 }
 
 @media screen and (max-width: 320px) {

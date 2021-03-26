@@ -298,6 +298,17 @@ body {
   font-weight: bold;
 }
 
+.post-thumbnail-container {
+  width: 252px;
+  height: 142px;
+  overflow: hidden;
+}
+
+.post-thumbnail-container img {
+    margin-top: -19px;
+    width: 252px;
+}
+
 .posts {
   list-style: none;
   margin: 0;

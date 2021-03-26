@@ -5,6 +5,7 @@ categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: premiles
 post_description: "The second episode of Virtualgoodsdealer Interview Series. Cindie and Omnia speak with Miles about the uncanny performance of vulnerability used throughout his posts and debated with him over the evolving definition of cringe."  
+thumbnail: https://img.youtube.com/vi/8UvVB7ry8ys/mqdefault.jpg
 ---
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/8UvVB7ry8ys?rel=0" %}

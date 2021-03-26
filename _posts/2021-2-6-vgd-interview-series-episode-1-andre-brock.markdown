@@ -5,6 +5,7 @@ categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: André L. Brock
 post_description: "The first episode of Virtualgoodsdealer Interview Series. Cindie and Omnia speak to Dr. André Brock about his work studying Black Twitter and hear his thoughts on outrage economy, cancel culture, and their impact on social media."  
+thumbnail: https://img.youtube.com/vi/4eYD_3NemIA/mqdefault.jpg
 ---
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/4eYD_3NemIA?rel=0" %}
