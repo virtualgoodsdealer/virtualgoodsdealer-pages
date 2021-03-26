@@ -14,7 +14,7 @@ post_description: The Myers-Briggs Type Indicator and some of its traits are ref
 
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/kCLccpWQkoY?rel=0" %}
-
+<br />
 [View Audio Transcription](/articles/2021/03/19/myers-briggs-type-indicator-trends-an-analysis-video/#audio-transcription)
 
 After spending 70+ hours interviewing and researching all kinds of different meme pages using my obsessive MBTI knowledge, I spent another week of pretty much non-stop editing on Adobe Photoshop, After Effects, and Premiere, making sure that my video would be just as entertaining as it was informative.
