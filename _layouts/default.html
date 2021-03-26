@@ -4,9 +4,15 @@
   <body>
     <div class='layout'>
       {% include header.html %}
+      {% if page.layout == "landing" or page.layout == "exhibits" %}
+        <div class="container-with-cards">
+      {% endif %}
       <div class='container'>
         {{ content }}
       </div>
+      {% if page.layout == "landing" or page.layout == "exhibits" %}
+        </div>
+      {% endif %}
       <div class='container'>
         {% include footer.html %}
       </div>

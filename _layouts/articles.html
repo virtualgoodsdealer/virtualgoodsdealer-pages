@@ -11,7 +11,14 @@ layout: default
       {% for post in site.posts %}
         {% if post.layout == "post" %}
         <div class='posts__item row'>
-        	<div class='col-lg-2'>
+        	<div class='col-lg-3'>
+            {% if post.thumbnail %}
+              <div class="post-thumbnail-container  mx-auto">
+                <a href='{{ post.url | relative_url }}'>
+                  <img class="img-thumbnail" src="{{ post.thumbnail }}"/>
+                </a>
+              </div>
+            {% endif %}
           	<time class='posts__date font-weight-light text-nowrap' datetime='{{ post.date | date_to_xmlschema }}'>
             		{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
             		{{ post.date | date: date_format }}
@@ -21,8 +28,9 @@ layout: default
               {% if post_date > today_date %}
                 <span class="badge badge-pill badge-primary">Coming Soon</span>
               {% endif %}
+            
           </div>
-          <div class='col-lg posts__title'>
+          <div class='col-lg-9 posts__title'>
             <a class='posts__link' href='{{ post.url | relative_url }}'>
               {{ post.title }}
             </a>
@@ -86,5 +94,6 @@ layout: default
     </div>
     {% endif %}
   </div>
-  {% include categorynav.html %}
+
 </div>
+  {% include categorynav.html %}

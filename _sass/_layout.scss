@@ -236,6 +236,10 @@ body {
   padding-bottom: 1.7rem;
 }
 
+.exhibits-page-title {
+  margin-left: 15px;
+}
+
 .figure {
   display: block;
 }
@@ -305,7 +309,6 @@ body {
 }
 
 .post-thumbnail-container img {
-    margin-top: -19px;
     width: 252px;
 }
 
@@ -319,7 +322,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  align-items: baseline;
 }
 
 .posts__date {
