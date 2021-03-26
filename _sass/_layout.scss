@@ -236,6 +236,10 @@ body {
   padding-bottom: 1.7rem;
 }
 
+.exhibits-page-title {
+  margin-left: 15px;
+}
+
 .figure {
   display: block;
 }
@@ -299,14 +303,27 @@ body {
 }
 
 .post-thumbnail-container {
-  width: 252px;
-  height: 142px;
-  overflow: hidden;
+  border: 1px solid blue;
+  padding: .25rem;
+  border-radius: .25rem;
 }
 
 .post-thumbnail-container img {
-    margin-top: -19px;
-    width: 252px;
+  width: 100%;
+  height: auto;
+}
+
+.posts .post-thumbnail-exerpt {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.thumbnail-col {
+  padding-right: 0;
+}
+
+.date-column{
+  flex: 0 0 10%;
 }
 
 .posts {
@@ -319,7 +336,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  align-items: baseline;
 }
 
 .posts__date {

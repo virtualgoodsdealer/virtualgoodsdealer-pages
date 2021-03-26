@@ -20,8 +20,8 @@ layout: default
 	  			{% for post in post_array limit: 3 %}
 	  				<div class="mb-3 row">
 	  					{% if post.thumbnail %}
-	  					<div class="col- col-md-3">
-	  						<div class="post-thumbnail-container">
+	  					<div class="col- col-md-3 thumbnail-col">
+	  						<div class="post-thumbnail-container mx-auto">
 	  							<a href='{{ post.url | relative_url }}'>
 	  								<img class="" src="{{ post.thumbnail }}"/>
 	  							</a>
