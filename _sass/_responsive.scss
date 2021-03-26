@@ -20,6 +20,15 @@
   .landing {
   margin-top: 2rem;
     }
+
+  .posts .thumbnail-col {
+    padding-right: 15px;
+  }
+
+  .posts .post-thumbnail-exerpt {
+    margin-bottom: 0;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -50,20 +59,13 @@
   }
 
   .post-thumbnail-container {
-    width: 320px;
-    height: 180px;
     margin-bottom: 0.5rem;
   }
-
-  .post-thumbnail-container img {
-    width: 320px;
-
-  }
-
   .container-with-cards .container {
     padding-right: 0;
     padding-left: 0;
   }
+
 
 }
 

@@ -6,7 +6,7 @@ categories: [culture, video]
 author: Claire Ramirez
 related-articles:
 post_description: The Myers-Briggs Type Indicator and some of its traits are reflected through different meme page habits. Let Claire take you through this journey of self-awareness & meme expression.
-thumbnail: https://img.youtube.com/vi/kCLccpWQkoY/mqdefault.jpg
+thumbnail: https://img.youtube.com/vi/kCLccpWQkoY/hq720.jpg
 ---
 
 <p class="lead mt-4">

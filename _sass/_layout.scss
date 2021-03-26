@@ -303,13 +303,27 @@ body {
 }
 
 .post-thumbnail-container {
-  width: 252px;
-  height: 142px;
-  overflow: hidden;
+  border: 1px solid blue;
+  padding: .25rem;
+  border-radius: .25rem;
 }
 
 .post-thumbnail-container img {
-    width: 252px;
+  width: 100%;
+  height: auto;
+}
+
+.posts .post-thumbnail-exerpt {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.thumbnail-col {
+  padding-right: 0;
+}
+
+.date-column{
+  flex: 0 0 10%;
 }
 
 .posts {
