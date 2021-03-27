@@ -91,29 +91,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 </article>
-
-	    {% if page.author %}
-      		{% for creator in site.creators %}
-        		{% if creator.name == page.author %}
-        		<div class="card text-center">
-				  <div class="card-header">
-				    Thanks for reading!
-				  </div>
-				  <div class="card-body">
-				  	{% if creator.donationlink %}
-				    	<h5 class="card-title">If you enjoyed this post, consider donating to the author below.</h5>
-				    {% endif %}
-				    <p class="card-text">About {{creator.name}}: <span class="donation-text font-weight-light">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a></p>
-				    {% if creator.donationlink %}
-				    	<a href="{{ creator.donationlink }}" class="btn btn-primary" target="_blank">Donate here</a>
-				    {% endif %}
-				  </div>
-				</div>
-        			
-					
-        		{% endif %}
-      		{% endfor %}
-    	{% endif %}
+{% include article-creator.html %}
 <hr />
 {% include article-nav.html %}
 <hr />

@@ -73,7 +73,7 @@ defaults:
       path: ""
       type: "category"
     values:
-      layout: "articlescategory"
+      layout: "articles"
   - scope:
       path: ""
       type: "creators"
