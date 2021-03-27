@@ -1,0 +1,71 @@
+{% if page.author %}
+	{% for creator in site.creators %}
+		{% if creator.name == page.author %}
+		<div class="card author-post-card border-primary mt-5">
+		  <div class="card-header  text-center border-primary bg-transparent">
+		  	{% if creator.donationlink %}
+		  		If you enjoyed this post, consider donating to the creator below.
+		  	{% else %}
+		    	Thanks for spending time with us!
+		  	{% endif %}
+		  </div>
+		  <div class="card-body row">
+		  	<div class="col-sm-3 align-self-center thumbnail-col">
+		  		<div class="post-thumbnail-container mx-auto">
+		  			<img class="author-photo" src="/assets/creator_images/{{ creator.photo }}"/>
+		  		</div>
+		  	</div>
+		  	<div class="col-sm-9 align-self-center">
+			    <div class="author-createdby">
+			    	created by:
+			    </div>
+			    <h5 class="card-title">{{creator.name}}</h5>
+			    <p class="card-text">
+			    	<span class="author-post-bio font-weight-light">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a>
+			    </p>
+			    {% if creator.donationlink %}
+					<a href="{{ creator.donationlink }}" class="btn btn-primary donate-btn" target="_blank">Donate here</a>
+				{% endif %}
+			</div>
+
+		  </div>
+		</div>
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% if page.guest %}
+	{% for creator in site.creators %}
+		{% if creator.name == page.guest %}
+		<div class="card author-post-card border-primary mt-5">
+		  <div class="card-header  text-center border-primary bg-transparent">
+		  	{% if creator.donationlink %}
+		  		If you enjoyed this post, consider donating to the guest below.
+		  	{% else %}
+		    	Thanks for spending time with us!
+		  	{% endif %}
+		  </div>
+		  <div class="card-body row">
+		  	<div class="col-sm-3 align-self-center thumbnail-col">
+		  		<div class="post-thumbnail-container mx-auto">
+		  			<img class="author-photo" src="/assets/creator_images/{{ creator.photo }}"/>
+		  		</div>
+		  	</div>
+		  	<div class="col-sm-9 align-self-center">
+			    <div class="author-createdby">
+			    	this post is featuring:
+			    </div>
+			    <h5 class="card-title">{{creator.name}}</h5>
+			    <p class="card-text">
+			    	<span class="author-post-bio font-weight-light">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a>
+			    </p>
+			    {% if creator.donationlink %}
+					<a href="{{ creator.donationlink }}" class="btn btn-primary donate-btn" target="_blank">Donate here</a>
+				{% endif %}
+			</div>
+
+		  </div>
+		</div>
+		{% endif %}
+	{% endfor %}
+{% endif %}

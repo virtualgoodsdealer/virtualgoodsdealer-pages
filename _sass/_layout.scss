@@ -6,7 +6,7 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .donation-text a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link a,  .landing-product-card a{
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link a,  .landing-product-card a{
   color: $header-nav-color;
 }
 
@@ -24,7 +24,7 @@ body {
   text-decoration-skip-ink: auto;
 }
 
-.page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd{
+.page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd, .author-createdby{
   color: $post-date-color !important;
 }
 
@@ -33,7 +33,7 @@ body {
   text-decoration: none !important;
 }
 
-.read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link a:hover, .landing-articles-categories a:hover, .landing-product-card a:hover{
+.read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link a:hover, .landing-articles-categories a:hover, .landing-product-card a:hover, .author-post-bio a:hover{
   color: $post-link-hover-color !important;
   text-decoration: none !important;
 }
@@ -46,11 +46,11 @@ body {
     text-decoration: none;
 }
 
-.post a, .post-content a, .artist-page a, .donation-text a{
+.post a, .post-content a, .artist-page a{
   text-decoration: underline;
 }
 
-.post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover{
+.post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover, .author-post-bio a{
   color: $post-link-hover-color;
   text-decoration: underline;
   text-decoration-color: $post-link-hover-color;
@@ -253,6 +253,9 @@ body {
   overflow:hidden;
 }
 
+.border-primary {
+  border-color: blue!important;
+}
 
 video:focus, audio:focus {
   outline:none;
@@ -324,6 +327,10 @@ body {
 
 .date-column{
   flex: 0 0 10%;
+}
+
+.author-photo {
+  width: 100%;
 }
 
 .posts {
