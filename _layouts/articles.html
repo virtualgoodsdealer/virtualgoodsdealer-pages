@@ -2,13 +2,24 @@
 layout: default
 ---
 
+
 <div class="row">
   <div class="col-lg">
     {% if site.posts.size > 0 %}
-    <p class="page-name">/{{ page.title }}</p>
+    {% if page.tag %}
+      <p class="page-name">/articles/{{ page.tag }}</p>
+    {% else %}
+      <p class="page-name">/{{ page.title }}</p>
+    {% endif %}
 
     <div class='posts'>
-      {% for post in site.posts %}
+      {% if page.tag %}
+        {% assign posts_array = site.categories[page.tag] %}
+      {% else %}
+        {% assign posts_array = site.posts %}
+      {% endif %}
+      
+      {% for post in posts_array %}
         {% if post.layout == "post" %}
         <div class='posts__item row mb-3'>
         	<div class='col-lg-2 date-column'>
