@@ -11,8 +11,8 @@ layout: default
 		<h3 class="artist-name">{{ page.name }}</h3>
 		{{ content }}
 
+<!-- list of creator social links -->
 		<div class="artist-links">
-
 			<ul class="list-group list-group-horizontal">
 				{% if page.shop %}
 					<li class="list-group-item">
@@ -63,6 +63,8 @@ layout: default
 		</div>
 	</div>
 </div>
+
+<!-- display all articles and exhibits that creator is the author of -->
 {% for post in site.posts %}
 	{% if post.author contains page.name or post.guest contains page.name %}
 		{% assign contributer = true %}
