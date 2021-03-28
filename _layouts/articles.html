@@ -2,9 +2,10 @@
 layout: default
 ---
 
-
+<!-- show all posts -->
 <div class="row">
   <div class="col-lg">
+    <!-- check if current page is displaying all articles or only articles that are in a specific category -->
     {% if site.posts.size > 0 %}
     {% if page.tag %}
       <p class="page-name">/articles/{{ page.tag }}</p>
@@ -40,6 +41,7 @@ layout: default
               {{ post.title }}
             </a>
 
+            <!-- add guest name -->
             {% if post.guest %}
               <span class="posts-link-by">featuring</span>
               {% assign guest_list = '' | split: '' %}
@@ -56,7 +58,7 @@ layout: default
              {% endfor %}
              {{ guest_list | join: "," }}
             {% endif %}
-
+            <!-- add author name -->
             {% if post.author %}
               <span class="posts-link-by">by</span>
               {% assign author_list = '' | split: '' %}
@@ -74,7 +76,7 @@ layout: default
              {{ author_list | join: "," }}
             {% endif %}
             
-
+            <!-- add post thumbnail -->
             {% if post.thumbnail %}
             <div class="row post-thumbnail-exerpt">
               <div class="col- col-md-3 thumbnail-col">
@@ -90,6 +92,7 @@ layout: default
                 <div class="col">
               {% endif %}
 
+            <!-- add post description -->
             <div class="post-exerpt font-weight-light">
               {% if post.post_description %}
                 {{ post.post_description }}
@@ -100,6 +103,7 @@ layout: default
             </div>  
           </div>
         </div>
+        <!-- add post categories -->
         {% if post.categories %}
               <span class="posts-categories">
               {% assign categories = post.categories | sort %}
@@ -118,5 +122,6 @@ layout: default
     {% endif %}
 
   </div>
-      {% include categorynav.html %}
+  <!-- add list of categories -->
+  {% include categorynav.html %}
 </div>

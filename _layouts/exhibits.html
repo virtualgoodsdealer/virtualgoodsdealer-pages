@@ -2,6 +2,7 @@
 layout: default
 ---
 <script>
+// lazy load all videos
 	document.addEventListener("DOMContentLoaded", function() {
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
@@ -31,7 +32,7 @@ layout: default
 </script>
 
 <p class="page-name exhibits-page-title">/{{ page.title }}</p>
-
+<!-- display each exhibit in a card -->
 <div class="row">
 {% for exhibit in site.posts %}
 	{% if exhibit.layout == "exhibit" %}
@@ -43,9 +44,11 @@ layout: default
 			  <div class="card-body d-flex flex-column">
 			    <h5 class="card-title">{{ exhibit.title }}</h5>
 			    {% if exhibit.author %}
+			    	<!-- name of exhibit -->
 			    	{% capture creators_link %}
 			    		<h6 class="card-subtitle exhibit-creator-link mb-2">
 			    	{% endcapture %}
+			    	<!-- list creators with links to their creator page -->
 			    	{% for author in exhibit.author %}
 			    		{% assign author = author | strip %}
 			    		{% for creator in site.creators %}
@@ -62,9 +65,12 @@ layout: default
 			    	{% assign creators_link = creators_link | append: "</h6>" %}
 			    	{{ creators_link }}
 			    {% else %}
+			    	<!-- if there is no author, display author as virtualgoodsdealer -->
 			    	<h6 class="card-subtitle exhibit-vgd mb-2">virtualgoodsdealer</h6>
 			    {% endif %}
+			    <!-- description of exhibit -->
 			    <div class="card-text">{{ exhibit.post_description }}</div>
+			    <!-- link to view exhibit -->
 			    <div class="text-center mt-auto">
 			    	<a href="{{ exhibit.link }}" class="btn btn-primary w-100" target="_blank">View</a>
 			    </div>
@@ -75,13 +81,14 @@ layout: default
 {% endfor %}
 </div>
 
-	<div class="exhibit-submissions card w-100 text-center">
-	  <div class="card-header">
-	    Interested in displaying your work here?
-	  </div>
-	  <div class="card-body">
+<!-- card asking linking to call for submissions -->
+<div class="exhibit-submissions card w-100 text-center">
+  <div class="card-header">
+    Interested in displaying your work here?
+  </div>
+  <div class="card-body">
 
-	    <p class="card-text">Check out our web art submission guidelines to learn how you can submit your pieces.</p>
-	    <a href="/submissions/webart" class="btn btn-outline-primary">Submissions</a>
-	  </div>
-	</div>
+    <p class="card-text">Check out our web art submission guidelines to learn how you can submit your pieces.</p>
+    <a href="/submissions/webart" class="btn btn-outline-primary">Submissions</a>
+  </div>
+</div>
