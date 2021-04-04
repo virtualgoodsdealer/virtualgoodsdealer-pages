@@ -3,14 +3,16 @@ layout: post
 title:  "Virtualgoodsdealer Interview Series: Episode 3 - Music Memes With Bandmemes666"
 categories: [interview, video]
 author: [cindie xin, saqmemes]
-guest: bandmemes666
+guest: Bandmemes666
 post_description: "In episode 3 of Virtualgoodsdealer Interview Series, Cindie and Omnia discuss music memes with NY-based musician and memer Bandmemes666"  
-thumbnail: https://img.youtube.com/vi/8UvVB7ry8ys/hq720.jpg
+thumbnail: https://img.youtube.com/vi/McR4OTffABM/hq720.jpg
 ---
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/McR4OTffABM?rel=0" %}
 
-<p> This is the third episode of Virtualgoodsdealer Interview Series, where we will be having conversations with artists, scholars, and internet personalities on their work and experiences. </p>
+&zwnj;  
+
+<p> This is the third episode of Virtualgoodsdealer Interview Series, where we talk to artists, scholars, and internet personalities about their work and experiences. </p>
 
 In this episode we had the pleasure of speaking with musician and memer [@bandmemes666](https://www.instagram.com/bandmemes666/){:target="_blank"} about the people, events, and trends that inspire some of his memes, his thoughts on repost pages, his music writing process, upcoming projects, and what makes for a good music meme. 
 
@@ -21,7 +23,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 
 ### Audio Transcription
 
-*Intro Music*
+*\<Intro Music\>*
 
 **Omnia:** All right, so we want to welcome bandmemes666 to our show today. We were just talking about him not wanting to show his work until it was 100%. Which was a perfect transition, because we're gonna play a little — it's not really a game, but we're just going to go through all of our favorite music memes, and we're just going to dissect them for three minutes each. And please leave us your comments if you agree or disagree with some of our opinions. 
 
@@ -50,7 +52,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 
 **Omnia:** I bet you get mad notifications.
 
-**Dave:** Well, I have this habit, just as a musician, like, I'll record demos myself, and it'll be like, really half baked, and I'll send it to like a bunch of people. And then write like the next part, like right after. And then I'll be like, oh, well, why didn't I just like, wait a little bit longer to send it around everyone? That's also, like, a huge thing with musicians, I think, there's a lot of talk and planning and like, you celebrate before the job's done. You know what I mean?
+**Dave:** Well, I have this habit, just as a musician, like, I'll record demos myself, and it'll be like, really half baked, and I'll send it to like a bunch of people. And then write like the next part, like right after. And then I'll be like, oh, well, why didn't I just like, wait a little bit longer to send it around everyone? That's also, like, a huge thing with musicians, I think there's a lot of talk and planning and like, you celebrate before the job's done. You know what I mean?
 
 **Omnia:** Well, I mean, and sometimes you were just really gotta send it to people before you decide you're never going to show it to anybody.
 
@@ -124,7 +126,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 	</figcaption>
 </figure>
 
-**Cindie:** Oh my god, the sound that's like ahh!!. That song is so good. That sounds so good that no one talks about how good it is.
+**Cindie:** Oh my god, the sound that's like "haaa!". That song is so good. That sounds so good that no one talks about how good it is.
 
 **Omnia:** I used to be obsessed with it at some point. My favorite song by them now is On Melancholy Hill. I learned it on the keys.
 
@@ -229,7 +231,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 
 **Dave:** He was in NSYNC.
 
-Ciindie: That's true. But like, none of the other members of NSYNC are still famous.
+**Cindie:** That's true. But like, none of the other members of NSYNC are still famous.
 
 **Dave:** Yeah, that's true. But he was the N of NSYNC.
 
@@ -239,7 +241,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 
 **Omnia:** I was a Backstreet Boys fan.
 
-**Dave:** NSYNC is like, it's from the end of their first names. I think like the last letter of each of their first names is part of N SYNC.
+**Dave:** NSYNC is like, it's from the end of their first names. I think like the last letter of each of their first names is part of 'NSYNC'.
 
 **Omnia:** Well, that worked out for them. Okay.
 
@@ -313,7 +315,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 
 **Omnia:** I think I have. It’s kind of dubsteppy, right?
 
-**Cindie:** I don't know, it's like they play — I found out about them because they did like an adult swim feature, where they're playing music inside of a porta potty. Like, there's these two guys dressed in clown outfits. And they're both sitting in this porta potty like cramped as hell, but they have like drums, keyboards and stuff in there. And they're just playing music. And it's like, it's very chaotic. But one of the guys he plays a soprano saxophone and he's so good. Like, I guess he has like a jazz background or something. But it sounds like he's so skilled. And I don't know, to me the music sounds good, but it's very chaotic. It's like a good intro to that kind of genre.
+**Cindie:** I don't know, it's like they play — I found out about them because they did like an Adult Swim feature, where they're playing music inside of a porta potty. Like, there's these two guys dressed in clown outfits. And they're both sitting in this porta potty like cramped as hell, but they have like drums, keyboards and stuff in there. And they're just playing music. And it's like, it's very chaotic. But one of the guys he plays a soprano saxophone and he's so good. Like, I guess he has like a jazz background or something. But it sounds like he's so skilled. And I don't know, to me the music sounds good, but it's very chaotic. It's like a good intro to that kind of genre.
 
 **Omnia:** Wait, is the porta potty, is that part of the deal? Of Clown Core?
 
@@ -325,7 +327,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 
 **Omnia:** I’ll check it out. Okay, we gotta do another meme.
 
-**Cindie:** Sorry, for my Clown Core tangent.
+**Cindie:** Sorry for my Clown Core tangent.
 
 **Omnia:** No, that was very interesting, I’m glad I asked. I was so attacked by this meme.
 
@@ -336,7 +338,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 	</figcaption>
 </figure>
 
-**Cindie:** The pentatonic scale: *exists* Eighth graders who play guitar: *it's free real real estate.*
+**Cindie:** The pentatonic scale: \*exists\*. Eighth graders who play guitar: It's free real real estate.
 
 **Omnia:** It’s literally all you need though.
 
@@ -370,7 +372,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 
 **Omnia:** it's actually a pro. But yeah I guess I'm talking to a real musician now, so. [laughs] On the piano it's super easy too. I never played guitar but on the piano it's a dream.
 
-**Cindie:** I'm just looking at this like how do I learn this skill on guitar so i can start fake playing guitar? Dave, you're a guitar player right?
+**Cindie:** I'm just looking at this like how do I learn this skill on guitar so I can start fake playing guitar? Dave, you're a guitar player right?
 
 **Dave:** Yeah.
 
@@ -407,9 +409,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 
 **Omnia:** Stupider than going hunting? Of course not. Like I feel like the stupid things girls get attached to are so harmless compared to the stupid things that guys get excited about.
 
-**Cindie:** That's true I saw a tweet today that was like why are girls the ones that are demonized for being crazed fans of musicians, have you seen the way that boys will defend their favorite rapper? I guess like there's delusional people like everywhere you know but this is especially true for music I think. Like a lot of artists who are more popular — as soon as an artist gets a fan base that consists of a lot of teenage girls like they stopped being taken seriously. I put in this meme like in the top right it says like the it's like a Brockhampton album and like the 1975 album. I'm like, I don't actually think that either of those are that good but I feel like they're more made fun of because like a lot of their fan base is teenage girls.
-
-**Omnia:** I have no reason for hating Tool honestly and to be to be 100% honest I don't think I've ever heard a single song by them yet i feel like roasting them every time they their name comes up. 
+**Cindie:** That's true I saw a tweet today that was like, why are girls the ones that are demonized for being crazed fans of musicians, have you seen the way that boys will defend their favorite rapper? I guess like, there's delusional people like everywhere, you know, but this is especially true for music I think. Like a lot of artists who are more popular — as soon as an artist gets a fan base that consists of a lot of teenage girls like they stopped being taken seriously. I put in this meme like in the top right it says like the it's like a Brockhampton album and like the 1975 album. I'm like, I don't actually think that either of those are that good but I feel like they're more made fun of because like a lot of their fan base is teenage girls.
 
 <figure class="figure">
 	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\tool.jpg" class="figure-img img-fluid rounded" alt="music memes">
@@ -418,7 +418,7 @@ Ciindie: That's true. But like, none of the other members of NSYNC are still fam
 	</figcaption>
 </figure>
 
-I love this because it escalated very quickly, like it didn't need to escalate like that. Oh, you’re a Tool fan? Name five tools I can use to fix my parents’ marriage.
+**Omnia:** I have no reason for hating Tool honestly and to be to be 100% honest I don't think I've ever heard a single song by them yet i feel like roasting them every time they their name comes up. I love this because it escalated very quickly, like it didn't need to escalate like that. Oh, you’re a Tool fan? Name five tools I can use to fix my parents’ marriage.
 
 **Cindie:** This is really good.
 
@@ -444,7 +444,7 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Omnia:** Wait, that’s kind of cool.
 
-**Dave:** But like, once you start, say, like, if you show someone some music, and they don't like it, and then you immediately are like, no, like, this is why you should like it. It's like this deeper thing that you're like, not hearing that, like, you need to know outside of the music. You know what I mean?
+**Dave:** But like, once you start, say, like, if you show someone some music, and they don't like it, and then you immediately are like, no, this is why you should like it, it's like this deeper thing that you're like, not hearing that you need to know outside of the music. You know what I mean?
 
 **Omnia:** They want you to understand. Yeah.
 
@@ -487,6 +487,8 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Dave:** No, I didn't make it. I think I sent you, maybe I sent you one that I did make where he's like turning away from the staircase?
 
+**Cindie:** [laughs]  
+
 **Omnia:** No, I think this is the one you sent me because I tried to find it everywhere. And finally I just dmed you.
 
 **Dave:** I did not make this. I think it came from, I think actually I saw it on the Reddit page that you told me about.
@@ -504,13 +506,13 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 	</figcaption>
 </figure>
 
- It's like, top two top three, and I just love how simple and to the point it is. Art doesn't have to be edgy to be meaningful.
+**Omnia:** It's like, top two top three, and I just love how simple and to the point it is. Art doesn't have to be edgy to be meaningful.
 
 **Cindie:** Well I guess thanks for liking this one. I like this too. I guess I feel like it's very literal. It’s exactly what it says. But I feel like this wouldn't hit as hard now, but like when I — this was from like 2018 or something, right?
 
 **Omnia:** Yeah. I remember it hitting really hard, that's why I remembered it today because yeah, it was needed at the time for sure.
 
-**Cindie:** Yeah, it was like during a time when everyone — it's like people were doing the edginess olympics on Instagram. And it's like alright y'all…  Especially in meme pages you know how people try to like compete over how much trauma they have to try to get likes I'm like alright y'all, I thought we're in this to support each other and shit not like shame people for not having enough trauma,
+**Cindie:** Yeah, it was like during a time when everyone — it's like people were doing the edginess olympics on Instagram. And it's like alright y'all…  Especially in meme pages you know how people try to like compete over how much trauma they have to try to get likes I'm like alright y'all, I thought we're in this to support each other and shit not like shame people for not having enough trauma.
 
 **Omnia:** Oh yeah the whole olympics thing, yeah.
 
@@ -522,7 +524,7 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Omnia:** You did this with Phonto?
 
-**Cindie:** Yeah, it's like, if you pay Phonto, if you pay 99 cents you get like the 3d text feature where you can warp the text to make it look 3d.
+**Cindie:** Yeah, it's like, if you pay for Phonto, if you pay 99 cents you get like the 3d text feature where you can warp the text to make it look 3d.
 
 **Omnia:** I bet that's only on iPhone because they didn't show me that.
 
@@ -530,11 +532,11 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Omnia:** Their shadow on their like free version, oh my gosh it's useless. This looks really great. Why did you choose this Pokemon guy?
 
-**Cindie:** Honestly, I can't remember. Like at that time I think I just had it like the picture of Pikachu save to my phone because during that time I was really into finding pictures of like N64 era graphics T-posing and I would just like try to find every character like that in this art style. So I just had it saved to my phone. I actually I think I made this in the back of an uber like leaving from Jillian's apartment.
+**Cindie:** Honestly, I can't remember. Like at that time I think I just had it like the picture of Pikachu save to my phone because during that time I was really into finding pictures of like N64 era graphics T-posing and I would just like try to find every character like that in this art style. So I just had it saved to my phone. I actually I think I made this in the back of an uber leaving from Jillian's apartment.
 
 **Omnia:** Oh, wow.
 
-**Cindie:** In new york! I definitely made this in new york.
+**Cindie:** In New York! I definitely made this in New York.
 
 **Omnia:** I think Pikachu fits.
 
@@ -566,7 +568,7 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Cindie:** Okay, should we move on to Omnia’s meme?
 
-**Cindie:** Okay, yes, I’m excited.
+**Omnia:** Okay, yes, I’m excited.
 
 **Cindie:** Okay so i have two that i'm thinking of. One is music related and one isn't necessarily. I'm just gonna send both of them.
 
@@ -601,7 +603,7 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Cindie:** [laughs]
 
-**Dave:** I learned that guitar part. It was like one of the first like hip hop guitar parts I ever learned. Like [sings guitar part].
+**Dave:** I learned that guitar part. It was like one of the first like hip hop guitar parts I ever learned. Like [sings guitar riff].
 
 **Omnia:** So amazing. But fuck Dr. Dre. I'm saying it. Don't take it off the recording. Fuck Dr. Dre.
 
@@ -629,7 +631,7 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 
 **Omnia:** I’ve heard of the Shittyboyz. I heard about them from you or Fatima, I think.
 
-**Cindie:** Oh my god. Yeah, we were like obsessed with them for a while because like for a while when they were still in high school, they dropped like a mixtape that's so good. It's like lowkey. I don't think they're quite as good anymore because they're trying to be more serious.
+**Cindie:** Oh my god. Yeah, we were like obsessed with them for a while because like for a while when they were still in high school, they dropped like a mixtape that's so good. It's like lowkey, I don't think they're quite as good anymore because they're trying to be more serious.
 
 **Omnia:** Oh, that's a tough transition, but good for them.
 
@@ -656,3 +658,5 @@ I love this because it escalated very quickly, like it didn't need to escalate l
 **Dave:** [laughs] The link in my bio. Where else?
 
 **Omnia:** Link in bio. [@Bandmemes666](https://www.instagram.com/bandmemes666/?hl=en).
+
+*\<Outro Music\>*

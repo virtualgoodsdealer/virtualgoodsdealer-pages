@@ -11,4 +11,4 @@ photo: bandmemes666.png
 donationlink:
 patreon:
 ---
-[@bandmemes666](https://www.instagram.com/bandmemes666) is musician and memer based in New York. When he's not playing or composing music, he's creating 
+[@bandmemes666](https://www.instagram.com/bandmemes666) is musician and memer based in New York. When he's not playing or composing music, he's creating hilariously relatable memes for his highly prolific, celebrity-endorsed Instagram meme page.
