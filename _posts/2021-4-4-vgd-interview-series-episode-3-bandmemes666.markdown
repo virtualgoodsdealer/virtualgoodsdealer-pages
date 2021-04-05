@@ -30,7 +30,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Cindie:** I think Omnia is gonna send the first meme. Oh, there it is. Cool.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\koalanights.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\koalanights.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/koalanights/?hl=en" target="_blank">@koalanights</a>
 	</figcaption>
@@ -79,7 +79,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** That makes sense. I'm gonna go ahead, because we need to — I need to talk to Dave about this. We had a conversation about it before but the whole mastering versus mixing. I love this meme. It’s so on point.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\bandmemes1.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\bandmemes1.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/bandmemes666" target="_blank">@bandmemes666</a>
 	</figcaption>
@@ -120,7 +120,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** I don't know who made this, but somebody give them a medal.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\feelgoodinc.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\feelgoodinc.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Source: Unknown:
 	</figcaption>
@@ -181,7 +181,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Cindie:** I already did. Next meme!
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\crimea.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\crimea.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/namaste.at.home.dad" target="_blank">@namaste.at.home.dad</a>
 	</figcaption>
@@ -250,7 +250,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** Alright, so I put this meme here, but I don't really — what is this supposed to mean? Like is he actually… 
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\noiseshow.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\noiseshow.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/eternalbonghit" target="_blank">@eternalbonghit</a>
 	</figcaption>
@@ -281,7 +281,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** We're gonna have to talk about noise shows. After our last conversation, I went and just typed noise music. Um, I don't know. I didn't like what I heard, the first few ones, but okay. This is actually a good segue. Because it literally sounds like a blender.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\noisemusician.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\noisemusician.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/namaste.at.home.dad" target="_blank">@namaste.at.home.dad</a>
 	</figcaption>
@@ -332,7 +332,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** No, that was very interesting, I’m glad I asked. I was so attacked by this meme.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\pentatonic.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\pentatonic.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/biglukethefreak" target="_blank">@biglukethefreak</a>
 	</figcaption>
@@ -397,7 +397,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Cindie:** Hey, that's my meme! 
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\girlslikeit.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\girlslikeit.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/males_are_cancelled" target="_blank">@males_are_cancelled</a>
 	</figcaption>
@@ -412,7 +412,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Cindie:** That's true I saw a tweet today that was like, why are girls the ones that are demonized for being crazed fans of musicians, have you seen the way that boys will defend their favorite rapper? I guess like, there's delusional people like everywhere, you know, but this is especially true for music I think. Like a lot of artists who are more popular — as soon as an artist gets a fan base that consists of a lot of teenage girls like they stopped being taken seriously. I put in this meme like in the top right it says like the it's like a Brockhampton album and like the 1975 album. I'm like, I don't actually think that either of those are that good but I feel like they're more made fun of because like a lot of their fan base is teenage girls.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\tool.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\tool.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/mens_rice_activist" target="_blank">@mens_rice_activist</a>
 	</figcaption>
@@ -467,7 +467,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** Okay. I chose this one because I felt like it was a little too specific. So I want to hear your story.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\quit.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\quit.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/bandmemes666" target="_blank">@bandmemes666</a>
 	</figcaption>
@@ -500,7 +500,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** All right. I think this is probably my favorite meme by you.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\edgy.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\edgy.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/males_are_cancelled" target="_blank">@males_are_cancelled</a>
 	</figcaption>
@@ -575,7 +575,7 @@ Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 **Omnia:** Oh, okay. I think I'm going to talk about the shitty rappers one.
 
 <figure class="figure">
-	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\producers.jpg" class="figure-img img-fluid rounded" alt="music memes">
+	<img src="/assets/post_media/2021-4-4-vgd-interview-series-episode-3-bandmemes666\producers.JPG" class="figure-img img-fluid rounded" alt="music memes">
 	<figcaption class="figure-caption">
 		Meme by: <a href="https://www.instagram.com/saqmemes" target="_blank">@saqmemes</a>
 	</figcaption>
