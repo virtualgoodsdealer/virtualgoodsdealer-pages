@@ -10,9 +10,9 @@ post_description: [How drawing certain boundaries between you and your higher se
 
 ---
 
-![Dots](\assets\post_media\2021-3-31-gimp-tutorial\intro\dotpattern1.jpg "GIMP patterns")
 
-# Table of Content
+
+## Table of Content
 1. [What You Will Learn To Make](/articles/2021/03/26/making-with-gimp-part-one/#in-this-tutorial)
 2. [Why GIMP?](/articles/2021/03/26/making-with-gimp-part-one/#audio-transcription)
 3. [Getting Started]
@@ -21,9 +21,11 @@ post_description: [How drawing certain boundaries between you and your higher se
 4. [Navigating GIMP]
   - Layers Window
   - The Toolbox
+  - Colors
+  - 
 
 
-# In This Tutorial:
+## In This Tutorial:
 I will tell you about the different types of patterns I learned to make using GIMP, and show you step-by-step, how to make each design into your own creation. This is a complete beginner’s guide, as I, too, am a beginner. I hope this tutorial will help you become more familiar with GIMP's interface and toolboxes. By the end, you should be able to create something similar to each of the following examples:
 
 <div class="row">
@@ -45,7 +47,7 @@ I will tell you about the different types of patterns I learned to make using GI
 
 
 
-# Why GIMP?
+## Why GIMP?
 I got by as a content creator by making most of my content in my phone, using a combination of the following mobile photo editors:
 
 - [Phonto](https://phon.to/download){:target="_blank"}: for text editing
@@ -66,9 +68,9 @@ I was introduced to GIMP in this highly questionable [episode of Forensic Files]
 
 Gnu Image Manipulation Program is an open-source photo editing software used by professional illustrators, designers, photographers, and scientists alike. This is due to GIMP’s sophisticated layering system which allows you to add/blend/transform/erase very specific components inside an image without compromising the surrounding areas or losing your earlier edits. This unlimited editing functionality, coupled with GIMP’s highly customizable library of tools, brushes, gradients, textures, and patterns is why GIMP is the best-known free alternative to Photoshop. 
 
-And thanks to GIMP’s community of contributors (as in the source in "open source",) there are now over 100 GIMP-compatible plug-ins you can download for free. Here are my [first] and [second] favorites. They, along with the software, are in constant maintenance and development, meaning any bugs are swiftly dealt with. 
+And thanks to GIMP’s community of contributors (as the source in "open source") there are now over 100 GIMP-compatible plug-ins you can download for free. Here are my [first] and [second] favorites. They, along with the software, are in constant maintenance and development, meaning any bugs are swiftly dealt with. 
 
-To conclude my why behind this tutorial: GIMP is a remarkable and magnificent tool that can outperform photoshop in many ways despite being 100% free, for anyone to own, forever.
+To conclude my why behind this tutorial: GIMP is a remarkable and magnificent tool that can outperform photoshop in many ways despite being 100% free, for anyone to own forever.
 
 
 # Getting Started with GIMP:
@@ -78,14 +80,15 @@ To conclude my why behind this tutorial: GIMP is a remarkable and magnificent to
 ## Preparing Your Local Folder Tree:
 
 In your local drive, create a “My GIMP” folder. Inside it, create the following folder tree:
-- “My XCF Files”: this is where you’ll `Save` multi-layer projects if you want to be able to modify those layers at a later time. `Save` or `Save As`: `filename.xcf` 
+- “My XCF Files”: this is where you’ll `Save` multi-layer projects if you want to be able to modify those layers at a later time.
+  - `Save` or `Save As`: `filename.xcf` 
 - "My GIMP Exports": this is where you can "Export" your creations. You can export a layer or a selection, or as by default, all the visible areas in your canvas as a single image.
   - Note: in GIMP you may need to manually add the file extension. Use `Export As`:
     - `filename.png` for drawings, text, logos, icons, and images with transparent background.
     - `filename.jpeg` when it's important to have a smaller file size/faster loading time
     - `filename.gbr` to make any image or selection into a brush, and
     - `filename.pat` to make any image or selection into a tileable pattern
-  - Inside “My GIMP Exports” create a folder named “My GIMP Patterns" - this is where you’ll export your .pat files before you can add them to GIMP’s built-in `patterns` folder.
+  - Inside “My GIMP Exports” create a folder named “My GIMP Patterns" - this is where you’ll export your .pat files temporarily before you can add them to GIMP’s built-in `patterns` folder.
 
 ## Locating GIMP’s built-in “Patterns” folder
 1. Open GIMP
@@ -95,29 +98,36 @@ In your local drive, create a “My GIMP” folder. Inside it, create the follow
 5. While you’re still in the Open dialogue, navigate to your local “My GIMP” folder tree and add each of the folders you just created to GIMP's shortcuts. 
 6. While GIMP's built-in `patterns` folder is still in your clipboard, Open your local File Explorer and paste that location into the address bar. Select, then add the folder to your computer's shortcuts/Quick Access Bar. 
 
-If you're never going to work with GIMP again, this step might have been a waster of time. But if you do end up using GIMP, I just saved you many hours that I myself wasted rummaging through folders. Even if you don't find this tutorial to be helpful, I hope that you'll continue making, saving, and exporting things to fill these folders. **Visit the [Helpful Tools](/articles/2021/03/26/making-with-gimp-part-one/#helpful-tools) section for a list of my favorite GIMP resources.**
+If you're never going to work with GIMP again, this step might have been a waster of time. But if you do end up using GIMP, I just saved you many hours that I myself wasted rummaging through folders. Even if you don't find this tutorial to be helpful, I hope that you'll continue making, saving, and exporting things to fill these folders.
+
+**Visit the [Helpful Tools](/articles/2021/03/26/making-with-gimp-part-one/#helpful-tools) section for a list of my favorite GIMP resources.**
+
+<div class="alert alert-success" role="alert">
+Visit the [Helpful Tools](/articles/2021/03/26/making-with-gimp-part-one/#helpful-tools) section for a list of my favorite GIMP resources.
+</div>
 
 
 
+## Navigating GIMP
 
-# Navigating GIMP
+### Finding Your Way Around: General Tips 
 
-## Finding Things: 
-> **Until you are more familiar with GIMP's interface:**
-1. hover over the tools/sections one-by-one and a description of each should appear. 
+**Until you are more familiar with GIMP's interface, this is how you can find the various tools, windows, and settings you want to configure:**
+- Hover over the tools/sections one-by-one. The name and description of each should appear. 
 **or**
-2. go to: `windows - dockable dialogues` - Select the window you're looking for - if it's already docked, it should flash in place. If not, a new dialogue should apprear.
-> 
+- Go to: `Windows - Dockable Dialogues` - Select the window you're looking for - if it's already docked and visible, it should flash in place. If not, a new dialogue should apprear.
+
 **If you want your icons to look like the ones below:**
-- Go to: `Edit - Preferences - Interface - Icon Theme`
-- to switch to color mode: Pick the `Color` theme 
-- to increase the size, select: `Custom icon Size` then drag to large. 
-- click "OK"
+1. Go to: `Edit - Preferences - Interface - Icon Theme`
+2. To switch to color mode: Pick the `Color` theme 
+3. To increase the size of the icons, select: `Custom Icon Size` then drag to large.
+4. click "OK"
 
 
-In this tutorial we will utilize the following tools, features, and dialogues in GIMP
+MOre specifically, n this tutorial we will utilize the following tools, settings, and dialogues in GIMP
 
-## Layers:
+### Layers:
+this is a dockable dialogue, b
 
 <div class="media">
   <div class="media-body">
@@ -173,6 +183,20 @@ In this tutorial we will utilize the following tools, features, and dialogues in
     </div>
   </li>
   <li class="media">
+    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/move.jpg" alt="Move Tool">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Rotate Tool (shift+r)</h5>
+      Use this tool to rotate a selection. Configure the increment and angle of rotation using the Tool Options Window
+    </div>
+  </li>
+  <li class="media">
+    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/ellipse.jpg" alt="Ellipse Select Tool">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Allignment Tool</h5>
+      Allign/arrange selections and images horizontally or vertically in respect of eachother or the layer the occupy
+    </div>
+  </li>
+  <li class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/bucketfill.jpg" alt="Bucket-Fill Tool">
     <div class="media-body">
       <h5 class="mt-0 mb-1">Bucket-Fill Tool (shift+b)</h5>
@@ -197,13 +221,76 @@ In this tutorial we will utilize the following tools, features, and dialogues in
   </div>
 </div>
 
+## How-to Summary
 
-# Making Patterns in GIMP: Method Overview
-A pattern is a small image tiled side-by-side to fill a larger canvas. There are many ways to create patterns with GIMP, here are the few i learned over the last year:
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Action</th>
+      <th scope="col">How to do it</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">To move something inside a layer</th>
+      <td> Make sure you're in the correct layer and that the object is visible. Find the Move tool in the toolbox. click and drag to move your object. </td>
+    </tr>
+    <tr>
+      <th scope="row">To delete something inside a layer</th>
+      <td> Make sure it's selected and visible then hit the `Delete` key on your keyboard </td>
+    </tr>
+    <tr>
+      <th scope="row">To copy something inside a layer</th>
+      <td> Make sure you're in the correct layer and that the object is selected. Go to: `Edit - Copy` or `ctrl + c` </td>
+    </tr>
+    <tr>
+      <th scope="row">To copy an entire layer:</th>
+      <td>Select the layer and ake sure it's visible, copy or `ctrl + c` by default, only the top visible layer will be copied.</td>
+    </tr>
+    <tr>
+      <th scope="row">To copy all the visible things inside all visible layers</th>
+      <td>Go to: `Edit - Copy Visible` </td>
+    </tr>
+    <tr>
+      <th scope="row">To paste what's in your clipboard
+      <td> .... </td>
+    </tr>
+    <tr>
+      <th scope="row">To zoom in and out</th>
+      <td>click (+) or (-) on your keyboard</td>
+    </tr>
+    <tr>
+      <th scope="row">To unselect everything:</th>
+      <td colspan="2">Go to: `Select - None` or `Shift + ctrl + A` Do this then reselect if you're ever not sure if you selected the right thing</td>
+    </tr>
+    <tr>
+      <th scope="row">To change the active colors</th>
+      <td>To change the color of your foreground or background, click the one you want to change and a color dialogue should pop up. type in the color's html code or use the Color Picker tool</td>
+    </tr>
+    <tr>
+      <th scope="row">To find the name and function of a tool or feature</th>
+      <td>mouse over the icons/options one by one. The name and a short description should appear</td>
+    </tr>
+  </tbody>
+</table>
 
-tile to canvas ratio:
 
-## Method 1: tiling GIMP’s built-in patterns using the Bucket tool
+## Making Patterns in GIMP: Method Overview
+A pattern is a small image tiled side-by-side to fill a larger canvas. 
+
+### Tile to canvas ratio:
+
+
+### Testing your patterns by copying it to your clipboard
+To copy a selection:
+To copy everything inside a layer: copy or `ctrl + c`: to copy a single layer, by default the top visible layer.
+  copy visible or `shift + ctrl + c`: to copy multiple visible layers
+
+### Saving/Exporting your patterns
+
+With that said, there are many ways to create patterns with GIMP. Here are the few methods I learned over the last year: 
+
+### Method 1: tiling GIMP’s built-in patterns using the Bucket tool
 This is probably the simplest way to create your first pattern. It works great if you are only looking to stack the pattern file side by side a a grid.
 
 1. Create a test canvas
@@ -250,7 +337,7 @@ Find an image on the web that you want to make into a pattern. For this example,
 </figure>
 
 <div class="alert alert-success" role="alert">
-(side bar: it would be wise to create another folder for your royalty-free image collection. After you’ve been remixing things for a while, a line blurs in your memory between what’s original/ok to use for profit, and what needs to be credited.)
+Side bar: If you want to get into collaging and tiling long-term, it would be wise to create another folder for your royalty-free image collection. After you’ve been remixing things for a while, a line blurs in your memory between what’s original/ok to use for profit, and what needs to be credited.
 </div>
 
 1.  Right click the image you want and `Save Image As` to download.
@@ -289,13 +376,21 @@ you should get something that looks similar to this:
 2. duplicate it using the `duplicate current layer` button at the bottom of the layers window
 3. in duplicate layer only (which should be on top of the original): 
   - go to: `layer - layer to image size`
-  - again, go to: `layer - transform - offset - by width/2, height/2` now you should see the pattern copied in all 4 corners
-4. go to: `edit - copy visible` (this should copy both layers into your clipboard and the first space in your patterns dialogue)
+  - again in the top layer go to: `layer - transform - offset - by width/2, height/2` now you should see the same pattern copied in all 4 corners
+4. go to: `edit - copy visible` (this should copy both layers into your clipboard and temporarily occupy the the first block in your patterns dialogue)
 5. Test pattern
   - go to test canvas. create new layer and fill with BG or FG (whichever contrasts better with your design)
   - in new layer: select bucket-fill tool. set Fill Type to "pattern fill - clipboard image"
   - click anywhere in the layer to apply fill. 
 6. more tweaks: scale/flip tools.. tbc
+
+## Method 5: Drawing your own pattern using the select tools
+for this tutorial we're going to use the ellipse tool to make this dot pattern:
+
+![Dots](\assets\post_media\2021-3-31-gimp-tutorial\intro\dotpattern1.jpg "GIMP patterns")
+
+
+## Method 6: Drawing your own pattern using a brush
 
 *****Cindie this is the end of the first draft
 
@@ -316,8 +411,8 @@ click anywhere inside the image and a scaluntil face fills most of the layer bou
 o Bucket fill method: Using the bucket-fill tool to simply tile a pattern file
 o pattern-seamless method: using bucket tool with a filter to blend pattern tiles into a seamless texture. 
 • drawing your own patterns
-o select tool method: shapes
-o brush method: 
+o   select tool method: shapes
+o   brush method: 
 o text
 • offseting
 
@@ -426,29 +521,3 @@ Tip: if you want your icons to look like the ones below. Go to: Edit - Preferenc
     <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/f.jpg/whyihatefacebook_post4.png'>
   </div>
 </div>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">Action</th>
-      <th scope="col">How to do it</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">moving an object</th>
-      <td>make sure you're in the layer you want to move, click "m" on your keyboard or find the move tool in the toolbox. click and drag to move your object </td>
-    </tr>
-    <tr>
-      <th scope="row">zooming in and out</th>
-      <td>click (+) or (-) on your keyboard</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">![water pattern](/assets/post_media/2021-3-30-gimp-tutorial/water-pattern.jpg"water pattern")</td>
-    </tr>
-      <th scope="row">finding a tool</th>
-      <td>until you get familiar with GIMP's toolbox, mouse over the tools in the toolbox one-by-one until you find the one you need.</td>
-    </tr>
-  </tbody>
-</table>
