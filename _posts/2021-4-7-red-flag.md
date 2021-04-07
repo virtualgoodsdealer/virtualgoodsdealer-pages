@@ -9,9 +9,13 @@ post_description: [A free-form poem]
 
 ---
 
+![illustration](/assets/post_media/2021-4-7-red-flag/red_flag_graphic.png)  
+
+&zwnj; 
+
 **Red Flag**
 
-We're at his apartment, lying on his couch, and I tell him my idea for a sci-ti movie about a young woman who lives on a casino planet and scams the tourists.  
+We're at his apartment, lying on his couch, and I tell him my idea for a sci-fi movie about a young woman who lives on a casino planet and scams the tourists.  
 
 He says he doesn't think it's very realistic for the main character to be a woman. It's set in space on a made-up planet but the thing he can't wrap his head around is that a woman can propel action.  
 
