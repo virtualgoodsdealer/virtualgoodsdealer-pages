@@ -2,7 +2,7 @@
 layout: default
 ---
 <script>
-
+// adding links to all headings h2, h3, and h4
 window.addEventListener('DOMContentLoaded', (event) => {
 	const headings = document.querySelectorAll('h2,h3,h4'); // 1
 	for (const heading of headings) { // 3
@@ -19,9 +19,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 <article class='post'>
 	<div class="row">
+		<!-- title of page -->
 		<div class="col post-title">
 			{{ page.title }}
 		</div>
+		<!-- add coming soon badge if article date is in future -->
 		<div class="col-md-3">
 			<div class="posts__date text-md-right font-weight-light" datetime='{{ page.date | date_to_xmlschema }}'>
         	{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
@@ -35,6 +37,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   		</div>
 	</div>
 	<div class="row">
+		<!-- add guests and authors of post-->
 		<div class="col">
 			{% if page.guest %}
               featuring
@@ -71,6 +74,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	           {{ author_list | join: "," }}
             {% endif %}
 		</div>
+		<!-- add categories of post -->
 		<div class="col-md">
 			<div class="text-md-right text-nowrap category-nav">
 			{% if page.categories %}
@@ -83,6 +87,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		</div>
 	</div>
 	<div class="row">
+		<!-- add content of post -->
 		<div class="col post-content">
 			{{ content }}
 		</div>
@@ -91,10 +96,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 </article>
+<!-- add article author and guest bio -->
 {% include article-creator.html %}
 <hr />
+<!-- add next and prev article navigation and related articles -->
 {% include article-nav.html %}
 <hr />
+<!-- add response form -->
 <div class="response-form">
 	<span class="response-form-title">Want to leave us a response?</span>
 	<form action="https://formspree.io/f/mbjpapqy" method="POST">

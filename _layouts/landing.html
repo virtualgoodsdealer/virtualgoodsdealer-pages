@@ -5,11 +5,12 @@ layout: default
 	<div class="mb-3 w-100 text-center">
 		<img src="../assets/virtualgoodsdealer_logo_color.png" class="img-fluid logo" alt="virtualgoodsdealer logo">
 	</div>
+	<!-- add bio and subscribe link -->
 	<div class="mb-3 w-100 landing-pages-about text-center">
 		virtualgoodsdealer pages is a portal for publishing non-physical media and showcasing creators. 
 	</div>
 		<a href="https://www.virtualgoodsdealer.com/subscribe" class="btn btn-outline-primary w-100 mb-5">subscribe to our mailing list!</a>
-
+	<!-- add most recent 3 articles -->
 	<div class="mb-5 w-100">
 		<h5 class="card-title text-center">
 			recent articles
@@ -88,6 +89,7 @@ layout: default
 
 		       		</div>
 
+		       		<!-- make all post descriptions 2 lines across max -->
 			        {% include clamp.html %}
 					<script>
 						var exerpts = document.getElementById("{{ post.title | slugify }}");
@@ -95,13 +97,14 @@ layout: default
 					</script>
 					</div>
   				{% endfor %}
+  				<!-- link to articles page -->
 			  	<div class="text-center mt-3">
 					<a href="/articles" class="btn btn-outline-primary w-100 mb-0" >more articles</a>
 				</div>
 		  	</div>
 		</div>
 	</div>
-
+	<!-- list all categories -->
 	<h5 class="card-title text-center">
 		browse articles by category...
 	</h5>
@@ -117,6 +120,7 @@ layout: default
 	</ul>
 	</div>
 
+	<!-- add most recent web exhibit -->
 	<div class="mb-5 w-100">
 		<h5 class="card-title text-center">
 			featured web exhibit
@@ -160,6 +164,7 @@ layout: default
 	{% endfor %}
 	<a href="/exhibits" class="btn btn-primary w-100">more exhibits</a>
 	</div>
+	<!-- add list of open submissions -->
 	<div class="mb-5 w-100">
 		<div class="card">
 			<div class="card-body">
@@ -189,31 +194,32 @@ layout: default
 		</div>
 	</div>
 </div>
-		<script>
-					document.addEventListener("DOMContentLoaded", function() {
-		  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+<script>
+	// lazy load all videos
+	document.addEventListener("DOMContentLoaded", function() {
+		var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
-		  if ("IntersectionObserver" in window) {
-		    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-		      entries.forEach(function(video) {
-		        if (video.isIntersecting) {
-		          for (var source in video.target.children) {
-		            var videoSource = video.target.children[source];
-		            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-		              videoSource.src = videoSource.dataset.src;
-		            }
-		          }
+		if ("IntersectionObserver" in window) {
+		var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+		entries.forEach(function(video) {
+		if (video.isIntersecting) {
+		for (var source in video.target.children) {
+			var videoSource = video.target.children[source];
+			if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+			  videoSource.src = videoSource.dataset.src;
+			}
+	}
 
-		          video.target.load();
-		          video.target.classList.remove("lazy");
-		          lazyVideoObserver.unobserve(video.target);
-		        }
-		      });
-		    });
-
-		    lazyVideos.forEach(function(lazyVideo) {
-		      lazyVideoObserver.observe(lazyVideo);
-		    });
-		  }
+		video.target.load();
+		video.target.classList.remove("lazy");
+		lazyVideoObserver.unobserve(video.target);
+		}
 		});
-		</script>
+	});
+
+	lazyVideos.forEach(function(lazyVideo) {
+		lazyVideoObserver.observe(lazyVideo);
+			});
+		}
+	});
+</script>
