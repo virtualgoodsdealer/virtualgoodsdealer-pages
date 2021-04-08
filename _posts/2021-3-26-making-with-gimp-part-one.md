@@ -406,14 +406,14 @@ for this tutorial we're going to use the ellipse tool to make this dot pattern:
 3. Create new transparent layer above the white background (Foreground should be Black by default)
 4. Draw a 30X30p circle using the Ellipse Tool
   - with the Ellipse tool selected, click and drag down anywhere in the layer to draw. Don't hit enter yet. *at this point you may need to zoom in and out using + or - on your keyboard*
-  - configure the size to 30px using the `Tool Options` dialogue found under the toolbox.
-  <div class="alert alert-success" role="alert">
-if you want your pattern to look exactly like the one pictured above, you may skip this step: In the "Tool Options" dialogue, I left "feathered edges" unchecked because I wanted  Check it if you want your dot to have softer edges. 
-</div>
+  
+  *if you want your pattern to look exactly like the one pictured above, you may skip this step: In the "Tool Options" dialogue, I left "feathered edges" unchecked for this look. Check it if you want your dot to have softer edges.*
+
+  - Configure the size to 30px using the `Tool Options` dialogue found under the toolbox.
   - Click anywhere inside the circle to move it, then drag it towards the center. The mid point of your selection should easily "snap" to the center of the layer.
   - Click `Enter` depending on zoom level, you should either see a really tiny or a really blurry black dot in the middle of the layer. that's ok, it won't be blurry when tiled!
 5. Hide white background layer
-6. . with only the top layer visible, go to `Edit - Copy` or `ctrl+c`to temporarily store your dot as a GIMP pattern
+6. with only the top layer visible, go to `Edit - Copy` or `ctrl+c`to temporarily store your dot as a GIMP pattern
 7. In the test canvas, create a new layer, set Fill to "white"
 8. Apply pattern to your canvas
   - Select Fill-Bucket tool
