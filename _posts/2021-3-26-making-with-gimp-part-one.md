@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Making With GIMP: Patterns, Textures, and Text"
+title: "Making With GIMP: Patterns and Textures"
 categories: [tutorial]
 author: saqmemes
 related-articles:
@@ -16,13 +16,15 @@ post_description: [How drawing certain boundaries between you and your higher se
 1. [What You Will Learn To Make](/articles/2021/03/26/making-with-gimp-part-one/#in-this-tutorial)
 2. [Why GIMP?](articles/2021/03/26/making-with-gimp-part-one/#why-gimp)
 3. [Getting Started](articles/2021/03/26/making-with-gimp-part-one/#why-gimp)
-  - [Preparing Your local Folder Tree](/articles/2021/03/26/making-with-gimp-part-one/#preparing-your-local-folder-tree)
-  - [Locating GIMP's Patterns Folder](/articles/2021/03/26/making-with-gimp-part-one/#locating-gimps-built-in-patterns-folder)
 4. [Navigating GIMP](articles/2021/03/26/making-with-gimp-part-one/#navigating-gimp)
-  - [Layers](/articles/2021/03/26/making-with-gimp-part-one/#layers)
   - [The Toolbox](/articles/2021/03/26/making-with-gimp-part-one/#the-tool-box)
+  - [Colors]
+  - [Dockable vs. Floating Dialogues]
+  - [Layers]
   - [How-To Summary](/articles/2021/03/26/making-with-gimp-part-one/#how-to-summary)
-  - 
+5. [Patterns: An Overview]
+  - [Method 1]
+  - [Method 2]
 
 
 ## In This Tutorial:
@@ -132,6 +134,11 @@ More specifically, in this tutorial we will utilize the following tools, feature
 
 
 ### The Toolbox:
+What happens when you click on your canvas is determined by what is selected inside the toolbox. For example
+  - With the Move tool selected: if you click and drag anywhere in your canvas, you will move the whatever occupies the top visible layer.
+  - With the Scale tool selected: if you clcik and drag anywehre in your canvas, you will select whatever occupies the top visible layer and scale it, opening the Scale floating dialogue.
+
+With that in mind, here's every tool we will use in this turorial:
 
 <ul class="list-unstyled">
   <li class="media">
@@ -191,6 +198,8 @@ More specifically, in this tutorial we will utilize the following tools, feature
     </div>
   </li>
 </ul>
+
+### Tool Options
 <div class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/bucketfilltooloptions.jpg" alt="bucket-fill Tool Options">
   <div class="media-body">
@@ -198,6 +207,8 @@ More specifically, in this tutorial we will utilize the following tools, feature
     By default this dialogue is docked below the toolbox. Tip: the last thing copied to your clipboard can temporarily be used as a pattern. We will use this feature to test how our patterns look before we export them.
   </div>
 </div>
+
+### Colors
 <div class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/activecolors.jpg" alt="active colors">
   <div class="media-body">
@@ -206,12 +217,12 @@ More specifically, in this tutorial we will utilize the following tools, feature
   </div>
 </div>
 
-### Layers:
-Layers are like those transparent projector sheets teachers used to display compound information. By the end of this tutorial, you will become very familiar with the Layers Dialogue pictured below:
+### Layers
+oversimply-put, layers are like those transparent projector sheets your middle school teachers used to display compound diagrams, formulas, and concepts. By the end of this tutorial, you will become very familiar with the Layers Dialogue pictured below:
 
 <div class="media">
   <div class="media-body">
-    <h5 class="mt-0 mb-1">Layers Window</h5>
+    <h5 class="mt-0 mb-1">Layers Dialogue</h5>
     in this tutorial you will be working a lot inside the layers window, which is one of GIMP's Dockable Dialogues.
   </div>
   <img class="ml-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/layers.png" alt="GIMP layers window">
@@ -248,7 +259,7 @@ Layers are like those transparent projector sheets teachers used to display comp
       <td>Select the layer and ake sure it's visible, copy or `ctrl + c` by default, only the top visible layer will be copied.</td>
     </tr>
     <tr>
-      <th scope="row">To copy all the visible things inside all visible layers</th>
+      <th scope="row">To copy all the visible things inside all the visible layers</th>
       <td>Go to: `Edit - Copy Visible` </td>
     </tr>
     <tr>
@@ -280,16 +291,20 @@ Layers are like those transparent projector sheets teachers used to display comp
 
 
 ## Making Patterns in GIMP: Method Overview
-A pattern is a small image tiled side-by-side to fill a larger canvas. 
+A pattern is a small image tiled side-by-side to fill a larger canvas. before we get into each method, here are some important concepts you should be aware of:
 
 #### Tile to canvas ratio:
-
+while creating patterns, you will need to create at least 2 files, a small one for the pattern tile (50px - 250px) and a larger one to be used as a test canvas (1080px - 3600px)
 
 #### Testing your patterns via the clipboard
-"The Clipboard" is a where your computer *temporarily* stores the last selection you copied with the "Copy" command found in most programs, GIMP included. In GIMP however, there's this cool feature in the pattern Dialogue, where the first pattern block is always reserved for whatever is stored in the clipboard at the time. This will prove useful for testing patterns before you commit to exporting/saving.
+"The Clipboard" is a where your computer *temporarily* stores the last selection you copied with the "Copy" command found in most programs, GIMP included. In GIMP however, there's a cool feature in the pattern Dialogue, where the first pattern block is always reserved for whatever is stored in the clipboard at the time. This will prove useful for testing patterns before you commit to exporting/saving them.
 
 
 #### Saving/Exporting your patterns
+there are 3 different methods to save your pattern creations. 
+1. to add the pattern you created to GIMP's patterns window
+  - Go to: `File - Export As`
+  - remember the 
 
 
 With that said, there are many ways to create patterns with GIMP. Here are the few methods I learned over the last year: 
@@ -373,21 +388,13 @@ Side bar: If you want to get into collaging and tiling long-term, it would be wi
 you should get something that looks similar to this:
   ![diamond cat pattern](/assets/post_media/2021-3-31-gimp-tutorial/catcompact.jpg "diamond cat pink background")
   
-*The next method will teach you how to manipulate the spacing of your tiles.*
+*To manipulate the spacing, angle, and size of your tiles, go to:* [Method 7: Offsetting](/articles/2021/03/26/making-with-gimp-part-one/#method-7-offsetting)
 
-## Method 4: Offsetting 
 
-1. Go back to your cat pattern layer
-2. duplicate it using the `duplicate current layer` button at the bottom of the layers window
-3. in duplicate layer only (which should be on top of the original): 
-  - go to: `layer - layer to image size`
-  - again in the top layer go to: `layer - transform - offset - by width/2, height/2` now you should see the same pattern copied in all 4 corners
-4. go to: `edit - copy visible` (this should copy both layers into your clipboard and temporarily occupy the the first block in your patterns dialogue)
-5. Test pattern
-  - go to test canvas. create new layer and fill with BG or FG (whichever contrasts better with your design)
-  - in new layer: select bucket-fill tool. set Fill Type to "pattern fill - clipboard image"
-  - click anywhere in the layer to apply fill. 
-6. more tweaks: scale/flip tools.. tbc
+## Method 4: Tiling a specific part of an image using the Select Tool
+for this example we're going to tile the face of Pikachloe in the image below
+
+
 
 ## Method 5: Drawing your own pattern using the select tools
 for this tutorial we're going to use the ellipse tool to make this dot pattern:
@@ -426,16 +433,25 @@ for this tutorial we're going to use the ellipse tool to make this dot pattern:
 ## Method 6: Drawing your own pattern using a brush
 
 
+## Method 7: Offsetting
+
+This method can only be used in addition to methods 3-6
+
+1. Go back to your pattern layer
+2. Duplicate it using the `duplicate current layer` button at the bottom of the layers window
+3. in duplicate layer only (which should be on top of the original): 
+  - go to: `layer - layer to image size`
+  - again in duplicate layer, go to: `layer - transform - offset - by width/2, height/2` now you should see the same pattern copied in all 4 corners
+4. Copy both layers to your clipboard:
+  - go to: `edit - copy visible` (this should copy both layers into your clipboard and temporarily occupy the the first block in your patterns dialogue)
+5. Test your new pattern
+  - go to your test canvas.
+  - create new layer and fill it with BG or FG (whichever contrasts better with your design)
+  - in new layer: select bucket-fill tool. set Fill Type to "pattern fill - clipboard image"
+  - click anywhere in the layer to apply fill. 
+6. more tweaks: scale/flip tools.. tbc
 
 
-• Using GIMP’s built-in Patterns
-o Bucket fill method: Using the bucket-fill tool to simply tile a pattern file
-o pattern-seamless method: using bucket tool with a filter to blend pattern tiles into a seamless texture. 
-• drawing your own patterns
-o   select tool method: shapes
-o   brush method: 
-o text
-• offseting
 
 
 
@@ -547,3 +563,6 @@ Tip: if you want your icons to look like the ones below. Go to: Edit - Preferenc
 
 </body>
 </html>
+
+- [Preparing Your local Folder Tree](/articles/2021/03/26/making-with-gimp-part-one/#preparing-your-local-folder-tree)
+  - [Locating GIMP's Patterns Folder](/articles/2021/03/26/making-with-gimp-part-one/#locating-gimps-built-in-patterns-folder)
