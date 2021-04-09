@@ -10,7 +10,7 @@ post_description: ["We talk to dairysam, our newest creator partner, about their
 
 ---
 
-We spoke with Toronto-based multi-media artist [dairysam](/creatordirectory/dairysam) through video chat and email to get to know them and their work. They are the latest creator to work with us; we released select pieces by them including zines, figurines, and jewelry last month on March 25th.
+What stands out immediately about Toronto-based multi-media artist [dairysam](/creatordirectory/dairysam)'s work is the colorful and whimsical character designs. We spoke with dairysam through video chat and email to get to know the creator behind the zines, figurines, and illustrations. They are the latest creator to work with us; we released select pieces by them on [virtualgoodsdealer products](https://products.virtualgoodsdealer.com/){:target="_blank"} last month on March 25th.
 
 <p class='lead text-center'>I really like the phrase, "Jack of all trades, master of none but better than one".</p>
 ![dairysam @ virtualgoodsdealer](/assets/post_media/2021-4-9-virtualgoodsdealer-creators-dairysam/dairysam_redcup_rectangle.png)
@@ -30,11 +30,11 @@ Sam: I started selling in Zine fairs pretty recently! One year before Covid only
 	</div>
 </div>
 
-**You are an especially multi-talented artist creating in many mediums including illustration, zines, poetry, sculpture, sewing craft and more. In what ways does having such a broad scope impact your overall creative practice?**  
+**You are an especially multi-talented artist creating in many mediums including painting, zines, poetry, sculpture, jewelry, sewing craft and more. In what ways does having such a broad scope impact your overall creative practice?**  
 Sam: I really like the phrase, "Jack of all trades, master of none but better than one". I always felt that I rather only be average at multiple arts than be best at one? I liked seeing my art style applied to different formats, and incorporated with different textures, colours, time and space. Plus you learn more about other mediums and can see if it's a fit for you.
 
 **Would you encourage other artists to branch out more?**   
-I definitely think all artists should try other mediums! They might end up loving it!
+Sam: I definitely think all artists should try other mediums! They might end up loving it!
 
 **How has social media impacted your creative practice?**   
 Sam: Social media definitely impacted me, in both good and bad ways. Sometimes I find myself comparing myself to other artists, which I know is unhealthy. However, I also find artists who inspire my art and make me think of more creative ways I can do things, or opportunities for calls for artists, or just making friends and collaborations with other artists! These help me expand my art.
@@ -62,4 +62,6 @@ Sam: S....Shrek.. somebody once told me...
 
 ![dairysam products](/assets/post_media/2021-4-9-virtualgoodsdealer-creators-dairysam/dairysam_store_rectangle.png)
 <br />
-Select pieces by dairysam are currently available at [virtualgoodsdealer products](https://products.virtualgoodsdealer.com/). The collection contains handmade zines, painted clay figurines, and stickers starting at $8.
+Select pieces by dairysam are currently available at [virtualgoodsdealer products](https://products.virtualgoodsdealer.com/){:target="_blank"}. The collection contains handmade zines, painted polymer clay figurines, and handcut paper stickers starting at $8.
+
+<a href="https://products.virtualgoodsdealer.com/category/dairysam" class="btn btn-primary w-100" target="_blank">Shop here!</a>
