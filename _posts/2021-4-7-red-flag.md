@@ -9,7 +9,12 @@ post_description: ["A prose style poem about putting up with a piece of shit mis
 
 ---
 
-![illustration](/assets/post_media/2021-4-7-red-flag/red_flag_graphic.png)  
+<figure class="figure">
+	<img src="/assets/post_media/2021-4-7-red-flag/red_flag_graphic.png" class="figure-img img-fluid rounded" alt="illustration">
+	<figcaption class="figure-caption text-right">
+		Illustration by <a href="/creatordirectory/cindiexin" target="_blank">cindie xin</a>
+	</figcaption>
+</figure>
 
 &zwnj; 
 

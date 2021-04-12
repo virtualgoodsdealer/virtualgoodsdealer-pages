@@ -9,8 +9,12 @@ related-articles:
 post_description: [A list style poem about insomnia and the horror in the mundane. Likely to be relatable for many of our readers.]
 
 ---
-
-![illustration](/assets/post_media/2021-3-31-how-to-fall-asleep-at-night/graphic.png)  
+<figure class="figure">
+	<img src="/assets/post_media/2021-3-31-how-to-fall-asleep-at-night/graphic.png" class="figure-img img-fluid rounded" alt="illustration">
+	<figcaption class="figure-caption text-right">
+		Illustration by <a href="/creatordirectory/cindiexin" target="_blank">cindie xin</a>
+	</figcaption>
+</figure>
 
 &zwnj;  
 
