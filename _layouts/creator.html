@@ -109,3 +109,35 @@ layout: default
 	</div>
 {% endif %}
 </div>
+<div class="row article-nav mt-3">
+{% assign creators = site.creators | sort_natural: 'name' %}
+{% if page.previous.url %}
+		{% assign start = 0 %}
+		{% for creator in creators %}
+			{% if creator.url == page.url %}
+				{% assign start = 1 %}
+			{% endif %}
+			{% if start == 1 and creator.previous.url %}
+			  		<div class="text-left col">
+				    	<a href="{{ creator.previous.url }}">&laquo; {{ creator.previous.title }}</a>
+					</div>
+					{% break %}
+			{% endif %}
+	 	{% endfor %}
+{% endif %}
+{% if page.next.url %}
+	{% assign creators_reverse = creators | reverse %}
+	{% assign start = 0 %}
+	{% for creator in creators_reverse %}
+		{% if creator.url == page.url %}
+			{% assign start = 1 %}
+		{% endif %}
+		{% if start == 1 and creator.next.url %}
+			<div class="text-right col">
+			   	<a href="{{ creator.next.url }}">{{ creator.next.title }} &raquo;</a>
+			</div>
+			{% break %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+</div>
