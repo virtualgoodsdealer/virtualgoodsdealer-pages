@@ -1,12 +1,11 @@
 ---
 
 layout: post
-
 title: "On Angels and Clowns: Emancipatory Figuring(s) in the Collective Unconscious"
 categories: [prose, culture]
-author: Noah Allaire
+author: noah allaire
 related-articles:
-post_description: [specific internet memes (e.g. Be not Afraid) and their relationship to larger cultural and religious semiotic systems]
+post_description: ["An exploration of the Angel and the Clown as prevailing concepts throughout modern history, and their rebirth today in memes and popular culture."]
 
 ---
 <figure class="figure">
