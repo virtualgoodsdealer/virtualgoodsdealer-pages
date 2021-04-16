@@ -3,10 +3,10 @@
 layout: post
 
 title: "Making With GIMP: Patterns and Textures"
-categories: [tutorial]
+categories: [tutorial, tech]
 author: saqmemes
 related-articles:
-post_description: [How drawing certain boundaries between you and your higher self may reveal your true potential. Plus the one thing you should know before next voyage]
+post_description: [a step-by step guide into making patterns and textures using GIMP]
 
 ---
 
@@ -41,16 +41,16 @@ I will tell you about the different types of patterns I learned to make using GI
 
 <div class="row">
   <div class="col-sm">
-    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/feathers-portrait.jpg/'>
+    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/feathers-portrait.jpg'>
   </div>
   <div class="col-sm">
     <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/pikachloe-portrait-geen.jpg'>
   </div>
   <div class="col-sm">
-    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/trash-portrait.jpg/'>
+    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/trash-portrait.jpg'>
   </div>
   <div class="col-sm">
-    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/square-portrait-4.jpg/'>
+    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/intro/square-portrait-4.jpg'>
   </div>
 </div>
 
@@ -411,7 +411,7 @@ This filter comes with the [Resynthesizer] Plug-in. Use this method to blend roc
 
 <div class="row">
   <div class="col-sm">
-    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/methods/leaftile.jpg/whyihatefacebook_post1.png'>
+    <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/methods/leaftile.jpg'>
   </div>
   <div class="col-sm">
     <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/methods/leafseamless.jpg'>
