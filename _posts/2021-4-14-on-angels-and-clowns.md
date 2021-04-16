@@ -2,7 +2,7 @@
 
 layout: post
 title: "On Angels and Clowns: Emancipatory Figuring(s) in the Collective Unconscious"
-categories: [prose, culture]
+categories: [essay, culture]
 author: noah allaire
 related-articles:
 post_description: ["An exploration of the Angel and the Clown as prevailing concepts throughout modern history, and their rebirth today in memes and popular culture."]
