@@ -13,27 +13,27 @@ post_description: [a step-by step guide into making patterns and textures using 
 ![feathers](\assets\post_media\2021-3-31-gimp-tutorial\intro\feathersheader.jpg "feathers")
 
 ## TABLE OF CONTENTS
-1. [What You Will Learn](/articles/2021/03/26/making-with-gimp-part-one/#in-this-tutorial)
-2. [Why GIMP?](/articles/2021/03/26/making-with-gimp-part-one/#why-gimp)
-3. [Getting Started](/articles/2021/03/26/making-with-gimp-part-one/#getting-started)
-4. [Navigating GIMP](/articles/2021/03/26/making-with-gimp-part-one/#navigating-gimp)
-  - [The Toolbox](/articles/2021/03/26/making-with-gimp-part-one/#the-tool-box)
-  - [Colors](/articles/2021/03/26/making-with-gimp-part-one/#colors)
-  - [Layers](/articles/2021/03/26/making-with-gimp-part-one/#layers)
-  - [How-To Summary](/articles/2021/03/26/making-with-gimp-part-one/#how-to-summary)
-5. [Creating Patterns](/articles/2021/03/26/making-with-gimp-part-one/#making-patterns-in-gimp)
-  - [Tile to Canvas Ratio](/articles/2021/03/26/making-with-gimp-part-one/#tile-to-canvas-ratio)
-  - [Testing Your Patterns](/articles/2021/03/26/making-with-gimp-part-one/#testing-your-patterns-via-the-clipboard)
-  - [Layer Boundaries](/articles/2021/03/26/making-with-gimp-part-one/#layer-boundaries)
-  - [Saving Your Creations](/articles/2021/03/26/making-with-gimp-part-one/#savingexporting-your-creations)
-  - [Method 1](/articles/2021/03/26/making-with-gimp-part-one/#method-1-tiling-gimps-built-in-patterns-using-the-bucket-tool)
-  - [Method 2](/articles/2021/03/26/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter)
-  - [Method 3](/articles/2021/03/26/making-with-gimp-part-one/#method-3-tiling-any-image-from-the-web-using-the-bucket-fill-tool)
-  - [Method 4](/articles/2021/03/26/making-with-gimp-part-one/#method-4-tiling-a-specific-part-of-an-image-using-the-select-tool)
-  - [Method 5](/articles/2021/03/26/making-with-gimp-part-one/#method-5-drawing-your-own-pattern-using-the-select-tools)
-  - [Method 6: Offsetting](/articles/2021/03/26/making-with-gimp-part-one/offsetting)
-  - [Adding a Border & Bevel](/articles/2021/03/26/making-with-gimp-part-one/#adding-a-border--bevel)
-6. [Helpful Resources](/articles/2021/03/26/making-with-gimp-part-one/#helpful-resources)
+1. [What You Will Learn](/articles/2021/04/16/making-with-gimp-part-one/#in-this-tutorial)
+2. [Why GIMP?](/articles/2021/04/16/making-with-gimp-part-one/#why-gimp)
+3. [Getting Started](/articles/2021/04/16/making-with-gimp-part-one/#getting-started)
+4. [Navigating GIMP](/articles/2021/04/16/making-with-gimp-part-one/#navigating-gimp)
+  - [The Toolbox](/articles/2021/04/16/making-with-gimp-part-one/#the-tool-box)
+  - [Colors](/articles/2021/04/16/making-with-gimp-part-one/#colors)
+  - [Layers](/articles/2021/04/16/making-with-gimp-part-one/#layers)
+  - [How-To Summary](/articles/2021/04/16/making-with-gimp-part-one/#how-to-summary)
+5. [Creating Patterns](/articles/2021/04/16/making-with-gimp-part-one/#making-patterns-in-gimp)
+  - [Tile to Canvas Ratio](/articles/2021/04/16/making-with-gimp-part-one/#tile-to-canvas-ratio)
+  - [Testing Your Patterns](/articles/2021/04/16/making-with-gimp-part-one/#testing-your-patterns-via-the-clipboard)
+  - [Layer Boundaries](/articles/2021/04/16/making-with-gimp-part-one/#layer-boundaries)
+  - [Saving Your Creations](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
+  - [Method 1](/articles/2021/04/16/making-with-gimp-part-one/#method-1-tiling-gimps-built-in-patterns-using-the-bucket-tool)
+  - [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter)
+  - [Method 3](/articles/2021/04/16/making-with-gimp-part-one/#method-3-tiling-any-image-from-the-web-using-the-bucket-fill-tool)
+  - [Method 4](/articles/2021/04/16/making-with-gimp-part-one/#method-4-tiling-a-specific-part-of-an-image-using-the-select-tool)
+  - [Method 5](/articles/2021/04/16/making-with-gimp-part-one/#method-5-drawing-your-own-pattern-using-the-select-tools)
+  - [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/offsetting)
+  - [Adding a Border & Bevel](/articles/2021/04/16/making-with-gimp-part-one/#adding-a-border--bevel)
+6. [Helpful Resources](/articles/2021/04/16/making-with-gimp-part-one/#helpful-resources)
 
 
 ## IN THIS TUTORIAL:
@@ -91,7 +91,7 @@ To conclude my *why* behind this tutorial: GIMP is a remarkable and magnificent 
  Download and install GIMP [here](https://www.gimp.org/downloads/){:target="_blank"}
 
 ### Installing Resynthesizer
-Resynthesizer is a very useful plug-in that we will use for [Method 2](/articles/2021/03/26/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter) in this tutorial. Download and install it [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip)
+Resynthesizer is a very useful plug-in that we will use for [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter) in this tutorial. Download and install it [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip)
 
 
 ### Preparing Your Local Folder Tree:
@@ -119,7 +119,7 @@ If you're never going to work with GIMP again, this step might have been a waste
 
 
 <div class="alert alert-success" role="alert">
-Visit the <a href="/articles/2021/03/26/making-with-gimp-part-one/#helpful-tools">Helpful Tools</a> section for a list of my favorite GIMP resources.
+Visit the <a href="/articles/2021/04/16/making-with-gimp-part-one/#helpful-tools">Helpful Tools</a> section for a list of my favorite GIMP resources.
 </div>
 
 
@@ -460,9 +460,9 @@ Side bar: If you want to get into collaging and tiling long-term, it would be wi
   - click anywhere in the layer to apply fill. 
 you should get something that looks similar to this:
   ![diamond cat pattern](/assets/post_media/2021-3-31-gimp-tutorial/methods/catcompact.jpg "diamond cat pink background")
-9. To manipulate the spacing, angle, and size of your tiles, go to: [Method 6: Offsetting](/articles/2021/03/26/making-with-gimp-part-one/#method-6-offsetting)
+9. To manipulate the spacing, angle, and size of your tiles, go to: [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
 
-[How to export and/or save this pattern](/articles/2021/03/26/making-with-gimp-part-one/#savingexporting-your-creations)
+[How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
 ## METHOD 4: Tiling a specific part of an image using the Select Tool
 for this example we're going to tile the face of Pikachloe in the image below:
@@ -495,7 +495,7 @@ you should get something that looks similar to this:
 
 ![pikachloe](/assets/post_media/2021-3-31-gimp-tutorial/methods/pikachloe1.jpg "pikachloe")
 
-*To get your tiles to look like the ones below, go to [Method 6: Offsetting](/articles/2021/03/26/making-with-gimp-part-one/#method-6-offsetting) to configure the spacing, angle, and size of your tiles.*
+*To get your tiles to look like the ones below, go to [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting) to configure the spacing, angle, and size of your tiles.*
 <div class="row">
   <div class="col-sm">
     <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/methods/pikachloeflipped.jpg'>
@@ -508,7 +508,7 @@ you should get something that looks similar to this:
   </div>
 </div>
 
-[Export and/or save this pattern](/articles/2021/03/26/making-with-gimp-part-one/#savingexporting-your-creations)
+[Export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
 
 
@@ -542,9 +542,9 @@ for this tutorial we're going to use the ellipse tool to make this dot pattern:
   - Select Fill-Bucket tool
   - in the Tool Options dialgoue, make sure fill type is set to "pattern" and that the pattern source is set to "clipboard"
   - click anywhere inside the layer to tile your dots
-13. To manipulate the spacing, angle, and size of your tiles, go to:* [Method 6: Offsetting](/articles/2021/03/26/making-with-gimp-part-one/#method-6-offsetting)
+13. To manipulate the spacing, angle, and size of your tiles, go to:* [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
 
-[How to export and/or save this pattern](/articles/2021/03/26/making-with-gimp-part-one/#savingexporting-your-patterns)
+[How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-patterns)
 
 
 ## Method 6: Offsetting
