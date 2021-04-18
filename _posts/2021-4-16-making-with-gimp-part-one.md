@@ -28,9 +28,9 @@ post_description: [a step-by step guide into making patterns and textures using 
   - [Saving Your Creations](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
   - [Method 1](/articles/2021/04/16/making-with-gimp-part-one/#method-1-tiling-gimps-built-in-patterns-using-the-bucket-tool)
   - [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter)
-  - [Method 3](/articles/2021/04/16/making-with-gimp-part-one/#method-3-tiling-any-image-from-the-web-using-the-bucket-fill-tool)
-  - [Method 4](/articles/2021/04/16/making-with-gimp-part-one/#method-4-tiling-a-specific-part-of-an-image-using-the-select-tool)
-  - [Method 5](/articles/2021/04/16/making-with-gimp-part-one/#method-5-drawing-your-own-pattern-using-the-select-tools)
+  - [Method 3](/articles/2021/04/16/making-with-gimp-part-one/#method-3-drawing-your-own-pattern-using-the-select-tools)
+  - [Method 4](/articles/2021/04/16/making-with-gimp-part-one/#method-4-tiling-any-image-from-the-web-using-the-bucket-fill-tool)
+  - [Method 5](/articles/2021/04/16/making-with-gimp-part-one/#method-5-tiling-a-specific-part-of-an-image-using-the-select-tool)
   - [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/offsetting)
   - [Adding a Border & Bevel](/articles/2021/04/16/making-with-gimp-part-one/#adding-a-border--bevel)
 6. [Helpful Resources](/articles/2021/04/16/making-with-gimp-part-one/#helpful-resources)
@@ -75,7 +75,7 @@ I still use, and highly recommend each of those apps, but as my audience and bod
 - **Color management:** GIMP gives you more control over color profiles, and allows you to create monotone versions of your designs (as those are cheaper to print) 
 - **optimizing photos for web:** In order to start cataloguing my work, I needed a tool to edit, tag, and save my work, preferebly in batches. I would come to discover, thanks to Forensic Files of all things, that The GIMP community created this free plug-in that helps you do just that.
 
-I was introduced to GIMP in this highly questionable yet entertaining [episode of Forensic Files](https://youtu.be/uI9mjJH9cW8?t=384) where a well-meaning IT specialist with no forensic anthropology training was able to uncover the identity of a skeleton using GIMP. He simply took a photo of the skull, then superimposed, first his own face as a control, then various missing people’s faces until luckily the right one fit. What made me curious was that throughout the episode, he referred to GIMP as the “free photoshop.” At that time this is exactly what I was looking for.
+Yes, I was introduced to GIMP in this highly questionable yet entertaining [episode of Forensic Files](https://youtu.be/uI9mjJH9cW8?t=384) where a well-meaning IT specialist with no forensic anthropology training was able to uncover the identity of a skeleton using GIMP. He simply took a photo of the skull, then superimposed, first his own face as a control, then various missing people’s faces until luckily the right one fit. What made me curious was that throughout the episode, he referred to GIMP as the “free photoshop.” At that time this is exactly what I was looking for.
 
 **Gnu Image Manipulation Program** is an open-source photo editing software used by professional illustrators, designers, photographers, and scientists alike. This is due to GIMP’s sophisticated layering system which allows you to add/blend/transform/erase very specific components inside an image without compromising the surrounding areas or losing your earlier edits. This unlimited editing functionality, coupled with GIMP’s highly customizable library of tools, brushes, gradients, textures, and patterns is why GIMP is the best-known free alternative to Photoshop. 
 
@@ -347,8 +347,8 @@ A pattern is a small image tiled side-by-side to fill a larger canvas. before we
 while creating patterns, you will need to create at least 2 files, a small one for the pattern tile (50x50p - 250x250p) and a larger one to be used as a test canvas (1080x1080p - 3600x3600p)
 
 For this tutorial we will use the following ratios:
-- pattern (tile) files: 100x100 px and 180x180px
-- test canvas: 1920x1080 px
+- Pattern (tile) files: 60x60 px and 180x180px
+- Test canvas: 1920x1080 px. you can also create a square or portrait test canvas if you'd like
 
 
 #### Testing your patterns via the clipboard
@@ -361,7 +361,7 @@ Sometimes you will need to fit the layer into the image or vice-versa. Follow th
 
 #### Saving/Exporting your creations
 There are 3 different methods to save your pattern creations. 
-1. To add the pattern you created to GIMP's patterns window
+1. To add the pattern you created to GIMP's patterns dialogue
 - Go to: `File - Export As`
 - Name it `filename.pat`
 - Save file in your local "My GIMP Patterns" folder, which you should have added to GIMP's shortcuts earlier in this tutorial.
@@ -374,37 +374,42 @@ There are 3 different methods to save your pattern creations.
 - Name it:`filename.jpg` or `filename.png` 
 - Save it in your local "My GIMP Exports" folder
 
-3. If you don't think you'll want to modify the individual layers at a later time in a GIMP file, you can exit without saving, otherwise
+3. If you don't think you'll want to modify the individual layers of your pattern at a later time, you can exit without saving. If you want to keep working on the pattern later:
 - Go to: `File - Save`
 - Name it: `filename.xcf`
 - Save it in your local "My XCF Files" folder as `filename-pattern.xcf`
 
 
-**With that said, there are many ways to create patterns with GIMP. Here are the few methods I learned over the last year:**
+**With that said, there are so many ways to create patterns and textures using GIMP. Here are the few methods I learned over the last year:**
 
 ### METHOD 1: tiling GIMP’s built-in patterns using the Bucket tool
-This is probably the simplest way to create your first pattern. It works great if you are only looking to stack a preexisting GIMP pattern side by side in a rigid grid.
+This is probably the simplest way to create your first pattern. It works great if you are only looking to stack a preexisting GIMP pattern side by side in a grid.
 
 1. Create at least one test canvas:
 you will keep coming back to this document to test all the methods
     - Go to: `File – New`
     - Set width and height: 1920*1080
     - Go to `Advanced Options` using the (+)
-    - Fill with: transparency White
+    - Fill with: transparency
     - Click ok
 2. Choose a pattern from GIMP's pattern menu
   - in your test canvas, Go to: `Windows - Dockable Dialogues - Patterns`
-  - If your patterns window is already docked, it should flash, otherwise a window should appear
+  - If your patterns window is already docked, it should flash in place, otherwise a window should appear
   - in the pattens window, expand the filter drop down menu
   - select the `plant` tag
   - select the `maple leaves` pattern
-  - Find the Fill Bucket tool in your toolbox, it should look like this: 
+  - Select the Bucket-Fill tool in your toolbox, set Fill Type to "pattern"
+  - Click anywhere inside the layer to apply your pattern. The result should look like this:
+
 ![Maple Leaf Pattern](/assets/post_media/2021-3-31-gimp-tutorial/methods/leaftile.jpg "Leaf Pattern")
 
-## METHOD 2: Blending GIMP’s built-in patterns by applying the Pattern Seamless Filter
-This filter comes with the [Resynthesizer] Plug-in. Use this method to blend rocks, bricks, water, fire, or plant patterns to create a more seamless and realistic texture. it's slower-running and does not work on layers with transparent fill. 
+[Export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
-1. in test canvas: create new layer. Fill with white
+
+## METHOD 2: Blending GIMP’s built-in patterns by applying the Pattern Seamless Filter
+This filter comes with the [Resynthesizer](/articles/2021/04/16/making-with-gimp-part-one/#installing-resynthesizer) plug-in. Use this method to blend rocks, bricks, water, fire, or plant patterns to create a more seamless and realistic texture. it's slower-running and does not work on layers with transparent fill. 
+
+1. in test canvas: create new layer. Fill with: white
 2. in new layer, go to: `Edit - Fill with pattern seamless`
 3. select `maple leaf` pattern using the browse menu if it's not already selected
 4. click ok. rendering may take up to a minute but this is the result in comparison to Method 1. Not perfect but looks more interesting than merely tiling.
@@ -418,8 +423,46 @@ This filter comes with the [Resynthesizer] Plug-in. Use this method to blend roc
   </div>
 </div>
 
+[Export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
-## METHOD 3: tiling any image from the web using the Bucket-Fill Tool
+you can try this method with other GIMP patterns or use it to blend your own creations into a seamless texture.
+
+## METHOD 3: Drawing your own pattern using the select tools
+for this tutorial we're going to use the ellipse tool to make this dot pattern:
+
+![Dots](\assets\post_media\2021-3-31-gimp-tutorial\intro\dotpattern1.jpg "GIMP patterns")
+
+1. Create new pattern file
+  - Go to: `File – New`
+  - Set size 60*60 px
+  - Go to: `Advanced Options`
+  - Set fill color to "White"
+2. Add and snap to center guides:
+  - Vertical guide: `Image – guides – new guide by percent – vertical – 50%`
+  - Horizontal guide:`image – guides – new guide by percent – horizontal – 50%` 
+  - Go to: `View` and check `Snap to Guides`
+3. Create new transparent layer above the white background (Foreground should be Black by default)
+4. Draw a 30X30p circle using the Ellipse Tool
+  - with the Ellipse tool selected, click and drag down anywhere in the layer to draw. Don't hit enter yet. *at this point you may need to zoom in and out using + or - on your keyboard*
+5. if you want your pattern to look exactly like the one pictured above, you may skip this step:
+  - In the "Tool Options" dialogue, I left "feathered edges" unchecked for this look. Check it if you want your dot to have softer edges.
+
+6. Configure the size to 30px using the `Tool Options` dialogue found under the toolbox.
+7. Click anywhere inside the circle to move it, then drag it towards the center. The mid point of your selection should easily "snap" to the center of the layer.
+8. Click `Enter` depending on zoom level, you should either see a really tiny or a really blurry black dot in the middle of the layer. that's ok, it won't be blurry when tiled!
+9. Hide white background layer
+10. with only the top layer visible, go to `Edit - Copy` or `ctrl+c`to temporarily store your dot as a GIMP pattern
+11. In the test canvas, create a new layer, set Fill to "white"
+12. Apply pattern to your canvas
+  - Select Fill-Bucket tool
+  - in the Tool Options dialgoue, make sure fill type is set to "pattern" and that the pattern source is set to "clipboard"
+  - click anywhere inside the layer to tile your dots
+13. To manipulate the spacing, angle, and size of your tiles, go to:* [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
+14. To manipulate the spacing, angle, and size of your tiles, go to: [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
+
+[How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-patterns)
+
+## METHOD 4: tiling any image from the web using the Bucket-Fill Tool
 Find an image on the web that you want to make into a pattern. For this example, I am using this photo
 
 <figure class="figure">
@@ -464,7 +507,7 @@ you should get something that looks similar to this:
 
 [How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
-## METHOD 4: Tiling a specific part of an image using the Select Tool
+## METHOD 5: Tiling a specific part of an image using the Select Tool
 for this example we're going to tile the face of Pikachloe in the image below:
 you should get something that looks similar to this:
   ![pikachloe](/assets/post_media/2021-3-31-gimp-tutorial/methods/pikachloefull.png "pikachloe")
@@ -510,41 +553,6 @@ you should get something that looks similar to this:
 
 [Export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
-
-
-## METHOD 5: Drawing your own pattern using the select tools
-for this tutorial we're going to use the ellipse tool to make this dot pattern:
-
-![Dots](\assets\post_media\2021-3-31-gimp-tutorial\intro\dotpattern1.jpg "GIMP patterns")
-
-1. Create new pattern file
-  - Go to: `File – New`
-  - Set size 60*60 px
-  - Go to: `Advanced Options`
-  - Set fill color to "White"
-2. Add and snap to center guides:
-  - Vertical guide: `Image – guides – new guide by percent – vertical – 50%`
-  - Horizontal guide:`image – guides – new guide by percent – horizontal – 50%` 
-  - Go to: `View` and check `Snap to Guides`
-3. Create new transparent layer above the white background (Foreground should be Black by default)
-4. Draw a 30X30p circle using the Ellipse Tool
-  - with the Ellipse tool selected, click and drag down anywhere in the layer to draw. Don't hit enter yet. *at this point you may need to zoom in and out using + or - on your keyboard*
-5. if you want your pattern to look exactly like the one pictured above, you may skip this step:
-  - In the "Tool Options" dialogue, I left "feathered edges" unchecked for this look. Check it if you want your dot to have softer edges.
-
-6. Configure the size to 30px using the `Tool Options` dialogue found under the toolbox.
-7. Click anywhere inside the circle to move it, then drag it towards the center. The mid point of your selection should easily "snap" to the center of the layer.
-8. Click `Enter` depending on zoom level, you should either see a really tiny or a really blurry black dot in the middle of the layer. that's ok, it won't be blurry when tiled!
-9. Hide white background layer
-10. with only the top layer visible, go to `Edit - Copy` or `ctrl+c`to temporarily store your dot as a GIMP pattern
-11. In the test canvas, create a new layer, set Fill to "white"
-12. Apply pattern to your canvas
-  - Select Fill-Bucket tool
-  - in the Tool Options dialgoue, make sure fill type is set to "pattern" and that the pattern source is set to "clipboard"
-  - click anywhere inside the layer to tile your dots
-13. To manipulate the spacing, angle, and size of your tiles, go to:* [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
-
-[How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-patterns)
 
 
 ## Method 6: Offsetting
