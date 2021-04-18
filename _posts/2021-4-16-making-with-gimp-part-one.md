@@ -368,7 +368,9 @@ There are 3 different methods to save your pattern creations.
 - Save file in your local [My GIMP Patterns](/articles/2021/04/16/making-with-gimp-part-one/#preparing-your-local-folder-tree) folder, which you should have added to GIMP's shortcuts [earlier in this tutorial](/articles/2021/04/16/making-with-gimp-part-one/#locating-gimps-built-in-patterns-folder).
 - Open your local "My GIMP Patterns" Folder and either drag or copy the pattern you just saved into GIMP's built-in `patterns` folder which should also be added to your quick access bar or local short cuts
 - In GIMP: refresh your pattern dialogue using the refresh button in the bottom right of the window and you should see your pattern. 
-- If you want to 
+- If you want to access the layers of your pattern later:
+  - Go to: `File - Save`
+  - Name it: `filename-pattern.xcf` and save it in your local "My XCF Files" local folder
 
 2. To export your test canvas as a flat image file
 - In your test canvas: move the layer you want to save to the top
@@ -376,10 +378,10 @@ There are 3 different methods to save your pattern creations.
 - Name it:`filename.jpg` or `filename.png` 
 - Save it in your local "My GIMP Exports" folder
 
-3. If you don't think you'll want to modify the individual layers of your pattern at a later time, you can exit without saving. If you want to keep working on the pattern later:
+3. If you don't think you'll want to modify the individual layers of your pattern or test canvas at a later time, you can exit upon exporting without saving. But if you want to keep working on the layers later:
 - Go to: `File - Save`
-- Name it: `filename.xcf`
-- Save it in your local "My XCF Files" folder as `filename-pattern.xcf`
+- Name it: `filename.xcf`  or `filename-pattern.xcf `
+- Save either one in your "My XCF Files" local folder
 
 
 **With that said, there are so many ways to create patterns and textures using GIMP. Here are the few methods I learned over the last year:**
