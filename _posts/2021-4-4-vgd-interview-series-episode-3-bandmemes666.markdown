@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Virtualgoodsdealer Interview Series: Episode 3 - "Music Memes With Bandmemes666"'
+title:  'Virtualgoodsdealer Interview Series: Episode 3, "Music Memes With Bandmemes666"'
 categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: Bandmemes666

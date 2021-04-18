@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Virtualgoodsdealer Interview Series: Episode 1, 'Dr. André Brock Hops on the Bannedwagon'"
+title:  'Virtualgoodsdealer Interview Series: Episode 1, "Dr. André Brock Hops on the Bannedwagon"'
 categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: André L. Brock

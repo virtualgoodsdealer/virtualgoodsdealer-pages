@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Virtualgoodsdealer Interview Series: Episode 4 - "@djinn_kazama Speaks to the Manager Within"'
+title:  'Virtualgoodsdealer Interview Series: Episode 4, "@djinn_kazama Speaks to the Manager Within"'
 categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: djinn kazama
