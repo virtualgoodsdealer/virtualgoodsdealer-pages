@@ -69,11 +69,11 @@ I got by as a content creator making most of my content in my phone, using a com
 - [Mirrorlab](https://play.google.com/store/apps/details?id=com.ilixa.mirror&hl=en_US&gl=US){:target="_blank"}: for distorting, blurring, and generating patterns and gradients
 - Powerpoint: cataloguing albums, batch saving, and text box tool
 
-I still use, and highly recommend each of those apps, but as my audience and body of work grew, so did my interest in design, typography, collage, and optical art. I also began to think about developing an artist portfolio and business brand alongside my social media presence. In other words, I needed to build an online store and portfolio, and fter some trial and error, I realized the free apps wouldn’t cut it. Here are a few reasons why:
+I still use, and highly recommend each of those apps, but as my audience and body of work grew, so did my interest in design, typography, collage, and optical art. I also began to think about developing an artist portfolio and business brand alongside my social media presence. In other words, I needed to build an online store and portfolio, and after some trial and error, I realized the free apps wouldn’t cut it. Here are a few reasons why:
 
 - **Resizing for prints:** in order to get your designs printed, they need to be up to 4800px – none of the apps I mentioned can produce images over 2200px
 - **Color management:** GIMP gives you more control over color profiles, and allows you to create monotone versions of your designs (as those are cheaper to print) 
-- **optimizing photos for web:** In order to start cataloguing my work, I needed a tool to edit, tag, and save my work, preferebly in batches. I would come to discover, thanks to Forensic Files of all things, that The GIMP community created this free plug-in that helps you do just that.
+- **optimizing photos for web:** In order to start cataloguing my work, I needed a tool to edit, tag, and save my work, preferably in batches. I would come to discover, thanks to Forensic Files of all things, that The GIMP community created this free plug-in that helps you do just that.
 
 Yes, I was introduced to GIMP in this highly questionable yet entertaining [episode of Forensic Files](https://youtu.be/uI9mjJH9cW8?t=384) where a well-meaning IT specialist with no forensic anthropology training was able to uncover the identity of a skeleton using GIMP. He simply took a photo of the skull, then superimposed, first his own face as a control, then various missing people’s faces until luckily the right one fit. What made me curious was that throughout the episode, he referred to GIMP as the “free photoshop.” At that time this is exactly what I was looking for.
 
@@ -120,7 +120,7 @@ If you're never going to work with GIMP again, this step might have been a waste
 
 
 <div class="alert alert-success" role="alert">
-Visit the <a href="/articles/2021/04/16/making-with-gimp-part-one/#helpful-tools">Helpful Tools</a> section for a list of my favorite GIMP resources.
+Visit the <a href="/articles/2021/04/16/making-with-gimp-part-one/#helpful-resources">Helpful Resources</a> section for a list of my favorite GIMP resources.
 </div>
 
 
@@ -155,7 +155,7 @@ More specifically, in this tutorial we will utilize the following tools, feature
 ### The Toolbox:
 What happens when you click on your canvas is determined by what is selected inside the toolbox. For example
   - With the Move tool selected: if you click and drag anywhere in your canvas, you will move the whatever occupies the top visible layer.
-  - With the Scale tool selected: if you clcik and drag anywehre in your canvas, you will select whatever occupies the top visible layer and scale it, opening the Scale floating dialogue.
+  - With the Scale tool selected: if you click and drag anywhere in your canvas, you will select whatever occupies the top visible layer and scale it, opening the Scale floating dialogue.
 
 With that in mind, here's every tool we will use in this turorial:
 
@@ -185,7 +185,7 @@ With that in mind, here's every tool we will use in this turorial:
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/scale.jpg" alt="Scale Tool">
     <div class="media-body">
       <h5 class="mt-0 mb-1">Scale/Resize Tool (shift+s)</h5>
-     Use to Resize an object, layer, or selection. To maintain a fixed aspect ratio, make sure the chain symbols next to the width/hight dialogue are linked.  
+     Use to Resize an object, layer, or selection. To maintain a fixed aspect ratio, make sure the chain symbols next to the width/height dialogue are linked.  
     </div>
   </li>
   <li class="media">
@@ -307,7 +307,7 @@ oversimply-put, layers are like those transparent projector sheets your middle s
     </tr>
     <tr class="table-light">
       <th scope="row">To copy an entire layer:</th>
-      <td>Select the layer and ake sure it's visible, copy or `ctrl + c` by default, only the top visible layer will be copied.</td>
+      <td>Select the layer and make sure it's visible, copy or `ctrl+c` by default, only the top visible layer will be copied.</td>
     </tr>
     <tr class="table-light">
       <th scope="row">To copy all the visible things inside all the visible layers</th>
@@ -315,11 +315,11 @@ oversimply-put, layers are like those transparent projector sheets your middle s
     </tr>
     <tr class="table-light">
       <th scope="row">To paste what's in your clipboard</th>
-      <td> make sure you're in the layer you want to paste in, then "ctrl+v" or go to "Edit-Paste" </td>
+      <td>Make sure you're in the layer you want to paste in, then "ctrl+v" or go to "Edit-Paste" </td>
     </tr>
     <tr class="table-light">
       <th scope="row">To zoom in and out</th>
-      <td>click (+) or (-) on your keyboard</td>
+      <td> Click (+) or (-) on your keyboard</td>
     </tr>
     <tr class="table-light">
       <th scope="row">To unselect everything:</th>
@@ -335,7 +335,7 @@ oversimply-put, layers are like those transparent projector sheets your middle s
     </tr>
     <tr class="table-light">
       <th scope="row">To quickly rename a layer</th>
-      <td>double click the layer name, type it in, then click enter</td>
+      <td>Double click the layer name, type it in, then click enter</td>
     </tr>
   </tbody>
 </table>
