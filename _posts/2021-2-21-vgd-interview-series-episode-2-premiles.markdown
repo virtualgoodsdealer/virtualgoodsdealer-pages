@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Virtualgoodsdealer Interview Series: Episode 2, 'Through the Cringe with @premiles'"
+title:  'Virtualgoodsdealer Interview Series: Episode 2, "Through the Cringe with @premiles"'
 categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: premiles
