@@ -31,7 +31,7 @@ post_description: [a step-by step guide into making patterns and textures using 
   - [Method 3](/articles/2021/04/16/making-with-gimp-part-one/#method-3-drawing-your-own-pattern-using-the-select-tools)
   - [Method 4](/articles/2021/04/16/making-with-gimp-part-one/#method-4-tiling-any-image-from-the-web-using-the-bucket-fill-tool)
   - [Method 5](/articles/2021/04/16/making-with-gimp-part-one/#method-5-tiling-a-specific-part-of-an-image-using-the-select-tool)
-  - [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/offsetting)
+  - [Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#offsetting)
   - [Adding a Border & Bevel](/articles/2021/04/16/making-with-gimp-part-one/#adding-a-border--bevel)
 6. [Helpful Resources](/articles/2021/04/16/making-with-gimp-part-one/#helpful-resources)
 
@@ -85,13 +85,14 @@ To conclude my *why* behind this tutorial: GIMP is a remarkable and magnificent 
 
 
 ## GETTING STARTED
+[mise en place](https://en.wikipedia.org/wiki/Mise_en_place){:target="_blank"}
  
 ### Installing GIMP
 
  Download and install GIMP [here](https://www.gimp.org/downloads/){:target="_blank"}
 
 ### Installing Resynthesizer
-Resynthesizer is a very useful plug-in that we will use for [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter) in this tutorial. Download and install it [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip)
+Resynthesizer is a very useful plug-in that we will use for [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter) in this tutorial. Download and install it [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip){:target="_blank"}
 
 
 ### Preparing Your Local Folder Tree:
@@ -364,11 +365,12 @@ There are 3 different methods to save your pattern creations.
 1. To add the pattern you created to GIMP's patterns dialogue
 - Go to: `File - Export As`
 - Name it `filename.pat`
-- Save file in your local "My GIMP Patterns" folder, which you should have added to GIMP's shortcuts earlier in this tutorial.
+- Save file in your local [My GIMP Patterns](/articles/2021/04/16/making-with-gimp-part-one/#preparing-your-local-folder-tree) folder, which you should have added to GIMP's shortcuts [earlier in this tutorial](/articles/2021/04/16/making-with-gimp-part-one/#locating-gimps-built-in-patterns-folder).
 - Open your local "My GIMP Patterns" Folder and either drag or copy the pattern you just saved into GIMP's built-in `patterns` folder which should also be added to your quick access bar or local short cuts
 - In GIMP: refresh your pattern dialogue using the refresh button in the bottom right of the window and you should see your pattern. 
+- If you want to 
 
-2. To save your test canvas as a flat image file
+2. To export your test canvas as a flat image file
 - In your test canvas: move the layer you want to save to the top
 - Go to: `File - Export As`
 - Name it:`filename.jpg` or `filename.png` 
@@ -457,8 +459,7 @@ for this tutorial we're going to use the ellipse tool to make this dot pattern:
   - Select Fill-Bucket tool
   - in the Tool Options dialgoue, make sure fill type is set to "pattern" and that the pattern source is set to "clipboard"
   - click anywhere inside the layer to tile your dots
-13. To manipulate the spacing, angle, and size of your tiles, go to:* [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
-14. To manipulate the spacing, angle, and size of your tiles, go to: [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
+13. To manipulate the spacing, angle, and size of your tiles, go to: [Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#offsetting)
 
 [How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-patterns)
 
@@ -503,7 +504,7 @@ Side bar: If you want to get into collaging and tiling long-term, it would be wi
   - click anywhere in the layer to apply fill. 
 you should get something that looks similar to this:
   ![diamond cat pattern](/assets/post_media/2021-3-31-gimp-tutorial/methods/catcompact.jpg "diamond cat pink background")
-9. To manipulate the spacing, angle, and size of your tiles, go to: [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting)
+9. To manipulate the spacing, angle, and size of your tiles, go to: [Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#offsetting)
 
 [How to export and/or save this pattern](/articles/2021/04/16/making-with-gimp-part-one/#savingexporting-your-creations)
 
@@ -538,7 +539,8 @@ you should get something that looks similar to this:
 
 ![pikachloe](/assets/post_media/2021-3-31-gimp-tutorial/methods/pikachloe1.jpg "pikachloe")
 
-*To get your tiles to look like the ones below, go to [Method 6: Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#method-6-offsetting) to configure the spacing, angle, and size of your tiles.*
+*To get your tiles to look like the ones below, go to [Offsetting](/articles/2021/04/16/making-with-gimp-part-one/#offsetting) to configure the spacing, angle, and size of your tiles.*
+
 <div class="row">
   <div class="col-sm">
     <img class="img-fluid" src='/assets/post_media/2021-3-31-gimp-tutorial/methods/pikachloeflipped.jpg'>
@@ -555,7 +557,7 @@ you should get something that looks similar to this:
 
 
 
-## Method 6: Offsetting
+## OFFSETTING
 
 
 <div class="alert alert-danger" role="alert">
@@ -590,27 +592,27 @@ To add a border to any image:
 
 ## HELPFUL RESOURCES
 - Download GIMP:
-  - [Here](https://www.gimp.org/downloads/)
+  - [Here](https://www.gimp.org/downloads/){:target="_blank"}
 - Helpful Plug-ins:
-  - [Resynthesizer](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip)
-  - [BIMP-Batch Image Manipulation Program for batch editing](https://alessandrofrancesconi.it/projects/bimp/)
+  - [Resynthesizer](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip){:target="_blank"}
+  - [BIMP-Batch Image Manipulation Program for batch editing](https://alessandrofrancesconi.it/projects/bimp/){:target="_blank"}
 - Useful Brushes:
-  - [Arrows](https://www.gimphelp.org/arrow_brushes_color_1.html)
-  - [Cards](https://www.deviantart.com/chrisdesign/art/GIMP-Playingcard-Brush-196530703)
+  - [Arrows](https://www.gimphelp.org/arrow_brushes_color_1.html){:target="_blank"}
+  - [Cards](https://www.deviantart.com/chrisdesign/art/GIMP-Playingcard-Brush-196530703){:target="_blank"}
 - Video Tutorials:
-  - [How to put someone's face on an object](https://www.youtube.com/watch?v=bVbYXsBxpiY&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=1)
-  - [Photo enhancement techniques](https://www.youtube.com/watch?v=TiavEWDVQGE&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=7)
-  - [Intro to layers](https://www.youtube.com/watch?v=pCyBF0NwIDU)
-  - [All layer modes explained](https://www.youtube.com/watch?v=17Iivi0tmug&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=21)
-  - [Creating T-shirt mock-ups](https://www.youtube.com/watch?v=qEs6Ml64twE&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=25)
-  - [Creating seamless patterns from a drawing](https://www.youtube.com/watch?v=Lt3U7dtT8g0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=32)
-  - [Top 10 Filters in GIMP](https://www.youtube.com/watch?v=Pbb2q65AxL0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=36)
-  - [Clone tool explained](https://www.youtube.com/watch?v=5p7mqkQ7YzM&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=39)
-  - [Clone, Healing, and Perspective tools](https://www.youtube.com/watch?v=qS_S87JkUN0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=46)
-  - [Creating 3D text](https://www.youtube.com/watch?v=j-uOl6dJ5CM&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=48)
-  - [Steal the color grading from any image](https://www.youtube.com/watch?v=8oZ5xOegS-s&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=47)
-  - [Creatinng a dot pattern with GIMP](https://www.youtube.com/watch?v=6TTLVlR7KHA&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=95)
+  - [How to put someone's face on an object](https://www.youtube.com/watch?v=bVbYXsBxpiY&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=1){:target="_blank"}
+  - [Photo enhancement techniques](https://www.youtube.com/watch?v=TiavEWDVQGE&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=7){:target="_blank"}
+  - [Intro to layers](https://www.youtube.com/watch?v=pCyBF0NwIDU){:target="_blank"}
+  - [All layer modes explained](https://www.youtube.com/watch?v=17Iivi0tmug&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=21){:target="_blank"}
+  - [Creating T-shirt mock-ups](https://www.youtube.com/watch?v=qEs6Ml64twE&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=25){:target="_blank"}
+  - [Creating seamless patterns from a drawing](https://www.youtube.com/watch?v=Lt3U7dtT8g0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=32){:target="_blank"}
+  - [Top 10 Filters in GIMP](https://www.youtube.com/watch?v=Pbb2q65AxL0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=36){:target="_blank"}
+  - [Clone tool explained](https://www.youtube.com/watch?v=5p7mqkQ7YzM&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=39){:target="_blank"}
+  - [Clone, Healing, and Perspective tools](https://www.youtube.com/watch?v=qS_S87JkUN0&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=46){:target="_blank"}
+  - [Creating 3D text](https://www.youtube.com/watch?v=j-uOl6dJ5CM&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=48){:target="_blank"}
+  - [Steal the color grading from any image](https://www.youtube.com/watch?v=8oZ5xOegS-s&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=47){:target="_blank"}
+  - [Creatinng a dot pattern with GIMP](https://www.youtube.com/watch?v=6TTLVlR7KHA&list=PLadY4zckiOFGka6i6em6XYRanbtPFuVSN&index=95){:target="_blank"}
 - Royalty-Free Images:
-  - [Openclipart.org](openclipart.org)
-  - [Pexels](https://www.pexels.com/royalty-free-images/)
-  - [EveryPixel](https://www.everypixel.com/)
+  - [Openclipart.org](openclipart.org){:target="_blank"}
+  - [Pexels](https://www.pexels.com/royalty-free-images/){:target="_blank"}
+  - [EveryPixel](https://www.everypixel.com/){:target="_blank"}
