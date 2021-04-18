@@ -1,27 +1,29 @@
 ---
 layout: post
-title:  "Virtualgoodsdealer Interview Series: Episode 4 - Djinn Kazama Speaks to the Manager Within"
+title:  'Virtualgoodsdealer Interview Series: Episode 4 - "@djinn_kazama Speaks to the Manager Within"'
 categories: [interview, video]
-author: [Cindie xin, saqmemes]
-guest: Djinn Kazama
-post_description: "In episode 4 of Virtualgoodsdealer Interview Series, Cindie and Omnia performative activism and more with Djinn Kazama"  
+author: [cindie xin, saqmemes]
+guest: djinn kazama
+post_description: "In episode 4 of the Virtualgoodsdealer Interview Series, Cindie and Omnia speak with with Djinn on their work and various topics such as performative activism and instagram infographics."  
 thumbnail: https://img.youtube.com/vi/tfN_ylX5TZc/hq720.jpg
 ---
 
 {% include youtube-video-embed.html src="https://www.youtube.com/embed/tfN_ylX5TZc?rel=0" %}
 
-&zwnj;  
+<br />
 
-<p> This is the third episode of Virtualgoodsdealer Interview Series, where we talk to artists, scholars, and internet personalities about their work and experiences. </p>
+This is the fourth episode of Virtualgoodsdealer Interview Series, where we talk to artists, scholars, and internet personalities about their work and experiences.
 
-In our 4th episode we had the honor of speaking with meme artist [@djinn_kazama](instagram.com/djinn_kazama) about performative activism in the influencer community, the pros and cons of antiracist infographics, the line between satire and misinformation, and about their experience creating their first show, Bottom Text, which aired on adultswim.com.
-This interview is co-hosted by Omnia Elbasheer and Cindie Xin, with editing by ada.wrong. It was recorded on Monday 4/11/21 at 7:00PM EST.
-Intro and outro track is by Hubert Obasanya.
+We had the honor of speaking with meme artist [djinn kazama](/creatordirectory/djinn_kazama) about performative activism in the influencer community, the pros and cons of antiracist infographics, the line between satire and misinformation, and about their experience creating their first show, Bottom Text, which aired on adultswim.com. Their instagram account is [@djinn_kazama](https://www.instagram.com/djinn_kazama/){:target="_blank"}.
 
-This interview is co-hosted by [Omnia Elbasheer](/creatordirectory/saqmemes) and [Cindie Xin](/creatordirectory/**Cindie**xin), with editing by [ada.wrong](/creatordirectory/adawrong). It was recorded on Monday 3/22/21 at 7:00PM EST.
+This interview is co-hosted by [Omnia Elbasheer](/creatordirectory/saqmemes) and [Cindie Xin](/creatordirectory/cindiexin), with editing by [ada.wrong](/creatordirectory/adawrong). It was recorded on Sunday 4/11/21 at 7:00PM EST.
 
 Intro and outro track is by [Hubert Obasanya](/creatordirectory/hubertobasanya).
 
+### Enjoying our content?
+Currently, virtualgoodsdealer pages is run on a volunteer basis by three people. Every week, we spend a lot of our time creating new content for pages, curating community submitted works, as well as developing the pages website. We have decided to start seeking donations so that we can continue to do so. [More information here.](/donate)
+
+{% include donate-button.html %}
 
 ### Audio Transcription
 

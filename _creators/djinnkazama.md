@@ -1,7 +1,7 @@
 ---
-title: Djinn Kazama
-permalink: /creatordirectory/djinnkazama
-name: Djinn Kazama
+title: djinn kazama
+permalink: /creatordirectory/djinn_kazama
+name: djinn kazama
 website:
 instagram: djinn_kazama
 twitter: femtominaj
