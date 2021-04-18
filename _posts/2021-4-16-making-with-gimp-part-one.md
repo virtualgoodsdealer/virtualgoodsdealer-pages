@@ -17,7 +17,7 @@ post_description: [a step-by step guide into making patterns and textures using 
 2. [Why GIMP?](/articles/2021/04/16/making-with-gimp-part-one/#why-gimp)
 3. [Getting Started](/articles/2021/04/16/making-with-gimp-part-one/#getting-started)
 4. [Navigating GIMP](/articles/2021/04/16/making-with-gimp-part-one/#navigating-gimp)
-  - [The Toolbox](/articles/2021/04/16/making-with-gimp-part-one/#the-tool-box)
+  - [The Toolbox](/articles/2021/04/16/making-with-gimp-part-one/#the-toolbox)
   - [Colors](/articles/2021/04/16/making-with-gimp-part-one/#colors)
   - [Layers](/articles/2021/04/16/making-with-gimp-part-one/#layers)
   - [How-To Summary](/articles/2021/04/16/making-with-gimp-part-one/#how-to-summary)
