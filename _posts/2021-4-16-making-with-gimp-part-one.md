@@ -485,13 +485,13 @@ Side bar: If you want to get into collaging and tiling long-term, it would be wi
   - Open Gimp: `File – New`
   - set size to 1920*1080
   - Expand `Advanced Options` using the (+)
-  - Fill with: Foreground color (note: by default this is set to Black, which is what we need for contrast with the example image used in this exercise. to change the color of your background:******)
+  - Fill with: transparency
   - `Ok` to create new image
 
 3.  Create your pattern file
   - set size to 180*180
   - Go to `Advanced Options` using the (+)
-  - Fill with: Foreground color
+  - Fill with: transparency
   - `Ok` to create new image
 
 4. drag image from your local file explorer into the layers window. The image will be pasted as a new layer  with the same name as the image file.
@@ -501,7 +501,7 @@ Side bar: If you want to get into collaging and tiling long-term, it would be wi
 6. hide the background layer below using the lock "eye" to the left of the layer name. 
 7. with the image layer selected, go to: `edit - copy` (or `ctrl`+`c` on your keyboard)
 8. Test pattern
-  - go to test canvas then create new layer and fill with BG or FG (whichever contrasts better with your design)
+  - go to test canvas then create new layer and fill with Foreground (or whatever contrasts better with your design)
   - in new layer: select bucket-fill tool. set Fill Type to "pattern fill - clipboard image"
   - click anywhere in the layer to apply fill. 
 you should get something that looks similar to this:
