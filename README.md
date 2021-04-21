@@ -45,7 +45,7 @@ related-articles: [article file name] ((optional))
 please note that the `author` field must match with the `name` field in the `creatorname.md` creator file for them to be linked.   
 if the article has multiple authors, write them in brackets.
 ```
-categories: [name1, name2]
+author: [name1, name2]
 ```
 
 if the article has multiple categories, write it in brackets.
@@ -133,11 +133,13 @@ website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
+facebook: facebook username ((optional))
 bandcamp: bandcamp url ((optional))
 soundcloud: soundcloud url ((optional))
 spotify: spotify url ((optional))
 patreon: patreon url ((optional))
 gumroad: gumroad url ((optional))
+tiktok: tiktok url ((optional))
 
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))

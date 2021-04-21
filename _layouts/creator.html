@@ -33,6 +33,11 @@ layout: default
 					<li class="list-group-item">
 						<a href="https://twitter.com/{{ page.twitter }}" target="_blank">twitter</a>
 					</li>
+				{% endif %}				
+				{% if page.facebook %}
+					<li class="list-group-item">
+						<a href="https://facebook.com/{{ page.facebook }}" target="_blank">facebook</a>
+					</li>
 				{% endif %}
 				{% if page.spotify %}
 					<li class="list-group-item">
@@ -57,6 +62,11 @@ layout: default
 				{% if page.gumroad %}
 					<li class="list-group-item">
 						<a href="{{ page.gumroad }}" target="_blank">gumroad</a>
+					</li>
+				{% endif %}
+				{% if page.tiktok %}
+					<li class="list-group-item">
+						<a href="{{ page.tiktok }}" target="_blank">tiktok</a>
 					</li>
 				{% endif %}
 			</ul>
