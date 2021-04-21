@@ -5,7 +5,7 @@ title: "Photography Archive 2020"
 categories: [photography]
 author: Echo Nixod
 related-articles:
-post_description: ["Photography archive for 2020"]
+post_description: ["A memoir-style collection of photography and writing. Portraiture, fashion, fantasy, and more."]
 
 ---
 <style>
@@ -58,13 +58,13 @@ post_description: ["Photography archive for 2020"]
 <div id="holyTouch" class="carousel slide" data-interval="false" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block w-75" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_1.jpg" alt="Holy Touch 1">
+      <img class="d-block" width="65%" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_1.jpg" alt="Holy Touch 1">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-75" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_2.jpg" alt="Holy Touch 2">
+      <img class="d-block" width="65%" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_2.jpg" alt="Holy Touch 2">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-75" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_3.jpg" alt="Holy Touch 3">
+      <img class="d-block" width="65%" src="/assets/post_media/2021-4-21-photography-archive-2020/2_holytouch_3.jpg" alt="Holy Touch 3">
     </div>
   </div>
 
