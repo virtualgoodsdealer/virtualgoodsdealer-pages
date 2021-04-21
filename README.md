@@ -133,11 +133,13 @@ website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
+facebook: facebook username ((optional))
 bandcamp: bandcamp url ((optional))
 soundcloud: soundcloud url ((optional))
 spotify: spotify url ((optional))
 patreon: patreon url ((optional))
 gumroad: gumroad url ((optional))
+tiktok: tiktok url ((optional))
 
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))
