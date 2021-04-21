@@ -45,7 +45,7 @@ related-articles: [article file name] ((optional))
 please note that the `author` field must match with the `name` field in the `creatorname.md` creator file for them to be linked.   
 if the article has multiple authors, write them in brackets.
 ```
-categories: [name1, name2]
+author: [name1, name2]
 ```
 
 if the article has multiple categories, write it in brackets.
