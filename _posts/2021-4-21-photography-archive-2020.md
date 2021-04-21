@@ -49,7 +49,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by Jhovanni Particio Molina<br> 
   Edited by me<br>
-  Model is Jhovanni Particio Molina (@transpinksoul on Instagram)
+  Model is Jhovanni Particio Molina (<a href="https://www.instagram.com/forbiddenreligion/" target="_blank">@forbiddenreligion</a> on Instagram)
   </i>
 </div>
 
@@ -85,7 +85,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by Jhovanni Particio Molina<br> 
   Edited by me<br>
-  Model is Jhovanni Particio Molina (@transpinksoul on Instagram)
+  Model is Jhovanni Particio Molina (<a href="https://www.instagram.com/forbiddenreligion/" target="_blank">@forbiddenreligion</a> on Instagram)
   </i>
 </div>
 
@@ -112,13 +112,14 @@ post_description: ["A memoir-style collection of photography and writing. Portra
 </div>
 <div class="figure-caption">
   <p class="text-center"><b><u>Here, Kitty Kitty</u></b></p>
-  Despite my obsession with Jhovanni's look that day, Daniel was the one I kept taking photos of. Her photogenic personality attracted my camera lense. While Jhovanni reminded me of an angel, Daniel reminded me of something fierce. Like a cat! (Hence the edits). Not just any cat, but a Jaguar or a Leopard. The first photo ended up sitting in my Google drive, unedited, because I had no idea what to do with it. Daniel was on the phone, so I took off guard photos of her. I loved the facial expression. I attempted to add in cats, but they didn't suit the original background. After wracking my brain, I decided to give Daniel split pupils and cat ears (first photo). The background still did not suit anything. I ended up saving the photo and scrolling through my favorite Vaporwave app. I scrolled until I came upon that lion wallpaper. I saved it, cut Daniel out of the horrific background in the original photo, and placed her in front of the lion. With the touch of a bronze filter, an amazing photo with a very low quality was born! The second photo was previously edited. I had already added a motion blur and golden eyes. I didn't want to leave it that way though. Since I had that cat theme going on for Daniel, I gave her some cat ears and claws. She's hugging a pillar in the original photo, but zoomed in it looks like a scratch post (at least I think so).
+  Despite my obsession with Jhovanni's look that day, Daniel was the one I kept taking photos of. Her photogenic personality attracted my camera lense. While Jhovanni reminded me of an angel, Daniel reminded me of something fierce. Like a cat! (Hence the edits). Not just any cat, but a Jaguar or a Leopard. The first photo ended up sitting in my Google drive, unedited, because I had no idea what to do with it. Daniel was on the phone, so I took off guard photos of her. I loved the facial expression. I attempted to add in cats, but they didn't suit the original background. After wracking my brain, I decided to give Daniel split pupils and cat ears (first photo). The background still did not suit anything. I ended up saving the photo and scrolling through my favorite Vaporwave app. I scrolled until I came upon that lion wallpaper. I saved it, cut Daniel out of the horrific background in the original photo, and placed her in front of the lion. With the touch of a bronze filter, an amazing photo with a very low quality was born!<br><br>
+  The second photo was previously edited. I had already added a motion blur and golden eyes. I didn't want to leave it that way though. Since I had that cat theme going on for Daniel, I gave her some cat ears and claws. She's hugging a pillar in the original photo, but zoomed in it looks like a scratch post (at least I think so).
   <br><br>
   <i>
   Photographed by me<br>
   Styled by Daniel<br> 
   Edited by me<br>
-  Model is Daniel (@theerealmissthang on Instagram)
+  Model is Daniel (<a href="https://www.instagram.com/theerealmissthang/" target="_blank">@theerealmissthang</a> on Instagram)
   </i>
 </div>
 
@@ -157,7 +158,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by both me and Maddie Moonrose<br> 
   Edited by me<br>
-  Model is Maddie Moonrose (@maddiemoonrose on Instagram)
+  Model is Maddie Moonrose (<a href="https://www.instagram.com/maddiemoonrose/" target="_blank">@maddiemoonrose</a> on Instagram)
   </i>
 </div>
 
@@ -211,7 +212,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -244,7 +245,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -280,7 +281,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -301,7 +302,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -334,7 +335,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -367,7 +368,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -403,7 +404,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -424,7 +425,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -445,7 +446,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -466,7 +467,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -499,7 +500,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
@@ -538,11 +539,11 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
-<!-- RIDING HOOD -->
+<!-- FACES -->
 
 <div id="faces" class="carousel slide" data-interval="false" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
@@ -574,7 +575,7 @@ post_description: ["A memoir-style collection of photography and writing. Portra
   Photographed by me<br>
   Styled by me<br> 
   Edited by me<br>
-  Model is myself (@r3_echo on Instagram)
+  Model is myself (<a href="https://www.instagram.com/r3_echo/" target="_blank">@r3_echo</a> on Instagram)
   </i>
 </div>
 
