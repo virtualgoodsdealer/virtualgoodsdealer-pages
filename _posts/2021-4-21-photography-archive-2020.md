@@ -18,16 +18,9 @@ post_description: ["A memoir-style collection of photography and writing. Portra
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23777' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carousel-inner {
-  padding-top: 50px;
+.carousel {
+  padding-top: 70px;
   padding-bottom: 25px;
-}
-
-@media (min-width:768) {
-  .img {
-    height: 50%;
-    width: auto;
-  }
 }
 
 </style>
