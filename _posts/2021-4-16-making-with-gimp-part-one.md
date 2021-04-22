@@ -9,10 +9,31 @@ related-articles:
 post_description: [a step-by step guide into making patterns and textures using GIMP]
 
 ---
+---
+
+<style>
+
+.second-heading {
+    font size: 300%;
+    color: blue;
+    font-family: "Rubik Extrabold", Rubik, sans-serif;
+}
+
+.toc-head {
+    font size: 100%;
+    color: blue;
+    font-family: Rubik, Rubik, sans-serif;
+    font-variant: normal;
+
+
+}
+
+</style>
 
 ![feathers](\assets\post_media\2021-3-31-gimp-tutorial\intro\feathersheader.jpg "feathers")
 
-## TABLE OF CONTENTS
+<h2 class= "second-heading">TABLE OF CONTENTS</h2>
+
 1. [What You Will Learn](/articles/2021/04/16/making-with-gimp-part-one/#in-this-tutorial)
 2. [Why GIMP?](/articles/2021/04/16/making-with-gimp-part-one/#why-gimp)
 3. [Getting Started](/articles/2021/04/16/making-with-gimp-part-one/#getting-started)
@@ -56,20 +77,19 @@ I will tell you about the different types of patterns I learned to make using GI
 
 
 
+<h2 class= "second-heading">WHY GIMP?</h2>
 
-
-## WHY GIMP?
-I got by as a content creator making most of my content in my phone, using a combination of the following mobile photo editors:
+I got by as a content creator making all my content in my phone, using a combination of the following mobile photo editors:
 
 - [Phonto](https://phon.to/download){:target="_blank"}: for text editing
-- [PicsArt](https://picsart.com/){:target="_blank"}: for their stickers and filters, also for cropping/blending/enhancing images
+- [PicsArt](https://picsart.com/){:target="_blank"}: for their stickers and filters, also for cropping/blending/enhancing images. Note: very few fonts are included with the free version 
 - [Background eraser](https://play.google.com/store/apps/details?id=com.handycloset.android.eraser&hl=en_US&gl=US){:target="_blank"}: for its auto erase tool
 - [IbisPaint X](https://ibispaint.com/?lang=en-US){:target="_blank"}: for brushes and other drawing tools
 - [Cut+Mix Studio](https://play.google.com/store/apps/details?id=pictriev.cutout&hl=en_US&gl=US){:target="_blank"}: for layering/affining/face swapping
 - [Mirrorlab](https://play.google.com/store/apps/details?id=com.ilixa.mirror&hl=en_US&gl=US){:target="_blank"}: for distorting, blurring, and generating patterns and gradients
 - Powerpoint: cataloguing albums, batch saving, and text box tool
 
-I still use, and highly recommend each of those apps, but as my audience and body of work grew, so did my interest in design, typography, collage, and optical art. I also began to think about developing an artist portfolio and business brand alongside my social media presence. In other words, I needed to build an online store and portfolio, and after some trial and error, I realized the free apps wouldn’t cut it. Here are a few reasons why:
+I still use, and highly recommend each of those apps, but as my audience and body of work grew, so did my interest in design, typography, collage, and optical art. Moreover, began to think about developing a portfolio and business brand alongside my social media presence. In other words, I needed to build an online store and portfolio. After some trial and error, I realized the phone apps wouldn’t cut it. Here are a few reasons why:
 
 - **Resizing for prints:** in order to get your designs printed, they need to be up to 4800px – none of the apps I mentioned can produce images over 2200px
 - **Color management:** GIMP gives you more control over color profiles, and allows you to create monotone versions of your designs (as those are cheaper to print) 
@@ -84,18 +104,24 @@ And thanks to GIMP’s community of contributors (as the source in "open source"
 To conclude my *why* behind this tutorial: GIMP is a remarkable and magnificent tool that can outperform photoshop in many ways despite being 100% free, for anyone to own, forever.
 
 
-## GETTING STARTED
+<h2 class= "second-heading">SOFTWARE INSTALLATION</h2>
+
+1. Download the latest version of GIMP [here](https://www.gimp.org/downloads/){:target="_blank"}
+2. Enhance your GIMP experience with the following free plug-ins: you can download [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip){:target="_blank"}
+It is packed with powerful tools and filters, one of which we utilize in [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter)
+- Helpful Plug-ins:
+  - [Resynthesizer](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip){:target="_blank"}
+  - [BIMP-Batch Image Manipulation Program for batch editing](https://alessandrofrancesconi.it/projects/bimp/){:target="_blank"}:  allows you to resize, crop, rotate, watermark large numbers of image files in one go. Batch processing could save you hours.
+- Useful Brushes:
+  - [Arrows](https://www.gimphelp.org/arrow_brushes_color_1.html){:target="_blank"}
+  - [Cards](https://www.deviantart.com/chrisdesign/art/GIMP-Playingcard-Brush-196530703){:target="_blank"}
+
+<h2 class= "second-heading">WORKFLOW RECOMMENDATIONS</h2>
+
 [mise en place](https://en.wikipedia.org/wiki/Mise_en_place){:target="_blank"}
- 
-### Installing GIMP
-
- Download and install GIMP [here](https://www.gimp.org/downloads/){:target="_blank"}
-
-### Installing Resynthesizer
-Resynthesizer is a very useful plug-in that we will use for [Method 2](/articles/2021/04/16/making-with-gimp-part-one/#method-2-blending-gimps-built-in-patterns-by-applying-the-pattern-seamless-filter) in this tutorial. Download and install it [here](https://github.com/pixlsus/registry.gimp.org_static/blob/master/registry.gimp.org/files/Resynthesizer_v1.0-i686.zip){:target="_blank"}
 
 
-### Preparing Your Local Folder Tree:
+<h3 class= "third-heading">preparing your local folder-tree</h3>
 
 In your local drive, create a “My GIMP” folder. Inside it, create the following folder tree:
 - “**My XCF Files**”: this is where you’ll `Save` multi-layer projects if you want to be able to modify those layers at a later time.
@@ -108,7 +134,8 @@ In your local drive, create a “My GIMP” folder. Inside it, create the follow
     - `filename.pat` to make any image or selection into a tileable pattern.
   - Inside “My GIMP Exports” create a folder named “**My GIMP Patterns**" - this is where you’ll export your .pat files temporarily before you can add them to GIMP’s built-in `patterns` folder.
 
-### Locating GIMP’s Built-in “Patterns” Folder
+### Locating GIMP’s Built-in "patterns" Folder
+Find where GIMP's built-in assets (patterns, brushes, ect..) are saved because this is where you will have to s haare located in GIMPimportant to locate and bookmark because while you can export 
 1. Open GIMP
 2. Go to: `Edit – Preferences – Folders` (+) to expand
 3. select the `patterns` folder and copy its location from the address bar above. If there are 2 folders, select the one with "Roaming" in its address. Exit Preferences dialogue without saving.
@@ -161,6 +188,13 @@ With that in mind, here's every tool we will use in this turorial:
 
 <ul class="list-unstyled">
   <li class="media">
+    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/bucketfill.jpg" alt="Bucket-Fill Tool">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Bucket-Fill Tool (shift+b)</h5>
+     Use to Fill a selection or area with a color or pattern. Configure the fill of your bucket in the Bucket-Fill Tool Options Window (pictured below) 
+    </div>
+  </li>
+  <li class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/move.jpg" alt="Move Tool">
     <div class="media-body">
       <h5 class="mt-0 mb-1">Move Tool (m)</h5>
@@ -175,16 +209,9 @@ With that in mind, here's every tool we will use in this turorial:
     </div>
   </li>
   <li class="media">
-    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/zoom.jpg" alt="Zoom Tool">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1">Zoom Tool (+) or (-)</h5>
-     I recommend using the keyboard shortcut to zoom in(+) or out (-)
-    </div>
-  </li>
-  <li class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/scale.jpg" alt="Scale Tool">
     <div class="media-body">
-      <h5 class="mt-0 mb-1">Scale/Resize Tool (shift+s)</h5>
+      <h5 class="mt-0 mb-1">Scale (Resize) Tool (shift+s)</h5>
      Use to Resize an object, layer, or selection. To maintain a fixed aspect ratio, make sure the chain symbols next to the width/height dialogue are linked.  
     </div>
   </li>
@@ -199,21 +226,21 @@ With that in mind, here's every tool we will use in this turorial:
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/rotate.jpg" alt="Move Tool">
     <div class="media-body">
       <h5 class="mt-0 mb-1">Rotate Tool (shift+r)</h5>
-      Use this tool to rotate a selection. Configure the increment and angle of rotation using the Tool Options Window
+      Use this tool to rotate a layer, image, or selection. Configure the increment and angle of rotation using the Tool Options Dialogue
+    </div>
+  </li>
+  <li class="media">
+    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/zoom.jpg" alt="Zoom Tool">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Zoom Tool (+) or (-)</h5>
+     YI recommend using the keyboard shortcut to zoom in(+) or out (-)
     </div>
   </li>
   <li class="media">
     <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/align.jpg" alt="Ellipse Select Tool">
     <div class="media-body">
       <h5 class="mt-0 mb-1">Alignment Tool</h5>
-      Allign/arrange selections and images horizontally or vertically in respect of eachother or the layer the occupy
-    </div>
-  </li>
-  <li class="media">
-    <img class="mr-3" src="/assets/post_media/2021-3-31-gimp-tutorial/icons/bucketfill.jpg" alt="Bucket-Fill Tool">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1">Bucket-Fill Tool (shift+b)</h5>
-     Use to Fill a selection or area with a color or pattern. Configure the fill of your bucket in the Bucket-Fill Tool Options Window (pictured below) 
+      Select this tool, then click on the object you want to align, then go back to the tool option dialogue and figure it out. selections and images horizontally or vertically in respect of eachother or the layer the occupy. I Snapping to guides or grid points is a much simpler and more precise way to make sure everything is 
     </div>
   </li>
 </ul>
@@ -618,3 +645,4 @@ To add a border to any image:
   - [Openclipart.org](openclipart.org){:target="_blank"}
   - [Pexels](https://www.pexels.com/royalty-free-images/){:target="_blank"}
   - [EveryPixel](https://www.everypixel.com/){:target="_blank"}
+
