@@ -2,7 +2,7 @@
 
 layout: post
 title: "Red Flag"
-categories: [poetry]
+categories: poetry
 author: Alia Brandt
 related-articles:
 post_description: ["A prose style poem about putting up with a piece of shit misogynist. Rage, silence, and revenge."]

@@ -2,7 +2,7 @@
 
 layout: post
 title: Robots, Explained
-categories: [tech]
+categories: essay
 author: Selam Gano
 related-articles:
 post_description: Will they take over the world? More importantly, will they put me out of a job?

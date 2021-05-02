@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making A Simple Static Website: Part Three, Using Jekyll with Github Pages"
-categories: [tutorial, tech]
+categories: tutorial
 author: ada.wrong
 excerpt_separator: <!--more-->
 related-articles: [2020-11-16-simple-website-tutorial-part-one, 2020-11-23-simple-website-tutorial-part-two]

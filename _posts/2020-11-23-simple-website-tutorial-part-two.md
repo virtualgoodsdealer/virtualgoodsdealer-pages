@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making A Simple Static Website: Part Two, Setting Up Your Development Environment and Workflow for Github Pages"
-categories: [tutorial, tech]
+categories: tutorial
 author: ada.wrong
 excerpt_separator: <!--more-->
 related-articles: [2020-11-16-simple-website-tutorial-part-one, 2021-1-21-simple-website-tutorial-part-three]

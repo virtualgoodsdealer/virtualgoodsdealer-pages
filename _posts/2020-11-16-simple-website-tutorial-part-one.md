@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making A Simple Static Website: Part One, Why Code Your Own Website?"
-categories: [tutorial, tech]
+categories: tutorial
 author: ada.wrong
 excerpt_separator: <!--more-->
 related-articles: [2020-11-23-simple-website-tutorial-part-two, 2021-1-21-simple-website-tutorial-part-three]

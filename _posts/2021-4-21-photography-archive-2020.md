@@ -2,7 +2,7 @@
 
 layout: post
 title: "Photography Archive 2020"
-categories: [photography]
+categories: art
 author: Echo Nixod
 related-articles:
 post_description: ["A memoir-style collection of photography and writing. Portraiture, fashion, fantasy, and more."]

@@ -3,7 +3,7 @@
 layout: post
 
 title: "Dead-End Trips: An Intrapersonal Guide to Interstellar Travel"
-categories: [prose]
+categories: poetry
 author: saqmemes
 related-articles:
 post_description: [How drawing certain boundaries between you and your higher self may reveal your true potential. Plus the one thing you should know before next voyage]

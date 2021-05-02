@@ -2,7 +2,7 @@
 
 layout: post
 title: "Myers-Briggs Type Indicator Trends: An Analysis Video on Meme Page Owners and Their MBTI"
-categories: [culture, video]
+categories: video
 author: Claire Ramirez
 related-articles:
 post_description: The Myers-Briggs Type Indicator and some of its traits are reflected through different meme page habits. Let Claire take you through this journey of self-awareness & meme expression.

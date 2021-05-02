@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
-categories: news
+categories: announcements
 author: 
 post_description: "We are Virtualgoodsdealer."
 ---

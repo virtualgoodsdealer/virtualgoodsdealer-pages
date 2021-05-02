@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Virtualgoodsdealer Creators: October Rewind"
-categories: news
+categories: announcements
 author: 
 post_description:
 excerpt_separator: <!--more-->

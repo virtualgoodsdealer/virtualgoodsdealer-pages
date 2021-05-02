@@ -3,7 +3,7 @@
 layout: post
 
 title: "Making With GIMP: Patterns and Textures"
-categories: [tutorial, tech]
+categories: tutorial
 author: saqmemes
 related-articles:
 post_description: [a step-by step guide into making patterns and textures using GIMP]

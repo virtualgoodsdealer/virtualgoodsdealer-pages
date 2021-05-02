@@ -2,7 +2,7 @@
 
 layout: post
 title: "Virtualgoodsdealer Creators: Dairysam"
-categories: [news]
+categories: interview
 author:
 guest: dairysam
 related-articles:

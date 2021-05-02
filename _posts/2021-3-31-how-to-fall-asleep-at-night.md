@@ -3,7 +3,7 @@
 layout: post
 
 title: "How to Fall Asleep at Night"
-categories: [poetry]
+categories: poetry
 author: pear_bomb
 related-articles:
 post_description: [A list style poem about insomnia and the horror in the mundane. Likely to be relatable for many of our readers.]

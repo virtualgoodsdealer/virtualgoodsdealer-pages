@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"Deleted in 2020" Submissions Update'
-categories: news
+categories: announcements
 author: 
 post_description:
 excerpt_separator: <!--more-->
