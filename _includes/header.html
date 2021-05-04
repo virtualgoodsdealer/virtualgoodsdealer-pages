@@ -9,12 +9,25 @@
 		    <div class="navbar-nav">
 		    	{% assign pages_sorted = site.pages | sort: "order" %}
 		    	{% for page in pages_sorted %}
-			      {% if page.title %}
+			      {% if page.title and page.title == "articles" %}
 			      	<li>
-			      		<a class="nav-item nav-link" href="{{ page.url | relative_url }}">/{{ page.title | escape }}</a>
+			      		<a class="nav-item nav-link nav-link-articles" href="{{ page.url | relative_url }}">/{{ page.title | escape }}</a>
 			      	</li>
+			      		<div class="category-nav-toggle landing-articles-categories">
+			      		{% assign categories = site.categories | sort %}
+						{% for category in categories %}
+						    <li>
+						      <a class="category-nav-link font-weight-light" href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
+						    </li>
+						{% endfor %}
+						</div>
+					{% elsif page.title %}
+						<li>
+			      			<a class="nav-item nav-link" href="{{ page.url | relative_url }}">/{{ page.title | escape }}</a>
+			      		</li>
 			      {% endif %}
 			    {% endfor %}
+			    	
 			  <li>
 		      </li>
 		    </div>

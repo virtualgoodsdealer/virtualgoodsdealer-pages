@@ -326,7 +326,21 @@ body {
 }
 
 .date-column{
-  flex: 0 0 10%;
+  flex: 0 0 14%;
+}
+
+.category-nav-link{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.nav-link-articles{
+  padding-bottom: 0.25rem;
+}
+
+.category-nav-toggle {
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
 }
 
 .author-photo {

@@ -81,3 +81,9 @@
     font-size: 0.9rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .category-nav-toggle {
+    display: none;
+  }
+}
