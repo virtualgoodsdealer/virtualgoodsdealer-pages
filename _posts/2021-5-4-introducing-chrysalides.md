@@ -9,26 +9,48 @@ post_description: ["Motivation and thoughts behind the creator's new series of d
 ---
 
 <script>
-  fetch('https://ipfs.io/ipfs/Qmdp2T77ut3fP5pZ14UrJvXwKGVMoqchF6g8Wn5aMDubsn/metadata.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("one").innerHTML = data.name;
-  });
-    fetch('https://ipfs.io/ipfs/QmQMUEGRd8PHgsU8UwmGMnPBPBomwhj7dJCGmnnzdG3fnT/metadata.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("two").innerHTML = data.name;
-  });
-  fetch('https://ipfs.io/ipfs/QmcJ3G5VnYS4auySrHvTHEfc7xhYaPsGedqYAg62yK28Jk/metadata.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("three").innerHTML = data.name;
-  });
-    fetch('https://ipfs.io/ipfs/QmV68nSEg5KzcFE8E55gzXodYq7ZMrMFy6eSZabpn54KQM/metadata.json')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("four").innerHTML = data.name;
-  });
+  document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+          fetch('https://ipfs.io/ipfs/Qmdp2T77ut3fP5pZ14UrJvXwKGVMoqchF6g8Wn5aMDubsn/metadata.json')
+            .then(response => response.json())
+            .then(data => {
+              document.getElementById("one").innerHTML = data.name;
+            });
+              fetch('https://ipfs.io/ipfs/QmQMUEGRd8PHgsU8UwmGMnPBPBomwhj7dJCGmnnzdG3fnT/metadata.json')
+            .then(response => response.json())
+            .then(data => {
+              document.getElementById("two").innerHTML = data.name;
+            });
+            fetch('https://ipfs.io/ipfs/QmcJ3G5VnYS4auySrHvTHEfc7xhYaPsGedqYAg62yK28Jk/metadata.json')
+            .then(response => response.json())
+            .then(data => {
+              document.getElementById("three").innerHTML = data.name;
+            });
+              fetch('https://ipfs.io/ipfs/QmV68nSEg5KzcFE8E55gzXodYq7ZMrMFy6eSZabpn54KQM/metadata.json')
+            .then(response => response.json())
+            .then(data => {
+              document.getElementById("four").innerHTML = data.name;
+            });
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Possibly fall back to event handlers here
+  }
+});
 </script>
 
 <style>
@@ -38,6 +60,10 @@ post_description: ["Motivation and thoughts behind the creator's new series of d
     .img-full {
       max-width: 60%!important;
     }
+
+    .lazy {
+      width: 100%;
+    }
 </style>
 
 I'd love to give a brain dump of some of my motivations and thinking behind this series of NFTs I recently created.
@@ -45,13 +71,13 @@ I'd love to give a brain dump of some of my motivations and thinking behind this
 <div class="row">
   <div class="col- col-sm-6">
     <figure class="figure">
-      <image src="https://ipfs.io/ipfs/QmdTYAp64EJPfKUmNUEwwyL9u9hpTsx6zmR24SNkPHhTxL/nft.png" />
+      <image class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" data-src="https://ipfs.io/ipfs/QmdTYAp64EJPfKUmNUEwwyL9u9hpTsx6zmR24SNkPHhTxL/nft.png" />
       <figcaption class="figure-caption" id="one"></figcaption>
     </figure>
   </div>
   <div class="col- col-sm-6">
     <figure class="figure">
-      <image src="https://ipfs.io/ipfs/QmeYre1gcRHniBJiiTxUxbLfCs5BbFKW36BawamF6446Zo/nft.png" />
+      <image class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" data-src="https://ipfs.io/ipfs/QmeYre1gcRHniBJiiTxUxbLfCs5BbFKW36BawamF6446Zo/nft.png" />
       <figcaption class="figure-caption" id="two"></figcaption>
     </figure>
   </div>
@@ -60,13 +86,13 @@ I'd love to give a brain dump of some of my motivations and thinking behind this
 <div class="row">
   <div class="col- col-sm-6">
     <figure class="figure">
-      <image src="https://ipfs.io/ipfs/QmUNED5ZvCZYoNcztcaf1hdLdasRfXVXVVS1aZuKPxk1xy/nft.png" />
+      <image class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" data-src="https://ipfs.io/ipfs/QmUNED5ZvCZYoNcztcaf1hdLdasRfXVXVVS1aZuKPxk1xy/nft.png" />
       <figcaption class="figure-caption" id="three"></figcaption>
     </figure>
   </div>
   <div class="col- col-sm-6">
     <figure class="figure">
-      <image src="https://ipfs.io/ipfs/QmNPTC7VXxS39TVQsMHnJAGE51FuzPnFSf7qyobndJXzCs/nft.png" />
+      <image class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" data-src="https://ipfs.io/ipfs/QmNPTC7VXxS39TVQsMHnJAGE51FuzPnFSf7qyobndJXzCs/nft.png" />
       <figcaption class="figure-caption" id="four"></figcaption>
     </figure>
   </div>
