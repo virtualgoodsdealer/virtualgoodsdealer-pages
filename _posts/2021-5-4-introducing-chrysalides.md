@@ -57,8 +57,10 @@ post_description: ["Motivation and thoughts behind the creator's new series of d
     figure {
       margin-bottom: 0px!important;
     }
-    .img-full {
-      max-width: 60%!important;
+    @media screen and (min-width: 575px){
+      .img-full {
+        max-width: 60%!important;
+      }
     }
 
     .lazy {
