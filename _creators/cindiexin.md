@@ -10,4 +10,4 @@ photo: cindiexin.jpg
 soundcloud: https://soundcloud.com/males_are_cancelled
 donationlink: https://www.paypal.com/paypalme/cindiex
 ---
-Cindie Xin is a multi media creative and net personality based in Atlanta, GA. They are part of virtualgoodsdealer.
+cindie is a multi-media creative and recording artist based in ATL. They work on creative direction, design, and social media for Virtualgoodsdealer.
