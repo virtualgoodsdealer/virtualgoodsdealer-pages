@@ -4,7 +4,7 @@ title:  "Virtualgoodsdealer Interview Series: Episode 5, We're All Baby"
 categories: [interview, video]
 author: [cindie xin, saqmemes]
 guest: Aiden Arata
-post_description: "In episode 5 of the Virtualgoodsdealer Interview Series, Cindie and Omnia speak with with Djinn on their work and various topics such as performative activism and instagram infographics."  
+post_description: "In episode 5 of the Virtualgoodsdealer Interview Series, Cindie and Omnia ask Aiden Arata, about her meme-making process versus her writing process, her thoughts on her past experiences with accountability and closure, and about her upcoming writing projects."  
 thumbnail: https://img.youtube.com/vi/oFRFtt8nwAw/hq720.jpg
 ---
 
