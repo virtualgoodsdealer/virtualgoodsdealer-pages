@@ -133,7 +133,9 @@ layout: default
 			{% include exhibit-video-embed.html poster=poster src=source%}
 			  <div class="card-body">
 			    <h5 class="card-title">{{ exhibit.title }}</h5>
-			    {% if exhibit.author %}
+			    {% if exhibit.author_description %}
+			    		<h6 class="card-subtitle exhibit-vgd exhibit-creator-link mb-2">{{ exhibit.author_description }}</h6>
+			    {% elsif exhibit.author %}
 			    	{% capture creators_link %}
 			    		<h6 class="card-subtitle exhibit-creator-link mb-2">
 			    	{% endcapture %}

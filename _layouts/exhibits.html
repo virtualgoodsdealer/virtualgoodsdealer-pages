@@ -43,7 +43,9 @@ layout: default
 			{% include exhibit-video-embed.html poster=poster src=source%}
 			  <div class="card-body d-flex flex-column">
 			    <h5 class="card-title">{{ exhibit.title }}</h5>
-			    {% if exhibit.author %}
+			    {% if exhibit.author_description %}
+			    		<h6 class="card-subtitle exhibit-vgd exhibit-creator-link mb-2">{{ exhibit.author_description }}</h6>
+			    {% elsif exhibit.author %}
 			    	<!-- name of exhibit -->
 			    	{% capture creators_link %}
 			    		<h6 class="card-subtitle exhibit-creator-link mb-2">
@@ -60,8 +62,9 @@ layout: default
 			    				{% assign atag = atag | append: '</a>' %}
 			    			{% endif %}
 			    		{% endfor %}
-			    		{% assign creators_link = creators_link | append: atag %}
 			    	{% endfor %}
+			    		{% assign creators_link = creators_link | append: atag %}
+
 			    	{% assign creators_link = creators_link | append: "</h6>" %}
 			    	{{ creators_link }}
 			    {% else %}
