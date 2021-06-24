@@ -1,3 +1,115 @@
+// COLORS
+
+// darkmode
+@mixin dark-mode {
+
+  .card, .list-group-item, .posts-link-by:before, .form-control, .form-control:focus{
+    background-color: $body-bg-color-dark;
+  }
+  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link a, .landing-product-card a, .btn-outline-primary, .posts__link, .post a, .post h1,
+  .post h2,
+  .post h3,
+  .post h4,
+  .post h5,
+  .post h6{
+  color: $accent-color-dark;
+  }
+
+  .btn-primary, .btn-outline-primary:hover, .badge-primary{
+    background-color: $accent-color-dark;
+  }
+
+  .btn-primary, .btn-outline-primary, .btn-outline-primary:hover, .exhibit-card, .landing .card, .border-primary, .post-thumbnail-container {
+    border-color: $accent-color-dark !important;
+  }
+
+  .post a:hover, .read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link a:hover, .landing-articles-categories a:hover, .landing-product-card a:hover, .author-post-bio a:hover, .post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover, .author-post-bio a, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .post-content a:hover, .footer a:hover{
+    color: $hover-color-dark !important;
+  }
+
+  .post, .form-article-title {
+    color: $text-color-dark;
+  }
+
+  .posts-link-authors, .page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd, .author-createdby, .posts-categories a, .category-nav a, .posts-link-by, .posts__date, .form-control, .post figure figcaption, .post figure figcaption a, .post blockquote, .post blockquote a, .footer a, .footer{
+    color: $text-sec-color-dark !important;
+  }
+
+  .btn-primary:hover{
+    background-color: $primary-btn-hover-dark;
+  }
+
+  .svg-icon{
+    fill: $text-sec-color-dark;
+  }
+
+  .svg-icon:hover{
+    fill: $hover-color-dark;
+  }
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include dark-mode;
+    background-color: $body-bg-color-dark !important;
+    color: $text-color-dark !important;
+  }
+}
+
+// lightmode
+body {
+  background-color: $body-bg-color-light;
+  color: $text-color-light;
+}
+
+.post, .form-article-title {
+  color: $text-color-light;
+}
+
+.card, .list-group-item, .posts-link-by:before, .form-control, .form-control:focus{
+  background-color: $body-bg-color-light;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link a, .landing-product-card a, .btn-outline-primary, .posts__link, .post a, .post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6{
+  color: $accent-color-light;
+}
+
+.btn-primary, .btn-outline-primary:hover, .badge-primary{
+  background-color: $accent-color-light;
+}
+
+.btn-primary, .btn-outline-primary, .btn-outline-primary:hover, .exhibit-card, .landing .card, .border-primary, .post-thumbnail-container {
+  border-color: $accent-color-light !important;
+}
+
+.post a:hover, .read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link a:hover, .landing-articles-categories a:hover, .landing-product-card a:hover, .author-post-bio a:hover, .post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover, .author-post-bio a, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .post-content a:hover, .footer a:hover{
+  color: $hover-color-light !important;
+}
+
+.posts-link-authors, .page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd, .author-createdby, .posts-categories a, .category-nav a, .posts-link-by, .posts__date, .form-control, .post figure figcaption, .post figure figcaption a, .post blockquote, .post blockquote a, .footer a, .footer{
+  color: $text-sec-color-light !important;
+}
+
+.btn-primary:hover{
+  background-color: $primary-btn-hover-light;
+  border-color: $primary-btn-hover-light !important;
+}
+
+.svg-icon{
+  fill: $text-sec-color-light;
+}
+
+.svg-icon:hover{
+  fill: $hover-color-light;
+}
+
 html {
     overflow-y:scroll;
 }
@@ -6,9 +118,7 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .landing-articles-categories a, .artist-page h3, .artist-page a, .post-content a, .response-form-title, .article-nav a, .article-suggested a, .submission-list a, .creator-list a, .exhibit-creator-link a,  .landing-product-card a{
-  color: $header-nav-color;
-}
+
 
 .navbar {
   padding: 0px;
@@ -19,22 +129,15 @@ body {
 }
 
 .posts-link-authors{
-  color: $post-date-color;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
 }
 
-.page-name, .read-more, .artist-articles, .article-suggested, .exhibit-vgd, .author-createdby{
-  color: $post-date-color !important;
-}
-
 .posts-categories a, .category-nav a{
-  color: $post-date-color !important;
   text-decoration: none !important;
 }
 
 .read-more:hover, .posts-categories a:hover, .category-nav a:hover, .creator-list a:hover, .exhibit-creator-link a:hover, .landing-articles-categories a:hover, .landing-product-card a:hover, .author-post-bio a:hover{
-  color: $post-link-hover-color !important;
   text-decoration: none !important;
 }
 
@@ -51,9 +154,7 @@ body {
 }
 
 .post a:hover, .posts__link:hover, .posts-link-authors:hover, .artist-page a:hover, .author-post-bio a{
-  color: $post-link-hover-color;
   text-decoration: underline;
-  text-decoration-color: $post-link-hover-color;
 }
 
 .post-exerpt{
@@ -103,28 +204,22 @@ body {
 }
 
 .btn-primary{
-  background-color: $header-nav-color;
   text-decoration: none !important;
   color: white !important;
 }
 
 .btn-primary:hover{
-  background-color: black;
   text-decoration: none !important;
   color: white !important;
 }
 
 .btn-outline-primary {
-    color: $header-nav-color;
     background-color: transparent;
     background-image: none;
-    border-color: $header-nav-color;
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: $header-nav-color;
-    border-color: $header-nav-color;
 }
 
 .post blockquote a{
@@ -146,10 +241,6 @@ body {
   margin-top: 1.25rem;
 }
 
-.posts-link-by{
-  color: $post-date-color;
-}
-
 .posts-link-by:before {
   /* absolute positioning keeps it within h1's relative positioned box, takes it out of the document flow and forces a block-style display */
   position: absolute;
@@ -157,8 +248,7 @@ body {
   width: 0.3rem;
   /* we need to make sure our 'mask' is tall enough to hide the underline. For my own purpose 200% was enough, but you can play and see what suits you */
   height: 1.5rem;
-  /* set the background colour to the same as whatever the background colour is behind your element. I've used a red box here so you can see it on your page before you change the colour ;) */
-  background-color: white;
+
   /* give the browser some text to render (if you're familiar with clearing floats like this, you should understand why this is important) */
   content: ".";
   /* hide the dynamic text you've just added off the screen somewhere */
@@ -188,34 +278,22 @@ body {
 }
 
 .svg-icon{
-  fill: $footer-color;
   width: 1rem;
   margin-top: 5px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.svg-icon:hover{
-  fill: black;
-}
-
 .footer a{
-  color: $footer-color;
   text-decoration: none;
 }
 
-.footer a:hover{
-  color: black;
-}
 
 .badge {
   line-height: 1.2;
   font-weight: 400;
 }
 
-.badge-primary {
-  background-color: $header-nav-color;
-}
 
 .submission-content {
   margin-top: 1rem;
@@ -224,7 +302,6 @@ body {
 .exhibit-card {
   margin-bottom: 1rem;
   height: 100%;
-  border-color: $header-nav-color;
   overflow:hidden;
 }
 
@@ -249,12 +326,7 @@ body {
 }
 
 .landing .card {
-  border-color: $header-nav-color;
   overflow:hidden;
-}
-
-.border-primary {
-  border-color: blue!important;
 }
 
 video:focus, audio:focus {
@@ -271,10 +343,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-body {
-  background-color: $body-bg-color;
 }
 
 .layout {
@@ -296,7 +364,6 @@ body {
 .header__nav__item {
   text-decoration: none;
   font-size: 1rem;
-  color: $header-nav-color;
 }
 
 .header__nav__item--title {
@@ -306,7 +373,7 @@ body {
 }
 
 .post-thumbnail-container {
-  border: 1px solid blue;
+  border: 1px solid;
   padding: .25rem;
   border-radius: .25rem;
 }
@@ -360,7 +427,6 @@ body {
 }
 
 .posts__date {
-  color: $post-date-color;
   font-size: 1rem;
 }
 
@@ -369,7 +435,6 @@ body {
 }
 
 .posts__link {
-  color: $post-link-color;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
 }
@@ -377,16 +442,9 @@ body {
 .footer {
   margin-top: 3rem;
   font-size: .9rem;
-  color: $footer-color;
   font-family: Arial, sans-serif;
 }
 
-
-.icon {
-  height: .9rem;
-  width: .9rem;
-  fill: $icon-color;
-}
 
 #disqus_thread {
   margin-top: 60px;
@@ -396,17 +454,8 @@ body {
   font-weight: 400;
   line-height: 1.8rem;
   font-size: 1rem;
-  color: $post-content-color;
 }
 
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
-  color: $post-heading-color;
-}
 
 .post h1 {
   font-size: 1.5em;
@@ -441,14 +490,7 @@ body {
 
 
 .post a {
-  color: $post-link-color;
   word-wrap: break-word;
-  text-decoration-color: rgba($post-link-color, .8);
-}
-
-.post a:hover {
-  color: $post-link-hover-color;
-  text-decoration-color: $post-link-hover-color;
 }
 
 .post h1 a,
@@ -460,13 +502,11 @@ body {
 .post strong,
 .post b {
   font-weight: 700;
-  color: $post-emphasis-color;
 }
 
 .post em,
 .post i {
   font-style: italic;
-  color: $post-emphasis-color;
 }
 
 .post img {
@@ -500,12 +540,10 @@ body {
   margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
-  color: $post-figure-color;
 }
 
 .post figure figcaption a {
   text-decoration: none;
-  color: $post-figure-color;
 }
 
 .post hr {
@@ -516,15 +554,14 @@ body {
   border-top: 1px solid $post-border-color;
 }
 
+hr {
+  border-color: $post-border-color;
+}
+
 .post blockquote {
   margin: 0 0 1.64em 0;
   border-left: 3px solid $post-border-color;
   padding-left: 12px;
-  color: $post-blockquote-color;
-}
-
-.post blockquote a {
-  color: $post-blockquote-color;
 }
 
 .post ul,
