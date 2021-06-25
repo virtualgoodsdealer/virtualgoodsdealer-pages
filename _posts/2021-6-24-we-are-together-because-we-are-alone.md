@@ -6,7 +6,7 @@ author: cindie xin
 post_description: "Variety mix, old and new. Recorded 6.17.21."  
 ---
 
-![Mix Cover](/assets/post_media/2021-6-24-we-are-together-because-we-are-alone/weralllalone_cover.JPG)  
+![Mix Cover](/assets/post_media/2021-6-24-we-are-together-because-we-are-alone/weareallalone_COVER.png)  
 
 &zwnj; 
 
@@ -40,7 +40,7 @@ Trololo Song Remix!
 Horror Gqom - T5UMUT5UMU  
 KLK - Arca (Miss Jay Re-Drum)  
 Look at me (Drake Trap Remix)  
-Altered States - Chris Rich
+Altered States - Chris Rich  
 2020 財富 Chinese Psytrance 和平 music 愛 video 左手指月 (Terror music official mix) - Technical Terror  
 Golden Skans - Klaxons (Sebastian 1.2.0 Remix)  
 Magnetic Field - T5UMUT5UMU  
