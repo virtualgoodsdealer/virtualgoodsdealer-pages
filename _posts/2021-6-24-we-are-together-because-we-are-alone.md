@@ -10,7 +10,7 @@ post_description: "Variety mix, old and new. Recorded 6.17.21."
 
 &zwnj; 
 
-{% include open-embed.html src="/assets/post_media/2021-6-24-we-are-together-because-we-are-alone/CYNset6.17.wav" %}  &zwnj;  
+{% include open-embed.html src="/assets/post_media/2021-6-24-we-are-together-because-we-are-alone/CYNset6.17.mp3" %}  &zwnj;  
 
 *Setlist:*  
 

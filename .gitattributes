@@ -1,2 +1,3 @@
 * text=auto
 /assets/post_media/2021-6-24-we-are-together-because-we-are-alone/CYNset6.17.wav filter=lfs diff=lfs merge=lfs -text
+/assets/post_media/2021-6-24-we-are-together-because-we-are-alone/CYNset6.17.mp3 filter=lfs diff=lfs merge=lfs -text
