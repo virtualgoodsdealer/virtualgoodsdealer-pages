@@ -50,7 +50,7 @@ $text-color-light: $black;
 $text-color-dark: $white;
 
 $text-sec-color-light: $grey;
-$text-sec-color-dark: lighten($grey, 10);
+$text-sec-color-dark: darken($white, 35);
 
 $primary-btn-hover-light: $black;
 $primary-btn-hover-dark: $grey;
@@ -60,11 +60,6 @@ $code-bg-color-dark: lighten($black, 20);
 
 $footer-color: $grey;
 $icon-color: $grey;
-
-// specific colors for post
-
-$post-border-color: $grey-light;
-
 
 @import 'normalize';
 @import 'settings';
