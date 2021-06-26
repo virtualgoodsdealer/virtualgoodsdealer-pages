@@ -43,8 +43,12 @@
     fill: $text-sec-color-dark;
   }
 
-  .svg-icon:hover{
-    fill: $hover-color-dark;
+  .svg-icon:hover, .toggle-button-svg:hover {
+    fill: $hover-color-dark !important;
+  }
+
+  .toggle-button-svg {
+    fill: $accent-color-dark !important;
   }
 
   .post code, .post tt, .post pre {
@@ -179,8 +183,12 @@ body {
   fill: $text-sec-color-light;
 }
 
-.svg-icon:hover{
+.svg-icon:hover, .toggle-button-svg:hover{
   fill: $hover-color-light;
+}
+
+.toggle-button-svg {
+  fill: $accent-color-light !important;
 }
 
 .post code, .post tt, .post pre {
@@ -794,3 +802,6 @@ html {
   background: none;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+}
