@@ -293,47 +293,47 @@ oversimply-put, layers are like those transparent projector sheets your middle s
     </tr>
   </thead>
   <tbody>
-    <tr class="table-light">
+    <tr>
       <th scope="row">To move something inside a layer</th>
       <td> Make sure you're in the correct layer and that the object is visible. Find the Move tool in the toolbox. click and drag to move your object. </td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To delete something inside a layer</th>
       <td> Make sure it's selected and visible then hit the `Delete` key on your keyboard </td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To copy something inside a layer</th>
       <td> Make sure you're in the correct layer and that the object is selected. Go to: `Edit - Copy` or `ctrl + c` </td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To copy an entire layer:</th>
       <td>Select the layer and make sure it's visible, copy or `ctrl+c` by default, only the top visible layer will be copied.</td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To copy all the visible things inside all the visible layers</th>
       <td>Go to: `Edit - Copy Visible` </td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To paste what's in your clipboard</th>
       <td>Make sure you're in the layer you want to paste in, then "ctrl+v" or go to "Edit-Paste" </td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To zoom in and out</th>
       <td> Click (+) or (-) on your keyboard</td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To unselect everything:</th>
       <td colspan="2">Go to: `Select - None` or `Shift + ctrl + A` Do this then reselect if you're ever unsure if you selected the right thing</td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To change the active colors</th>
       <td>To change the color of your foreground or background, click the one you want to change and a color dialogue should pop up. Type in the color's html notation, use one of GIMP's palettes, or use the Color Picker tool</td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To find the name and function of a tool or feature</th>
       <td>mouse over the icons/options one by one. The name and a short description should appear</td>
     </tr>
-    <tr class="table-light">
+    <tr >
       <th scope="row">To quickly rename a layer</th>
       <td>Double click the layer name, type it in, then click enter</td>
     </tr>
@@ -469,7 +469,7 @@ for this tutorial we're going to use the ellipse tool to make this dot pattern:
 Find an image on the web that you want to make into a pattern. For this example, I am using this photo
 
 <figure class="figure">
-  <img src="/assets/post_media/2021-3-31-gimp-tutorial/cat.png" class="figure-img img-fluid rounded" alt="diamond cat ">
+  <img src="/assets/post_media/2021-3-31-gimp-tutorial/methods/cat.png" class="figure-img img-fluid rounded" alt="diamond cat ">
   <figcaption class="figure-caption">
     from <a href="https://openclipart.org/" target="_blank">from openclipart.org - a free image library and a goldmine for blersed content</a>
   </figcaption>
