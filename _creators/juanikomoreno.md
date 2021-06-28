@@ -11,4 +11,4 @@ photo: juanikomoreno.png
 donationlink:
 patreon:
 ---
-Curator, artist and researcher. Interested in cosmotechnics, nature/culture divide, planetarity, sinthetic intelligence, and flowery shirts.
+Curator, artist and researcher. Interested in cosmotechnics, nature/culture divide, planetarity, synthetic intelligence, and flowery shirts.
