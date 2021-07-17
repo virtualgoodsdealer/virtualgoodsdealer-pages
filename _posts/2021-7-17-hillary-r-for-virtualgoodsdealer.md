@@ -79,8 +79,8 @@ Hillary: It started in my undergrad, I was a photography major. I was very diffe
 **How did you get started with character design?**  
 Hillary: I have a background in 3D modeling when I got my MA in exhibition design and I used to create rooms for exhibitions and installations. I got fascinated with the idea of 3D becoming an artistic medium rather than just a function. I began to look to retro gaming as a source of inspiration (thanks to my amazing fiance, Eric, who is a collector of retro video games) and breaking down the characters I was playing into shapes. As I began to build on those shapes in 3D, characters started to be born and they took on their own life form.
 
-<figure class="figure">
-	<div id="model-container" style="width: 100%; height: 20rem;"></div>
+<figure class="figure mt-4">
+	<div class="mx-auto" id="model-container" style="width: 25rem; height: 25rem;"></div>
 	<figcaption class="figure-caption">
 		"TV Boi" by Hillary R
 	</figcaption>
@@ -112,11 +112,10 @@ function createModel(element) {
         // }
     };
  	const scene = new THREE.Scene();
- 	scene.background = null;
- 	const camera = new THREE.PerspectiveCamera(13, element.clientWidth / element.clientHeight, 1, 1000 );
+ 	const camera = new THREE.PerspectiveCamera(15, element.clientWidth / element.clientHeight, 1, 1000 );
 
- 	const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setClearColor( 0x000000, 0 );
+ 	const renderer = new THREE.WebGLRenderer();
+    renderer.setClearColor(new THREE.Color( 0xe6a1e1 ));
  	renderer.setSize( element.clientWidth, element.clientHeight );
 
  	element.appendChild( renderer.domElement );
@@ -168,7 +167,7 @@ function createModel(element) {
         scene.add( alight );
 
         const color = 0xFFFFFF;
-        const intensity = 0.8;
+        const intensity = 1;
         const light = new THREE.DirectionalLight(color, intensity);
         light.position.set(5, 10, 5);
         light.target.position.set(-5, 0, -5);
@@ -186,8 +185,8 @@ function createModel(element) {
         shadowMesh.material.opacity = 0.8;
 
         shadowMesh.rotateX(-80*Math.PI/180);
-        shadowMesh.position.set(0,-0.38,0);
-        shadowMesh.scale.set(0.8,0.8,0.8);
+        shadowMesh.position.set(0,-0.5,0);
+        shadowMesh.scale.set(1,1,1);
         scene.add( shadowMesh );
 
         camera.position.z = 5;
@@ -238,7 +237,27 @@ function createModel(element) {
             composer.render();
         };
 
+        const hoverAnimate = function () {
+            cancelAnimationFrame( animation );
+            animationHover = requestAnimationFrame( hoverAnimate );
+
+            if(yincrease){
+               meshToRotate.rotateOnWorldAxis(new THREE.Vector3(0,1,0).normalize(), 0.05); 
+            }
+            else{
+               meshToRotate.rotateOnWorldAxis(new THREE.Vector3(0,1,0).normalize(), -0.05);
+            }
+            composer.render();
+        };
+
+        const stopHoverAnimate = function () {
+            cancelAnimationFrame( animationHover );
+            animate();
+        };
+
         animate();
+        element.addEventListener("mouseenter", hoverAnimate);
+        element.addEventListener("mouseout", stopHoverAnimate)
 
     }, undefined, function ( error ) {
 
