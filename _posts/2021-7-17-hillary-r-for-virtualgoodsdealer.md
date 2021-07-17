@@ -86,6 +86,15 @@ Hillary: I have a background in 3D modeling when I got my MA in exhibition desig
 	</figcaption>
 </figure>
 
+<style>
+
+@media (max-width: 575px){
+	#model-container{
+		width:  100%;
+	}
+}
+</style>
+
 <script type="module">
 import * as THREE from '/scripts/three/build/three.module.js';
 import { GLTFLoader } from '/scripts/three/examples/jsm/loaders/GLTFLoader.js';
