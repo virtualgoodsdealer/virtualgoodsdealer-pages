@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Virtualgoodsdealer Creators: YAYA 涯涯"
-categories: interview
+categories: [interview, art]
 author:
 guest: YAYA 涯涯
 related-articles:
