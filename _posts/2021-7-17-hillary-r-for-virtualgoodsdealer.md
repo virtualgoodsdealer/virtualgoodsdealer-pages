@@ -2,7 +2,7 @@
 
 layout: post
 title: "Hillary R for Virtualgoodsdealer"
-categories: interview
+categories: [interview, art]
 author:
 guest: Hillary R
 related-articles:

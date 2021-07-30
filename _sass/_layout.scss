@@ -27,7 +27,7 @@
     color: $hover-color-dark !important;
   }
 
-  .post, .form-article-title, code {
+  .post, .form-article-title, code, .carousel-caption {
     color: $text-color-dark;
   }
 
@@ -141,7 +141,7 @@ body {
   color: $text-color-light;
 }
 
-.post, .form-article-title, code {
+.post, .form-article-title, code, .carousel-caption {
   color: $text-color-light;
 }
 
