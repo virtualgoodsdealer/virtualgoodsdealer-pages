@@ -157,11 +157,17 @@ And what does it mean for me, in this body, to want to claim a place in a hobby 
 		max-height:  20rem;
 	}
 
+	.carousel-control-next, .carousel-control-prev {
+		top: auto;
+		bottom: auto;
+		align-items: end;
+	}
+
 </style>
 
 Finally, we asked YAYA 涯涯 to rank their favorite anime.
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
 
   <div class="carousel-inner">
     <div class="carousel-item active">
