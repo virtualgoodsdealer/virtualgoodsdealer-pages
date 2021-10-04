@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "hoobrit 2020 won set"
-categories: music
+categories: [music, downloads]
 author: Hubert Obasanya
 post_description: "from the 2020 NYE rave set hosted in Atlanta."  
 ---
