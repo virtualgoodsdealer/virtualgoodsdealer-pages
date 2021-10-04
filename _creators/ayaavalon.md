@@ -6,7 +6,7 @@ website: https://ayaavalon.cargo.site/
 shop:
 instagram: aya.avalon
 twitter:
-photo: ayaavalon.jpg
+photo: ayaavalon.jpeg
 donationlink:
 ---
 Aya Avalon is a multidisciplinary artist based in Montreal, Canada. They makes games, comics, performance & video with art therapy in mind. 
