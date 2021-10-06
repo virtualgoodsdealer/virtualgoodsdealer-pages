@@ -5,6 +5,8 @@ name: Aya Avalon
 website: https://ayaavalon.cargo.site/
 shop:
 instagram: aya.avalon
+facebook: ForestHouseINTERACTIVE
+itch: https://ayaavalon.itch.io/
 twitter:
 photo: ayaavalon.jpeg
 donationlink:

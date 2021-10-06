@@ -140,6 +140,7 @@ spotify: spotify url ((optional))
 patreon: patreon url ((optional))
 gumroad: gumroad url ((optional))
 tiktok: tiktok url ((optional))
+itch: itch.io url ((optional))
 
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))
