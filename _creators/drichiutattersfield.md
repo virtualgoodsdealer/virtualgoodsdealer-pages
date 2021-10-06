@@ -2,7 +2,7 @@
 title: dri chiu tattersfield
 permalink: /creatordirectory/drichiutattersfield
 name: dri chiu tattersfield
-website: https://hellodri.itch.io
+itch: https://hellodri.itch.io
 shop:
 twitter: plant_a_dri
 gumroad: https://gumroad.com/dri
