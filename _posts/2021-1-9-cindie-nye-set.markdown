@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "males_are_cancelled set - wasted fuckers secret nye rave"
-categories: music
+categories: [music, downloads]
 author: cindie xin
 post_description: "Length 20:04. Multi-genre, variable BPM. Audio hosted on Virtualgoodsdealer."  
 ---
