@@ -178,9 +178,10 @@ layout: default
 	</div>
 	<!-- list all categories -->
 	<h5 class="card-title text-center">
-		browse articles by category...
+		browse by category...
 	</h5>
-	<div class="landing-articles-categories mb-5 w-100 d-flex justify-content-center">
+	<div class="landing-articles-categories mb-5 w-100 d-flex flex-column justify-content-center">
+		<div class="d-flex justify-content-center">
 		<a class="mr-1" href="/articles">/articles</a>
 		<ul class="list-group">					
 			{% assign categories = site.categories | sort %}
@@ -190,7 +191,12 @@ layout: default
 		    </li>
 		{% endfor %}
 	</ul>
+</div>
+
+	<div class="landing-articles-categories">
+		<a class="mr-1" href="/exhibits">/exhibits</a>
 	</div>
+		</div>
 
 	<!-- add most recent web exhibit -->
 	<div class="mb-5 w-100">
