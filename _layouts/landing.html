@@ -177,26 +177,31 @@ layout: default
 		</div>
 	</div>
 	<!-- list all categories -->
+
 	<h5 class="card-title text-center">
 		browse by category...
 	</h5>
-	<div class="landing-articles-categories mb-5 w-100 d-flex flex-column justify-content-center">
-		<div class="d-flex justify-content-center">
-		<a class="mr-1" href="/articles">/articles</a>
-		<ul class="list-group">					
+	<div class="row landing-articles-categories">
+		<div class="col-6 text-right">
+			<a class="mr-1" href="/articles">/articles</a>
+		</div>
+		<div class="col-6 text-left">
+			<ul class="list-group">					
 			{% assign categories = site.categories | sort %}
 			{% for category in categories %}
 		    <li class="list-group-item">
 		      <a class="font-weight-light" href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
 		    </li>
 		{% endfor %}
-	</ul>
-</div>
-
-	<div class="landing-articles-categories">
-		<a class="mr-1" href="/exhibits">/exhibits</a>
-	</div>
 		</div>
+	</div>
+	<div class="row mb-5 landing-articles-categories">
+		<div class="col-6 text-right">
+			<a class="mr-1" href="/exhibits">/exhibits</a>
+		</div>
+		<div class="col-6 text-right">
+		</div>
+	</div>
 
 	<!-- add most recent web exhibit -->
 	<div class="mb-5 w-100">
