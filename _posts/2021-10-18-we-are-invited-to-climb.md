@@ -9,7 +9,7 @@ post_description: Live-generating excerpts from a book of chance poetry
 
 <script src="/scripts/bml/bml.bundle.js" type="text/javascript"></script>
 
-![A pocketbook laying on a bed of wires](/assets/post_media/2021-10-06-we-are-invited-to-climb/book-on-wires.jpg "Photo by Phoebe Waldron")
+![A pocketbook laying on a bed of wires](/assets/post_media/2021-10-18-we-are-invited-to-climb/book-on-wires.jpg "Photo by Phoebe Waldron")
 
 These are a few poems from my recently published book of generative "chance poetry" [_We Are Invited to Climb_](https://awst-press.com/shop/we-are-invited-to-climb). The book is not only written with chance systems but available in a free live-generating edition at [weareinvitedtoclimb.org](//weareinvitedtoclimb.org). In the spirit of virtual goods, these excerpts are embedded here in live-generating versions as well, realized anew every time you load or refresh this page.
 
