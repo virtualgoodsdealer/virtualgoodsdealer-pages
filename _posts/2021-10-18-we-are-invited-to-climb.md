@@ -11,11 +11,11 @@ post_description: Live-generating excerpts from a book of chance poetry
 
 ![A pocketbook laying on a bed of wires](/assets/post_media/2021-10-18-we-are-invited-to-climb/book-on-wires.jpg "Photo by Phoebe Waldron")
 
-These are a few poems from my recently published book of generative "chance poetry" [_We Are Invited to Climb_](https://awst-press.com/shop/we-are-invited-to-climb). The book is not only written with chance systems but available in a free live-generating edition at [weareinvitedtoclimb.org](//weareinvitedtoclimb.org). In the spirit of virtual goods, these excerpts are embedded here in live-generating versions as well, realized anew every time you load or refresh this page.
+These are a few poems from my recently published book of generative "chance poetry" [_We Are Invited to Climb_](https://awst-press.com/shop/we-are-invited-to-climb){:target="_blank"}. The book is not only written with chance systems but available in a free live-generating edition at [weareinvitedtoclimb.org](//weareinvitedtoclimb.org){:target="_blank"}. In the spirit of virtual goods, these excerpts are embedded here in live-generating versions as well, realized anew every time you load or refresh this page.
 
-The book is written using my pet poetry programming language, [BML](//bml-lang.org), which incorporates carefully composed randomized elements into linear text. On each generation of the book, thousands of poetic elements---words, phrases, line breaks, layout---are chosen by chance. Curious readers may be interested to read [the book's appendix](https://weareinvitedtoclimb.org/#appendix), which delves into the technical construction and artistic motivations behind the project, as well as a brief survey of the generative text scene.
+The book is written using my pet poetry programming language, [BML](//bml-lang.org){:target="_blank"}, which incorporates carefully composed randomized elements into linear text. On each generation of the book, thousands of poetic elements---words, phrases, line breaks, layout---are chosen by chance. Curious readers may be interested to read [the book's appendix](https://weareinvitedtoclimb.org/#appendix){:target="_blank"}, which delves into the technical construction and artistic motivations behind the project, as well as a brief survey of the generative text scene.
 
-The book and these excerpts are published under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and the book's source code is available [here](https://gitlab.com/ajyoon/weareinvitedtoclimb.org/).
+The book and these excerpts are published under a [Creative Commons BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/){:target="_blank"} and the book's source code is available [here](https://gitlab.com/ajyoon/weareinvitedtoclimb.org/){:target="_blank"}.
 
 <div style="text-align: right"><i>—ay</i></div>
 
