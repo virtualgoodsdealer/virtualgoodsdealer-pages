@@ -12,7 +12,76 @@ layout: default
 	<div class="mb-3 w-100 landing-pages-about text-center">
 		virtualgoodsdealer pages is a portal for publishing non-physical media and showcasing creators.
 	</div>
-		<a href="https://www.virtualgoodsdealer.com/subscribe" class="btn btn-primary w-100 mb-5">subscribe to our mailing list!</a>
+	<!-- add most recent update -->
+
+	<div class="w-100">
+		<div class="card mb-3">
+			<div class="card-body landing-updates">
+				<h5 class="card-title text-center">
+					new content every week
+				</h5>
+				<div class="row d-flex justify-content-around">
+					<div class="col-lg-6 text-center text-lg-right">
+				latest update:
+				{% assign post_array = site.posts %}
+	  			{% assign post = post_array.first %}
+
+	  			{% assign subs_sorted = site.submissions | reverse %}
+	  			{% assign sub = subs_sorted.first %}
+
+	  			{% if post.date < sub.date %}
+	  				{% assign post = sub %}
+	  			{% endif %}
+
+	  			<time class='text-nowrap font-weight-light' datetime='{{ post.date | date_to_xmlschema }}'>
+            		{% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+            		{{ post.date | date: date_format }}
+          		</time>
+          	</div>
+          	<div class="col-lg-6 text-center text-lg-left">
+  				<a class='posts__link' href='{{ post.url | relative_url }}'>
+	              {{ post.title }}
+
+
+	            {% if post.guest %}
+	              featuring
+	              {% assign guest_list = '' | split: '' %}
+	              {% for guest in post.guest %}
+	                {% for creator in site.creators %}
+	                  {% if creator.name == guest %}
+	                    {% capture guest_link %}
+	                      {{ guest | escape }}
+	                      {% endcapture %}
+	                      {% assign guest_link = guest_link | rstrip %}
+	                      {% assign guest_list = guest_list | push: guest_link %}
+	                  {% endif %}
+	                {% endfor %}
+	             {% endfor %}
+	             {{ guest_list | join: "," }}
+	            {% endif %}
+
+	            {% if post.author %}
+	              by
+	              {% assign author_list = '' | split: '' %}
+	              {% for author in post.author %}
+	                {% for creator in site.creators %}
+	                  {% if creator.name == author %}
+	                    {% capture author_link %}
+	                      {{ author | escape }}
+	                    {% endcapture %}
+	                    {% assign author_link = author_link | rstrip %}
+	                    {% assign author_list = author_list | push: author_link %}
+	                  {% endif %}
+	                {% endfor %}
+	             {% endfor %}
+	             {{ author_list | join: "," }}
+	            {% endif %}
+	            	            </a>
+	            	        </div>
+	           </div>
+	    </div>
+	</div>
+		<a href="https://www.virtualgoodsdealer.com/subscribe" target="_blank" class="btn btn-primary w-100 mb-5">subscribe for updates!</a>
 	<!-- add most recent 3 articles -->
 	<div class="mb-5 w-100">
 		<h5 class="card-title text-center">
@@ -108,19 +177,30 @@ layout: default
 		</div>
 	</div>
 	<!-- list all categories -->
+
 	<h5 class="card-title text-center">
-		browse articles by category...
+		browse by category...
 	</h5>
-	<div class="landing-articles-categories mb-5 w-100 d-flex justify-content-center">
-		<a class="mr-1" href="/articles">/articles</a>
-		<ul class="list-group">					
+	<div class="row landing-articles-categories">
+		<div class="col-6 text-right">
+			<a class="mr-1" href="/articles">/articles</a>
+		</div>
+		<div class="col-6 text-left">
+			<ul class="list-group">					
 			{% assign categories = site.categories | sort %}
 			{% for category in categories %}
 		    <li class="list-group-item">
 		      <a class="font-weight-light" href="{{ site.url }}/articles/{{ category | first | slugsize }}">/{{ category | first }}</a>
 		    </li>
 		{% endfor %}
-	</ul>
+		</div>
+	</div>
+	<div class="row mb-5 landing-articles-categories">
+		<div class="col-6 text-right">
+			<a class="mr-1" href="/exhibits">/exhibits</a>
+		</div>
+		<div class="col-6 text-right">
+		</div>
 	</div>
 
 	<!-- add most recent web exhibit -->
