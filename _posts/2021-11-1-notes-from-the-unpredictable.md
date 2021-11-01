@@ -37,7 +37,7 @@ post_description: 100porcent_genuine began in 2021 as an artistic archiving proj
 
 </style>
 
-<h4 id="i">i.</h4>
+<h3 id="i">i.</h3>
 
 <pre id="partone">
 wherever this page is open,
@@ -68,12 +68,12 @@ and this something already exists
 here         and                                there.
 </pre>
 
-<h4 id="ii">ii.</h4>
+<h3 id="ii">ii.</h3>
 100porcent_genuine is a performative hybrid body of two Brazilian artists, Lucas Lucas (b. 1994, Rio de Janeiro) and Rodrigo Pinheiro (b. 1994, Rio de Janeiro), whose artistic research paths converge to create a persona avatar which materializes 100porcent_genuine productions, a transmedia speculative work of fiction. 100porcent_genuine began in 2021 as an artistic archiving project of pictures from bot profiles on Instagram, gradually evolving as an audiovisual fiction, provoked by enigmatic contact with artificial intelligence and its alien ways of thinking. In this way, 100porcent_genuine is driven to investigate in which ways the psycho-cognitive effects that we experience online and cross-media reorder our individual and collective bodies, our imaginations and therefore our realities.
 
-<h4 id="iii">iii.<br />
+<h3 id="iii">iii.<br />
 <br />
-Words from the duo</h4>
+Words from the duo</h3>
 
 <div id="partthree">
 “100porcent_genuine is the name we gave to our movement, to the persona we’ve assumed since we begun to work as a collective on this interdisciplinary artistic research project. In our process, we’re rather instigated by the increasingly virtualization of relationships, by how we apprehend/process/transmit information and build up social and affective bonds in this social-political-economical context.<br />
@@ -148,10 +148,10 @@ Lucas Lucas and Rodrigo Pinheiro, May 2021
 	</figcaption>
 </figure>
 
-<h4 id="iv">iv.<br />
+<h3 id="iv">iv.<br />
 <br />
 “27251 (no wires, no limits)” film description
-</h4>
+</h3>
 <div id="partfour">
 artist: 100porcent_genuine (Lucas Lucas and Rodrigo Pinheiro)<br />
 original title: “27251 (no wires, no limits)”<br />
