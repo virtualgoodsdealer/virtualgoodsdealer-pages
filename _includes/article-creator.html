@@ -21,12 +21,22 @@
 			    	created by:
 			    </div>
 			    <h5 class="card-title">{{creator.name}}</h5>
-			    <p class="card-text">
-			    	<span class="author-post-bio font-weight-light">{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}</span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a>
-			    </p>
+			    <div class="card-text author-post-bio font-weight-light" id="{{ creator.permalink }}">
+			    	{{ creator.content | markdownify | remove: '<p>' | remove: '</p>' }}
+			    </div>
+			    <span><a href="{{ creator.permalink }}" class="read-more font-weight-light">Learn more</a></span>
+			    {% include clamp.html %}
+			    <script>
+					var exerpts = document.getElementById("{{ creator.permalink }}");
+					$clamp(exerpts, {clamp: 4, useNativeClamp: false});
+				</script>
+				
+				<div class="mt-3">
 			    {% if creator.donationlink %}
 					<a href="{{ creator.donationlink }}" class="btn btn-primary donate-btn" target="_blank">Donate here</a>
 				{% endif %}
+				</div>
+				
 			</div>
 
 		  </div>
