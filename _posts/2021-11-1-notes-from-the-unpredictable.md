@@ -17,7 +17,7 @@ post_description: 100porcent_genuine began in 2021 as an artistic archiving proj
 }
 
 #partthree{
-	font-family: "Times New Roman"!important;
+	font-family: "Helvetica"!important;
 	font-style:  italic!important;
 }
 
