@@ -22,7 +22,7 @@ Since discord servers can't just be found in a Google search, in this article, I
 
 The following summaries include self written descriptions and goals of each discord server's creator(s). The server invite links are posted here with permission from their moderators.
 
-## CARI: Consumer Aesthetic Research Institute
+## CARI: Consumer Aesthetics Research Institute
 by [Froyo Tam](/creatordirectory/froyotam) and [Evan Collins](/creatordirectory/evancollins)
 
 "A group focused on the research and analysis of zeitgeists of consumer design. Our goal is to create a contemporary lexicon on postmodern design since 1970s to the present."
