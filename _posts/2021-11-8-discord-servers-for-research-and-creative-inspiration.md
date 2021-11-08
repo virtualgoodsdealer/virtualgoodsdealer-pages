@@ -41,7 +41,7 @@ Learn more about CARI, their research, and how you can contribute to and use the
 2. Knowledge is a privilege.
 3. Knowledge means nothing without context.
 
-The Lightshine Chamber contains both general channels for discussion and sharing and more specialized channels on topics such as surveillance, memetics, and anime. Resources that are posted in the discord server are organized in a shared are.na group for easy reference. Learn more about the tenets of Lightshine Chamber, their server events, and archive of resources by joining the discord server.
+The Lightshine Chamber contains both general channels for discussion and sharing and more specialized channels on topics such as surveillance, memetics, and anime. Resources that are posted in the discord server are organized in a shared are.na group for easy reference. Learn more about the tenets of Lightshine Chamber, their server events, and their archive of resources by joining the discord server.
 
 <a href="https://discord.gg/fC4pbX6Wz4" class="btn btn-primary mb-5" target="_blank">discord invite</a>
 
@@ -51,9 +51,9 @@ by [Idil Galip](/creatordirectory/idilgalip)
 
 "The Meme Studies Research Network is an international and interdisciplinary research network for scholars who study memes. It aims to bring people together and foster discussion about memes from various academic fields, methodological practices and theoretical standpoints. The main goal of the network is to collaboratively establish a meme studies canon, and offer researchers an index of resources that center memes as their main object of interest."
 
-The Meme Studies Research Network discord hosts a reading group and talks with media studies scholars. In addition to channels for sharing and discussing memes and other internet media, there is a channel for finding collaborators. Learn more about the Meme Studies Research Network, their events, and index of scholarly works on [their website](https://memestudiesrn.wordpress.com/){:target="_blank"} or discord server.
+The Meme Studies Research Network discord organizes an index of scholarly works on memes, hosts a reading group, and features talks with media studies scholars. In addition to channels for sharing and discussing memes and other internet media, there is a channel for finding collaborators. Learn more about the Meme Studies Research Network, their index of scholarly works, and how to attend their events on [their website](https://memestudiesrn.wordpress.com/){:target="_blank"} or discord server.
 
 <a href="https://discord.gg/Sg8R8ZvCz5" class="btn btn-primary" target="_blank">discord invite</a>
 
 ---
-Thank you to the creators and moderators of these communities! Feel free to learn more about them and support them below. If you are a moderator of a discord community that's looking for creators or researchers, reach out to me, ada.wrong, to be featured in a future virtualgoodsdealer article.
+Thank you to the creators and moderators of these communities! Feel free to learn more about them and support them below. If you are a moderator of a discord community that's looking for creators or researchers, reach out to me, [ada.wrong](/creatordirectory/adawrong), below to be featured in a future virtualgoodsdealer article.

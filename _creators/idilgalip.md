@@ -6,7 +6,7 @@ website: http://idilgalip.com
 shop:
 instagram: cybervolta
 twitter: idilgalip
-photo: idilgalip.jpeg
+photo: idilgalip.jpg
 patreon:
 donationlink:
 ---
