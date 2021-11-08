@@ -20,7 +20,7 @@ Although social media allows us to easily share our work, it mainly seeks to dis
 
 Since discord servers can't just be found in a Google search, in this article, I'm featuring three discord servers that you can join today for research outside formal institutions, creative inspiration, or collaborative discussion. The topics of these servers center around design, technology, and internet culture. My goal is that you, the creatvies in our larger virtualgoodsdealer community, will be able to find people to learn and collaborate with.
 
-The following summaries are the self written descriptions and goals of each discord server's creators. The server invite links are posted here with permission from their moderators.
+The following summaries include self written descriptions and goals of each discord server's creator(s). The server invite links are posted here with permission from their moderators.
 
 ## CARI: Consumer Aesthetic Research Institute
 by [Froyo Tam](/creatordirectory/froyotam) and [Evan Collins](/creatordirectory/evancollins)
