@@ -3,7 +3,7 @@ title: Skullfucked
 permalink: /creatordirectory/skullfucked
 name: Skullfucked
 website: 
-shop: skullfucked
+<!-- shop: skullfucked -->
 instagram: skull.fuckedd
 twitter: skull.fuckedd
 photo: skullfucked.jpg

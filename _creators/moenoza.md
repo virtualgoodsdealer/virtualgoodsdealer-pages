@@ -3,7 +3,7 @@ title: Moe Noza
 permalink: /creatordirectory/moenoza
 name: Moe Noza
 website: https://depop.com/moenoza
-shop: moe-noza
+<!-- shop: moe-noza -->
 instagram: moenoza
 twitter: 
 photo: moenoza.jpg

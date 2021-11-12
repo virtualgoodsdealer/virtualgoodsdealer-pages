@@ -3,7 +3,7 @@ title: demonmercen
 permalink: /creatordirectory/demonmercen
 name: demonmercen
 website: https://www.depop.com/demonmercen/
-shop: demonmercen
+<!-- shop: demonmercen -->
 instagram: demonmercenary
 twitter: demmonmercenary
 photo: demonmercen.jpg
