@@ -3,7 +3,7 @@ title: GentleMoonBell [Gently Made Plush]
 permalink: /creatordirectory/gentlemoonbell
 name: GentleMoonBell [Gently Made Plush]
 website: https://www.etsy.com/shop/melvaharris
-shop: gentlemoonbell
+<!-- shop: gentlemoonbell -->
 instagram: melvaharris
 twitter: MeL_VaToast
 photo: gentlemoonbell.jpg

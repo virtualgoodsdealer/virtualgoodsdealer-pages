@@ -3,7 +3,7 @@ title: LIVING SHADOW™
 permalink: /creatordirectory/livingshadow
 name: LIVING SHADOW™
 website: https://darkage.online/
-shop: living-shadow
+<!-- shop: living-shadow -->
 instagram: darkage.jpg
 twitter: 
 photo: livingshadow.png

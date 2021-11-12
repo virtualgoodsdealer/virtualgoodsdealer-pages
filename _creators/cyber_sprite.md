@@ -3,7 +3,7 @@ title: cyber_sprite
 permalink: /creatordirectory/cyber_sprite
 name: cyber_sprite
 website: http://depop.com/cyber_sprite 
-shop: charming-sprite-shop
+<!-- shop: charming-sprite-shop -->
 instagram: cyber_sprite
 twitter:
 photo: cybersprite.jpg

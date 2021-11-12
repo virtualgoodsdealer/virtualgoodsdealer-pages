@@ -3,7 +3,7 @@ title: Luz Muerta
 permalink: /creatordirectory/luzmuerta
 name: Luz Muerta
 website: https://www.luzmuerta.com/
-shop: luz-muerta
+<!-- shop: luz-muerta -->
 instagram: luz.muerta
 twitter: 
 photo: luzmuerta.jpg

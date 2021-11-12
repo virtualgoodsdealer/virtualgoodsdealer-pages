@@ -3,7 +3,7 @@ title: Zines by Jackie
 permalink: /creatordirectory/zinesbyjackie
 name: Zines by Jackie
 website: http://zinesbyjackie.com/
-shop: zines-by-jackie
+<!-- shop: zines-by-jackie -->
 instagram: jacq_ilu
 twitter: jackieis_online
 photo: zinesbyjackie.jpg
