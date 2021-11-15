@@ -3,7 +3,7 @@ title: YAYA 涯涯
 permalink: /creatordirectory/yaya
 name: YAYA 涯涯
 website: https://nyaya.skin
-shop:
+shop: yaya
 instagram: nya.yayaya
 twitter: liu1ight
 photo: yaya.jpg
