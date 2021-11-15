@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Discord Servers for Research and Creative Inspiration That You Can Join Today"
-categories:
+categories: community
 author: ada.wrong
 guest: [Froyo Tam, Evan Collins, Idil Galip]
 related-articles:

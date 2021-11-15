@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes from the unpredictable"
-categories: art
+categories: [art, essay]
 author: 100porcent_genuine
 related-articles:
 post_description: 100porcent_genuine began in 2021 as an artistic archiving project of pictures from bot profiles on Instagram, gradually evolving as an audiovisual fiction, provoked by enigmatic contact with artificial intelligence and its alien ways of thinking.
