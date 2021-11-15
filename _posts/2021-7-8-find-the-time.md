@@ -9,7 +9,7 @@ post_description: [a collection of poetry.]
 
 
 
-![finding time](/assets/post_media/2021-7-8-mel-poems/finding-time.png "finding time")
+![finding time](/assets/post_media/2021-7-8-find-the-time/finding-time.png "finding time")
 
 *"These are just some dumbs poems that I wrote when I was incarcerated. I recently unearthed that time capsule and I just thought hey man you can ignore how dumb you feel about these and just submit a couple so they at least exist outside of some sad story about spending chunks of my life behind bars (not that they are in any way relative to incarceration)."*  
 
