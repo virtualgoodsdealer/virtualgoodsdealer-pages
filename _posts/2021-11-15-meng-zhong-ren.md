@@ -7,7 +7,7 @@ related-articles:
 post_description: "the only absolute truth is that Truth is variable and everchanging. but consider: reality alone isn't enough."
 ---
 
-the only absolute truth is that Truth is variable and everchanging. but consider: reality alone isn't enough.  
+the only absolute truth is that [Truth](https://nyaya.skin/){:target="_blank"} is variable and everchanging. but consider: reality alone isn't enough.  
 《mirror in the mirror / (光)》 is the starting point — available for purchase at [virtualgoodsdealer products](https://products.virtualgoodsdealer.com/category/yaya){:target="_blank"} now, along with prints and stickers also by YAYA 涯涯.
 
 ![《 梦中人 meng zhong ren 》](/assets/post_media/2021-11-15-meng-zhong-ren/Web-1920-–-1_01.gif)
