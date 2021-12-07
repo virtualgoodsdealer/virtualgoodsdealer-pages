@@ -24,6 +24,11 @@ layout: default
 						<a href="{{ page.website }}" target="_blank">website</a>
 					</li>
 				{% endif %}
+				{% if page.blog %}
+					<li class="list-group-item">
+						<a href="{{ page.blog }}" target="_blank">blog</a>
+					</li>
+				{% endif %}
 				{% if page.instagram %}
 					<li class="list-group-item">
 						<a href="https://www.instagram.com/{{ page.instagram }}" target="_blank">instagram</a>
