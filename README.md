@@ -129,8 +129,10 @@ title: name
 permalink: /creatordirectory/creatorname
 name: name
 
-website: website or store url ((optional))
 shop: virtualgoodsdealer.com store page ((optional))
+
+website: website url ((optional))
+blog: blog url ((optional))
 instagram: instagram username ((optional))
 twitter: twitter username ((optional))
 facebook: facebook username ((optional))
