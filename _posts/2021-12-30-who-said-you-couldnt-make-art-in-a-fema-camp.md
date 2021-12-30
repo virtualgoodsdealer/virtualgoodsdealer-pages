@@ -4,7 +4,7 @@ title: "Who said you couldn't make art in a FEMA camp?"
 categories: [art, essay]
 author: Mira Mandelbrot
 related-articles:
-post_description: A gallery of the artist's recent work accompanied by an essay on their creative drive and comtemplations on the future. Some inspiration for the start of your 2022.
+post_description: A gallery of the artist's recent work accompanied by an essay on her creative drive and comtemplations on the future. Some inspiration for the start of your 2022.
 ---
 
 ![Artwork by Mira Mandelbrot](/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-1.png)
