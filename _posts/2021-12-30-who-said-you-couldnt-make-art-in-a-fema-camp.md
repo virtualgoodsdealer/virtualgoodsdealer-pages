@@ -17,7 +17,10 @@ When you’re a kid it’s hard to verbalize much of this or know what is and is
 
 I’m thankful for the internet. It seems to be very funny epic and brave to shit on the internet as a concept, but I think it kicks ass. The connections I formed with others across the globe in the depths of my despair kick ass. The ability to learn about generational trauma and cycles of abuse so I can break out of them kick ass. The tools I was given to escape my situation and chart a new course kick ass. My artistic lifeline kicks ass.
 
-![Artwork by Mira Mandelbrot](/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-2.jpeg)
+<picture>
+	<source srcset="/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-2-dark.png" media="(prefers-color-scheme: dark)">
+	<img src="/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-2.jpeg" class="img-fluid d-block m-auto logo" alt="Artwork by Mira Mandelbrot">
+</picture>
 
 Let’s talk more about cycles. They’re integral to my work and ever present in my life, I’d say the same goes for many people. I’ve been very busy with client work as of late and unable to get my feet wet with much personal stuff, but the work I made from 2020-2021 can all be loosely grouped together. 
 
@@ -31,7 +34,10 @@ The past may be painful and I can never forget it, but I won’t let it control 
 
 It was powerful for me to accept that nothing is permanent. Nothing lasts, and that’s okay. There will always be new people, opportunities, and paths to traverse. 
 
-![Artwork by Mira Mandelbrot](/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-4.png)
+<picture>
+	<source srcset="/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-4-dark.png" media="(prefers-color-scheme: dark)">
+	<img src="/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-4.png" class="img-fluid d-block m-auto logo" alt="Artwork by Mira Mandelbrot">
+</picture>
 
 ![Artwork by Mira Mandelbrot](/assets/post_media/2021-12-30-who-said-you-couldnt-make-art-in-a-fema-camp/mira-mandelbrot-5.png)
 
