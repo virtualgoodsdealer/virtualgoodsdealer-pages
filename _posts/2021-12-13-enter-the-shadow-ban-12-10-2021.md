@@ -6,6 +6,7 @@ author: ada.wrong
 guest: [djinn kazama, JAGUAR]
 related-articles:
 post_description: "Photos from the 12/10 event at Trans-Pecos in Ridgewood Queens, NY"
+thumbnail: /assets/post_media/2021-12-13-enter-the-shadow-ban-12-10-2021/thumbnail.jpg
 ---
 <style>
 	.post img{
