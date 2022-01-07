@@ -12,7 +12,25 @@ post_description: A collection of memes that are impossible to explain.
 	.figure-caption {
 		font-size: 2rem;
 	}
-	</style>
+
+	@media screen and (min-width: 768px) {
+		.post figure img{
+			width:65% !important;
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		.post figure img{
+			width:55% !important;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.post figure img{
+			width:45% !important;
+		}
+	}
+</style>
 
 A meme is created by combining a number of unrelated elements (images, phrases, feelings, symbols) to reveal a conceptually new, easily shareable image. The consumption of memes exploded over the last 2 decades because they provided a new medium to explore humor, express outrage, and for better or worse, a way to spread the word.
 
