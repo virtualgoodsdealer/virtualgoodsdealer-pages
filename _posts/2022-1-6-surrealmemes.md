@@ -57,6 +57,14 @@ This is a collection of my favorite modern surrealist memes and artworks, organi
 ## Melancholic Piano
 
 <figure class="figure">
+	<img src="/assets/post_media/2022-1-6-surrealmemes/thecallcenter_hallway.jpg" class="figure-img img-fluid rounded" alt="long hallway">
+	<figcaption class="figure-caption">
+		By: <a href="https://www.instagram.com/thecallcenter" target="_blank">@thecallcenter</a>
+	</figcaption>
+</figure>
+
+
+<figure class="figure">
 	<img src="/assets/post_media/2022-1-6-surrealmemes/realsurrealmemes_mango.jpg" class="figure-img img-fluid rounded" alt="Mango Fact of the Day">
 	<figcaption class="figure-caption">
 		By: <a href="https://www.instagram.com/real.surreal.memes" target="_blank">@real.surreal.memes</a>
@@ -92,9 +100,9 @@ This is a collection of my favorite modern surrealist memes and artworks, organi
 </figure>
 
 <figure class="figure">
-	<img src="/assets/post_media/2022-1-6-surrealmemes/allhailthemat_omnicroc.jpg" class="figure-img img-fluid rounded" alt="The Omnicroc">
+	<img src="/assets/post_media/2022-1-6-surrealmemes/bananaboi.jpg" class="figure-img img-fluid rounded" alt="cow length">
 	<figcaption class="figure-caption">
-		By: <a href="https://www.instagram.com/all_hail_the_mat" target="_blank">@all_hail_the_mat</a>
+		By: <a href="https://www.instagram.com/bananna.boi_" target="_blank">@bananna.boi_</a>
 	</figcaption>
 </figure>
 
@@ -132,6 +140,13 @@ This is a collection of my favorite modern surrealist memes and artworks, organi
 </figure>
 
 <figure class="figure">
+	<img src="/assets/post_media/2022-1-6-surrealmemes/thatsbelievable_raven.jpg" class="figure-img img-fluid rounded" alt="raven">
+	<figcaption class="figure-caption">
+		By: <a href="https://www.instagram.com/thatsbelievable" target="_blank">@thatsbelievable</a>
+	</figcaption>
+</figure>
+
+<figure class="figure">
 	<img src="/assets/post_media/2022-1-6-surrealmemes/enlightenedlowlife_grandpa.jpg" class="figure-img img-fluid rounded" alt="The Centrum Silver Effect">
 	<figcaption class="figure-caption">
 		By: <a href="https://www.instagram.com/enlightenedlowlife" target="_blank">@enlightenedlowlife</a>
@@ -164,7 +179,7 @@ This is a collection of my favorite modern surrealist memes and artworks, organi
 
 
 
-## Experimental Jazz
+## Alternative Jazz
 
 <figure class="figure">
 	<img src="/assets/post_media/2022-1-6-surrealmemes/helpimtrapped_monalisa.jpg" class="figure-img img-fluid rounded" alt="If no one cared about the Mona Lisa">
