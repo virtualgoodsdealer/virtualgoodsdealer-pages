@@ -4,7 +4,7 @@ permalink: /creatordirectory/djinn_kazama
 name: djinn kazama
 website:
 instagram: djinn_kazama
-twitter: femtominaj
+twitter: djinnkazama_
 photo: djinnkazama.jpeg
 donationlink:
 ---
