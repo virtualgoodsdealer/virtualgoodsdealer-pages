@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 We began our first iteration of Virtualgoodsdealer Creators a month ago on October 6th and it has been a unique and rewarding experience! This post is a lookback on our experiences, as the organizers of Virtualgoodsdealer, and a feature on all the participants who released products with us this month. <!--more-->
 
-This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercen), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and [Skullfucked](/creatordirectory/skullfucked). Here we are sharing some more about each creator and their inspiration and goals.
+This month we featured work from [Charming Sprite Shop by cyber_sprite](/creatordirectory/cyber_sprite), [Juriel Furukawa](/creatordirectory/jurielfurukawa), [demonmercen](/creatordirectory/demonmercenary), [Soft_G0th](/creatordirectory/soft_g0th), [Steph Lau](/creatordirectory/stephlau), [Zines by Jackie](/creatordirectory/zinesbyjackie), [Hillary R](/creatordirectory/hillaryr), and [Skullfucked](/creatordirectory/skullfucked). Here we are sharing some more about each creator and their inspiration and goals.
 
 -----
 ![cyber_sprite Fembot Pendant](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/cyber_sprite_fembot.jpg)
@@ -39,18 +39,18 @@ cyber_sprite: The glitter girl from the “coming back from the club” vine. Le
 Juriel: less frequent than before! I love how much more access I have to more independent sellers, but feel like I can spend too long looking at things. I do enjoy the immediate feeling of desire and love than comes from seeing an item in person
 
 -----
-![Demonmercen Bowl](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/demonmercen_bowl.jpg)
+![Demonmercenary Bowl](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/demonmercen_bowl.jpg)
 
-[Demonmercen](/creatordirectory/demonmercen) is "a demon of sadness" based in Orlando. They are creating resin art, jewelry, apparel, and visual art.
+[Demonmercenary](/creatordirectory/demonmercenary) is "a demon of sadness" based in Orlando. They are creating resin art, jewelry, apparel, and visual art.
 
 >I'm a demon of sadness, through my grief I take the trash I collect and make it into fun items ppl can wear use and have, sometimes I make things from nothing as well, magic gang shit. I hope my love for the world is radiated through my collection  and people feel it cause I do love you all!!
->-demonmercen
+>-demonmercenary
 
 **Q: What's something that's inspiring you right now?**   
-demonmercen: (devil may cry) my family, they have really been here for me, even when Im to the best to work with and it makes me want to pursue my original goals before my life got messed up harder, they deserve a good life after working so hard to help me despite the circumstances I was born in.
+demonmercenary: (devil may cry) my family, they have really been here for me, even when Im to the best to work with and it makes me want to pursue my original goals before my life got messed up harder, they deserve a good life after working so hard to help me despite the circumstances I was born in.
 
 **Q: If you could have an infinite budget for one creative project, what would you make?**  
-demonmercen: a giant resin sculpture, show casing the feeling of severe depression, id need a jack hammer tons of clay, a jar, and hella time
+demonmercenary: a giant resin sculpture, show casing the feeling of severe depression, id need a jack hammer tons of clay, a jar, and hella time
 
 -----
 ![Soft_g0th Stickers](/assets/post_media/2020-11-7-virtualgoodsdealer-creators-october-rewind/soft_g0th_stickerpile.png)
