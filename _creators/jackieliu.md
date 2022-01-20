@@ -1,7 +1,7 @@
 ---
-title: Zines by Jackie
+title: Jackie Liu
 permalink: /creatordirectory/zinesbyjackie
-name: Zines by Jackie
+name: Jackie Liu
 website: http://zinesbyjackie.com/
 <!-- shop: zines-by-jackie -->
 instagram: jacq_ilu
