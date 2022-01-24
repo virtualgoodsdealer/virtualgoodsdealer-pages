@@ -2,13 +2,13 @@
 title: Jackie Liu
 permalink: /creatordirectory/zinesbyjackie
 name: Jackie Liu
-website: http://zinesbyjackie.com/
+website: https://jackieis.online/
 <!-- shop: zines-by-jackie -->
 instagram: jacq_ilu
 twitter: jackieis_online
 photo: zinesbyjackie.jpg
 ---
 
-Jackie Liu is an artist and designer that works with comics, the web, and education. Throughout all of her work, she combines vulnerability, self-reflection, nostalgia, and humor to create safe spaces for others to know themselves better and thrive creativity.
+Jackie Liu is a designer, artist, and programmer that works with comics, the web, and education. She likes to make things that foster self-reflection and/or explore our relationships with technology–through play, whimsy, and nostalgia.
 
-"Zines by Jackie" is her effort to create such spaces in tech, design, and art. Developing an ongoing series, she hopes to create playful, welcoming, and socially-centered ways to learn about technology and our relationships to it.
+[Zines by Jackie](https://www.zinesbyjackie.com){:target="_blank"} is her ongoing effort to offer resources for learning about and being creative with technology. Recently, she copes with the chaos of life through autobiographical comics.
