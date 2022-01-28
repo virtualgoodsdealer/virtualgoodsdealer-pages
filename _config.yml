@@ -95,9 +95,13 @@ defaults:
 google_analytics: G-VTKW4XE2X9
 
 feed:
-  collections:
-    - creators
-    - submissions
+  # collections:
+  #   - creators
+  #   - submissions
+  url: https:pages.virtualgoodsdealer.com
+
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
