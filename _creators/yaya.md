@@ -9,4 +9,4 @@ twitter: liu1ight
 photo: yaya.jpg
 donationlink:
 ---
-YAYA 涯涯 is a catboy hitogoroshi multimedia artist based in LA. they weave post-anime illustrations, animations, poetry, music, and performance into abstracted narratives about alienation, rage, grief, loss, selfhood, and the intimacy of violence. he also likes motorcycles and knives.
+YAYA 涯涯 is a computerfucker sun, incel moon, chad jock rising. he wants to know who you are when you're alone.
