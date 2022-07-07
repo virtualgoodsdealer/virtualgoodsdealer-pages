@@ -6,14 +6,29 @@ live at [pages.virtualgoodsdealer.com](https://pages.virtualgoodsdealer.com/)
 ## Getting started (how to run a local version)
 open the terminal
 
-[install ruby with rvm](https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac)
-except remember to use ruby ver 2.6.3. only go up to step #8 in the linked tutorial.
+check that you have gcc installed  
+`gcc --version`
+
+check that you have git installed  
+`git --version`
+
+install rvm  
+`curl -L https://get.rvm.io | bash -s stable`
+
+check that rvm was installed  
+`rvm --version`
+
+install ruby ver 2.6.3  
+`rvm install 2.6.3`
+
+set 2.6.3 as the default ruby version  
+`rvm --default use 2.6.3`
 
 install bundler and jekyll
 `gem install bundler jekyll`
 
 clone this repository to where you want it
-`git clone https://github.com/virtualgoodsdealer/virtualgoodsdealer.github.io.git`
+`git clone https://github.com/virtualgoodsdealer/virtualgoodsdealer-pages.git`
 
 install all the gems needed for the repository
 `bundle install`
@@ -26,11 +41,9 @@ go to `localhost:4000` in your browser to see the site running locally.
 from now on, you only need to go inside the repo folder and run `bundle exec jekyll serve` to test the site in your browser. note that if you change the `_config.yml` file, you have to stop the local server (with ctrl-c) and rerun it for the changes to be reflected. otherwise, you can just refresh the browser.
 
 ## Adding a new article
-first, go to article drafts branch or make a new one
-
 create a new article by adding a file `yyyy-mm-dd-title-of-article.md` in the `_posts` folder. the file name must be in this format and everything must be separated by dashes (no spaces).
 
-open the file and fill out the following front matter:
+open the file and fill out the following front matter and content:
 
 ```
 ---
@@ -41,6 +54,8 @@ author: name ((optional))
 guest: guestname ((optional - for interview posts ))
 related-articles: [article file name] ((optional))
 ---
+
+Insert text content of article here.
 ```
 please note that the `author` field must match with the `name` field in the `creatorname.md` creator file for them to be linked.   
 if the article has multiple authors, write them in brackets.
@@ -117,12 +132,38 @@ Add the path to the audio file within `src`. Add a caption that will be displaye
 ```
 {% include open-embed.html caption="Add Your Caption Here" src="..." %}
 ```
-## Adding a new creator to the creator directory
-first, go to artist bios branch or create a new one
-
-add a new creator by adding a file `creatorname.md` in the `_creators` folder. the file name should be the creator's name but no period characters or spaces (use dashes instead of spaces).
+## Adding a new exhibit
+create a new exhibit by adding a file `yyyy-mm-dd-title-of-exhibit.md` in the `_posts` folder. the file name must be in this format and everything must be separated by dashes (no spaces).
 
 open the file and fill out the following front matter:
+```
+---
+layout: exhibit
+title: title of exhibit
+author: name
+author_description: description of author of exhibit ((optional))
+post_description: description of exhibit
+demo: /assets/exhibit_previews/name_of_exhibit/name_of_exhibit_preview.mp4
+demo_poster: /assets/exhibit_previews/name_of_exhibit/name_of_exhibit_preview_poster.png
+link: url of exhibit
+permalink: /exhibits#title-of-exhibit
+---
+```
+please note that the `author` field must match with the `name` field in the `creatorname.md` creator file for them to be linked.   
+if the article has multiple authors, write them in brackets.
+```
+author: [name1, name2]
+```
+the `author_description` field is only used if the creator of the exhibit does not have a corresponding creator page. for example, there may be several creators that worked on the exhibit. some or all can be listed in the `author` field but they may want their collective name to be used for the exhibit page display. in that case, use the `author_description` field to display the collective name instead of the individual creators. a combination of text and links can be used in this field.
+
+`demo` and `demo_poster` fields have the path to a video of the exhibit and the path to the preview image of the video. for the image and video files, create a new folder in `/assets/exhibit_previews` with the name of the exhibit. place the image and video file in that folder.
+
+the url for the `link` field needs to include `https://www.` or `http://www.`.
+
+## Adding a new creator to the creator directory
+add a new creator by adding a file `creatorname.md` in the `_creators` folder. the file name should be the creator's name but no period characters or spaces (use dashes instead of spaces).
+
+open the file and fill out the following front matter and content:
 ```
 ---
 title: name
@@ -147,6 +188,8 @@ itch: itch.io url ((optional))
 photo: creatorname.jpg
 donationlink: url of donation link ((optional))
 ---
+
+Insert bio of creator here.
 ```
 
 `title` should be the same as `name`.
@@ -166,22 +209,20 @@ save the creator photo in the `assets/creator_images` folder.
 then, insert the bio of the creator below the frontmatter.
 
 ## Adding a new article category page
-first, make a new branch for yourself or go to your branch
-
 add a new category page so that all the articles with that category can show up on its own page. to do this, add a file `categoryname.md` in the `_category` folder.
 
 open the file and fill out the following front matter:
 ```
+---
 tag: categoryname
 permalink: /articles/categoryname
+---
 ```
 
 ## Adding a new submissions page
-first, go to submissions branch or create a new one
-
 add a submissions page by adding a file `submissionscallname.md` in the `_submissions` folder. the file name should be revelant to the submissions call title but no period characters or spaces (use dashes instead of spaces).
 
-open the file and fill out the following front matter:
+open the file and fill out the following front matter and content:
 ```
 ---
 layout: submissions
@@ -190,14 +231,39 @@ permalink: /submissions/submissionscallname
 date: yyyy-mm-dd
 open: true
 ---
+
+Insert submission description here.
 ```
 
 the date is used to sort the submissions by most recent.
 
 set `open` to "true" if the submissions call is open. set it to "false" if the call is closed.
 
-## Pushing changes
-push changes to your current branch and then create a merge request on the github website.
+## Workflow and Pushing changes
+check for new updates to master branch/live site  
+`git checkout master`  
+`git pull origin master`
+
+create new branch for updates you are working on  
+`git checkout -b newbranch`
+
+make your changes and test locally with `bundle exec jekyll serve` and then going to `localhost:4000` in your browser
+
+check the status of your changes to see what files were changed  
+`git status`
+
+stage and commit all your changes to the new branch you are on
+`git add .`  
+`git commit -m 'description of changes made`
+
+push your changes to github, creating a remote version of the branch you created
+`git push origin newbranch`
+
+go on the github website and create a pull request to merge `newbranch` with master
+
+if there are no conflicts, click "merge" inside the pull request to merge into master and make your changes live
+
+changes will be live on [https://pages.virtualgoodsdealer.com/](https://pages.virtualgoodsdealer.com/) in around 15 minutes
 
 ## Helpful quick links
 [markdown guide](https://www.markdownguide.org/cheat-sheet/) for formatting article content
